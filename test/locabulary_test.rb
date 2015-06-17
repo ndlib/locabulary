@@ -28,4 +28,14 @@ class LocabularyTest < MiniTest::Test
     Locabulary.active_items_for(predicate_name: 'copyright')
     assert_equal(Locabulary.active_cache.key?('copyright'), true)
   end
+
+  def test_active_label_for_uri_when_uri_is_found
+    label = Locabulary.active_label_for_uri(predicate_name: 'copyright', term_uri: 'http://creativecommons.org/licenses/by/3.0/us/')
+    assert_equal(label, 'Attribution 3.0 United States')
+  end
+
+  def test_active_label_for_uri_when_uri_is_not_found
+    label = Locabulary.active_label_for_uri(predicate_name: 'copyright', term_uri: 'Chompy')
+    assert_equal(label, 'Chompy')
+  end
 end

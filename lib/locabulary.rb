@@ -57,6 +57,12 @@ module Locabulary
     end
   end
 
+  def active_label_for_uri(predicate_name:, term_uri:)
+    object = active_items_for(predicate_name: predicate_name).detect { |obj| obj.term_uri == term_uri }
+    return object.term_label if object
+    term_uri
+  end
+
   def active_labels_for(predicate_name:, as_of: Date.today)
     active_items_for(predicate_name: predicate_name, as_of: as_of).map(&:term_label)
   end
