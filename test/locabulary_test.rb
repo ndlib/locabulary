@@ -26,6 +26,6 @@ class LocabularyTest < MiniTest::Test
 
   def test_it_will_build_a_cached_data
     Locabulary.active_items_for(predicate_name: 'copyright')
-    assert_equal(Locabulary.cache.key?('copyright'), true)
+    assert_equal(Locabulary.active_cache.key?('copyright'), true)
   end
 end

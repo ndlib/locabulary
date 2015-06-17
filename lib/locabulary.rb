@@ -58,7 +58,7 @@ module Locabulary
   end
 
   def active_labels_for(predicate_name:, as_of: Date.today)
-    full_objects_for(predicate_name: predicate_name, as_of: as_of).map(&:term_label)
+    active_items_for(predicate_name: predicate_name, as_of: as_of).map(&:term_label)
   end
 
   def filename_for_predicate_name(predicate_name:)
