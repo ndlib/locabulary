@@ -1,0 +1,50 @@
+[
+  {
+    "predicate_name": "resource_consulted",
+    "term_label": "Consultation with a librarian",
+    "term_uri": "Consultation with a librarian",
+    "default_presentation_sequence": null,
+    "activated_on": "2015-01-01",
+    "deactivated_on": null
+  },
+  {
+    "predicate_name": "resource_consulted",
+    "term_label": "Databases accessed via Hesburgh Libraries",
+    "term_uri": "Databases accessed via Hesburgh Libraries",
+    "default_presentation_sequence": null,
+    "activated_on": "2015-01-01",
+    "deactivated_on": null
+  },
+  {
+    "predicate_name": "resource_consulted",
+    "term_label": "Electronic journals",
+    "term_uri": "Electronic journals",
+    "default_presentation_sequence": null,
+    "activated_on": "2015-01-01",
+    "deactivated_on": null
+  },
+  {
+    "predicate_name": "resource_consulted",
+    "term_label": "Hesburgh Libraries Rare Books and Special Collections and/or Archives",
+    "term_uri": "Hesburgh Libraries Rare Books and Special Collections and/or Archives",
+    "default_presentation_sequence": null,
+    "activated_on": "2015-01-01",
+    "deactivated_on": null
+  },
+  {
+    "predicate_name": "resource_consulted",
+    "term_label": "Print sources",
+    "term_uri": "Print sources",
+    "default_presentation_sequence": null,
+    "activated_on": "2015-01-01",
+    "deactivated_on": null
+  },
+  {
+    "predicate_name": "resource_consulted",
+    "term_label": "Web sites or other internet research sources",
+    "term_uri": "Web sites or other internet research sources",
+    "default_presentation_sequence": null,
+    "activated_on": "2015-01-01",
+    "deactivated_on": null
+  }
+]

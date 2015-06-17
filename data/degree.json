@@ -1,0 +1,138 @@
+[
+  {
+    "predicate_name": "degree",
+    "term_label": "Doctor of Musical Arts",
+    "term_uri": null,
+    "default_presentation_sequence": null,
+    "activated_on": "2015-01-01",
+    "deactivated_on": null
+  },
+  {
+    "predicate_name": "degree",
+    "term_label": "Doctor of Philosophy",
+    "term_uri": null,
+    "default_presentation_sequence": null,
+    "activated_on": "2015-01-01",
+    "deactivated_on": null
+  },
+  {
+    "predicate_name": "degree",
+    "term_label": "Master of Arts",
+    "term_uri": null,
+    "default_presentation_sequence": null,
+    "activated_on": "2015-01-01",
+    "deactivated_on": null
+  },
+  {
+    "predicate_name": "degree",
+    "term_label": "Master of Fine Arts",
+    "term_uri": null,
+    "default_presentation_sequence": null,
+    "activated_on": "2015-01-01",
+    "deactivated_on": null
+  },
+  {
+    "predicate_name": "degree",
+    "term_label": "Master of Medieval Studies",
+    "term_uri": null,
+    "default_presentation_sequence": null,
+    "activated_on": "2015-01-01",
+    "deactivated_on": null
+  },
+  {
+    "predicate_name": "degree",
+    "term_label": "Master of Science",
+    "term_uri": null,
+    "default_presentation_sequence": null,
+    "activated_on": "2015-01-01",
+    "deactivated_on": null
+  },
+  {
+    "predicate_name": "degree",
+    "term_label": "Master of Science in Aerospace Engineering",
+    "term_uri": null,
+    "default_presentation_sequence": null,
+    "activated_on": "2015-01-01",
+    "deactivated_on": null
+  },
+  {
+    "predicate_name": "degree",
+    "term_label": "Master of Science in Bioengineering",
+    "term_uri": null,
+    "default_presentation_sequence": null,
+    "activated_on": "2015-01-01",
+    "deactivated_on": null
+  },
+  {
+    "predicate_name": "degree",
+    "term_label": "Master of Science in Chemical Engineering",
+    "term_uri": null,
+    "default_presentation_sequence": null,
+    "activated_on": "2015-01-01",
+    "deactivated_on": null
+  },
+  {
+    "predicate_name": "degree",
+    "term_label": "Master of Science in Civil Engineering",
+    "term_uri": null,
+    "default_presentation_sequence": null,
+    "activated_on": "2015-01-01",
+    "deactivated_on": null
+  },
+  {
+    "predicate_name": "degree",
+    "term_label": "Master of Science in Computer Science and Engineering",
+    "term_uri": null,
+    "default_presentation_sequence": null,
+    "activated_on": "2015-01-01",
+    "deactivated_on": null
+  },
+  {
+    "predicate_name": "degree",
+    "term_label": "Master of Science in Earth Sciences",
+    "term_uri": null,
+    "default_presentation_sequence": null,
+    "activated_on": "2015-01-01",
+    "deactivated_on": null
+  },
+  {
+    "predicate_name": "degree",
+    "term_label": "Master of Science in Electrical Engineering",
+    "term_uri": null,
+    "default_presentation_sequence": null,
+    "activated_on": "2015-01-01",
+    "deactivated_on": null
+  },
+  {
+    "predicate_name": "degree",
+    "term_label": "Master of Science in Environmental Engineering",
+    "term_uri": null,
+    "default_presentation_sequence": null,
+    "activated_on": "2015-01-01",
+    "deactivated_on": null
+  },
+  {
+    "predicate_name": "degree",
+    "term_label": "Master of Science in Geological Sciences",
+    "term_uri": null,
+    "default_presentation_sequence": null,
+    "activated_on": "2015-01-01",
+    "deactivated_on": null
+  },
+  {
+    "predicate_name": "degree",
+    "term_label": "Master of Science in Interdisciplinary Mathematics",
+    "term_uri": null,
+    "default_presentation_sequence": null,
+    "activated_on": "2015-01-01",
+    "deactivated_on": null
+  },
+  {
+    "predicate_name": "degree",
+    "term_label": "Master of Science in Mechanical Engineering",
+    "term_uri": null,
+    "default_presentation_sequence": null,
+    "activated_on": "2015-01-01",
+    "deactivated_on": null
+  }
+]
