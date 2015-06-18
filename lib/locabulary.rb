@@ -42,7 +42,9 @@ module Locabulary
   #   low churn rate. And while the date is important, I'm not as concerned
   #   about the local controlled vocabulary exposing a date that has expired.
   #   When we next deploy the server changes, the deactivated will go away.
-  def active_items_for(predicate_name:, as_of: Date.today)
+  def active_items_for(options = {})
+    predicate_name = options.fetch(:predicate_name)
+    as_of = options.fetch(:as_of) { Date.today }
     active_cache[predicate_name] ||= begin
       filename = filename_for_predicate_name(predicate_name: predicate_name)
       JSON.parse(File.read(filename)).each_with_object([]) do |item_values, mem|
@@ -63,7 +65,9 @@ module Locabulary
 
   # @api public
   # @since 0.1.0
-  def active_label_for_uri(predicate_name:, term_uri:)
+  def active_label_for_uri(options = {})
+    predicate_name = options.fetch(:predicate_name)
+    term_uri = options.fetch(:term_uri)
     object = active_items_for(predicate_name: predicate_name).detect { |obj| obj.term_uri == term_uri }
     return object.term_label if object
     term_uri
@@ -71,12 +75,14 @@ module Locabulary
 
   # @api public
   # @since 0.1.0
-  def active_labels_for(predicate_name:)
+  def active_labels_for(options = {})
+    predicate_name = options.fetch(:predicate_name)
     active_items_for(predicate_name: predicate_name).map(&:term_label)
   end
 
   # @api private
-  def filename_for_predicate_name(predicate_name:)
+  def filename_for_predicate_name(options = {})
+    predicate_name = options.fetch(:predicate_name)
     filename = File.join(DATA_DIRECTORY, "#{File.basename(predicate_name)}.json")
     return filename if File.exist?(filename)
     raise Locabulary::RuntimeError, "Unable to find predicate_name: #{predicate_name}"
