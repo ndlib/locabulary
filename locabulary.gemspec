@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Jeremy Friesen"]
   spec.email         = ["jeremy.n.friesen@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{An extraction of limited localized vocabulary for Sipity and CurateND.}
+  spec.description   = %q{An extraction of limited localized vocabulary for Sipity and CurateND.}
+  spec.homepage      = "https://github.com/ndlib/locabulary"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
