@@ -3,7 +3,7 @@ require 'json'
 
 # @since 0.1.0
 module Locabulary
-  VERSION='0.1.1'.freeze
+  VERSION='0.1.2'.freeze
   DATA_DIRECTORY = File.expand_path("../../data/", __FILE__).freeze
 
   class RuntimeError < ::RuntimeError
