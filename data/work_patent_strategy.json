@@ -41,7 +41,7 @@
   },
   {
     "predicate_name": "work_patent_strategy",
-    "term_label": "material already published",
+    "term_label": "material_already_published",
     "term_uri": null,
     "default_presentation_sequence": 6,
     "activated_on": "2015-07-06",
