@@ -21,7 +21,7 @@
     "term_uri": null,
     "default_presentation_sequence": 3,
     "activated_on": "2015-01-01",
-    "deactivated_on": null
+    "deactivated_on": "2015-07-07"
   },
   {
     "predicate_name": "work_patent_strategy",
@@ -29,6 +29,22 @@
     "term_uri": null,
     "default_presentation_sequence": 4,
     "activated_on": "2015-01-01",
+    "deactivated_on": "2015-07-07"
+  },
+  {
+    "predicate_name": "work_patent_strategy",
+    "term_label": "non_provisional_patent_filed",
+    "term_uri": null,
+    "default_presentation_sequence": 5,
+    "activated_on": "2015-07-07",
+    "deactivated_on": null
+  },
+  {
+    "predicate_name": "work_patent_strategy",
+    "term_label": "material already published",
+    "term_uri": null,
+    "default_presentation_sequence": 6,
+    "activated_on": "2015-07-07",
     "deactivated_on": null
   }
 ]
