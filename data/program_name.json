@@ -57,7 +57,7 @@
   },
   {
     "predicate_name": "program_name",
-    "term_label": "Chemistry",
+    "term_label": "Chemistry and Biochemistry",
     "term_uri": null,
     "default_presentation_sequence": null,
     "activated_on": "2015-01-01",
@@ -146,14 +146,6 @@
   {
     "predicate_name": "program_name",
     "term_label": "Integrated Biomedical Sciences",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
-  },
-  {
-    "predicate_name": "program_name",
-    "term_label": "Law",
     "term_uri": null,
     "default_presentation_sequence": null,
     "activated_on": "2015-01-01",
