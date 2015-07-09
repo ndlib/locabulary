@@ -39,3 +39,12 @@ class LocabularyTest < MiniTest::Test
     assert_equal(label, 'Chompy')
   end
 end
+
+class Locabulary::ItemTest < MiniTest::Test
+  def test_sort_with_nil_and_integer
+    item_1 = Locabulary::Item.new(default_presentation_sequence: nil, label: 'Hello')
+    item_2 = Locabulary::Item.new(default_presentation_sequence: 2, label: 'World')
+
+    assert_equal([item_1,item_2].sort, [item_2, item_1])
+  end
+end

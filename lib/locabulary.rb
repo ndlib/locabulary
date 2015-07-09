@@ -22,10 +22,15 @@ module Locabulary
       end
     end
 
+    SORT_SEQUENCE_FOR_NIL = 100_000_000
     def <=>(other)
-      value = default_presentation_sequence <=> other.default_presentation_sequence
+      value = presentation_sequence <=> other.presentation_sequence
       return value unless value == 0
       term_label <=> other.term_label
+    end
+
+    def presentation_sequence
+      default_presentation_sequence || SORT_SEQUENCE_FOR_NIL
     end
 
     private
