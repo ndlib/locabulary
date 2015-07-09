@@ -13,7 +13,7 @@ module Locabulary
     include Comparable
     ATTRIBUTE_NAMES = [:predicate_name, :term_label, :term_uri, :default_presentation_sequence, :activated_on, :deactivated_on].freeze
 
-    attr_reader *ATTRIBUTE_NAMES
+    attr_reader(*ATTRIBUTE_NAMES)
 
     def initialize(attributes = {})
       ATTRIBUTE_NAMES.each do |key|
@@ -30,7 +30,7 @@ module Locabulary
 
     private
 
-    attr_writer *ATTRIBUTE_NAMES
+    attr_writer(*ATTRIBUTE_NAMES)
   end
 
   module_function
