@@ -38,6 +38,18 @@ class LocabularyTest < MiniTest::Test
     label = Locabulary.active_label_for_uri(predicate_name: 'copyright', term_uri: 'Chompy')
     assert_equal(label, 'Chompy')
   end
+
+  def test_active_nested_label_for
+    obtained_result = Locabulary.active_nested_labels_for(predicate_name: 'affiliation')
+    expected_result = {
+      "Faculty research and publications" => ["Faculty research and publications"],
+      "Staff research and publications" => ["Staff research and publications"],
+      "Graduate research and publications" => ["Graduate research and publications"],
+      "Undergraduate research and publications" => ["Undergraduate research and publications"],
+      "Other" => ["Other"]
+    }
+    assert_equal(obtained_result, expected_result)
+  end
 end
 
 class Locabulary::ItemTest < MiniTest::Test
