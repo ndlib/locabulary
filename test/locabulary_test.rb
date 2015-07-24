@@ -39,15 +39,24 @@ class LocabularyTest < MiniTest::Test
     assert_equal(label, 'Chompy')
   end
 
-  def test_active_nested_label_for
-    obtained_result = Locabulary.active_nested_labels_for(predicate_name: 'affiliation')
-    expected_result = {
-      "Faculty research and publications" => ["Faculty research and publications"],
-      "Staff research and publications" => ["Staff research and publications"],
-      "Graduate research and publications" => ["Graduate research and publications"],
-      "Undergraduate research and publications" => ["Undergraduate research and publications"],
-      "Other" => ["Other"]
-    }
+  def test_active_nested_label_for_one_level
+    result = Locabulary.active_nested_labels_for(predicate_name: 'administrative_units')
+    obtained_result = result.fetch('University of Notre Dame')
+    expected_result = ['University of Notre Dame']
+    assert_equal(obtained_result, expected_result)
+  end
+
+  def test_active_nested_label_for_two_level
+    result = Locabulary.active_nested_labels_for(predicate_name: 'administrative_units')
+    obtained_result = result.fetch("University of Notre Dame::Eck Institute for Global Health")
+    expected_result = ["Eck Institute for Global Health"]
+    assert_equal(obtained_result, expected_result)
+  end
+
+  def test_active_nested_label_for_three_level
+    result = Locabulary.active_nested_labels_for(predicate_name: 'administrative_units')
+    obtained_result = result.fetch("University of Notre Dame::School of Architecture")
+    expected_result = ["School of Architecture", "Center for Building Communities"]
     assert_equal(obtained_result, expected_result)
   end
 end
