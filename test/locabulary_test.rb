@@ -38,6 +38,27 @@ class LocabularyTest < MiniTest::Test
     label = Locabulary.active_label_for_uri(predicate_name: 'copyright', term_uri: 'Chompy')
     assert_equal(label, 'Chompy')
   end
+
+  def test_active_nested_label_for_one_level
+    result = Locabulary.active_nested_labels_for(predicate_name: 'administrative_units')
+    obtained_result = result.fetch('University of Notre Dame')
+    expected_result = ['University of Notre Dame']
+    assert_equal(obtained_result, expected_result)
+  end
+
+  def test_active_nested_label_for_two_level
+    result = Locabulary.active_nested_labels_for(predicate_name: 'administrative_units')
+    obtained_result = result.fetch("University of Notre Dame::Eck Institute for Global Health")
+    expected_result = ["Eck Institute for Global Health"]
+    assert_equal(obtained_result, expected_result)
+  end
+
+  def test_active_nested_label_for_three_level
+    result = Locabulary.active_nested_labels_for(predicate_name: 'administrative_units')
+    obtained_result = result.fetch("University of Notre Dame::School of Architecture")
+    expected_result = ["School of Architecture", "Center for Building Communities"]
+    assert_equal(obtained_result, expected_result)
+  end
 end
 
 class Locabulary::ItemTest < MiniTest::Test
