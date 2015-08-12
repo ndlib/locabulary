@@ -353,14 +353,6 @@
   },
   {
     "predicate_name": "administrative_units",
-    "term_label": "University of Notre Dame::College of Arts and Letters::John J. Reilly Center for Science, Technology and Values",
-    "term_uri": null,
-    "default_presentation_sequence": 500,
-    "activated_on": "2015-07-22",
-    "deactivated_on": null
-  },
-  {
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Science::QuarkNet Center",
     "term_uri": null,
     "default_presentation_sequence": 500,
@@ -609,6 +601,14 @@
   },
   {
     "predicate_name": "administrative_units",
+    "term_label": "University of Notre Dame::College of Arts and Letters::John J. Reilly Center for Science, Technology and Values",
+    "term_uri": null,
+    "default_presentation_sequence": 500,
+    "activated_on": "2015-07-22",
+    "deactivated_on": null
+  },
+  {
+    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Arts and Letters::Rooney Center for the Study of American Democracy",
     "term_uri": null,
     "default_presentation_sequence": 500,
@@ -620,6 +620,22 @@
     "term_label": "University of Notre Dame::College of Arts and Letters::William J. Shaw Center for Children and Families",
     "term_uri": null,
     "default_presentation_sequence": 500,
+    "activated_on": "2015-07-22",
+    "deactivated_on": null
+  },
+  {
+    "predicate_name": "administrative_units",
+    "term_label": "University of Notre Dame::Graduate School",
+    "term_uri": null,
+    "default_presentation_sequence": 200,
+    "activated_on": "2015-07-22",
+    "deactivated_on": null
+  },
+  {
+    "predicate_name": "administrative_units",
+    "term_label": "University of Notre Dame::First Year Studies",
+    "term_uri": null,
+    "default_presentation_sequence": 200,
     "activated_on": "2015-07-22",
     "deactivated_on": null
   },
