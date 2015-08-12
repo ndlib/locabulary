@@ -65,6 +65,14 @@ class LocabularyTest < MiniTest::Test
     administrative_unit_ids = content.map {|item| item['term_label']}
     assert_equal(administrative_unit_ids.uniq.length, administrative_unit_ids.length)
   end
+
+  def test_to_verify_data_files
+    files = Dir.glob(File.join(File.dirname(__FILE__), '../data/*.json'))
+    refute_empty files
+    files.each do |file|
+      assert_kind_of(Array, JSON.parse(File.read(file)))
+    end
+  end
 end
 
 class Locabulary::ItemTest < MiniTest::Test
