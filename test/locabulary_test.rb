@@ -59,6 +59,12 @@ class LocabularyTest < MiniTest::Test
     expected_result = ["School of Architecture", "Center for Building Communities"]
     assert_equal(obtained_result, expected_result)
   end
+
+  def test_for_unique_administratitive_unit_ids
+    content = JSON.parse(File.read(File.join(File.dirname(__FILE__), '../data/administrative_units.json')))
+    administrative_unit_ids = content.map {|item| item['term_label']}
+    assert_equal(administrative_unit_ids.uniq.length, administrative_unit_ids.length)
+  end
 end
 
 class Locabulary::ItemTest < MiniTest::Test
