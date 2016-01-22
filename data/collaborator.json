@@ -1,802 +1,403 @@
-[
-  {
+{
+  "values": [{
     "predicate_name": "collaborator",
     "term_label": "actor",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "adapter",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "animator",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "annotator",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "architect",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "arranger",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "artist",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "author",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "author in quotations or text extracts",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "author of afterword, colophon, etc.",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "author of dialog",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "author of introduction, etc.",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "author of screenplay, etc.",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "calligrapher",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "cartographer",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "choreographer",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "cinematographer",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "collaborator",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "collotyper",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "commentator",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "commentator for written text",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "compiler",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "composer",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "conceptor",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "conductor",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "consultant",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "consultant to a project",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "contractor",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "contributor",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "correspondent",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "costume designer",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "creator",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "curator of an exhibition",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "dancer",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "delineator",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "designer",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "director",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "dissertant",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "draftsman",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "editor",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "engineer",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "engraver",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "etcher",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "facsimilist",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "forger",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "host",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "illuminator",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "illustrator",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "instrumentalist",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "interviewee",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "interviewer",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "inverntor",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "landscape architect",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "librettist",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "lighting designer",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "lithographer",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "lyricist",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "manufacturer",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "metal-engraver",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "moderator",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "musician",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "narrator",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "organizer of meeting",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "originator",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "performer",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "photographer",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "platemaker",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "printmaker",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "producer",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "production personnel",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "programmer",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "puppeteer",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "recording engineer",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "renderer",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "reporter",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "research team head",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "research team member",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "researcher",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "responsible party",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "restager",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "reviewer",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "scenarist",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "scientific advisor",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "scribe",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "sculptor",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "secretary",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "set designer",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "signer",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "speaker",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "standards body",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "storyteller",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "surveyor",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "teacher",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "transcriber",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "translator",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "videographer",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "vocalist",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "wood-engraver",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "woodcutter",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-07-06"
+  },{
     "predicate_name": "collaborator",
     "term_label": "writer of accompanying material",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-07-06",
-    "deactivated_on": null
-  }
-]
+    "activated_on": "2015-07-06"
+  }]
+}

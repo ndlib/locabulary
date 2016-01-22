@@ -52,10 +52,11 @@ module Locabulary
     as_of = options.fetch(:as_of) { Date.today }
     active_cache[predicate_name] ||= begin
       filename = filename_for_predicate_name(predicate_name: predicate_name)
-      JSON.parse(File.read(filename)).each_with_object([]) do |item_values, mem|
+      json = JSON.parse(File.read(filename))
+      json.fetch('values').each_with_object([]) do |item_values, mem|
         activated_on = Date.parse(item_values.fetch('activated_on'))
         next unless activated_on < as_of
-        deactivated_on_value = item_values.fetch('deactivated_on')
+        deactivated_on_value = item_values.fetch('deactivated_on', nil)
         if deactivated_on_value.nil?
           mem << Item.new(item_values)
         else

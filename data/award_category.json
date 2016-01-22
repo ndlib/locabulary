@@ -1,42 +1,28 @@
-[
-  {
+{
+  "values": [{
     "predicate_name": "award_category",
     "term_label": "10000 Level",
-    "term_uri": null,
     "default_presentation_sequence": 10,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-01-01"
+  },{
     "predicate_name": "award_category",
     "term_label": "20000–40000 Level",
-    "term_uri": null,
     "default_presentation_sequence": 20,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-01-01"
+  },{
     "predicate_name": "award_category",
     "term_label": "Senior Thesis",
-    "term_uri": null,
     "default_presentation_sequence": 50,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-01-01"
+  },{
     "predicate_name": "award_category",
     "term_label": "Honors Thesis",
-    "term_uri": null,
     "default_presentation_sequence": 40,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-01-01"
+  },{
     "predicate_name": "award_category",
     "term_label": "Capstone Project",
-    "term_uri": null,
     "default_presentation_sequence": 30,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
-  }
-]
+    "activated_on": "2015-01-01"
+  }]
+}
