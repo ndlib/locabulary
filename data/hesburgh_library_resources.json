@@ -99,5 +99,60 @@
     "term_label": "Other Resources::Workshop(s)/camps",
     "default_presentation_sequence": 400,
     "activated_on": "2016-01-01"
+  }, {
+    "predicate_name": "hesburgh_library_resources",
+    "term_label": "External Resources::Archives - domestic",
+    "default_presentation_sequence": 500,
+    "activated_on": "2016-01-01"
+  }, {
+    "predicate_name": "hesburgh_library_resources",
+    "term_label": "External Resources::Archives - international",
+    "default_presentation_sequence": 500,
+    "activated_on": "2016-01-01"
+  }, {
+    "predicate_name": "hesburgh_library_resources",
+    "term_label": "External Resources::Archives - digital",
+    "default_presentation_sequence": 500,
+    "activated_on": "2016-01-01"
+  }, {
+    "predicate_name": "hesburgh_library_resources",
+    "term_label": "External Resources::Consultation with a librarian - domestic",
+    "default_presentation_sequence": 500,
+    "activated_on": "2016-01-01"
+  }, {
+    "predicate_name": "hesburgh_library_resources",
+    "term_label": "External Resources::Consultation with a librarian - international",
+    "default_presentation_sequence": 500,
+    "activated_on": "2016-01-01"
+  }, {
+    "predicate_name": "hesburgh_library_resources",
+    "term_label": "External Resources::Consultation with a librarian - digital",
+    "default_presentation_sequence": 500,
+    "activated_on": "2016-01-01"
+  }, {
+    "predicate_name": "hesburgh_library_resources",
+    "term_label": "External Resources::Library - domestic",
+    "default_presentation_sequence": 500,
+    "activated_on": "2016-01-01"
+  }, {
+    "predicate_name": "hesburgh_library_resources",
+    "term_label": "External Resources::Library - international",
+    "default_presentation_sequence": 500,
+    "activated_on": "2016-01-01"
+  }, {
+    "predicate_name": "hesburgh_library_resources",
+    "term_label": "External Resources::Library - digital",
+    "default_presentation_sequence": 500,
+    "activated_on": "2016-01-01"
+  }, {
+    "predicate_name": "hesburgh_library_resources",
+    "term_label": "External Resources::Web sites or other internet research sources",
+    "default_presentation_sequence": 500,
+    "activated_on": "2016-01-01"
+  }, {
+    "predicate_name": "hesburgh_library_resources",
+    "term_label": "External Resources::Workshops",
+    "default_presentation_sequence": 500,
+    "activated_on": "2016-01-01"
   }]
 }
