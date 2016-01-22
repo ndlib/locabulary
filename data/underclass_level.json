@@ -1,0 +1,31 @@
+[
+  {
+    "predicate_name": "underclass_level",
+    "term_label": "First Year",
+    "term_uri": null,
+    "default_presentation_sequence": 1,
+    "activated_on": "2015-01-01",
+    "deactivated_on": null
+  },{
+    "predicate_name": "underclass_level",
+    "term_label": "Sophomore",
+    "term_uri": null,
+    "default_presentation_sequence": 2,
+    "activated_on": "2015-01-01",
+    "deactivated_on": null
+  },{
+    "predicate_name": "underclass_level",
+    "term_label": "Junior",
+    "term_uri": null,
+    "default_presentation_sequence": 3,
+    "activated_on": "2015-01-01",
+    "deactivated_on": null
+  },{
+    "predicate_name": "underclass_level",
+    "term_label": "5th Year",
+    "term_uri": null,
+    "default_presentation_sequence": 5,
+    "activated_on": "2015-01-01",
+    "deactivated_on": null
+  }
+]
