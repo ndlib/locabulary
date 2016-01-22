@@ -1,26 +1,22 @@
 {
+  "predicate_name": "award_category",
   "values": [{
-    "predicate_name": "award_category",
     "term_label": "10000 Level",
     "default_presentation_sequence": 10,
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "award_category",
     "term_label": "20000–40000 Level",
     "default_presentation_sequence": 20,
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "award_category",
     "term_label": "Senior Thesis",
     "default_presentation_sequence": 50,
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "award_category",
     "term_label": "Honors Thesis",
     "default_presentation_sequence": 40,
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "award_category",
     "term_label": "Capstone Project",
     "default_presentation_sequence": 30,
     "activated_on": "2015-01-01"

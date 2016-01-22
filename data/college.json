@@ -1,31 +1,26 @@
 {
+  "predicate_name": "college",
   "values": [{
-    "predicate_name": "college",
     "term_label": "School of Architecture",
     "default_presentation_sequence": 60,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "college",
     "term_label": "Mendoza College of Business",
     "default_presentation_sequence": 50,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "college",
     "term_label": "College of Engineering",
     "default_presentation_sequence": 20,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "college",
     "term_label": "College of Science",
     "default_presentation_sequence": 30,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "college",
     "term_label": "College of Arts and Letters",
     "default_presentation_sequence": 10,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "college",
     "term_label": "First Year Studies",
     "default_presentation_sequence": 40,
     "activated_on": "2015-12-14"

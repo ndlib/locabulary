@@ -15,7 +15,7 @@ module Locabulary
 
     attr_reader(*ATTRIBUTE_NAMES)
 
-    def initialize(attributes = {})
+    def initialize(attributes={})
       ATTRIBUTE_NAMES.each do |key|
         value = attributes.fetch(key) { attributes.fetch(key.to_s, nil) }
         send("#{key}=", value)
@@ -53,16 +53,17 @@ module Locabulary
     active_cache[predicate_name] ||= begin
       filename = filename_for_predicate_name(predicate_name: predicate_name)
       json = JSON.parse(File.read(filename))
+      predicate_name = json.fetch('predicate_name')
       json.fetch('values').each_with_object([]) do |item_values, mem|
         activated_on = Date.parse(item_values.fetch('activated_on'))
         next unless activated_on < as_of
         deactivated_on_value = item_values.fetch('deactivated_on', nil)
         if deactivated_on_value.nil?
-          mem << Item.new(item_values)
+          mem << Item.new(item_values.merge('predicate_name' => predicate_name))
         else
           deactivated_on = Date.parse(deactivated_on_value)
           next unless deactivated_on >= as_of
-          mem << Item.new(item_values)
+          mem << Item.new(item_values.merge('predicate_name' => predicate_name))
         end
         mem
       end.sort

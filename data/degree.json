@@ -1,70 +1,54 @@
 {
+  "predicate_name": "degree",
   "values": [{
-    "predicate_name": "degree",
     "term_label": "Doctor of Musical Arts",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "degree",
     "term_label": "Doctor of Philosophy",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "degree",
     "term_label": "Master of Arts",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "degree",
     "term_label": "Master of Fine Arts",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "degree",
     "term_label": "Master of Medieval Studies",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "degree",
     "term_label": "Master of Science",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "degree",
     "term_label": "Master of Science in Aerospace Engineering",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "degree",
     "term_label": "Master of Science in Bioengineering",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "degree",
     "term_label": "Master of Science in Chemical Engineering",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "degree",
     "term_label": "Master of Science in Civil Engineering",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "degree",
     "term_label": "Master of Science in Computer Science and Engineering",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "degree",
     "term_label": "Master of Science in Earth Sciences",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "degree",
     "term_label": "Master of Science in Electrical Engineering",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "degree",
     "term_label": "Master of Science in Environmental Engineering",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "degree",
     "term_label": "Master of Science in Geological Sciences",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "degree",
     "term_label": "Master of Science in Interdisciplinary Mathematics",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "degree",
     "term_label": "Master of Science in Mechanical Engineering",
     "activated_on": "2015-01-01"
   }]

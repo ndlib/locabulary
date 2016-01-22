@@ -1,402 +1,303 @@
 {
+  "predicate_name": "collaborator",
   "values": [{
-    "predicate_name": "collaborator",
     "term_label": "actor",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "adapter",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "animator",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "annotator",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "architect",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "arranger",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "artist",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "author",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "author in quotations or text extracts",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "author of afterword, colophon, etc.",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "author of dialog",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "author of introduction, etc.",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "author of screenplay, etc.",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "calligrapher",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "cartographer",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "choreographer",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "cinematographer",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "collaborator",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "collotyper",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "commentator",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "commentator for written text",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "compiler",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "composer",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "conceptor",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "conductor",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "consultant",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "consultant to a project",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "contractor",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "contributor",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "correspondent",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "costume designer",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "creator",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "curator of an exhibition",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "dancer",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "delineator",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "designer",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "director",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "dissertant",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "draftsman",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "editor",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "engineer",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "engraver",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "etcher",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "facsimilist",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "forger",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "host",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "illuminator",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "illustrator",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "instrumentalist",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "interviewee",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "interviewer",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "inverntor",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "landscape architect",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "librettist",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "lighting designer",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "lithographer",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "lyricist",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "manufacturer",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "metal-engraver",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "moderator",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "musician",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "narrator",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "organizer of meeting",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "originator",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "performer",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "photographer",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "platemaker",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "printmaker",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "producer",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "production personnel",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "programmer",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "puppeteer",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "recording engineer",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "renderer",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "reporter",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "research team head",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "research team member",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "researcher",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "responsible party",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "restager",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "reviewer",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "scenarist",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "scientific advisor",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "scribe",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "sculptor",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "secretary",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "set designer",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "signer",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "speaker",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "standards body",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "storyteller",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "surveyor",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "teacher",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "transcriber",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "translator",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "videographer",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "vocalist",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "wood-engraver",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "woodcutter",
     "activated_on": "2015-07-06"
   },{
-    "predicate_name": "collaborator",
     "term_label": "writer of accompanying material",
     "activated_on": "2015-07-06"
   }]

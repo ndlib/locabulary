@@ -1,22 +1,18 @@
 {
+  "predicate_name": "affiliation",
   "values": [{
-    "predicate_name": "affiliation",
     "term_label": "Faculty research and publications",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "affiliation",
     "term_label": "Staff research and publications",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "affiliation",
     "term_label": "Graduate research and publications",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "affiliation",
     "term_label": "Undergraduate research and publications",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "affiliation",
     "term_label": "Other",
     "activated_on": "2015-01-01"
   }]

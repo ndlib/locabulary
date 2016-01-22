@@ -1,126 +1,96 @@
 {
+  "predicate_name": "program_name",
   "values": [{
-    "predicate_name": "program_name",
     "term_label": "Aerospace and Mechanical Engineering",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "program_name",
     "term_label": "Anthropology",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "program_name",
     "term_label": "Applied and Computational Mathematics and Statistics",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "program_name",
     "term_label": "Art, Art History, and Design",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "program_name",
     "term_label": "Bioengineering",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "program_name",
     "term_label": "Biological Sciences",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "program_name",
     "term_label": "Chemical and Biomolecular Engineering",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "program_name",
     "term_label": "Chemistry and Biochemistry",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "program_name",
     "term_label": "Civil and Environmental Engineering and Earth Sciences",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "program_name",
     "term_label": "Classics",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "program_name",
     "term_label": "Computer Science and Engineering",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "program_name",
     "term_label": "Creative Writing",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "program_name",
     "term_label": "Early Christian Studies",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "program_name",
     "term_label": "Economics",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "program_name",
     "term_label": "Electrical Engineering",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "program_name",
     "term_label": "English",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "program_name",
     "term_label": "History",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "program_name",
     "term_label": "History and Philosophy of Science",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "program_name",
     "term_label": "Integrated Biomedical Sciences",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "program_name",
     "term_label": "Literature",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "program_name",
     "term_label": "Mathematics",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "program_name",
     "term_label": "Medieval Studies",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "program_name",
     "term_label": "Peace Studies",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "program_name",
     "term_label": "Philosophy",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "program_name",
     "term_label": "Physics",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "program_name",
     "term_label": "Political Science",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "program_name",
     "term_label": "Psychology",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "program_name",
     "term_label": "Romance Languages and Literatures",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "program_name",
     "term_label": "Sacred Music",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "program_name",
     "term_label": "Sociology",
     "activated_on": "2015-01-01"
   },{
-    "predicate_name": "program_name",
     "term_label": "Theology",
     "activated_on": "2015-01-01"
   }]

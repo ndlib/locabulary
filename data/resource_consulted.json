@@ -1,191 +1,155 @@
 {
+  "predicate_name": "resource_consulted",
   "values": [{
-    "predicate_name": "resource_consulted",
     "term_label": "People::Consultation with a subject librarian",
     "default_presentation_sequence": 100,
     "activated_on": "2016-01-01"
   }, {
-    "predicate_name": "resource_consulted",
     "term_label": "People::LINk Program librarian",
     "default_presentation_sequence": 100,
     "activated_on": "2016-01-01"
   }, {
-    "predicate_name": "resource_consulted",
     "term_label": "People::Research Help Desk services (in person, on phone, via email)",
     "default_presentation_sequence": 100,
     "activated_on": "2016-01-01"
   }, {
-    "predicate_name": "resource_consulted",
     "term_label": "Places::Archives",
     "default_presentation_sequence": 200,
     "activated_on": "2016-01-01"
   }, {
-    "predicate_name": "resource_consulted",
     "term_label": "Places::Center for Digital Scholarship",
     "default_presentation_sequence": 200,
     "activated_on": "2016-01-01"
   }, {
-    "predicate_name": "resource_consulted",
     "term_label": "Places::Branch Libraries",
     "default_presentation_sequence": 200,
     "activated_on": "2016-01-01"
   }, {
-    "predicate_name": "resource_consulted",
     "term_label": "Places::Multimedia spaces",
     "default_presentation_sequence": 200,
     "activated_on": "2016-01-01"
   }, {
-    "predicate_name": "resource_consulted",
     "term_label": "Places::Medieval Institute",
     "default_presentation_sequence": 200,
     "activated_on": "2016-01-01"
   }, {
-    "predicate_name": "resource_consulted",
     "term_label": "Places::Music & Media Services Unit",
     "default_presentation_sequence": 200,
     "activated_on": "2016-01-01"
   }, {
-    "predicate_name": "resource_consulted",
     "term_label": "Places::Rare Books and Special Collections",
     "default_presentation_sequence": 200,
     "activated_on": "2016-01-01"
   }, {
-    "predicate_name": "resource_consulted",
     "term_label": "Online Resources::CurateND",
     "default_presentation_sequence": 300,
     "activated_on": "2016-01-01"
   }, {
-    "predicate_name": "resource_consulted",
     "term_label": "Online Resources::Databases accessed via Hesburgh Libraries web site",
     "default_presentation_sequence": 300,
     "activated_on": "2016-01-01"
   }, {
-    "predicate_name": "resource_consulted",
     "term_label": "Online Resources::Data sets accessed via Hesburgh Libraries web site",
     "default_presentation_sequence": 300,
     "activated_on": "2016-01-01"
   }, {
-    "predicate_name": "resource_consulted",
     "term_label": "Online Resources::LibGuide online research guides",
     "default_presentation_sequence": 300,
     "activated_on": "2016-01-01"
   }, {
-    "predicate_name": "resource_consulted",
     "term_label": "Online Resources::Online chat via Hesburgh Libraries web site",
     "default_presentation_sequence": 300,
     "activated_on": "2016-01-01"
   }, {
-    "predicate_name": "resource_consulted",
     "term_label": "Online Resources::Remix",
     "default_presentation_sequence": 300,
     "activated_on": "2016-01-01"
   }, {
-    "predicate_name": "resource_consulted",
     "term_label": "Other Resources::Digitization and images resources",
     "default_presentation_sequence": 400,
     "activated_on": "2016-01-01"
   }, {
-    "predicate_name": "resource_consulted",
     "term_label": "Other Resources::Government information/statistics",
     "default_presentation_sequence": 400,
     "activated_on": "2016-01-01"
   }, {
-    "predicate_name": "resource_consulted",
     "term_label": "Other Resources::Inter-Library Loan services",
     "default_presentation_sequence": 400,
     "activated_on": "2016-01-01"
   }, {
-    "predicate_name": "resource_consulted",
     "term_label": "Other Resources::Workshop(s)/camps",
     "default_presentation_sequence": 400,
     "activated_on": "2016-01-01"
   }, {
-    "predicate_name": "resource_consulted",
     "term_label": "External Resources::Archives - domestic",
     "default_presentation_sequence": 500,
     "activated_on": "2016-01-01"
   }, {
-    "predicate_name": "resource_consulted",
     "term_label": "External Resources::Archives - international",
     "default_presentation_sequence": 500,
     "activated_on": "2016-01-01"
   }, {
-    "predicate_name": "resource_consulted",
     "term_label": "External Resources::Archives - digital",
     "default_presentation_sequence": 500,
     "activated_on": "2016-01-01"
   }, {
-    "predicate_name": "resource_consulted",
     "term_label": "External Resources::Consultation with a librarian - domestic",
     "default_presentation_sequence": 500,
     "activated_on": "2016-01-01"
   }, {
-    "predicate_name": "resource_consulted",
     "term_label": "External Resources::Consultation with a librarian - international",
     "default_presentation_sequence": 500,
     "activated_on": "2016-01-01"
   }, {
-    "predicate_name": "resource_consulted",
     "term_label": "External Resources::Consultation with a librarian - digital",
     "default_presentation_sequence": 500,
     "activated_on": "2016-01-01"
   }, {
-    "predicate_name": "resource_consulted",
     "term_label": "External Resources::Library - domestic",
     "default_presentation_sequence": 500,
     "activated_on": "2016-01-01"
   }, {
-    "predicate_name": "resource_consulted",
     "term_label": "External Resources::Library - international",
     "default_presentation_sequence": 500,
     "activated_on": "2016-01-01"
   }, {
-    "predicate_name": "resource_consulted",
     "term_label": "External Resources::Library - digital",
     "default_presentation_sequence": 500,
     "activated_on": "2016-01-01"
   }, {
-    "predicate_name": "resource_consulted",
     "term_label": "External Resources::Web sites or other internet research sources",
     "default_presentation_sequence": 500,
     "activated_on": "2016-01-01"
   }, {
-    "predicate_name": "resource_consulted",
     "term_label": "External Resources::Workshops",
     "default_presentation_sequence": 500,
     "activated_on": "2016-01-01"
   }, {
-    "predicate_name": "resource_consulted",
     "term_label": "Consultation with a librarian",
     "term_uri": "Consultation with a librarian",
     "activated_on": "2015-01-01",
     "deactivated_on": "2015-12-31"
   },{
-    "predicate_name": "resource_consulted",
     "term_label": "Databases accessed via Hesburgh Libraries",
     "term_uri": "Databases accessed via Hesburgh Libraries",
     "activated_on": "2015-01-01",
     "deactivated_on": "2015-12-31"
   },{
-    "predicate_name": "resource_consulted",
     "term_label": "Electronic journals",
     "term_uri": "Electronic journals",
     "activated_on": "2015-01-01",
     "deactivated_on": "2015-12-31"
   },{
-    "predicate_name": "resource_consulted",
     "term_label": "Hesburgh Libraries Rare Books and Special Collections and/or Archives",
     "term_uri": "Hesburgh Libraries Rare Books and Special Collections and/or Archives",
     "activated_on": "2015-01-01",
     "deactivated_on": "2015-12-31"
   },{
-    "predicate_name": "resource_consulted",
     "term_label": "Print sources",
     "term_uri": "Print sources",
     "activated_on": "2015-01-01",
     "deactivated_on": "2015-12-31"
   },{
-    "predicate_name": "resource_consulted",
     "term_label": "Web sites or other internet research sources",
     "term_uri": "Web sites or other internet research sources",
     "activated_on": "2015-01-01",

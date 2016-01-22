@@ -1,486 +1,390 @@
 {
+  "predicate_name": "administrative_units",
   "values": [{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame",
     "default_presentation_sequence": 100,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::School of Architecture",
     "default_presentation_sequence": 200,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::School of Architecture::Center for Building Communities",
     "default_presentation_sequence": 500,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::Mendoza College of Business",
     "default_presentation_sequence": 200,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::Mendoza College of Business::Accountancy",
     "default_presentation_sequence": 300,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::Mendoza College of Business::Finance",
     "default_presentation_sequence": 300,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::Mendoza College of Business::Management",
     "default_presentation_sequence": 300,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::Mendoza College of Business::Marketing",
     "default_presentation_sequence": 300,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::Mendoza College of Business::Center for Accounting Research and Education (CARE)",
     "default_presentation_sequence": 500,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::Mendoza College of Business::Center for Ethics and Religious Values in Business",
     "default_presentation_sequence": 500,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::Mendoza College of Business::Center for the Study of Financial Regulation",
     "default_presentation_sequence": 500,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::Mendoza College of Business::Deloitte Center for Ethical Leadership",
     "default_presentation_sequence": 500,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::Mendoza College of Business::Fanning Center for Business Communication",
     "default_presentation_sequence": 500,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::Mendoza College of Business::Gigot Center for Entrepreneurship",
     "default_presentation_sequence": 500,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::Mendoza College of Business::Institute for Ethical Business Worldwide",
     "default_presentation_sequence": 500,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Engineering",
     "default_presentation_sequence": 200,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Engineering::Aerospace and Mechanical Engineering",
     "default_presentation_sequence": 300,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Engineering::Chemical and Biomolecular Engineering",
     "default_presentation_sequence": 300,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Engineering::Civil & Environmental Engineering & Earth Sciences",
     "default_presentation_sequence": 300,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Engineering::Computer Science and Engineering",
     "default_presentation_sequence": 300,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Engineering::Electrical Engineering",
     "default_presentation_sequence": 300,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Engineering::NDnano",
     "default_presentation_sequence": 400,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Engineering::Wireless Institute",
     "default_presentation_sequence": 400,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Engineering::Institute for Flow Physics and Control",
     "default_presentation_sequence": 400,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Engineering::Midwest Institute for Nanoelectronics Discovery",
     "default_presentation_sequence": 400,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Engineering::Center for Microfluidics and Medical Diagnostics",
     "default_presentation_sequence": 500,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Engineering::Center for Environmental Science and Technology",
     "default_presentation_sequence": 500,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Science",
     "default_presentation_sequence": 200,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Science::Applied and Computational Mathematics and Statistics",
     "default_presentation_sequence": 300,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Science::Biology",
     "default_presentation_sequence": 300,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Science::Chemistry and Biochemistry",
     "default_presentation_sequence": 300,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Science::Mathematics",
     "default_presentation_sequence": 300,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Science::Physics",
     "default_presentation_sequence": 300,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Science::Environmental Research Center (UNDERC)",
     "default_presentation_sequence": 400,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Science::Harper Cancer Research Institute",
     "default_presentation_sequence": 400,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Science::Center for Astrophysics (CANDU)",
     "default_presentation_sequence": 500,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Science::Center for Health Sciences Advising",
     "default_presentation_sequence": 500,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Science::Center for Mathematics",
     "default_presentation_sequence": 500,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Science::Center for Stem Cells and Regenerative Medicine",
     "default_presentation_sequence": 500,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Science::Center for Zebrafish Research",
     "default_presentation_sequence": 500,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Science::iCeNSA",
     "default_presentation_sequence": 500,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Science::Institute for Theoretical Sciences",
     "default_presentation_sequence": 500,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Science::Interdisciplinary Center for the Study of Biocomplexity",
     "default_presentation_sequence": 500,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Science::ISNAP",
     "default_presentation_sequence": 500,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Arts and Letters::John J. Reilly Center for Science, Technology and Values",
     "default_presentation_sequence": 500,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Science::QuarkNet Center",
     "default_presentation_sequence": 500,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Science::Ruth M. Hillebrand Center for Compassionate Care in Medicine",
     "default_presentation_sequence": 500,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Arts and Letters",
     "default_presentation_sequence": 200,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Arts and Letters::Africana Studies",
     "default_presentation_sequence": 300,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Arts and Letters::American Studies",
     "default_presentation_sequence": 300,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Arts and Letters::Classics",
     "default_presentation_sequence": 300,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Arts and Letters::East Asian Languages and Cultures",
     "default_presentation_sequence": 300,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Arts and Letters::English",
     "default_presentation_sequence": 300,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Arts and Letters::German and Russian Languages and Literatures",
     "default_presentation_sequence": 300,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Arts and Letters::History",
     "default_presentation_sequence": 300,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Arts and Letters::Irish Language and Literature",
     "default_presentation_sequence": 300,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Arts and Letters::Philosophy",
     "default_presentation_sequence": 300,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Arts and Letters::Program of Liberal Studies",
     "default_presentation_sequence": 300,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Arts and Letters::Romance Languages and Literatures",
     "default_presentation_sequence": 300,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Arts and Letters::Theology",
     "default_presentation_sequence": 300,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Arts and Letters::Art, Art History & Design",
     "default_presentation_sequence": 300,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Arts and Letters::Film, Television, and Theatre",
     "default_presentation_sequence": 300,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Arts and Letters::Music",
     "default_presentation_sequence": 300,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Arts and Letters::Anthropology",
     "default_presentation_sequence": 300,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Arts and Letters::Economics",
     "default_presentation_sequence": 300,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Arts and Letters::Political Science",
     "default_presentation_sequence": 300,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Arts and Letters::Psychology",
     "default_presentation_sequence": 300,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Arts and Letters::Sociology",
     "default_presentation_sequence": 300,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Arts and Letters::Institute for Latino Studies",
     "default_presentation_sequence": 400,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Arts and Letters::Liu Institute for Asia and Asian Studies",
     "default_presentation_sequence": 400,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Arts and Letters::Center for Ethics and Culture",
     "default_presentation_sequence": 500,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Arts and Letters::Center for Philosophy of Religion",
     "default_presentation_sequence": 500,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Arts and Letters::Center for Research on Educational Opportunity",
     "default_presentation_sequence": 500,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Arts and Letters::Center for the Study of Religion and Society",
     "default_presentation_sequence": 500,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Arts and Letters::Center for the Study of Social Movements",
     "default_presentation_sequence": 500,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Arts and Letters::Cushwa Center for the Study of American Catholicism",
     "default_presentation_sequence": 500,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Arts and Letters::Rooney Center for the Study of American Democracy",
     "default_presentation_sequence": 500,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::College of Arts and Letters::William J. Shaw Center for Children and Families",
     "default_presentation_sequence": 500,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::Center for Social Concerns",
     "default_presentation_sequence": 400,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::Eck Institute for Global Health",
     "default_presentation_sequence": 400,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::Institute for Church Life",
     "default_presentation_sequence": 400,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::Institute for Educational Initiatives",
     "default_presentation_sequence": 400,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::Institute for Educational Initiatives::Center for STEM Education",
     "default_presentation_sequence": 500,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::JINA-CEE",
     "default_presentation_sequence": 400,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::Kellogg Institute for International Studies",
     "default_presentation_sequence": 400,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::Keough-Naughton Institute for Irish Studies",
     "default_presentation_sequence": 400,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::Kroc Institute for International Peace Studies",
     "default_presentation_sequence": 400,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::Medieval Institute",
     "default_presentation_sequence": 400,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::Nanovic Institute for European Studies",
     "default_presentation_sequence": 400,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::Notre Dame Radiation Laboratory",
     "default_presentation_sequence": 400,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::Tantur Ecumenical Institute",
     "default_presentation_sequence": 400,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::W. M. Keck Center For Transgene Research",
     "default_presentation_sequence": 400,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::Center for Civil and Human Rights",
     "default_presentation_sequence": 500,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::Center for Rare and Neglected Diseases",
     "default_presentation_sequence": 500,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::Center for Theology, Science, and Human Flourishing",
     "default_presentation_sequence": 500,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::NDEnergy",
     "default_presentation_sequence": 500,
     "activated_on": "2015-07-22"
   },{
-    "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame::Interdisciplinary Center for Network Science and Applications",
     "default_presentation_sequence": 500,
     "activated_on": "2015-07-22"
