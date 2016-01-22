@@ -1,5 +1,5 @@
-[
-  {
+{
+  "values": [{
     "predicate_name": "work_patent_strategy",
     "term_label": "going_to_patent",
     "term_uri": null,
@@ -46,5 +46,5 @@
     "default_presentation_sequence": 6,
     "activated_on": "2015-07-06",
     "deactivated_on": null
-  }
-]
+  }]
+}

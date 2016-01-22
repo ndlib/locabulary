@@ -1,5 +1,5 @@
-[
-  {
+{
+  "values": [{
     "predicate_name": "award_category",
     "term_label": "10000 Level",
     "term_uri": null,
@@ -38,5 +38,5 @@
     "default_presentation_sequence": 30,
     "activated_on": "2015-01-01",
     "deactivated_on": null
-  }
-]
+  }]
+}

@@ -1,5 +1,5 @@
-[
-  {
+{
+  "values": [{
     "predicate_name": "underclass_level",
     "term_label": "First Year",
     "term_uri": null,
@@ -27,5 +27,5 @@
     "default_presentation_sequence": 5,
     "activated_on": "2015-01-01",
     "deactivated_on": null
-  }
-]
+  }]
+}

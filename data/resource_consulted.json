@@ -1,5 +1,5 @@
-[
-  {
+{
+  "values": [{
     "predicate_name": "resource_consulted",
     "term_label": "Consultation with a librarian",
     "term_uri": "Consultation with a librarian",
@@ -46,5 +46,5 @@
     "default_presentation_sequence": null,
     "activated_on": "2015-01-01",
     "deactivated_on": null
-  }
-]
+  }]
+}

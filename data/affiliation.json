@@ -1,5 +1,5 @@
-[
-  {
+{
+  "values": [{
     "predicate_name": "affiliation",
     "term_label": "Faculty research and publications",
     "term_uri": null,
@@ -38,5 +38,5 @@
     "default_presentation_sequence": null,
     "activated_on": "2015-01-01",
     "deactivated_on": null
-  }
-]
+  }]
+}

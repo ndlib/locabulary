@@ -1,5 +1,5 @@
-[
-  {
+{
+  "values": [{
     "predicate_name": "work_publication_strategy",
     "term_label": "going_to_publish",
     "term_uri": null,
@@ -30,5 +30,5 @@
     "default_presentation_sequence": 4,
     "activated_on": "2015-01-01",
     "deactivated_on": null
-  }
-]
+  }]
+}

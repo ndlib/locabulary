@@ -1,5 +1,5 @@
-[
-  {
+{
+  "values": [{
     "predicate_name": "citation_style",
     "term_label": "American Psychological Association",
     "term_uri": "APA",
@@ -22,5 +22,5 @@
     "default_presentation_sequence": null,
     "activated_on": "2015-01-01",
     "deactivated_on": null
-  }
-]
+  }]
+}

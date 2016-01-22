@@ -1,5 +1,5 @@
-[
-  {
+{
+  "values": [{
     "predicate_name": "collaborator",
     "term_label": "actor",
     "term_uri": null,
@@ -798,5 +798,5 @@
     "default_presentation_sequence": null,
     "activated_on": "2015-07-06",
     "deactivated_on": null
-  }
-]
+  }]
+}

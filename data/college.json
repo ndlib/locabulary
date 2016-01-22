@@ -1,5 +1,5 @@
-[
-  {
+{
+  "values": [{
     "predicate_name": "college",
     "term_label": "School of Architecture",
     "term_uri": null,
@@ -46,5 +46,5 @@
     "default_presentation_sequence": 40,
     "activated_on": "2015-12-14",
     "deactivated_on": null
-  }
-]
+  }]
+}

@@ -1,5 +1,5 @@
-[
-  {
+{
+  "values": [{
     "predicate_name": "degree",
     "term_label": "Doctor of Musical Arts",
     "term_uri": null,
@@ -134,5 +134,5 @@
     "default_presentation_sequence": null,
     "activated_on": "2015-01-01",
     "deactivated_on": null
-  }
-]
+  }]
+}

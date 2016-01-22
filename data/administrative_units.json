@@ -1,5 +1,5 @@
-[
-  {
+{
+  "values": [{
     "predicate_name": "administrative_units",
     "term_label": "University of Notre Dame",
     "term_uri": null,
@@ -774,5 +774,5 @@
     "default_presentation_sequence": 500,
     "activated_on": "2015-07-22",
     "deactivated_on": null
-  }
-]
+  }]
+}

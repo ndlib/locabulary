@@ -1,5 +1,5 @@
-[
-  {
+{
+  "values": [{
     "predicate_name": "program_name",
     "term_label": "Aerospace and Mechanical Engineering",
     "term_uri": null,
@@ -246,5 +246,5 @@
     "default_presentation_sequence": null,
     "activated_on": "2015-01-01",
     "deactivated_on": null
-  }
-]
+  }]
+}
