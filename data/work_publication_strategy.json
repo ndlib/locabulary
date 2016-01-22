@@ -2,33 +2,22 @@
   "values": [{
     "predicate_name": "work_publication_strategy",
     "term_label": "going_to_publish",
-    "term_uri": null,
     "default_presentation_sequence": 1,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-01-01"
+  },{
     "predicate_name": "work_publication_strategy",
     "term_label": "will_not_publish",
-    "term_uri": null,
     "default_presentation_sequence": 2,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-01-01"
+  },{
     "predicate_name": "work_publication_strategy",
     "term_label": "already_published",
-    "term_uri": null,
     "default_presentation_sequence": 3,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-01-01"
+  },{
     "predicate_name": "work_publication_strategy",
     "term_label": "do_not_know",
-    "term_uri": null,
     "default_presentation_sequence": 4,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
+    "activated_on": "2015-01-01"
   }]
 }

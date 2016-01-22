@@ -2,249 +2,126 @@
   "values": [{
     "predicate_name": "program_name",
     "term_label": "Aerospace and Mechanical Engineering",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-01-01"
+  },{
     "predicate_name": "program_name",
     "term_label": "Anthropology",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-01-01"
+  },{
     "predicate_name": "program_name",
     "term_label": "Applied and Computational Mathematics and Statistics",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-01-01"
+  },{
     "predicate_name": "program_name",
     "term_label": "Art, Art History, and Design",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-01-01"
+  },{
     "predicate_name": "program_name",
     "term_label": "Bioengineering",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-01-01"
+  },{
     "predicate_name": "program_name",
     "term_label": "Biological Sciences",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-01-01"
+  },{
     "predicate_name": "program_name",
     "term_label": "Chemical and Biomolecular Engineering",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-01-01"
+  },{
     "predicate_name": "program_name",
     "term_label": "Chemistry and Biochemistry",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-01-01"
+  },{
     "predicate_name": "program_name",
     "term_label": "Civil and Environmental Engineering and Earth Sciences",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-01-01"
+  },{
     "predicate_name": "program_name",
     "term_label": "Classics",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-01-01"
+  },{
     "predicate_name": "program_name",
     "term_label": "Computer Science and Engineering",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-01-01"
+  },{
     "predicate_name": "program_name",
     "term_label": "Creative Writing",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-01-01"
+  },{
     "predicate_name": "program_name",
     "term_label": "Early Christian Studies",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-01-01"
+  },{
     "predicate_name": "program_name",
     "term_label": "Economics",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-01-01"
+  },{
     "predicate_name": "program_name",
     "term_label": "Electrical Engineering",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-01-01"
+  },{
     "predicate_name": "program_name",
     "term_label": "English",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-01-01"
+  },{
     "predicate_name": "program_name",
     "term_label": "History",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-01-01"
+  },{
     "predicate_name": "program_name",
     "term_label": "History and Philosophy of Science",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-01-01"
+  },{
     "predicate_name": "program_name",
     "term_label": "Integrated Biomedical Sciences",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-01-01"
+  },{
     "predicate_name": "program_name",
     "term_label": "Literature",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-01-01"
+  },{
     "predicate_name": "program_name",
     "term_label": "Mathematics",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-01-01"
+  },{
     "predicate_name": "program_name",
     "term_label": "Medieval Studies",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-01-01"
+  },{
     "predicate_name": "program_name",
     "term_label": "Peace Studies",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-01-01"
+  },{
     "predicate_name": "program_name",
     "term_label": "Philosophy",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-01-01"
+  },{
     "predicate_name": "program_name",
     "term_label": "Physics",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-01-01"
+  },{
     "predicate_name": "program_name",
     "term_label": "Political Science",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-01-01"
+  },{
     "predicate_name": "program_name",
     "term_label": "Psychology",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-01-01"
+  },{
     "predicate_name": "program_name",
     "term_label": "Romance Languages and Literatures",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-01-01"
+  },{
     "predicate_name": "program_name",
     "term_label": "Sacred Music",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-01-01"
+  },{
     "predicate_name": "program_name",
     "term_label": "Sociology",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-01-01"
+  },{
     "predicate_name": "program_name",
     "term_label": "Theology",
-    "term_uri": null,
-    "default_presentation_sequence": null,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
+    "activated_on": "2015-01-01"
   }]
 }

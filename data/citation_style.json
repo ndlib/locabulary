@@ -3,24 +3,16 @@
     "predicate_name": "citation_style",
     "term_label": "American Psychological Association",
     "term_uri": "APA",
-    "default_presentation_sequence": null,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-01-01"
+  },{
     "predicate_name": "citation_style",
     "term_label": "Chicago Manual of Style",
     "term_uri": "Chicago",
-    "default_presentation_sequence": null,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
-  },
-  {
+    "activated_on": "2015-01-01"
+  },{
     "predicate_name": "citation_style",
     "term_label": "Modern Language Association",
     "term_uri": "MLA",
-    "default_presentation_sequence": null,
-    "activated_on": "2015-01-01",
-    "deactivated_on": null
+    "activated_on": "2015-01-01"
   }]
 }

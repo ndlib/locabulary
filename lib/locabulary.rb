@@ -56,7 +56,7 @@ module Locabulary
       json.fetch('values').each_with_object([]) do |item_values, mem|
         activated_on = Date.parse(item_values.fetch('activated_on'))
         next unless activated_on < as_of
-        deactivated_on_value = item_values.fetch('deactivated_on')
+        deactivated_on_value = item_values.fetch('deactivated_on', nil)
         if deactivated_on_value.nil?
           mem << Item.new(item_values)
         else
