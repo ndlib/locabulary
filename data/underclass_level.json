@@ -13,6 +13,10 @@
     "default_presentation_sequence": 3,
     "activated_on": "2015-01-01"
   },{
+    "term_label": "Junior",
+    "default_presentation_sequence": 4,
+    "activated_on": "2015-01-01"
+  },{
     "term_label": "5th Year",
     "default_presentation_sequence": 5,
     "activated_on": "2015-01-01"
