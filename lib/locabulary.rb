@@ -11,7 +11,7 @@ module Locabulary
 
   class Item
     include Comparable
-    ATTRIBUTE_NAMES = [:predicate_name, :term_label, :term_uri, :default_presentation_sequence, :activated_on, :deactivated_on].freeze
+    ATTRIBUTE_NAMES = [:predicate_name, :term_label, :term_uri, :deposit_label, :description, :grouping, :affiliation, :default_presentation_sequence, :activated_on, :deactivated_on].freeze
 
     attr_reader(*ATTRIBUTE_NAMES)
 
@@ -91,6 +91,15 @@ module Locabulary
   # @api public
   def active_nested_labels_for(options = {})
     format_active_items_for(active_labels_for(options))
+  end
+
+  # @api public
+  def properties_for_uri(options = {})
+    predicate_name = options.fetch(:predicate_name)
+    term_uri = options.fetch(:term_uri)
+    object = active_items_for(predicate_name: predicate_name).detect { |obj| obj.term_uri == term_uri }
+    return object. if object
+    term_uri
   end
 
   # @api private

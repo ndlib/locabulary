@@ -5,6 +5,10 @@ require 'json'
 
 class JsonCreator
 
+  ATTRIBUTE_NAMES = [:term_label, :term_uri, :deposit_label, :description, :grouping, :affiliation, :presentation_sequence, :activated_on, :deactivated_on].freeze
+
+  attr_reader(*ATTRIBUTE_NAMES)
+
   def initialize(document_key, vocabulary, data_fetcher = default_data_fetcher)
     @document_key = document_key
     @vocabulary = vocabulary
@@ -22,6 +26,8 @@ class JsonCreator
     "Institute" => 400
   }
 
+
+
   def create_or_update
     @spreadsheet_data = data_fetcher.call(document_key)
     convert_to_json(get_required_data_from_spreadsheet)
@@ -34,6 +40,8 @@ class JsonCreator
   end
 
   private
+
+  attr_writer(*ATTRIBUTE_NAMES)
 
   def default_data_fetcher
     ->(document_key) { GoogleSpreadsheet.new(document_key).read_spreadsheet }
@@ -84,32 +92,38 @@ class JsonCreator
   end
 
   def get_required_data_from_spreadsheet
-    final = {}
+    formatted_data =[]
     line = []
     spreadsheet_data.shift
     spreadsheet_data.each do |row|
+      final = {}
       line << row[0]
       line << row[1] if row[1] && !row[1].empty?
       line << row[2] if row[2] && !row[2].empty?
-      final[ line.join('::') ] = row[3]
+      final[ "term_label" ] = line.join('::')
+      final[ "presentation_sequence" ] = ORDER[row[3]]
+      final[ "term_uri" ] = row[4]
+      final[ "deposit_label" ] = row[5]
+      final[ "description" ] = row[6]
+      final[ "grouping" ] = row[7]
+      final[ "affiliation" ] = row[8]
+      final[ "activated_on" ] = "2015-07-22"
+      final[ "deactivated_on" ] = nil
+      formatted_data << final
       line = []
     end
-    final
+    formatted_data
   end
 
   def convert_to_json(data)
     json_array = []
-    data.each do |key, value|
-      data_map = {
-        "predicate_name" => vocabulary,
-        "term_label" => key,
-        "term_uri" => nil,
-        "default_presentation_sequence" => ORDER[value],
-        "activated_on" => "2015-07-22",
-        "deactivated_on" => nil
-      }
+    data.each do |row|
+      data_map = {}
+      ATTRIBUTE_NAMES.each do |key|
+        data_map[ key ]  = row.fetch(key) { row.fetch(key.to_s, nil) }
+      end
       json_array << data_map
     end
-    @json_data = JSON.pretty_generate(json_array)
+    @json_data = JSON.pretty_generate({"predicate_name"=>vocabulary, "values"=> json_array})
   end
 end
