@@ -48,15 +48,17 @@ class LocabularyTest < MiniTest::Test
 
   def test_active_nested_label_for_two_level
     result = Locabulary.active_nested_labels_for(predicate_name: 'administrative_units')
-    obtained_result = result.fetch("University of Notre Dame::Eck Institute for Global Health")
-    expected_result = ["Eck Institute for Global Health"]
+    #obtained_result = result.fetch("University of Notre Dame::Centers and Institutes::Eck Institute for Global Health")
+    obtained_result = result.fetch("University of Notre Dame::Law School")
+    expected_result = ["Law School"]
     assert_equal(obtained_result, expected_result)
   end
 
   def test_active_nested_label_for_three_level
     result = Locabulary.active_nested_labels_for(predicate_name: 'administrative_units')
-    obtained_result = result.fetch("University of Notre Dame::School of Architecture")
-    expected_result = ["School of Architecture", "Center for Building Communities"]
+    obtained_result = result.fetch("University of Notre Dame::Hesburgh Libraries")
+    #expected_result = ["School of Architecture"]
+    expected_result = ["Hesburgh Libraries", "Rare Books and Special Collections", "University Archives"]
     assert_equal(obtained_result, expected_result)
   end
 

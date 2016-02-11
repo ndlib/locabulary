@@ -987,18 +987,6 @@
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Centers and Institutes::Institute for Educational Initiatives",
-      "term_uri": "http://stemeducation.nd.edu/",
-      "deposit_label": "",
-      "description": "",
-      "grouping": "",
-      "affiliation": "",
-      "presentation_sequence": null,
-      "activated_on": "2015-07-22",
-      "deactivated_on": null
-    },
-    {
-      "predicate_name": "administrative_units",
       "term_label": "University of Notre Dame::Centers and Institutes::Institute for Ethical Business Worldwide",
       "term_uri": "http://www.ethicalbusiness.nd.edu/",
       "deposit_label": "",

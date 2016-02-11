@@ -118,7 +118,7 @@ class JsonCreator
   def convert_to_json(data)
     json_array = []
     data.each do |row|
-      data_map = {}
+      data_map = {"predicate_name"=>vocabulary}
       ATTRIBUTE_NAMES.each do |key|
         data_map[ key ]  = row.fetch(key) { row.fetch(key.to_s, nil) }
       end
