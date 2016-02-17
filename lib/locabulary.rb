@@ -84,7 +84,7 @@ module Locabulary
   # @since 0.1.0
   def active_labels_for(options = {})
     predicate_name = options.fetch(:predicate_name)
-    active_items_for(predicate_name: predicate_name).map(&:term_label)
+    active_items_for(predicate_name: predicate_name).sort_by(&:default_presentation_sequence).map(&:term_label)
   end
 
 

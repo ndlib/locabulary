@@ -9,7 +9,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": 100,
+      "default_presentation_sequence": 1,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -21,7 +21,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": 200,
+      "default_presentation_sequence": 2,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -33,7 +33,7 @@
       "description": "",
       "grouping": "The Humanities",
       "affiliation": "",
-      "presentation_sequence": 200,
+      "default_presentation_sequence": 3,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -45,7 +45,7 @@
       "description": "",
       "grouping": "The Humanities",
       "affiliation": "",
-      "presentation_sequence": 300,
+      "default_presentation_sequence": 4,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -57,7 +57,7 @@
       "description": "Includes Journalism",
       "grouping": "The Humanities",
       "affiliation": "",
-      "presentation_sequence": 300,
+      "default_presentation_sequence": 5,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -69,7 +69,7 @@
       "description": "",
       "grouping": "The Social Sciences",
       "affiliation": "",
-      "presentation_sequence": 300,
+      "default_presentation_sequence": 6,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -81,7 +81,7 @@
       "description": "",
       "grouping": "The Arts",
       "affiliation": "",
-      "presentation_sequence": 300,
+      "default_presentation_sequence": 7,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -93,7 +93,7 @@
       "description": "Includes Arabic Studies",
       "grouping": "The Humanities",
       "affiliation": "",
-      "presentation_sequence": 300,
+      "default_presentation_sequence": 8,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -105,7 +105,7 @@
       "description": "",
       "grouping": "The Humanities",
       "affiliation": "",
-      "presentation_sequence": 300,
+      "default_presentation_sequence": 9,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -117,7 +117,7 @@
       "description": "",
       "grouping": "The Social Sciences",
       "affiliation": "",
-      "presentation_sequence": 300,
+      "default_presentation_sequence": 10,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -129,7 +129,7 @@
       "description": "",
       "grouping": "The Humanities",
       "affiliation": "",
-      "presentation_sequence": 300,
+      "default_presentation_sequence": 11,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -141,7 +141,7 @@
       "description": "",
       "grouping": "The Arts",
       "affiliation": "",
-      "presentation_sequence": 300,
+      "default_presentation_sequence": 12,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -153,7 +153,7 @@
       "description": "",
       "grouping": "The Humanities",
       "affiliation": "",
-      "presentation_sequence": 300,
+      "default_presentation_sequence": 13,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -165,7 +165,7 @@
       "description": "",
       "grouping": "The Humanities",
       "affiliation": "",
-      "presentation_sequence": 300,
+      "default_presentation_sequence": 14,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -177,7 +177,7 @@
       "description": "",
       "grouping": "The Humanities",
       "affiliation": "",
-      "presentation_sequence": 300,
+      "default_presentation_sequence": 15,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -189,7 +189,7 @@
       "description": "",
       "grouping": "The Humanities",
       "affiliation": "",
-      "presentation_sequence": 300,
+      "default_presentation_sequence": 16,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -201,7 +201,7 @@
       "description": "",
       "grouping": "The Arts",
       "affiliation": "",
-      "presentation_sequence": 300,
+      "default_presentation_sequence": 17,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -213,7 +213,7 @@
       "description": "",
       "grouping": "The Humanities",
       "affiliation": "",
-      "presentation_sequence": 300,
+      "default_presentation_sequence": 18,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -225,7 +225,7 @@
       "description": "",
       "grouping": "The Social Sciences",
       "affiliation": "",
-      "presentation_sequence": 300,
+      "default_presentation_sequence": 19,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -237,7 +237,7 @@
       "description": "",
       "grouping": "The Social Sciences",
       "affiliation": "",
-      "presentation_sequence": 300,
+      "default_presentation_sequence": 20,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -249,7 +249,7 @@
       "description": "",
       "grouping": "The Humanities",
       "affiliation": "",
-      "presentation_sequence": 300,
+      "default_presentation_sequence": 21,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -261,7 +261,7 @@
       "description": "",
       "grouping": "The Social Sciences",
       "affiliation": "",
-      "presentation_sequence": 300,
+      "default_presentation_sequence": 22,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -273,7 +273,7 @@
       "description": "",
       "grouping": "The Humanities",
       "affiliation": "",
-      "presentation_sequence": 300,
+      "default_presentation_sequence": 23,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -285,7 +285,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": 200,
+      "default_presentation_sequence": 24,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -297,7 +297,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": 300,
+      "default_presentation_sequence": 25,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -309,7 +309,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": 300,
+      "default_presentation_sequence": 26,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -321,7 +321,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": 300,
+      "default_presentation_sequence": 27,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -333,7 +333,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": 300,
+      "default_presentation_sequence": 28,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -345,7 +345,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": 200,
+      "default_presentation_sequence": 29,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -357,7 +357,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": 300,
+      "default_presentation_sequence": 30,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -369,7 +369,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": 300,
+      "default_presentation_sequence": 31,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -381,7 +381,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": 300,
+      "default_presentation_sequence": 32,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -393,7 +393,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": 300,
+      "default_presentation_sequence": 33,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -405,7 +405,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": 300,
+      "default_presentation_sequence": 34,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -417,7 +417,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": 200,
+      "default_presentation_sequence": 35,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -429,7 +429,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": 300,
+      "default_presentation_sequence": 36,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -441,7 +441,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": 300,
+      "default_presentation_sequence": 37,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -453,7 +453,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": 300,
+      "default_presentation_sequence": 38,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -465,7 +465,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": 300,
+      "default_presentation_sequence": 39,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -477,7 +477,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": 300,
+      "default_presentation_sequence": 40,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -489,7 +489,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": 300,
+      "default_presentation_sequence": 41,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -501,19 +501,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": 200,
-      "activated_on": "2015-07-22",
-      "deactivated_on": null
-    },
-    {
-      "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Law School",
-      "term_uri": "http://law.nd.edu/",
-      "deposit_label": "",
-      "description": "",
-      "grouping": "",
-      "affiliation": "",
-      "presentation_sequence": 200,
+      "default_presentation_sequence": 42,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -525,7 +513,19 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": 200,
+      "default_presentation_sequence": 43,
+      "activated_on": "2015-07-22",
+      "deactivated_on": null
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Law School",
+      "term_uri": "http://law.nd.edu/",
+      "deposit_label": "",
+      "description": "",
+      "grouping": "",
+      "affiliation": "",
+      "default_presentation_sequence": 44,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -537,7 +537,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": 200,
+      "default_presentation_sequence": 45,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -549,7 +549,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": 300,
+      "default_presentation_sequence": 46,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -561,7 +561,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": 300,
+      "default_presentation_sequence": 47,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -573,7 +573,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": 300,
+      "default_presentation_sequence": 48,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -585,7 +585,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": 200,
+      "default_presentation_sequence": 49,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -597,7 +597,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": 300,
+      "default_presentation_sequence": 50,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -609,7 +609,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": 300,
+      "default_presentation_sequence": 51,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -621,7 +621,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "University of Notre Dame::Mendoza College of Business",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 52,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -633,7 +633,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "University of Notre Dame::College of Science",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 53,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -645,7 +645,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "University of Notre Dame::School of Architecture",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 54,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -657,7 +657,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 55,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -669,7 +669,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "University of Notre Dame::Hesburgh Libraries",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 56,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -681,7 +681,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "University of Notre Dame::College of Engineering",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 57,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -693,7 +693,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "University of Notre Dame::College of Arts and Letters",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 58,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -705,7 +705,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "University of Notre Dame::Mendoza College of Business",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 59,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -717,7 +717,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "University of Notre Dame::College of Science",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 60,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -729,7 +729,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "University of Notre Dame::College of Science",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 61,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -741,7 +741,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "University of Notre Dame::College of Engineering",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 62,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -753,7 +753,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "University of Notre Dame::College of Arts and Letters",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 63,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -765,7 +765,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 64,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -777,7 +777,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "University of Notre Dame::College of Arts and Letters",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 65,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -789,7 +789,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 66,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -801,7 +801,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "University of Notre Dame::College of Science",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 67,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -813,7 +813,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "University of Notre Dame::Mendoza College of Business",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 68,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -825,7 +825,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "University of Notre Dame::College of Arts and Letters",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 69,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -837,7 +837,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "University of Notre Dame::College of Arts and Letters",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 70,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -849,7 +849,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 71,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -861,7 +861,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "University of Notre Dame::College of Science",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 72,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -873,7 +873,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "University of Notre Dame::College of Arts and Letters",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 73,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -885,7 +885,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "University of Notre Dame::Mendoza College of Business",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 74,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -897,7 +897,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 75,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -909,7 +909,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "University of Notre Dame::College of Science",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 76,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -921,7 +921,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "University of Notre Dame::Mendoza College of Business",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 77,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -933,7 +933,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "University of Notre Dame::Mendoza College of Business",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 78,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -945,7 +945,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "University of Notre Dame::College of Science",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 79,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -957,7 +957,7 @@
       "description": "Interdisciplinary Center for Network Science & Applications",
       "grouping": "",
       "affiliation": "University of Notre Dame::College of Science",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 80,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -969,7 +969,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 81,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -981,7 +981,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 82,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -993,7 +993,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "University of Notre Dame::Mendoza College of Business",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 83,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -1005,7 +1005,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "University of Notre Dame::College of Engineering",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 84,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -1017,7 +1017,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "University of Notre Dame::College of Arts and Letters",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 85,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -1029,7 +1029,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "University of Notre Dame::College of Science",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 86,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -1041,7 +1041,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 87,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -1053,7 +1053,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "University of Notre Dame::College of Science",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 88,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -1065,7 +1065,7 @@
       "description": "Institute for Structure and Nuclear Astrophysics",
       "grouping": "",
       "affiliation": "University of Notre Dame::College of Science",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 89,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -1077,7 +1077,7 @@
       "description": "Joint Institute for Nuclear Astrophysics – Center for the Evolution of the Elements",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 90,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -1089,7 +1089,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "University of Notre Dame::College of Arts and Letters",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 91,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -1101,7 +1101,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 92,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -1113,7 +1113,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 93,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -1125,7 +1125,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 94,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -1137,7 +1137,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "University of Notre Dame::College of Arts and Letters",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 95,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -1149,7 +1149,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 96,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -1161,7 +1161,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "University of Notre Dame::College of Engineering",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 97,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -1173,7 +1173,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 98,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -1185,7 +1185,7 @@
       "description": "Center for Sustainable Energy at Notre Dame",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 99,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -1197,7 +1197,7 @@
       "description": "Nano Science and Technology",
       "grouping": "",
       "affiliation": "University of Notre Dame::College of Engineering",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 100,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -1209,7 +1209,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 101,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -1221,7 +1221,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "University of Notre Dame::College of Science",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 102,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -1233,7 +1233,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "University of Notre Dame::College of Arts and Letters",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 103,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -1245,7 +1245,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "University of Notre Dame::College of Science",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 104,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -1257,7 +1257,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 105,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -1269,7 +1269,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "University of Notre Dame::Hesburgh Libraries",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 106,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -1281,7 +1281,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 107,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -1293,7 +1293,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "University of Notre Dame::College of Arts and Letters",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 108,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     },
@@ -1305,7 +1305,7 @@
       "description": "",
       "grouping": "",
       "affiliation": "University of Notre Dame::College of Engineering",
-      "presentation_sequence": null,
+      "default_presentation_sequence": 109,
       "activated_on": "2015-07-22",
       "deactivated_on": null
     }

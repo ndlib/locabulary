@@ -5,7 +5,7 @@ require 'json'
 
 class JsonCreator
 
-  ATTRIBUTE_NAMES = [:term_label, :term_uri, :deposit_label, :description, :grouping, :affiliation, :presentation_sequence, :activated_on, :deactivated_on].freeze
+  ATTRIBUTE_NAMES = [:term_label, :term_uri, :deposit_label, :description, :grouping, :affiliation, :default_presentation_sequence, :activated_on, :deactivated_on].freeze
 
   attr_reader(*ATTRIBUTE_NAMES)
 
@@ -101,7 +101,7 @@ class JsonCreator
       line << row[1] if row[1] && !row[1].empty?
       line << row[2] if row[2] && !row[2].empty?
       final[ "term_label" ] = line.join('::')
-      final[ "presentation_sequence" ] = ORDER[row[3]]
+      final[ "default_presentation_sequence" ] = row[9].to_i
       final[ "term_uri" ] = row[4]
       final[ "deposit_label" ] = row[5]
       final[ "description" ] = row[6]
