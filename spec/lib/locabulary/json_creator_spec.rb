@@ -18,6 +18,7 @@ RSpec.describe Locabulary::JsonCreator do
     ]
   end
   subject { described_class.new('dummy', 'administrative_units', data_fetcher) }
+  its(:default_data_fetcher) { should respond_to(:call) }
 
   it 'will have an output filename' do
     expect(File.exist?(subject.output_filepath)).to eq(true)

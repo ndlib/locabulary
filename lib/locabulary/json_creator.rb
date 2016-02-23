@@ -29,11 +29,13 @@ module Locabulary
       convert_to_json(map_data(spreadsheet_data))
     end
 
+    # :nocov:
     def write_to_file
       File.open(output_filepath, "w") do |f|
         f.puts json_data
       end
     end
+    # :nocov:
 
     private
 
@@ -78,6 +80,7 @@ module Locabulary
       @json_data = JSON.pretty_generate("predicate_name" => vocabulary, "values" => json_array)
     end
 
+    # :nocov:
     # Responsible for interacting with Google Sheets and retrieiving relevant information
     class GoogleSpreadsheet
       attr_reader :access_token, :document_key, :session
