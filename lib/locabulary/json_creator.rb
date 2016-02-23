@@ -2,6 +2,7 @@ require "google/api_client"
 require "google_drive"
 require 'highline/import'
 require 'locabulary'
+require 'locabulary/item'
 require 'json'
 
 module Locabulary
@@ -59,13 +60,8 @@ module Locabulary
     end
 
     def convert_to_json(data)
-      json_array = []
-      data.each do |row|
-        data_map = {}
-        Item::ATTRIBUTE_NAMES.each do |key|
-          data_map[key] = row.fetch(key) { row.fetch(key.to_s, nil) }
-        end
-        json_array << data_map
+      json_array = data.map do |row|
+        Locabulary::Item.new(row).to_h
       end
       @json_data = JSON.pretty_generate("predicate_name" => predicate_name, "values" => json_array)
     end
