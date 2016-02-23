@@ -17,17 +17,6 @@ RuboCop::RakeTask.new do |task|
   task.options << "--config=.hound.yml"
 end
 
-require 'reek/rake/task'
-Reek::Rake::Task.new do |task|
-  task.verbose = true
-end
-
-require 'flay_task'
-FlayTask.new do |task|
-  task.verbose = true
-  task.threshold = 20
-end
-
 namespace :commitment do
   task :configure_test_for_code_coverage do
     ENV['COVERAGE'] = 'true'
@@ -49,5 +38,5 @@ namespace :commitment do
   end
 end
 
-task(default: [:rubocop, :reek, :flay, 'commitment:configure_test_for_code_coverage', :spec, 'commitment:code_coverage'])
+task(default: [:rubocop, 'commitment:configure_test_for_code_coverage', :spec, 'commitment:code_coverage'])
 task(release: :default)
