@@ -13,6 +13,14 @@ module Locabulary
       :activated_on, :deactivated_on
     ].freeze
 
+    def to_h
+      ATTRIBUTE_NAMES.each_with_object({}) do |key, mem|
+        mem[key.to_s] = send(key)
+        mem
+      end
+    end
+    alias as_json to_h
+
     attr_reader(*ATTRIBUTE_NAMES)
 
     private
