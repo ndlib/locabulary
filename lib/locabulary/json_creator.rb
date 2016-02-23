@@ -122,7 +122,7 @@ module Locabulary
       data.each do |row|
         data_map = { "predicate_name" => vocabulary }
         ATTRIBUTE_NAMES.each do |key|
-          data_map[key]  = row.fetch(key) { row.fetch(key.to_s, nil) }
+          data_map[key] = row.fetch(key) { row.fetch(key.to_s, nil) }
         end
         json_array << data_map
       end

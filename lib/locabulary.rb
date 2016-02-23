@@ -144,7 +144,7 @@ module Locabulary
     return text, text if text_array.size == 1
     return text, text_array.last if text_array.size == 3
     key = ""
-    (0..(text_array.size-3)).each do |index|
+    (0..(text_array.size - 3)).each do |index|
       key << text_array[index]
     end
     value = text_array.last
