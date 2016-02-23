@@ -15,7 +15,7 @@ module Locabulary
 
     def to_h
       ATTRIBUTE_NAMES.each_with_object({}) do |key, mem|
-        mem[key.to_s] = send(key)
+        mem[key.to_s] = send(key) unless send(key).to_s.strip == ''
         mem
       end
     end

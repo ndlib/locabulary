@@ -16,7 +16,7 @@ RSpec.describe Locabulary::Item do
 
   it 'will have a #to_h with keys that are the ATTRIBUTE_NAMES' do
     item = described_class.new(default_presentation_sequence: 2, term_label: 'Apple')
-    expect(item.to_h.keys).to eq(described_class::ATTRIBUTE_NAMES.map(&:to_s))
+    expect(item.to_h.keys).to eq(%w(term_label default_presentation_sequence))
   end
 
   its(:as_json) { should be_a(Hash) }

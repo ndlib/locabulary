@@ -31,25 +31,14 @@ RSpec.describe Locabulary::JsonCreator do
           "predicate_name" => "administrative_units",
           "term_label" => "University of Notre Dame::School of Architecture",
           "term_uri" => "http://architecture.nd.edu/",
-          "deposit_label" => "",
-          "description" => "",
-          "grouping" => "",
-          "affiliation" => "",
-          "default_presentation_sequence" => nil,
-          "activated_on" => "2015-07-22",
-          "deactivated_on" => nil
+          "activated_on" => "2015-07-22"
         },
         {
           "predicate_name" => "administrative_units",
           "term_label" => "University of Notre Dame::Centers and Institutes::Center for Building Communities",
           "term_uri" => "http://buildingcommunities.nd.edu/",
-          "deposit_label" => "",
-          "description" => "",
-          "grouping" => "",
           "affiliation" => "University of Notre Dame::School of Architecture",
-          "default_presentation_sequence" => nil,
-          "activated_on" => "2015-07-22",
-          "deactivated_on" => nil
+          "activated_on" => "2015-07-22"
         }
       ]
     }
