@@ -1,20 +1,23 @@
 require "google/api_client"
 require "google_drive"
 require 'highline/import'
+require 'locabulary'
 require 'json'
 
 module Locabulary
   # Responsible for capturing vocabulary from a given source and writing it to a file
   class JsonCreator
-
-    ATTRIBUTE_NAMES = [:term_label, :term_uri, :deposit_label, :description, :grouping, :affiliation, :default_presentation_sequence, :activated_on, :deactivated_on].freeze
+    ATTRIBUTE_NAMES = [
+      :term_label, :term_uri, :deposit_label, :description, :grouping, :affiliation, :default_presentation_sequence, :activated_on,
+      :deactivated_on
+    ].freeze
 
     attr_reader(*ATTRIBUTE_NAMES)
 
     def initialize(document_key, vocabulary, data_fetcher = default_data_fetcher)
       @document_key = document_key
       @vocabulary = vocabulary
-      @output_filepath = File.expand_path("../../../data/#{vocabulary}.json", __FILE__)
+      @output_filepath = File.join(Locabulary::DATA_DIRECTORY, "#{vocabulary}.json")
       @data_fetcher = data_fetcher
     end
 
@@ -22,15 +25,17 @@ module Locabulary
     attr_accessor :output_filepath
 
     def create_or_update
-      @spreadsheet_data = data_fetcher.call(document_key)
-      convert_to_json(get_required_data_from_spreadsheet)
+      spreadsheet_data = data_fetcher.call(document_key)
+      convert_to_json(map_data(spreadsheet_data))
     end
 
+    # :nocov:
     def write_to_file
       File.open(output_filepath, "w") do |f|
         f.puts json_data
       end
     end
+    # :nocov:
 
     private
 
@@ -40,13 +45,52 @@ module Locabulary
       ->(document_key) { GoogleSpreadsheet.new(document_key).read_spreadsheet }
     end
 
+    def map_data(spreadsheet_data)
+      formatted_data = []
+      spreadsheet_data.shift # Discard the header line
+      spreadsheet_data.each do |row|
+        line = []
+        final = {}
+        line << row[0]
+        line << row[1] if row[1] && !row[1].empty?
+        line << row[2] if row[2] && !row[2].empty?
+        final["term_label"] = line.join('::')
+        final["default_presentation_sequence"] = row[9].to_s.strip == '' ? nil : row[9].to_i
+        final["term_uri"] = row[4]
+        final["deposit_label"] = row[5]
+        final["description"] = row[6]
+        final["grouping"] = row[7]
+        final["affiliation"] = row[8]
+        final["activated_on"] = "2015-07-22"
+        final["deactivated_on"] = nil
+        formatted_data << final
+      end
+      formatted_data
+    end
+
+    def convert_to_json(data)
+      json_array = []
+      data.each do |row|
+        data_map = { "predicate_name" => vocabulary }
+        ATTRIBUTE_NAMES.each do |key|
+          data_map[key] = row.fetch(key) { row.fetch(key.to_s, nil) }
+        end
+        json_array << data_map
+      end
+      @json_data = JSON.pretty_generate("predicate_name" => vocabulary, "values" => json_array)
+    end
+
+    # :nocov:
+    # Responsible for interacting with Google Sheets and retrieiving relevant information
     class GoogleSpreadsheet
-      attr_reader :access_token, :document_key
-      FILE_PATH = __FILE__
+      attr_reader :access_token, :document_key, :session
+
+      private :session
 
       def initialize(document_key)
         @document_key = document_key
         configure_oauth!
+        @session = GoogleDrive.login_with_oauth(access_token)
       end
 
       def configure_oauth!
@@ -63,7 +107,6 @@ module Locabulary
       end
 
       def read_spreadsheet
-        session = GoogleDrive.login_with_oauth(access_token)
         ws = session.spreadsheet_by_key(document_key).worksheets[0]
         spreadsheet_data = []
         (1..ws.num_rows).each do |row|
@@ -77,47 +120,16 @@ module Locabulary
       end
 
       def client_secrets
-        return @secrets if @secrets
-        secrets_path = File.join(File.dirname(FILE_PATH), '../config/client_secrets.example.yml')
-        secrets_path = File.join(File.dirname(FILE_PATH), '../config/client_secrets.yml') if File.exist? File.join(File.dirname(FILE_PATH), '../config/client_secrets.yml')
-        @secrets = YAML.load(File.open(File.join(secrets_path)))
+        @secrets ||= YAML.load(File.open(File.join(secrets_path)))
       end
-    end
 
-    def get_required_data_from_spreadsheet
-      formatted_data =[]
-      line = []
-      spreadsheet_data.shift
-      spreadsheet_data.each do |row|
-        final = {}
-        line << row[0]
-        line << row[1] if row[1] && !row[1].empty?
-        line << row[2] if row[2] && !row[2].empty?
-        final[ "term_label" ] = line.join('::')
-        final[ "default_presentation_sequence" ] = row[9].to_s.strip == '' ? nil : row[9].to_i
-        final[ "term_uri" ] = row[4]
-        final[ "deposit_label" ] = row[5]
-        final[ "description" ] = row[6]
-        final[ "grouping" ] = row[7]
-        final[ "affiliation" ] = row[8]
-        final[ "activated_on" ] = "2015-07-22"
-        final[ "deactivated_on" ] = nil
-        formatted_data << final
-        line = []
-      end
-      formatted_data
-    end
-
-    def convert_to_json(data)
-      json_array = []
-      data.each do |row|
-        data_map = {"predicate_name"=>vocabulary}
-        ATTRIBUTE_NAMES.each do |key|
-          data_map[ key ]  = row.fetch(key) { row.fetch(key.to_s, nil) }
+      def secrets_path
+        if File.exist? File.join(File.dirname(__FILE__), '../config/client_secrets.yml')
+          File.join(File.dirname(__FILE__), '../config/client_secrets.yml')
+        else
+          File.join(File.dirname(__FILE__), '../config/client_secrets.example.yml')
         end
-        json_array << data_map
       end
-      @json_data = JSON.pretty_generate({"predicate_name"=>vocabulary, "values"=> json_array})
     end
   end
 end

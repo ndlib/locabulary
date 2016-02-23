@@ -69,17 +69,22 @@ RSpec.describe Locabulary do
   context 'verification that administrative units are unique' do
     it 'has unique adminstrative unit term labels' do
       content = JSON.parse(File.read(File.join(File.dirname(__FILE__), '../../data/administrative_units.json')))
-      administrative_unit_ids = content.fetch('values').map {|item| item['term_label']}
+      administrative_unit_ids = content.fetch('values').map { |item| item['term_label'] }
       expect(administrative_unit_ids.uniq).to eq(administrative_unit_ids)
     end
   end
 end
 
 RSpec.describe Locabulary::Item do
-  def test_sort_with_nil_and_integer
-    item_1 = Locabulary::Item.new(default_presentation_sequence: nil, label: 'Hello')
-    item_2 = Locabulary::Item.new(default_presentation_sequence: 2, label: 'World')
+  context 'Comparable' do
+    it 'sorts with nil and integers for presentation sequence' do
+      item_1 = Locabulary::Item.new(default_presentation_sequence: nil, term_label: 'Hello')
+      item_2 = Locabulary::Item.new(default_presentation_sequence: 2, term_label: 'World')
+      item_3 = Locabulary::Item.new(default_presentation_sequence: nil, term_label: 'Help')
+      item_4 = Locabulary::Item.new(default_presentation_sequence: 1, term_label: 'Bob')
+      item_5 = Locabulary::Item.new(default_presentation_sequence: 2, term_label: 'Apple')
 
-    assert_equal([item_1,item_2].sort, [item_2, item_1])
+      expect([item_1, item_2, item_3, item_4, item_5].sort).to eq([item_4, item_5, item_2, item_1, item_3])
+    end
   end
 end
