@@ -100,15 +100,6 @@ module Locabulary
     format_active_items_for(active_labels_for(options))
   end
 
-  # @api public
-  def properties_for_uri(options = {})
-    predicate_name = options.fetch(:predicate_name)
-    term_uri = options.fetch(:term_uri)
-    object = active_items_for(predicate_name: predicate_name).detect { |obj| obj.term_uri == term_uri }
-    return object. if object
-    term_uri
-  end
-
   # @api private
   def filename_for_predicate_name(options = {})
     predicate_name = options.fetch(:predicate_name)
