@@ -1,6 +1,5 @@
 #!/usr/bin/env ruby -U
-
-require_relative 'json_creator'
+require 'locabulary/json_creator'
 
 puts "Updating Administrative Units"
 json_creator = JsonCreator.new "1oBW5FCTtYXsUi8roBiMRBLFY3dXamhTqy-kiG2rqu5Q", "administrative_units"
