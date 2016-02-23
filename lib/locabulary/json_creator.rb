@@ -96,9 +96,9 @@ module Locabulary
 
     def get_required_data_from_spreadsheet
       formatted_data = []
-      line = []
-      spreadsheet_data.shift
+      spreadsheet_data.shift # Discard the header line
       spreadsheet_data.each do |row|
+        line = []
         final = {}
         line << row[0]
         line << row[1] if row[1] && !row[1].empty?
@@ -113,7 +113,6 @@ module Locabulary
         final["activated_on"] = "2015-07-22"
         final["deactivated_on"] = nil
         formatted_data << final
-        line = []
       end
       formatted_data
     end
