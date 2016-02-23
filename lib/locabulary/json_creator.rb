@@ -25,8 +25,8 @@ module Locabulary
     attr_accessor :output_filepath
 
     def create_or_update
-      @spreadsheet_data = data_fetcher.call(document_key)
-      convert_to_json(get_required_data_from_spreadsheet)
+      spreadsheet_data = data_fetcher.call(document_key)
+      convert_to_json(map_data(spreadsheet_data))
     end
 
     def write_to_file
@@ -41,6 +41,41 @@ module Locabulary
 
     def default_data_fetcher
       ->(document_key) { GoogleSpreadsheet.new(document_key).read_spreadsheet }
+    end
+
+    def map_data(spreadsheet_data)
+      formatted_data = []
+      spreadsheet_data.shift # Discard the header line
+      spreadsheet_data.each do |row|
+        line = []
+        final = {}
+        line << row[0]
+        line << row[1] if row[1] && !row[1].empty?
+        line << row[2] if row[2] && !row[2].empty?
+        final["term_label"] = line.join('::')
+        final["default_presentation_sequence"] = row[9].to_s.strip == '' ? nil : row[9].to_i
+        final["term_uri"] = row[4]
+        final["deposit_label"] = row[5]
+        final["description"] = row[6]
+        final["grouping"] = row[7]
+        final["affiliation"] = row[8]
+        final["activated_on"] = "2015-07-22"
+        final["deactivated_on"] = nil
+        formatted_data << final
+      end
+      formatted_data
+    end
+
+    def convert_to_json(data)
+      json_array = []
+      data.each do |row|
+        data_map = { "predicate_name" => vocabulary }
+        ATTRIBUTE_NAMES.each do |key|
+          data_map[key] = row.fetch(key) { row.fetch(key.to_s, nil) }
+        end
+        json_array << data_map
+      end
+      @json_data = JSON.pretty_generate("predicate_name" => vocabulary, "values" => json_array)
     end
 
     # Responsible for interacting with Google Sheets and retrieiving relevant information
@@ -92,41 +127,6 @@ module Locabulary
           File.join(File.dirname(__FILE__), '../config/client_secrets.example.yml')
         end
       end
-    end
-
-    def get_required_data_from_spreadsheet
-      formatted_data = []
-      spreadsheet_data.shift # Discard the header line
-      spreadsheet_data.each do |row|
-        line = []
-        final = {}
-        line << row[0]
-        line << row[1] if row[1] && !row[1].empty?
-        line << row[2] if row[2] && !row[2].empty?
-        final["term_label"] = line.join('::')
-        final["default_presentation_sequence"] = row[9].to_s.strip == '' ? nil : row[9].to_i
-        final["term_uri"] = row[4]
-        final["deposit_label"] = row[5]
-        final["description"] = row[6]
-        final["grouping"] = row[7]
-        final["affiliation"] = row[8]
-        final["activated_on"] = "2015-07-22"
-        final["deactivated_on"] = nil
-        formatted_data << final
-      end
-      formatted_data
-    end
-
-    def convert_to_json(data)
-      json_array = []
-      data.each do |row|
-        data_map = { "predicate_name" => vocabulary }
-        ATTRIBUTE_NAMES.each do |key|
-          data_map[key] = row.fetch(key) { row.fetch(key.to_s, nil) }
-        end
-        json_array << data_map
-      end
-      @json_data = JSON.pretty_generate("predicate_name" => vocabulary, "values" => json_array)
     end
   end
 end
