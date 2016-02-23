@@ -1,6 +1,7 @@
 require "google/api_client"
 require "google_drive"
 require 'highline/import'
+require 'locabulary'
 require 'json'
 
 module Locabulary
@@ -14,7 +15,7 @@ module Locabulary
     def initialize(document_key, vocabulary, data_fetcher = default_data_fetcher)
       @document_key = document_key
       @vocabulary = vocabulary
-      @output_filepath = File.expand_path("../../../data/#{vocabulary}.json", __FILE__)
+      @output_filepath = File.join(Locabulary::DATA_DIRECTORY, "#{vocabulary}.json")
       @data_fetcher = data_fetcher
     end
 
