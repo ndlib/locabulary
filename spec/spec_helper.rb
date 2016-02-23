@@ -1,4 +1,7 @@
-$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
+GEM_ROOT = File.expand_path('../../', __FILE__)
+$LOAD_PATH.unshift File.join(GEM_ROOT, 'lib')
+
+require 'rspec'
 
 RSpec.configure do |config|
   # rspec-mocks config goes here. You can use an alternate test double
