@@ -9,6 +9,7 @@ module Locabulary
   class RuntimeError < ::RuntimeError
   end
 
+  # A singular item in the controlled vocubulary
   class Item
     def initialize(attributes={})
       ATTRIBUTE_NAMES.each do |key|

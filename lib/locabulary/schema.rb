@@ -2,6 +2,7 @@ require 'dry/validation'
 require 'dry/validation/schema'
 
 module Locabulary
+  # Responsible for providing a defined and clear schema for each of the locabulary items.
   class Schema < Dry::Validation::Schema
     key(:predicate_name) { |predicate_name| predicate_name.format?(/\A[a-z_]+\Z/) & predicate_name.filled? }
     key(:values) do |values|
