@@ -78,10 +78,15 @@ module Locabulary
       end
 
       def client_secrets
-        return @secrets if @secrets
-        secrets_path = File.join(File.dirname(FILE_PATH), '../config/client_secrets.example.yml')
-        secrets_path = File.join(File.dirname(FILE_PATH), '../config/client_secrets.yml') if File.exist? File.join(File.dirname(FILE_PATH), '../config/client_secrets.yml')
-        @secrets = YAML.load(File.open(File.join(secrets_path)))
+        @secrets ||= YAML.load(File.open(File.join(secrets_path)))
+      end
+
+      def secrets_path
+        if File.exist? File.join(File.dirname(__FILE__), '../config/client_secrets.yml')
+          File.join(File.dirname(__FILE__), '../config/client_secrets.yml')
+        else
+          File.join(File.dirname(__FILE__), '../config/client_secrets.example.yml')
+        end
       end
     end
 
