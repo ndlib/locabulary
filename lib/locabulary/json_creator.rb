@@ -7,8 +7,10 @@ require 'json'
 module Locabulary
   # Responsible for capturing vocabulary from a given source and writing it to a file
   class JsonCreator
-
-    ATTRIBUTE_NAMES = [:term_label, :term_uri, :deposit_label, :description, :grouping, :affiliation, :default_presentation_sequence, :activated_on, :deactivated_on].freeze
+    ATTRIBUTE_NAMES = [
+      :term_label, :term_uri, :deposit_label, :description, :grouping, :affiliation, :default_presentation_sequence, :activated_on,
+      :deactivated_on
+    ].freeze
 
     attr_reader(*ATTRIBUTE_NAMES)
 
@@ -41,13 +43,16 @@ module Locabulary
       ->(document_key) { GoogleSpreadsheet.new(document_key).read_spreadsheet }
     end
 
+    # Responsible for interacting with Google Sheets and retrieiving relevant information
     class GoogleSpreadsheet
-      attr_reader :access_token, :document_key
-      FILE_PATH = __FILE__
+      attr_reader :access_token, :document_key, :session
+
+      private :session
 
       def initialize(document_key)
         @document_key = document_key
         configure_oauth!
+        @session = GoogleDrive.login_with_oauth(access_token)
       end
 
       def configure_oauth!
@@ -64,7 +69,6 @@ module Locabulary
       end
 
       def read_spreadsheet
-        session = GoogleDrive.login_with_oauth(access_token)
         ws = session.spreadsheet_by_key(document_key).worksheets[0]
         spreadsheet_data = []
         (1..ws.num_rows).each do |row|
@@ -91,7 +95,7 @@ module Locabulary
     end
 
     def get_required_data_from_spreadsheet
-      formatted_data =[]
+      formatted_data = []
       line = []
       spreadsheet_data.shift
       spreadsheet_data.each do |row|
@@ -99,15 +103,15 @@ module Locabulary
         line << row[0]
         line << row[1] if row[1] && !row[1].empty?
         line << row[2] if row[2] && !row[2].empty?
-        final[ "term_label" ] = line.join('::')
-        final[ "default_presentation_sequence" ] = row[9].to_s.strip == '' ? nil : row[9].to_i
-        final[ "term_uri" ] = row[4]
-        final[ "deposit_label" ] = row[5]
-        final[ "description" ] = row[6]
-        final[ "grouping" ] = row[7]
-        final[ "affiliation" ] = row[8]
-        final[ "activated_on" ] = "2015-07-22"
-        final[ "deactivated_on" ] = nil
+        final["term_label"] = line.join('::')
+        final["default_presentation_sequence"] = row[9].to_s.strip == '' ? nil : row[9].to_i
+        final["term_uri"] = row[4]
+        final["deposit_label"] = row[5]
+        final["description"] = row[6]
+        final["grouping"] = row[7]
+        final["affiliation"] = row[8]
+        final["activated_on"] = "2015-07-22"
+        final["deactivated_on"] = nil
         formatted_data << final
         line = []
       end
@@ -117,13 +121,13 @@ module Locabulary
     def convert_to_json(data)
       json_array = []
       data.each do |row|
-        data_map = {"predicate_name"=>vocabulary}
+        data_map = { "predicate_name" => vocabulary }
         ATTRIBUTE_NAMES.each do |key|
-          data_map[ key ]  = row.fetch(key) { row.fetch(key.to_s, nil) }
+          data_map[key]  = row.fetch(key) { row.fetch(key.to_s, nil) }
         end
         json_array << data_map
       end
-      @json_data = JSON.pretty_generate({"predicate_name"=>vocabulary, "values"=> json_array})
+      @json_data = JSON.pretty_generate("predicate_name" => vocabulary, "values" => json_array)
     end
   end
 end

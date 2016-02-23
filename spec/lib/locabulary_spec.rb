@@ -69,7 +69,7 @@ RSpec.describe Locabulary do
   context 'verification that administrative units are unique' do
     it 'has unique adminstrative unit term labels' do
       content = JSON.parse(File.read(File.join(File.dirname(__FILE__), '../../data/administrative_units.json')))
-      administrative_unit_ids = content.fetch('values').map {|item| item['term_label']}
+      administrative_unit_ids = content.fetch('values').map { |item| item['term_label'] }
       expect(administrative_unit_ids.uniq).to eq(administrative_unit_ids)
     end
   end
@@ -80,6 +80,6 @@ RSpec.describe Locabulary::Item do
     item_1 = Locabulary::Item.new(default_presentation_sequence: nil, label: 'Hello')
     item_2 = Locabulary::Item.new(default_presentation_sequence: 2, label: 'World')
 
-    assert_equal([item_1,item_2].sort, [item_2, item_1])
+    assert_equal([item_1, item_2].sort, [item_2, item_1])
   end
 end

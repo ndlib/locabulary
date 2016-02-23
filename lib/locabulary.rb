@@ -3,7 +3,7 @@ require 'json'
 
 # @since 0.1.0
 module Locabulary
-  VERSION='0.2.0'.freeze
+  VERSION = '0.2.0'.freeze
   DATA_DIRECTORY = File.expand_path("../../data/", __FILE__).freeze
 
   class RuntimeError < ::RuntimeError
@@ -11,14 +11,17 @@ module Locabulary
 
   # A singular item in the controlled vocubulary
   class Item
-    def initialize(attributes={})
+    def initialize(attributes = {})
       ATTRIBUTE_NAMES.each do |key|
         value = attributes.fetch(key) { attributes.fetch(key.to_s, nil) }
         send("#{key}=", value)
       end
     end
 
-    ATTRIBUTE_NAMES = [:predicate_name, :term_label, :term_uri, :deposit_label, :description, :grouping, :affiliation, :default_presentation_sequence, :activated_on, :deactivated_on].freeze
+    ATTRIBUTE_NAMES = [
+      :predicate_name, :term_label, :term_uri, :deposit_label, :description, :grouping, :affiliation, :default_presentation_sequence,
+      :activated_on, :deactivated_on
+    ].freeze
 
     attr_reader(*ATTRIBUTE_NAMES)
 
@@ -92,7 +95,6 @@ module Locabulary
     active_items_for(predicate_name: predicate_name).sort_by(&:default_presentation_sequence).map(&:term_label)
   end
 
-
   # @api public
   def active_nested_labels_for(options = {})
     format_active_items_for(active_labels_for(options))
@@ -146,6 +148,6 @@ module Locabulary
       key << text_array[index]
     end
     value = text_array.last
-    return key, value
+    [key, value]
   end
 end
