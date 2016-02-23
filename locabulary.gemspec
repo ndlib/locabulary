@@ -28,4 +28,9 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'google_drive'
   spec.add_development_dependency 'highline'
   spec.add_development_dependency "activesupport", "~>4.0"
+  spec.add_development_dependency "rubocop"
+  spec.add_development_dependency "reek"
+  spec.add_development_dependency "flay"
+  spec.add_development_dependency "simplecov"
+  spec.add_development_dependency "codeclimate-test-reporter"
 end
