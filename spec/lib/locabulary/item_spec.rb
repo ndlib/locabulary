@@ -20,4 +20,15 @@ RSpec.describe Locabulary::Item do
   end
 
   its(:as_json) { should be_a(Hash) }
+
+  context '#to_persistence_format_for_fedora' do
+    it 'is the term_label if no term_uri is given' do
+      subject = described_class.new(term_label: 'Hello')
+      subject.to_persistence_format_for_fedora == 'Hello'
+    end
+    it 'is the term_uri if one is given' do
+      subject = described_class.new(term_label: 'Hello', term_uri: 'http://goodbye.com')
+      subject.to_persistence_format_for_fedora == 'http://goodbye.com'
+    end
+  end
 end

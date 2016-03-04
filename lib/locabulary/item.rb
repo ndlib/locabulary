@@ -57,6 +57,11 @@ module Locabulary
     end
     alias as_json to_h
 
+    def to_persistence_format_for_fedora
+      return term_uri unless term_uri.to_s.strip == ''
+      term_label
+    end
+
     private
 
     attr_writer(*ATTRIBUTE_NAMES)
