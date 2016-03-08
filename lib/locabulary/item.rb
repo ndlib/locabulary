@@ -66,14 +66,19 @@ module Locabulary
 
     attr_writer(*ATTRIBUTE_NAMES)
 
+    def predicate_name=(input)
+      @predicate_name = input.to_s
+    end
+
     public
 
     include Comparable
 
-    # @todo Only objects with like predicate_name's should be compared
     def <=>(other)
-      value = presentation_sequence <=> other.presentation_sequence
-      return value unless value == 0
+      predicate_name_sort = predicate_name <=> other.predicate_name
+      return predicate_name_sort unless predicate_name_sort == 0
+      presentation_sequence_sort = presentation_sequence <=> other.presentation_sequence
+      return presentation_sequence_sort unless presentation_sequence_sort == 0
       term_label <=> other.term_label
     end
 
