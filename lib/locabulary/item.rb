@@ -1,7 +1,19 @@
+require 'dry/configurable'
 module Locabulary
   # A singular item in the controlled vocubulary.
   # @see https://en.wikipedia.org/wiki/Resource_Description_Framework
   class Item
+    extend Dry::Configurable
+
+    setting :attribute_names, [
+      :predicate_name, :term_label, :term_uri, :deposit_label, :description, :grouping, :affiliation, :default_presentation_sequence,
+      :activated_on, :deactivated_on
+    ].freeze
+
+    def attribute_names
+      self.class.config.attribute_names
+    end
+
     # [String] the trait for a given subject that we are describing by way of the term_label/term_uri
     attr_reader :predicate_name
 
@@ -38,19 +50,19 @@ module Locabulary
     attr_reader :affiliation
 
     def initialize(attributes = {})
-      ATTRIBUTE_NAMES.each do |key|
+      attribute_names.each do |key|
         value = attributes.fetch(key) { attributes.fetch(key.to_s, nil) }
         send("#{key}=", value)
       end
     end
-
-    ATTRIBUTE_NAMES = [
-      :predicate_name, :term_label, :term_uri, :deposit_label, :description, :grouping, :affiliation, :default_presentation_sequence,
-      :activated_on, :deactivated_on
-    ].freeze
+    #
+    # ATTRIBUTE_NAMES = [
+    #   :predicate_name, :term_label, :term_uri, :deposit_label, :description, :grouping, :affiliation, :default_presentation_sequence,
+    #   :activated_on, :deactivated_on
+    # ].freeze
 
     def to_h
-      ATTRIBUTE_NAMES.each_with_object({}) do |key, mem|
+      attribute_names.each_with_object({}) do |key, mem|
         mem[key.to_s] = send(key) unless send(key).to_s.strip == ''
         mem
       end
@@ -64,7 +76,7 @@ module Locabulary
 
     private
 
-    attr_writer(*ATTRIBUTE_NAMES)
+    attr_writer(*config.attribute_names)
 
     def predicate_name=(input)
       @predicate_name = input.to_s
