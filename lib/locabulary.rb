@@ -1,6 +1,7 @@
 require 'date'
 require 'json'
 require 'locabulary/item'
+require 'hanami/utils/string'
 
 # @since 0.1.0
 module Locabulary
