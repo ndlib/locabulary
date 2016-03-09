@@ -1,7 +1,6 @@
 require 'date'
 require 'json'
-require 'locabulary/item'
-require 'hanami/utils/string'
+require 'locabulary/items'
 
 # @since 0.1.0
 module Locabulary
@@ -22,21 +21,21 @@ module Locabulary
   #   When we next deploy the server changes, the deactivated will go away.
   def active_items_for(options = {})
     predicate_name = options.fetch(:predicate_name)
+    item_builder = Items.builder_for(predicate_name: predicate_name)
     as_of = options.fetch(:as_of) { Date.today }
     active_cache[predicate_name] ||= begin
       filename = filename_for_predicate_name(predicate_name: predicate_name)
       json = JSON.parse(File.read(filename))
-      predicate_name = json.fetch('predicate_name')
       json.fetch('values').each_with_object([]) do |item_values, mem|
         activated_on = Date.parse(item_values.fetch('activated_on'))
         next unless activated_on < as_of
         deactivated_on_value = item_values.fetch('deactivated_on', nil)
         if deactivated_on_value.nil?
-          mem << Item.new(item_values.merge('predicate_name' => predicate_name))
+          mem << item_builder.call(item_values.merge('predicate_name' => predicate_name))
         else
           deactivated_on = Date.parse(deactivated_on_value)
           next unless deactivated_on >= as_of
-          mem << Item.new(item_values.merge('predicate_name' => predicate_name))
+          mem << item_builder.call(item_values.merge('predicate_name' => predicate_name))
         end
         mem
       end.sort
