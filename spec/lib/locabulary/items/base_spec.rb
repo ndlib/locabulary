@@ -1,7 +1,7 @@
 require 'spec_helper'
-require 'locabulary/item'
+require 'locabulary/items/base'
 
-RSpec.describe Locabulary::Item do
+RSpec.describe Locabulary::Items::Base do
   context 'Comparable' do
     it 'sorts with nil and integers for presentation sequence' do
       item_1 = described_class.new(default_presentation_sequence: nil, term_label: 'Hello')

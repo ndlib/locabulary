@@ -1,9 +1,16 @@
-require 'locabulary/item'
+require 'locabulary/items/base'
 require 'hanami/utils/string'
 module Locabulary
   # A container for the various types of Locabulary Items
   module Items
     module_function
+
+    # @api public
+    # @since 0.2.1
+    def build(options = {})
+      predicate_name = options.fetch(:predicate_name) { options.fetch('predicate_name') }
+      builder_for(predicate_name: predicate_name).call(options)
+    end
 
     # @api public
     # @since 0.2.1
@@ -16,7 +23,7 @@ module Locabulary
       klass = begin
         Items.const_get(possible_class_name_for_predicate_name)
       rescue NameError
-        Item
+        Items::Base
       end
       klass.method(:new)
     end
