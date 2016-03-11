@@ -5,7 +5,7 @@ RSpec.describe Locabulary do
   before { Locabulary.reset_active_cache! }
 
   it 'will throw an exception if the predicate name is missing' do
-    expect { Locabulary.filename_for_predicate_name(predicate_name: '__missing__') }.to raise_error(Locabulary::RuntimeError)
+    expect { Locabulary.filename_for_predicate_name(predicate_name: '__missing__') }.to raise_error(Locabulary::Exceptions::RuntimeError)
   end
 
   it 'will de-reference the filenmae to a base name' do

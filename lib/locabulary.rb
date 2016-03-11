@@ -1,14 +1,12 @@
 require 'date'
 require 'json'
+require 'locabulary/exceptions'
 require 'locabulary/items'
 
 # @since 0.1.0
 module Locabulary
   VERSION = '0.2.0'.freeze
   DATA_DIRECTORY = File.expand_path("../../data/", __FILE__).freeze
-
-  class RuntimeError < ::RuntimeError
-  end
 
   module_function
 
@@ -69,7 +67,7 @@ module Locabulary
     predicate_name = options.fetch(:predicate_name)
     filename = File.join(DATA_DIRECTORY, "#{File.basename(predicate_name)}.json")
     return filename if File.exist?(filename)
-    raise Locabulary::RuntimeError, "Unable to find predicate_name: #{predicate_name}"
+    raise Locabulary::Exceptions::RuntimeError, "Unable to find predicate_name: #{predicate_name}"
   end
 
   # @api private
