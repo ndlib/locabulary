@@ -19,26 +19,34 @@ module Locabulary
   #   When we next deploy the server changes, the deactivated will go away.
   def active_items_for(options = {})
     predicate_name = options.fetch(:predicate_name)
-    item_builder = Items.builder_for(predicate_name: predicate_name)
     as_of = options.fetch(:as_of) { Date.today }
+    builder = Items.builder_for(predicate_name: predicate_name)
     active_cache[predicate_name] ||= begin
-      filename = filename_for_predicate_name(predicate_name: predicate_name)
-      json = JSON.parse(File.read(filename))
-      json.fetch('values').each_with_object([]) do |item_values, mem|
-        activated_on = Date.parse(item_values.fetch('activated_on'))
-        next unless activated_on < as_of
-        deactivated_on_value = item_values.fetch('deactivated_on', nil)
-        if deactivated_on_value.nil?
-          mem << item_builder.call(item_values.merge('predicate_name' => predicate_name))
-        else
-          deactivated_on = Date.parse(deactivated_on_value)
-          next unless deactivated_on >= as_of
-          mem << item_builder.call(item_values.merge('predicate_name' => predicate_name))
-        end
-        mem
-      end.sort
+      collector = []
+      with_active_extraction_for(predicate_name, as_of) do |data|
+        collector << builder.call(data.merge('predicate_name' => predicate_name))
+      end
+      collector.sort
     end
   end
+
+  def with_active_extraction_for(predicate_name, as_of)
+    filename = filename_for_predicate_name(predicate_name: predicate_name)
+    json = JSON.parse(File.read(filename))
+    json.fetch('values').each do |data|
+      activated_on = Date.parse(data.fetch('activated_on'))
+      next unless activated_on < as_of
+      deactivated_on_value = data.fetch('deactivated_on', nil)
+      if deactivated_on_value.nil?
+        yield(data)
+      else
+        deactivated_on = Date.parse(deactivated_on_value)
+        next unless deactivated_on >= as_of
+        yield(data)
+      end
+    end
+  end
+  private :with_active_extraction_for
 
   # @api public
   # @since 0.1.0
@@ -58,6 +66,7 @@ module Locabulary
   end
 
   # @api public
+  # @deprecated
   def active_nested_labels_for(options = {})
     format_active_items_for(active_labels_for(options))
   end
@@ -76,11 +85,18 @@ module Locabulary
   end
 
   # @api private
-  def reset_active_cache!
-    @active_cache = nil
+  def active_hierarchy_cache
+    @active_hierarchy_cache ||= {}
   end
 
   # @api private
+  def reset_active_cache!
+    @active_cache = nil
+    @active_hierarchy_cache = nil
+  end
+
+  # @api private
+  # @deprecated
   def format_active_items_for(items)
     root = {}
     items.each do |item|
@@ -92,6 +108,7 @@ module Locabulary
   end
 
   # @api private
+  # @deprecated
   def build_key_and_value(text)
     text_array = text.split(/(::)/)
     return text, text if text_array.size == 1
