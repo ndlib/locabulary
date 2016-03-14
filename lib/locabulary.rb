@@ -66,19 +66,21 @@ module Locabulary
     filename = filename_for_predicate_name(predicate_name: predicate_name)
     json = JSON.parse(File.read(filename))
     json.fetch('values').each do |data|
-      activated_on = Date.parse(data.fetch('activated_on'))
-      next unless activated_on < as_of
-      deactivated_on_value = data.fetch('deactivated_on', nil)
-      if deactivated_on_value.nil?
-        yield(data)
-      else
-        deactivated_on = Date.parse(deactivated_on_value)
-        next unless deactivated_on >= as_of
-        yield(data)
-      end
+      yield(data) if data_is_active?(data, as_of)
     end
   end
   private :with_active_extraction_for
+
+  def data_is_active?(data, as_of)
+    activated_on = Date.parse(data.fetch('activated_on'))
+    return false unless activated_on < as_of
+    deactivated_on_value = data.fetch('deactivated_on', nil)
+    return true if deactivated_on_value.nil?
+    deactivated_on = Date.parse(deactivated_on_value)
+    return false unless deactivated_on >= as_of
+    true
+  end
+  private :data_is_active?
 
   # @api public
   # @since 0.1.0
