@@ -19,8 +19,9 @@ module Locabulary
     attr_accessor :output_filepath
 
     def create_or_update
-      spreadsheet_data = data_fetcher.call(document_key)
-      convert_to_json(map_data(spreadsheet_data))
+      rows = data_fetcher.call(document_key)
+      data = extract_data_from(rows)
+      convert_to_json(data)
     end
 
     # :nocov:
@@ -33,30 +34,22 @@ module Locabulary
 
     private
 
-    def default_data_fetcher
-      ->(document_key) { GoogleSpreadsheet.new(document_key).read_spreadsheet }
+    def extract_data_from(rows)
+      spreadsheet_data = []
+      header = rows[0]
+      rows[1..-1].each do |row|
+        # The activated_on is a present hack reflecting a previous value
+        row_data = { "predicate_name" => predicate_name, "activated_on" => "2015-07-22", "default_presentation_sequence" => nil }
+        row.each_with_index do |cell, index|
+          row_data[header[index]] = cell unless cell.to_s.strip == ''
+        end
+        spreadsheet_data << row_data
+      end
+      spreadsheet_data
     end
 
-    def map_data(spreadsheet_data)
-      spreadsheet_data.shift # Discard the header line
-      spreadsheet_data.each_with_object([]) do |row, formatted_data|
-        line = []
-        final = {}
-        line << row[0]
-        line << row[1] if row[1] && !row[1].empty?
-        line << row[2] if row[2] && !row[2].empty?
-        final["predicate_name"] = predicate_name
-        final["term_label"] = line.join('::')
-        final["default_presentation_sequence"] = row[9].to_s.strip == '' ? nil : row[9].to_i
-        final["homepage"] = row[4]
-        final["deposit_label"] = row[5]
-        final["description"] = row[6]
-        final["grouping"] = row[7]
-        final["affiliation"] = row[8]
-        final["activated_on"] = "2015-07-22"
-        final["deactivated_on"] = nil
-        formatted_data << final
-      end
+    def default_data_fetcher
+      ->(document_key) { GoogleSpreadsheet.new(document_key).get_all_rows }
     end
 
     def convert_to_json(data)
@@ -92,17 +85,8 @@ module Locabulary
         @access_token = auth.access_token
       end
 
-      def read_spreadsheet
-        ws = session.spreadsheet_by_key(document_key).worksheets[0]
-        spreadsheet_data = []
-        (1..ws.num_rows).each do |row|
-          row_data = []
-          (1..ws.num_cols).each do |col|
-            row_data << ws[row, col]
-          end
-          spreadsheet_data << row_data
-        end
-        spreadsheet_data
+      def get_all_rows
+        session.spreadsheet_by_key(document_key).worksheets[0].rows
       end
 
       def client_secrets
@@ -110,10 +94,10 @@ module Locabulary
       end
 
       def secrets_path
-        if File.exist? File.join(File.dirname(__FILE__), '../config/client_secrets.yml')
-          File.join(File.dirname(__FILE__), '../config/client_secrets.yml')
+        if File.exist? File.join(File.dirname(__FILE__), '../../config/client_secrets.yml')
+          File.join(File.dirname(__FILE__), '../../config/client_secrets.yml')
         else
-          File.join(File.dirname(__FILE__), '../config/client_secrets.example.yml')
+          File.join(File.dirname(__FILE__), '../../config/client_secrets.example.yml')
         end
       end
     end

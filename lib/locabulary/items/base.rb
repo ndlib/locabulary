@@ -79,6 +79,10 @@ module Locabulary
         @predicate_name = input.to_s
       end
 
+      def default_presentation_sequence=(input)
+        @default_presentation_sequence = input.to_s.strip == '' ? nil : input.to_i
+      end
+
       public
 
       include Comparable
