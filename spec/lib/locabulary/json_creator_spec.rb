@@ -26,34 +26,34 @@ RSpec.describe Locabulary::JsonCreator do
   end
   it 'will convert a hash to a json file' do
     expected_output = {
-      "predicate_name": "administrative_units",
-      "values": [
+      "predicate_name" => "administrative_units",
+      "values" => [
         {
-          "predicate_name": "administrative_units",
-          "term_label": "University of Notre Dame",
-          "classification": "University",
-          "homepage": "http://www.nd.edu/",
-          "activated_on": "2015-07-22"
+          "predicate_name" => "administrative_units",
+          "term_label" => "University of Notre Dame",
+          "classification" => "University",
+          "homepage" => "http://www.nd.edu/",
+          "activated_on" => "2015-07-22"
         }, {
-          "predicate_name": "administrative_units",
-          "term_label": "University of Notre Dame::School of Architecture",
-          "classification": "College",
-          "homepage": "http://architecture.nd.edu/",
-          "activated_on": "2015-07-22"
+          "predicate_name" => "administrative_units",
+          "term_label" => "University of Notre Dame::School of Architecture",
+          "classification" => "College",
+          "homepage" => "http://architecture.nd.edu/",
+          "activated_on" => "2015-07-22"
         }, {
-          "predicate_name": "administrative_units",
-          "term_label": "University of Notre Dame::College of Arts and Letters",
-          "grouping": "The Humanities",
-          "classification": "College",
-          "homepage": "http://al.nd.edu/",
-          "activated_on": "2015-07-22"
+          "predicate_name" => "administrative_units",
+          "term_label" => "University of Notre Dame::College of Arts and Letters",
+          "grouping" => "The Humanities",
+          "classification" => "College",
+          "homepage" => "http://al.nd.edu/",
+          "activated_on" => "2015-07-22"
         }, {
-          "predicate_name": "administrative_units",
-          "term_label": "University of Notre Dame::College of Arts and Letters::Non-Departmental",
-          "classification": "Department",
-          "affiliation": "University of Notre Dame::School of Architecture",
-          "default_presentation_sequence": 1,
-          "activated_on": "2015-07-22"
+          "predicate_name" => "administrative_units",
+          "term_label" => "University of Notre Dame::College of Arts and Letters::Non-Departmental",
+          "classification" => "Department",
+          "affiliation" => "University of Notre Dame::School of Architecture",
+          "default_presentation_sequence" => 1,
+          "activated_on" => "2015-07-22"
         }
       ]
     }
