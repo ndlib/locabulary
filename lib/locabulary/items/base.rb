@@ -56,11 +56,6 @@ module Locabulary
           send("#{key}=", value)
         end
       end
-      #
-      # ATTRIBUTE_NAMES = [
-      #   :predicate_name, :term_label, :term_uri, :deposit_label, :description, :grouping, :affiliation, :default_presentation_sequence,
-      #   :activated_on, :deactivated_on
-      # ].freeze
 
       def to_h
         attribute_names.each_with_object({}) do |key, mem|
