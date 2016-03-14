@@ -21,6 +21,16 @@ RSpec.describe Locabulary::Items::Base do
 
   its(:as_json) { should be_a(Hash) }
 
+  context '#default_presentation_sequence=' do
+    [
+      ['', nil], ['1', 1], ['a', 0], [nil, nil]
+    ].each do |given, expected|
+      it "will coerce #{given.inspect} to #{expected.inspect}" do
+        expect(described_class.new(default_presentation_sequence: given).default_presentation_sequence).to eq(expected)
+      end
+    end
+  end
+
   context '#id' do
     it 'is an alias for #to_persistence_format_for_fedora' do
       subject = described_class.new(term_label: 'Hello')

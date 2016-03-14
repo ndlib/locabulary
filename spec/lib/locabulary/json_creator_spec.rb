@@ -2,18 +2,19 @@ require 'spec_helper'
 require 'locabulary/json_creator'
 
 RSpec.describe Locabulary::JsonCreator do
-  let(:data_fetcher) { ->(_) { array_of_data } }
-  let(:array_of_data) do
+  let(:data_fetcher) { ->(_) { rows } }
+  let(:rows) do
     [
+      %w(term_label default_presentation_sequence classification homepage description grouping affiliation),
       [
-        'Column header 1', 'Column header 2', 'Column header 3', 'Column header 4', 'Column header 5', 'Column header 6',
-        'Column header 7', 'Column header 8', 'Column header 9', 'Column header 10'
+        "University of Notre Dame", "", "University", "http://www.nd.edu/", "", "", ""
       ], [
-        'University of Notre Dame', 'School of Architecture', '', 'College', 'http://architecture.nd.edu/', '', '', '', '', ''
+        "University of Notre Dame::School of Architecture", "", "College", "http://architecture.nd.edu/", "", "", ""
       ], [
-        'University of Notre Dame', 'Centers and Institutes', 'Center for Building Communities', 'CenterOrInstitute',
-        'http://buildingcommunities.nd.edu/', '', '', '', 'University of Notre Dame::School of Architecture'
-
+        "University of Notre Dame::College of Arts and Letters", "", "College", "http://al.nd.edu/", "", "The Humanities", ""
+      ], [
+        "University of Notre Dame::College of Arts and Letters::Non-Departmental", "1", "Department", "", "", "",
+        "University of Notre Dame::School of Architecture"
       ]
     ]
   end
@@ -29,15 +30,29 @@ RSpec.describe Locabulary::JsonCreator do
       "values" => [
         {
           "predicate_name" => "administrative_units",
+          "term_label" => "University of Notre Dame",
+          "classification" => "University",
+          "homepage" => "http://www.nd.edu/",
+          "activated_on" => "2015-07-22"
+        }, {
+          "predicate_name" => "administrative_units",
           "term_label" => "University of Notre Dame::School of Architecture",
+          "classification" => "College",
           "homepage" => "http://architecture.nd.edu/",
           "activated_on" => "2015-07-22"
-        },
-        {
+        }, {
           "predicate_name" => "administrative_units",
-          "term_label" => "University of Notre Dame::Centers and Institutes::Center for Building Communities",
+          "term_label" => "University of Notre Dame::College of Arts and Letters",
+          "grouping" => "The Humanities",
+          "classification" => "College",
+          "homepage" => "http://al.nd.edu/",
+          "activated_on" => "2015-07-22"
+        }, {
+          "predicate_name" => "administrative_units",
+          "term_label" => "University of Notre Dame::College of Arts and Letters::Non-Departmental",
+          "classification" => "Department",
           "affiliation" => "University of Notre Dame::School of Architecture",
-          "homepage" => "http://buildingcommunities.nd.edu/",
+          "default_presentation_sequence" => 1,
           "activated_on" => "2015-07-22"
         }
       ]
