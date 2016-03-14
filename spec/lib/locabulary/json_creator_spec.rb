@@ -5,16 +5,16 @@ RSpec.describe Locabulary::JsonCreator do
   let(:data_fetcher) { ->(_) { rows } }
   let(:rows) do
     [
+      %w(term_label default_presentation_sequence classification homepage description grouping affiliation),
       [
-        "term_label", "default_presentation_sequence", "classification", "homepage", "description", "grouping", "affiliation"
-      ], [
         "University of Notre Dame", "", "University", "http://www.nd.edu/", "", "", ""
       ], [
         "University of Notre Dame::School of Architecture", "", "College", "http://architecture.nd.edu/", "", "", ""
       ], [
         "University of Notre Dame::College of Arts and Letters", "", "College", "http://al.nd.edu/", "", "The Humanities", ""
       ], [
-        "University of Notre Dame::College of Arts and Letters::Non-Departmental", "1", "Department", "", "", "", "University of Notre Dame::School of Architecture"
+        "University of Notre Dame::College of Arts and Letters::Non-Departmental", "1", "Department", "", "", "",
+        "University of Notre Dame::School of Architecture"
       ]
     ]
   end

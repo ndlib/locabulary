@@ -49,7 +49,7 @@ module Locabulary
     end
 
     def default_data_fetcher
-      ->(document_key) { GoogleSpreadsheet.new(document_key).get_all_rows }
+      ->(document_key) { GoogleSpreadsheet.new(document_key).all_rows }
     end
 
     def convert_to_json(data)
@@ -85,7 +85,7 @@ module Locabulary
         @access_token = auth.access_token
       end
 
-      def get_all_rows
+      def all_rows
         session.spreadsheet_by_key(document_key).worksheets[0].rows
       end
 
