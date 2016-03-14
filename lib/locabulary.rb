@@ -54,7 +54,7 @@ module Locabulary
   def associate_parents_and_childrens_for(hierarchy_graph_keys, items, predicate_name)
     items.each do |item|
       begin
-        hierarchy_graph_keys.fetch(item.parent_term_label).children << item unless item.parent_slugs.empty?
+        hierarchy_graph_keys.fetch(item.parent_term_label).add_child(item) unless item.parent_slugs.empty?
       rescue KeyError => error
         raise Exceptions::MissingHierarchicalParentError.new(predicate_name, error)
       end

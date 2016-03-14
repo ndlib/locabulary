@@ -27,6 +27,12 @@ RSpec.describe Locabulary::Items::AdministrativeUnit do
     end
   end
 
+  context '#add_child' do
+    it 'updates the children' do
+      expect { subject.add_child('tuna', 'sandwich') }.to change { subject.children.count }.by(2)
+    end
+  end
+
   context '#selectable_label' do
     it 'excludes the root' do
       expect(subject.selectable_label).to eq('Galaxy::Planet')

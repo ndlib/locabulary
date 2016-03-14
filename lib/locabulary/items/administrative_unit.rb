@@ -32,7 +32,13 @@ module Locabulary
         @children = []
       end
 
-      attr_reader :children
+      def children
+        @children.sort
+      end
+
+      def add_child(*input)
+        @children += input
+      end
 
       HIERARCHY_SEPARATOR = '::'.freeze
       def slugs
