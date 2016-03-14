@@ -13,6 +13,25 @@ RSpec.describe Locabulary::Items::AdministrativeUnit do
   its(:attribute_names) { should include(:activated_on) }
   its(:attribute_names) { should include(:deactivated_on) }
 
+  subject { Locabulary::Items::AdministrativeUnit.new(term_label: 'Universe::Galaxy::Planet') }
+  context '#selectable?' do
+    it 'is true if there are no children' do
+      allow(subject).to receive(:children).and_return([])
+      expect(subject).to be_selectable
+    end
+
+    it 'is false if there are children' do
+      allow(subject).to receive(:children).and_return([1, 2, 3])
+      expect(subject).to_not be_selectable
+    end
+  end
+
+  context '#selectable_label' do
+    it 'excludes the root' do
+      expect(subject.selectable_label).to eq('Galaxy::Planet')
+    end
+  end
+
   context 'slug methods' do
     subject { Locabulary::Items::AdministrativeUnit.new(term_label: 'Universe::Galaxy::Planet') }
 

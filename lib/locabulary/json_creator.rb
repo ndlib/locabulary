@@ -48,7 +48,7 @@ module Locabulary
         final["predicate_name"] = predicate_name
         final["term_label"] = line.join('::')
         final["default_presentation_sequence"] = row[9].to_s.strip == '' ? nil : row[9].to_i
-        final["term_uri"] = row[4]
+        final["homepage"] = row[4]
         final["deposit_label"] = row[5]
         final["description"] = row[6]
         final["grouping"] = row[7]

@@ -21,6 +21,13 @@ RSpec.describe Locabulary::Items::Base do
 
   its(:as_json) { should be_a(Hash) }
 
+  context '#id' do
+    it 'is an alias for #to_persistence_format_for_fedora' do
+      subject = described_class.new(term_label: 'Hello')
+      expect(subject.id).to eq(subject.to_persistence_format_for_fedora)
+    end
+  end
+
   context '#to_persistence_format_for_fedora' do
     it 'is the term_label if no term_uri is given' do
       subject = described_class.new(term_label: 'Hello')

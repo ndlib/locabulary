@@ -69,6 +69,7 @@ module Locabulary
         return term_uri unless term_uri.to_s.strip == ''
         term_label
       end
+      alias id to_persistence_format_for_fedora
 
       private
 
