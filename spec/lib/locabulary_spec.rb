@@ -44,10 +44,10 @@ RSpec.describe Locabulary do
 
       expect(root.term_label).to(eq(item3.fetch(:term_label)), "with only one item at root level")
       expect(root.children.size).to eq(2)
-      expect(root.children.map(&:term_label)).to eq([item1.fetch(:term_label), item4.fetch(:term_label)])
+      expect(root.children.map(&:term_label)).to eq([item4.fetch(:term_label), item1.fetch(:term_label)])
       expect(
         root.children.find { |node| node.term_label == 'Universe::Galaxy' }.children.map(&:term_label)
-      ).to eq([item2.fetch(:term_label), item5.fetch(:term_label)])
+      ).to eq([item5.fetch(:term_label), item2.fetch(:term_label)])
       expect(root.children.find { |node| node.term_label == 'Universe::Non-Galactic' }.children.map(&:term_label)).to eq([])
     end
     it 'fails if we have more than one root node' do
