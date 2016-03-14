@@ -65,12 +65,6 @@ module Locabulary
     active_items_for(predicate_name: predicate_name).map(&:term_label)
   end
 
-  # @api public
-  # @deprecated
-  def active_nested_labels_for(options = {})
-    format_active_items_for(active_labels_for(options))
-  end
-
   # @api private
   def filename_for_predicate_name(options = {})
     predicate_name = options.fetch(:predicate_name)
@@ -93,31 +87,5 @@ module Locabulary
   def reset_active_cache!
     @active_cache = nil
     @active_hierarchy_cache = nil
-  end
-
-  # @api private
-  # @deprecated
-  def format_active_items_for(items)
-    root = {}
-    items.each do |item|
-      key, value = build_key_and_value(item)
-      root[key] ||= []
-      root[key] << value
-    end
-    root
-  end
-
-  # @api private
-  # @deprecated
-  def build_key_and_value(text)
-    text_array = text.split(/(::)/)
-    return text, text if text_array.size == 1
-    return text, text_array.last if text_array.size == 3
-    key = ""
-    (0..(text_array.size - 3)).each do |index|
-      key << text_array[index]
-    end
-    value = text_array.last
-    [key, value]
   end
 end

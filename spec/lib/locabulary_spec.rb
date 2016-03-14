@@ -43,29 +43,6 @@ RSpec.describe Locabulary do
     end
   end
 
-  context '.active_nested_labels_for' do
-    it 'will handle a single level deep' do
-      result = Locabulary.active_nested_labels_for(predicate_name: 'administrative_units')
-      obtained_result = result.fetch('University of Notre Dame')
-      expected_result = ['University of Notre Dame']
-      expect(obtained_result).to eq(expected_result)
-    end
-
-    it 'will handle a nesting two levels deep' do
-      result = Locabulary.active_nested_labels_for(predicate_name: 'administrative_units')
-      obtained_result = result.fetch("University of Notre Dame::Law School")
-      expected_result = ["Law School"]
-      expect(obtained_result).to eq(expected_result)
-    end
-
-    it 'will handle a nesting three levels deep' do
-      result = Locabulary.active_nested_labels_for(predicate_name: 'administrative_units')
-      obtained_result = result.fetch("University of Notre Dame::Hesburgh Libraries")
-      expected_result = ["Hesburgh Libraries", "Rare Books and Special Collections", "University Archives"]
-      expect(obtained_result).to eq(expected_result)
-    end
-  end
-
   context 'verification that administrative units are unique' do
     it 'has unique adminstrative unit term labels' do
       content = JSON.parse(File.read(File.join(File.dirname(__FILE__), '../../data/administrative_units.json')))
