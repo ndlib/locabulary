@@ -5,7 +5,6 @@ require 'locabulary/items'
 
 # @since 0.1.0
 module Locabulary
-  VERSION = '0.2.0'.freeze
   DATA_DIRECTORY = File.expand_path("../../data/", __FILE__).freeze
 
   module_function
