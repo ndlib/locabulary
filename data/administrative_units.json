@@ -1308,6 +1308,16 @@
       "default_presentation_sequence": 109,
       "activated_on": "2015-07-22",
       "deactivated_on": null
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Centers and Institutes",
+      "deposit_label": "",
+      "description": "",
+      "grouping": "",
+      "default_presentation_sequence": 110,
+      "activated_on": "2015-07-22",
+      "deactivated_on": null
     }
   ]
 }

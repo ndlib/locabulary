@@ -30,6 +30,39 @@ module Locabulary
     end
   end
 
+  # @api public
+  # @since 0.2.0
+  def active_hierarchical_root(options = {})
+    predicate_name = options.fetch(:predicate_name)
+    as_of = options.fetch(:as_of) { Date.today }
+    builder = Items.builder_for(predicate_name: predicate_name)
+    active_hierarchical_root_cache[predicate_name] ||= begin
+      items = []
+      hierarchy_graph_keys = {}
+      top_level_slugs = Set.new
+      with_active_extraction_for(predicate_name, as_of) do |data|
+        item = builder.call(data.merge('predicate_name' => predicate_name))
+        items << item
+        top_level_slugs << item.root_slug
+        hierarchy_graph_keys[item.term_label] = item
+      end
+      associate_parents_and_childrens_for(hierarchy_graph_keys, items, predicate_name)
+      raise Exceptions::TooManyHierarchicalRootsError.new(predicate_name, top_level_slugs.to_a) if top_level_slugs.size > 1
+      hierarchy_graph_keys.fetch(top_level_slugs.first)
+    end
+  end
+
+  def associate_parents_and_childrens_for(hierarchy_graph_keys, items, predicate_name)
+    items.each do |item|
+      begin
+        hierarchy_graph_keys.fetch(item.parent_term_label).children << item unless item.parent_slugs.empty?
+      rescue KeyError => error
+        raise Exceptions::MissingHierarchicalParentError.new(predicate_name, error)
+      end
+    end
+  end
+  private :associate_parents_and_childrens_for
+
   def with_active_extraction_for(predicate_name, as_of)
     filename = filename_for_predicate_name(predicate_name: predicate_name)
     json = JSON.parse(File.read(filename))
@@ -79,13 +112,13 @@ module Locabulary
   end
 
   # @api private
-  def active_hierarchy_cache
-    @active_hierarchy_cache ||= {}
+  def active_hierarchical_root_cache
+    @active_hierarchical_root_cache ||= {}
   end
 
   # @api private
   def reset_active_cache!
     @active_cache = nil
-    @active_hierarchy_cache = nil
+    @active_hierarchical_root_cache = nil
   end
 end
