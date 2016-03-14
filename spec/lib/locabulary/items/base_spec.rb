@@ -1,7 +1,7 @@
 require 'spec_helper'
-require 'locabulary/item'
+require 'locabulary/items/base'
 
-RSpec.describe Locabulary::Item do
+RSpec.describe Locabulary::Items::Base do
   context 'Comparable' do
     it 'sorts with nil and integers for presentation sequence' do
       item_1 = described_class.new(default_presentation_sequence: nil, term_label: 'Hello')
@@ -20,6 +20,13 @@ RSpec.describe Locabulary::Item do
   end
 
   its(:as_json) { should be_a(Hash) }
+
+  context '#id' do
+    it 'is an alias for #to_persistence_format_for_fedora' do
+      subject = described_class.new(term_label: 'Hello')
+      expect(subject.id).to eq(subject.to_persistence_format_for_fedora)
+    end
+  end
 
   context '#to_persistence_format_for_fedora' do
     it 'is the term_label if no term_uri is given' do

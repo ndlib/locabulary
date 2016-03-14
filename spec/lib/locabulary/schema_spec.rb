@@ -8,8 +8,7 @@ RSpec.describe Locabulary::Schema do
     context "for #{File.basename(filename, '.json')}" do
       it "has a valid schema" do
         json = JSON.parse(File.read(filename)).deep_symbolize_keys
-        schema = Locabulary::Schema.new
-        expect(schema.call(json).messages).to eq({})
+        expect(Locabulary::Schema.call(json).messages).to eq({})
       end
     end
   end

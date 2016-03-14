@@ -30,14 +30,14 @@ RSpec.describe Locabulary::JsonCreator do
         {
           "predicate_name" => "administrative_units",
           "term_label" => "University of Notre Dame::School of Architecture",
-          "term_uri" => "http://architecture.nd.edu/",
+          "homepage" => "http://architecture.nd.edu/",
           "activated_on" => "2015-07-22"
         },
         {
           "predicate_name" => "administrative_units",
           "term_label" => "University of Notre Dame::Centers and Institutes::Center for Building Communities",
-          "term_uri" => "http://buildingcommunities.nd.edu/",
           "affiliation" => "University of Notre Dame::School of Architecture",
+          "homepage" => "http://buildingcommunities.nd.edu/",
           "activated_on" => "2015-07-22"
         }
       ]

@@ -2,7 +2,7 @@ require "google/api_client"
 require "google_drive"
 require 'highline/import'
 require 'locabulary'
-require 'locabulary/item'
+require 'locabulary/items'
 require 'json'
 
 module Locabulary
@@ -48,7 +48,7 @@ module Locabulary
         final["predicate_name"] = predicate_name
         final["term_label"] = line.join('::')
         final["default_presentation_sequence"] = row[9].to_s.strip == '' ? nil : row[9].to_i
-        final["term_uri"] = row[4]
+        final["homepage"] = row[4]
         final["deposit_label"] = row[5]
         final["description"] = row[6]
         final["grouping"] = row[7]
@@ -61,7 +61,7 @@ module Locabulary
 
     def convert_to_json(data)
       json_array = data.map do |row|
-        Locabulary::Item.new(row).to_h
+        Locabulary::Items.build(row).to_h
       end
       @json_data = JSON.pretty_generate("predicate_name" => predicate_name, "values" => json_array)
     end
