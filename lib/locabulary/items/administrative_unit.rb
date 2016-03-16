@@ -61,8 +61,13 @@ module Locabulary
         children.count == 0
       end
 
+      NON_DEPARTMENTAL_SLUG = "Non-Departmental".freeze
       def selectable_label
-        slugs[1..-1].join(HIERARCHY_SEPARATOR)
+        if slugs[-1] == NON_DEPARTMENTAL_SLUG
+          slugs[-2..-1].join(HIERARCHY_SEPARATOR)
+        else
+          slugs[-1]
+        end
       end
 
       alias selectable_id id
