@@ -1,3 +1,4 @@
+# encoding: UTF-8
 require 'locabulary/exceptions'
 require 'locabulary/items/base'
 
@@ -61,8 +62,15 @@ module Locabulary
         children.count == 0
       end
 
+      NON_DEPARTMENTAL_SLUG = "Non-Departmental".freeze
+      # NOTE: The whitespace characters are "thin spaces", U+200A
+      HUMAN_FRIENDLY_HIERARCHY_SEPARATOR = ' — '.freeze
       def selectable_label
-        slugs[1..-1].join(HIERARCHY_SEPARATOR)
+        if slugs[-1] == NON_DEPARTMENTAL_SLUG
+          slugs[-2..-1].join(HUMAN_FRIENDLY_HIERARCHY_SEPARATOR)
+        else
+          slugs[-1]
+        end
       end
 
       alias selectable_id id

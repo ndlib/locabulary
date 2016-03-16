@@ -34,8 +34,14 @@ RSpec.describe Locabulary::Items::AdministrativeUnit do
   end
 
   context '#selectable_label' do
-    it 'excludes the root' do
-      expect(subject.selectable_label).to eq('Galaxy::Planet')
+    it 'is the last slug' do
+      expect(subject.selectable_label).to eq('Planet')
+    end
+    it 'is the second to last and last slug if we have a Non-Departmental last slug' do
+      subject = Locabulary::Items::AdministrativeUnit.new(term_label: "Universe::Galaxy::#{described_class::NON_DEPARTMENTAL_SLUG}")
+      expect(subject.selectable_label).to eq(
+        "Galaxy#{described_class::HUMAN_FRIENDLY_HIERARCHY_SEPARATOR}#{described_class::NON_DEPARTMENTAL_SLUG}"
+      )
     end
   end
 
