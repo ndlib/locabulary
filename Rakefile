@@ -21,6 +21,16 @@ namespace :commitment do
   task :configure_test_for_code_coverage do
     ENV['COVERAGE'] = 'true'
   end
+  desc "Check for code that can go faster"
+  task :fasterer do
+    require 'fasterer/file_traverser'
+    file_traverser = Fasterer::FileTraverser.new(nil)
+    file_traverser.traverse
+    if file_traverser.offenses_found?
+      $stderr.puts "You can make the code go faster, see above. You can add exceptions in .fasterer.yml"
+      abort
+    end
+  end
   task :code_coverage do
     require 'json'
     $stdout.puts "Checking code_coverage"
@@ -38,5 +48,5 @@ namespace :commitment do
   end
 end
 
-task(default: [:rubocop, 'commitment:configure_test_for_code_coverage', :spec, 'commitment:code_coverage'])
+task(default: [:rubocop, 'commitment:fasterer', 'commitment:configure_test_for_code_coverage', :spec, 'commitment:code_coverage'])
 task(release: :default)

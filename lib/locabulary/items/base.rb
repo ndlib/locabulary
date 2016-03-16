@@ -52,7 +52,7 @@ module Locabulary
 
       def initialize(attributes = {})
         attribute_names.each do |key|
-          value = attributes.fetch(key) { attributes.fetch(key.to_s, nil) }
+          value = attributes[key] || attributes[key.to_s]
           send("#{key}=", value)
         end
       end
