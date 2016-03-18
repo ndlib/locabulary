@@ -74,7 +74,7 @@ module Locabulary
   def data_is_active?(data, as_of)
     activated_on = Date.parse(data.fetch('activated_on'))
     return false unless activated_on < as_of
-    deactivated_on_value = data.fetch('deactivated_on', nil)
+    deactivated_on_value = data['deactivated_on']
     return true if deactivated_on_value.nil?
     deactivated_on = Date.parse(deactivated_on_value)
     return false unless deactivated_on >= as_of
