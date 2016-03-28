@@ -21,6 +21,7 @@ AllCops:
     - 'tmp/**/*'
     - 'bin/**/*'
     - 'lib/milan/registry.rb'
+    - 'script/*'
   TargetRubyVersion: 2.2
 Rails:
   Enabled: false
