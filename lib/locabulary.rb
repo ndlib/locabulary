@@ -30,12 +30,12 @@ module Locabulary
   end
 
   # @api public
-  # @since 0.2.0
-  def active_hierarchical_root(options = {})
+  # @since 0.3.0
+  def active_hierarchical_roots(options = {})
     predicate_name = options.fetch(:predicate_name)
     as_of = options.fetch(:as_of) { Date.today }
     builder = Items.builder_for(predicate_name: predicate_name)
-    active_hierarchical_root_cache[predicate_name] ||= begin
+    active_hierarchical_root_caches[predicate_name] ||= begin
       items = []
       hierarchy_graph_keys = {}
       top_level_slugs = Set.new
@@ -46,8 +46,7 @@ module Locabulary
         hierarchy_graph_keys[item.term_label] = item
       end
       associate_parents_and_childrens_for(hierarchy_graph_keys, items, predicate_name)
-      raise Exceptions::TooManyHierarchicalRootsError.new(predicate_name, top_level_slugs.to_a) if top_level_slugs.size > 1
-      hierarchy_graph_keys.fetch(top_level_slugs.first)
+      top_level_slugs.map { |slug| hierarchy_graph_keys.fetch(slug) }
     end
   end
 
@@ -113,13 +112,13 @@ module Locabulary
   end
 
   # @api private
-  def active_hierarchical_root_cache
-    @active_hierarchical_root_cache ||= {}
+  def active_hierarchical_root_caches
+    @active_hierarchical_root_caches ||= {}
   end
 
   # @api private
   def reset_active_cache!
     @active_cache = nil
-    @active_hierarchical_root_cache = nil
+    @active_hierarchical_root_caches = nil
   end
 end

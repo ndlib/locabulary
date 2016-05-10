@@ -13,13 +13,5 @@ module Locabulary
         super("Expected #{predicate_name.inspect} to have a welformed tree. Error: #{error}")
       end
     end
-
-    # There is a problem with the hierarchy; Instead of a tree we have a multitude of trees
-    class TooManyHierarchicalRootsError < RuntimeError
-      attr_reader :predicate_name, :roots
-      def initialize(predicate_name, roots)
-        super("Expected fewer root slugs for #{predicate_name.inspect}. Roots encountered: #{roots.inspect}")
-      end
-    end
   end
 end
