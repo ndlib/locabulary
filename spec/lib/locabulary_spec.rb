@@ -46,7 +46,14 @@ RSpec.describe Locabulary do
       item6 = { term_label: 'Bizarro::World' }
       item7 = { term_label: 'Bizarro' }
       expect(described_class).to(
-        receive(:with_active_extraction_for).and_yield(item1).and_yield(item2).and_yield(item3).and_yield(item4).and_yield(item5).and_yield(item6).and_yield(item7)
+        receive(:with_active_extraction_for)
+          .and_yield(item1)
+          .and_yield(item2)
+          .and_yield(item3)
+          .and_yield(item4)
+          .and_yield(item5)
+          .and_yield(item6)
+          .and_yield(item7)
       )
       roots = described_class.active_hierarchical_roots(predicate_name: 'administrative_units')
 
