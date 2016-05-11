@@ -887,6 +887,19 @@
       "affiliation": "University of Notre Dame::College of Engineering",
       "homepage": "http://wireless.nd.edu/",
       "activated_on": "2015-07-22"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "Catholic Organizations",
+      "classification": "OrganizationalGroup",
+      "activated_on": "2015-07-22"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "Catholic Organizations::Catholic Research Resources Alliance",
+      "classification": "Organization",
+      "homepage": "http://www.catholicresearch.net/",
+      "activated_on": "2015-07-22"
     }
   ]
 }
