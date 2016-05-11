@@ -30,7 +30,7 @@ module Locabulary
   end
 
   # @api public
-  # @since 0.3.0
+  # @since 0.4.0
   def active_hierarchical_roots(options = {})
     predicate_name = options.fetch(:predicate_name)
     as_of = options.fetch(:as_of) { Date.today }
