@@ -4,7 +4,7 @@ require 'locabulary/items/administrative_unit'
 module Locabulary
   class AdministrativeUnitSorter
     attr_reader :hierarchial_facet_tree
-    def initialize(hierarchial_facet_tree = {})     HierarchicalFacet
+    def initialize(hierarchial_facet_tree = {})
       @hierarchial_facet_tree = hierarchial_facet_tree
     end
 
@@ -42,4 +42,3 @@ module Locabulary
     end
   end
 end
-
