@@ -48,6 +48,23 @@ module Locabulary
     end
   end
 
+  # @api public
+  # @since 0.5.0
+  # @param options [Hash]
+  # @option predicate_name [String]
+  # @option label [String]
+  # @option as_of [Date] Optional
+  # @raise ItemNotFoundError if unable to find label for predicate_name
+  # @return Locabulary::Item
+  def self.item_for(options = {})
+    predicate_name = options.fetch(:predicate_name)
+    label = options.fetch(:label)
+    as_of = options.fetch(:as_of) { Date.today }
+    builder = Items.builder_for(predicate_name: predicate_name)
+    returning_value = nil
+    # Code goes here! Leverage the with_extraction_for method and the builder.
+  end
+
   def self.associate_parents_and_childrens_for(hierarchy_graph_keys, items, predicate_name)
     items.each do |item|
       begin
@@ -59,10 +76,17 @@ module Locabulary
   end
   private_class_method :associate_parents_and_childrens_for
 
-  def self.with_active_extraction_for(predicate_name, as_of)
+  def self.with_extraction_for(predicate_name)
     filename = filename_for_predicate_name(predicate_name: predicate_name)
     json = JSON.parse(File.read(filename))
     json.fetch('values').each do |data|
+      yield(data)
+    end
+  end
+  private_class_method :with_extraction_for
+
+  def self.with_active_extraction_for(predicate_name, as_of)
+    with_extraction_for(predicate_name) do |data|
       yield(data) if data_is_active?(data, as_of)
     end
   end

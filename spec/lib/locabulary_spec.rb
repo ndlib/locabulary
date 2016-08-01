@@ -80,6 +80,23 @@ RSpec.describe Locabulary do
     end
   end
 
+  context '.item_for' do
+    # Create a data/spec.json file that assists with these specs
+    it 'returns an active item for the given predicate_name and label' do
+      item = described_class.item_for(predicate_name: 'spec', label: 'Active Item', as_of: Date.today)
+      expect(item).to be_a(Locabulary::Item::Base)
+    end
+    it 'returns a found deactived item if no active item is found for the given predicate_name and label' do
+      item = described_class.item_for(predicate_name: 'spec', label: 'Deactive Item', as_of: Date.today)
+      expect(item).to be_a(Locabulary::Item::Base)
+    end
+    it 'raises an exception if no item is found' do
+      expect do
+        described_class.item_for(predicate_name: 'spec', label: 'Very Much Missing')
+      end.to raise_error(Locabulary::Exceptions::ItemNotFoundError)
+    end
+  end
+
   context '.data_is_active?' do
     let(:as_of) { Date.parse('2015-10-23') }
     it 'returns false if the data not yet activated' do
