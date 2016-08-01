@@ -9,7 +9,7 @@ module Locabulary
       @hierarchial_facet_tree = hierarchial_facet_tree
     end
 
-    #This method return sorted locabulary hierarchical tree for given set of administrative_unit items
+    # This method return sorted locabulary hierarchical tree for given set of administrative_unit items
     def sorted_hierarchical_facets_for
       nodes = []
       hierarchial_facet_tree.each_pair do |key, sub_facets|
