@@ -35,7 +35,7 @@ module Locabulary
 
     def new_node(solr_facet_struct)
       items = Locabulary.active_items_for(predicate_name: "administrative_units")
-      term_label=solr_facet_struct.qvalue.gsub(/(?<!:):(?!:)/, "::")
+      term_label = solr_facet_struct.qvalue.gsub(/(?<!:):(?!:)/, "::")
       items.each do |administrative_unit|
         if administrative_unit.term_label == term_label
           return administrative_unit
