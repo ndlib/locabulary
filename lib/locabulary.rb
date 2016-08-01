@@ -10,10 +10,10 @@ module Locabulary
   # @api public
   # @since 0.1.0
   #
-  # @note A concession about the as_of; This is not a live query. The data has a
-  #   low churn rate. And while the date is important, I'm not as concerned
-  #   about the local controlled vocabulary exposing a date that has expired.
-  #   When we next deploy the server changes, the deactivated will go away.
+  # @note A concession about the as_of; This is not a live query. The cached data
+  #   for active entries is stored in memory. We don't invalidate the cache until
+  #   there is another deploy. I'm not concerned if we have expired data, as this
+  #   data once was valid. When we redeploy the service, the cache will be rebuilt.
   def self.active_items_for(options = {})
     predicate_name = options.fetch(:predicate_name)
     as_of = options.fetch(:as_of) { Date.today }
