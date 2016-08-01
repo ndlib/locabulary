@@ -20,13 +20,14 @@ module Locabulary
 
     private
 
-    def build_node_for(key, sub_facets)
+    def build_node_for(_key, sub_facets)
       arr = sub_facets.shift
       key_struct = arr.last
       node = new_node(key_struct)
       return node if sub_facets.is_a?(String)
-      sub_facets.each_pair do |key, sub_sub_facets|
-        node.add_child(build_node_for(sub_sub_facets[:_], sub_sub_facets))
+      sub_facets.each_pair do |_sub_key, sub_sub_facets|
+        child_node = build_node_for(sub_sub_facets.fetch(:_), sub_sub_facets)
+        node.add_child(child_node)
       end
       node.sort_children
       node
