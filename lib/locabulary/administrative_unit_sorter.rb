@@ -1,6 +1,3 @@
-require 'locabulary/items/base'
-require 'hanami/utils/string'
-require 'locabulary/items/administrative_unit'
 module Locabulary
   # Responsible for sorting a hierarchical facet tree.
   class AdministrativeUnitSorter
