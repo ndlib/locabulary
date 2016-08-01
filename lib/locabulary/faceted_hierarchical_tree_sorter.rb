@@ -1,6 +1,6 @@
 module Locabulary
   # Responsible for sorting a hierarchical facet tree.
-  class AdministrativeUnitSorter
+  class FacetedHierarchicalTreeSorter
     attr_reader :hierarchial_facet_tree
     def initialize(hierarchial_facet_tree = {})
       @hierarchial_facet_tree = hierarchial_facet_tree

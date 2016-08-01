@@ -1,7 +1,7 @@
 require 'spec_helper'
-require 'locabulary/administrative_unit_sorter'
+require 'locabulary/faceted_hierarchical_tree_sorter'
 
-RSpec.describe Locabulary::AdministrativeUnitSorter do
+RSpec.describe Locabulary::FacetedHierarchicalTreeSorter do
   before do
     FacetableStruct = Struct.new(:qvalue, :value, :hits)
   end
