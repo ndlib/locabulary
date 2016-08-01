@@ -2,23 +2,35 @@ require 'spec_helper'
 require 'locabulary/administrative_unit_sorter'
 
 RSpec.describe Locabulary::AdministrativeUnitSorter do
+  before do
+    FacetableStruct = Struct.new(:qvalue, :value, :hits)
+  end
+  after { Object.remove_const(:FacetableStruct) }
   let(:mock_input_hash) do
-    {"University of Notre Dame"=>
-      { :_=>OpenStruct.new(  qvalue: "University of Notre Dame", value: "University of Notre Dame", hits: 3),
-        "College of Engineering"=>{
-          :_=>OpenStruct.new(  qvalue: "University of Notre Dame:College of Engineering", value: "College of Engineering", hits: 1),
-          "Electrical Engineering"=> {
-            :_=>OpenStruct.new(  qvalue: "University of Notre Dame:College of Engineering:Electrical Engineering", value: "Electrical Engineering", hits: 1)}},
-        "College of Arts and Letters"=>
-          { :_=>OpenStruct.new(  qvalue: "University of Notre Dame:College of Arts and Letters", value: "College of Arts and Letters", hits: 2),
-            "Africana Studies"=>
-              { :_=>OpenStruct.new(  qvalue: "University of Notre Dame:College of Arts and Letters:Africana Studies", value: "Africana Studies", hits: 1)},
-            "East Asian Languages & Cultures"=>
-              { :_=>OpenStruct.new(  qvalue: "University of Notre Dame:College of Arts and Letters:East Asian Languages & Cultures", value: "East Asian Languages & Cultures", hits: 1)}},
-        "Mendoza College of Business"=>{
-          :_=>OpenStruct.new(  qvalue: "University of Notre Dame:Mendoza College of Business", value: "Mendoza College of Business", hits: 1),
-          "Finance"=> {
-            :_=>OpenStruct.new(  qvalue: "University of Notre Dame:Mendoza College of Business:Finance", value: "Finance", hits: 1)
+    {
+      "University of Notre Dame" => {
+        _: FacetableStruct.new("University of Notre Dame", "University of Notre Dame", 3),
+        "College of Engineering" => {
+          _: FacetableStruct.new("University of Notre Dame:College of Engineering", "College of Engineering", 1),
+          "Electrical Engineering" => {
+            _: FacetableStruct.new("University of Notre Dame:College of Engineering:Electrical Engineering", "Electrical Engineering", 1)
+          }
+        },
+        "College of Arts and Letters" => {
+          _: FacetableStruct.new("University of Notre Dame:College of Arts and Letters", "College of Arts and Letters", 2),
+          "Africana Studies" => {
+            _: FacetableStruct.new("University of Notre Dame:College of Arts and Letters:Africana Studies", "Africana Studies", 1)
+          },
+          "East Asian Languages & Cultures" => {
+            _: FacetableStruct.new(
+              "University of Notre Dame:College of Arts and Letters:East Asian Languages & Cultures", "East Asian Languages & Cultures", 1
+            )
+          }
+        },
+        "Mendoza College of Business" => {
+          _: FacetableStruct.new("University of Notre Dame:Mendoza College of Business", "Mendoza College of Business", 1),
+          "Finance" => {
+            _: FacetableStruct.new("University of Notre Dame:Mendoza College of Business:Finance", "Finance", 1)
           }
         }
       }
@@ -26,25 +38,32 @@ RSpec.describe Locabulary::AdministrativeUnitSorter do
   end
 
   let(:expected_output) do
-    {"University of Notre Dame"=>
-      { :_=>OpenStruct.new(  qvalue: "University of Notre Dame", value: "University of Notre Dame", hits: 3),
-        "College of Arts and Letters"=>
-          { :_=>OpenStruct.new(  qvalue: "University of Notre Dame:College of Arts and Letters", value: "College of Arts and Letters", hits: 2),
-            "Africana Studies"=>
-                { :_=>OpenStruct.new(  qvalue: "University of Notre Dame:College of Arts and Letters:Africana Studies", value: "Africana Studies", hits: 1)},
-            "East Asian Languages & Cultures"=>
-                { :_=>OpenStruct.new(  qvalue: "University of Notre Dame:College of Arts and Letters:East Asian Languages & Cultures", value: "East Asian Languages & Cultures", hits: 1)}
-        },
-        "Mendoza College of Business"=>{
-          :_=>OpenStruct.new(  qvalue: "University of Notre Dame:Mendoza College of Business", value: "Mendoza College of Business", hits: 1),
-          "Finance"=> {
-          :_=>OpenStruct.new(  qvalue: "University of Notre Dame:Mendoza College of Business:Finance", value: "Finance", hits: 1)
+    {
+      "University of Notre Dame" => {
+        _: FacetableStruct.new("University of Notre Dame", "University of Notre Dame", 3),
+        "College of Arts and Letters" => {
+          _: FacetableStruct.new("University of Notre Dame:College of Arts and Letters", "College of Arts and Letters", 2),
+          "Africana Studies" => {
+            _: FacetableStruct.new("University of Notre Dame:College of Arts and Letters:Africana Studies", "Africana Studies", 1)
+          },
+          "East Asian Languages & Cultures" => {
+            _: FacetableStruct.new(
+              "University of Notre Dame:College of Arts and Letters:East Asian Languages & Cultures", "East Asian Languages & Cultures", 1
+            )
           }
         },
-        "College of Engineering"=>{
-          :_=>OpenStruct.new(  qvalue: "University of Notre Dame:College of Engineering", value: "College of Engineering", hits: 1),
-          "Electrical Engineering"=> {
-          :_=>OpenStruct.new(  qvalue: "University of Notre Dame:College of Engineering:Electrical Engineering", value: "Electrical Engineering", hits: 1)}},
+        "Mendoza College of Business" => {
+          _: FacetableStruct.new("University of Notre Dame:Mendoza College of Business", "Mendoza College of Business", 1),
+          "Finance" => {
+            _: FacetableStruct.new("University of Notre Dame:Mendoza College of Business:Finance", "Finance", 1)
+          }
+        },
+        "College of Engineering" => {
+          _: FacetableStruct.new("University of Notre Dame:College of Engineering", "College of Engineering", 1),
+          "Electrical Engineering" => {
+            _: FacetableStruct.new("University of Notre Dame:College of Engineering:Electrical Engineering", "Electrical Engineering", 1)
+          }
+        }
       }
     }
   end
