@@ -89,9 +89,9 @@ module Locabulary
 
       def <=>(other)
         predicate_name_sort = predicate_name <=> other.predicate_name
-        return predicate_name_sort unless predicate_name_sort == 0
+        return predicate_name_sort unless predicate_name_sort.zero?
         presentation_sequence_sort = presentation_sequence <=> other.presentation_sequence
-        return presentation_sequence_sort unless presentation_sequence_sort == 0
+        return presentation_sequence_sort unless presentation_sequence_sort.zero?
         term_label <=> other.term_label
       end
 

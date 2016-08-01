@@ -21,7 +21,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "json", "~> 1.8"
   spec.add_dependency "dry-configurable"
-  spec.add_dependency "hanami-utils"
+  spec.add_dependency "activesupport", '~>4.0'
 
   spec.add_development_dependency "dry-validation"
   spec.add_development_dependency "bundler"
@@ -30,7 +30,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency 'google_drive'
   spec.add_development_dependency 'highline'
-  spec.add_development_dependency "activesupport", "~>4.0"
   spec.add_development_dependency "rubocop"
   spec.add_development_dependency "simplecov"
   spec.add_development_dependency "codeclimate-test-reporter"

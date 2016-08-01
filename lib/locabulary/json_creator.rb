@@ -1,4 +1,3 @@
-require "google/api_client"
 require "google_drive"
 require 'highline/import'
 require 'locabulary'
