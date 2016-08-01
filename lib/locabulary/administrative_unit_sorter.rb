@@ -18,6 +18,8 @@ module Locabulary
       nodes
     end
 
+    private
+
     def build_node_for(key, sub_facets)
       arr = sub_facets.shift
       key_struct = arr.last
