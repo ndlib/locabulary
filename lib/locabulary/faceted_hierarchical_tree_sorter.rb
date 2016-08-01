@@ -1,21 +1,22 @@
 module Locabulary
   # Responsible for sorting a hierarchical facet tree.
   class FacetedHierarchicalTreeSorter
-    attr_reader :hierarchial_facet_tree
-    def initialize(hierarchial_facet_tree = {})
-      @hierarchial_facet_tree = hierarchial_facet_tree
+    def initialize(tree = {})
+      @tree = tree
     end
 
     # This method return sorted locabulary hierarchical tree for given set of administrative_unit items
-    def sorted_hierarchical_facets_for
+    def call
       nodes = []
-      hierarchial_facet_tree.each_pair do |key, sub_facets|
+      tree.each_pair do |key, sub_facets|
         nodes << build_node_for(key, sub_facets)
       end
       nodes
     end
 
     private
+
+    attr_reader :tree
 
     def build_node_for(_key, sub_facets)
       arr = sub_facets.shift
