@@ -59,7 +59,7 @@ module Locabulary
       end
 
       def selectable?
-        children.count == 0
+        children.count.zero?
       end
 
       NON_DEPARTMENTAL_SLUG = "Non-Departmental".freeze
