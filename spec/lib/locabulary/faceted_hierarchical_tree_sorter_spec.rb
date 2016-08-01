@@ -1,11 +1,8 @@
 require 'spec_helper'
 require 'locabulary/faceted_hierarchical_tree_sorter'
+require 'spec_helper/facetable_struct'
 
 RSpec.describe Locabulary::FacetedHierarchicalTreeSorter do
-  before do
-    FacetableStruct = Struct.new(:qvalue, :value, :hits)
-  end
-  after { Object.remove_const(:FacetableStruct) }
   let(:mock_input_hash) do
     {
       "University of Notre Dame" => {
