@@ -7,8 +7,6 @@ require 'locabulary/items'
 module Locabulary
   DATA_DIRECTORY = File.expand_path("../../data/", __FILE__).freeze
 
-  module_function
-
   # @api public
   # @since 0.1.0
   #
@@ -16,7 +14,7 @@ module Locabulary
   #   low churn rate. And while the date is important, I'm not as concerned
   #   about the local controlled vocabulary exposing a date that has expired.
   #   When we next deploy the server changes, the deactivated will go away.
-  def active_items_for(options = {})
+  def self.active_items_for(options = {})
     predicate_name = options.fetch(:predicate_name)
     as_of = options.fetch(:as_of) { Date.today }
     builder = Items.builder_for(predicate_name: predicate_name)
@@ -31,7 +29,7 @@ module Locabulary
 
   # @api public
   # @since 0.4.0
-  def active_hierarchical_roots(options = {})
+  def self.active_hierarchical_roots(options = {})
     predicate_name = options.fetch(:predicate_name)
     as_of = options.fetch(:as_of) { Date.today }
     builder = Items.builder_for(predicate_name: predicate_name)
@@ -50,7 +48,7 @@ module Locabulary
     end
   end
 
-  def associate_parents_and_childrens_for(hierarchy_graph_keys, items, predicate_name)
+  def self.associate_parents_and_childrens_for(hierarchy_graph_keys, items, predicate_name)
     items.each do |item|
       begin
         hierarchy_graph_keys.fetch(item.parent_term_label).add_child(item) unless item.parent_slugs.empty?
@@ -59,18 +57,18 @@ module Locabulary
       end
     end
   end
-  private :associate_parents_and_childrens_for
+  private_class_method :associate_parents_and_childrens_for
 
-  def with_active_extraction_for(predicate_name, as_of)
+  def self.with_active_extraction_for(predicate_name, as_of)
     filename = filename_for_predicate_name(predicate_name: predicate_name)
     json = JSON.parse(File.read(filename))
     json.fetch('values').each do |data|
       yield(data) if data_is_active?(data, as_of)
     end
   end
-  private :with_active_extraction_for
+  private_class_method :with_active_extraction_for
 
-  def data_is_active?(data, as_of)
+  def self.data_is_active?(data, as_of)
     activated_on = Date.parse(data.fetch('activated_on'))
     return false unless activated_on < as_of
     deactivated_on_value = data['deactivated_on']
@@ -79,11 +77,11 @@ module Locabulary
     return false unless deactivated_on >= as_of
     true
   end
-  private :data_is_active?
+  private_class_method :data_is_active?
 
   # @api public
   # @since 0.1.0
-  def active_label_for_uri(options = {})
+  def self.active_label_for_uri(options = {})
     predicate_name = options.fetch(:predicate_name)
     term_uri = options.fetch(:term_uri)
     object = active_items_for(predicate_name: predicate_name).detect { |obj| obj.term_uri == term_uri }
@@ -93,13 +91,13 @@ module Locabulary
 
   # @api public
   # @since 0.1.0
-  def active_labels_for(options = {})
+  def self.active_labels_for(options = {})
     predicate_name = options.fetch(:predicate_name)
     active_items_for(predicate_name: predicate_name).map(&:term_label)
   end
 
   # @api private
-  def filename_for_predicate_name(options = {})
+  def self.filename_for_predicate_name(options = {})
     predicate_name = options.fetch(:predicate_name)
     filename = File.join(DATA_DIRECTORY, "#{File.basename(predicate_name)}.json")
     return filename if File.exist?(filename)
@@ -107,17 +105,17 @@ module Locabulary
   end
 
   # @api private
-  def active_cache
+  def self.active_cache
     @active_cache ||= {}
   end
 
   # @api private
-  def active_hierarchical_root_caches
+  def self.active_hierarchical_root_caches
     @active_hierarchical_root_caches ||= {}
   end
 
   # @api private
-  def reset_active_cache!
+  def self.reset_active_cache!
     @active_cache = nil
     @active_hierarchical_root_caches = nil
   end
