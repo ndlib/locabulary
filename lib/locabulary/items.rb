@@ -3,11 +3,9 @@ require 'active_support/core_ext/string/inflections'
 module Locabulary
   # A container for the various types of Locabulary Items
   module Items
-    module_function
-
     # @api public
     # @since 0.2.1
-    def build(options = {})
+    def self.build(options = {})
       predicate_name = options.fetch(:predicate_name) { options.fetch('predicate_name') }
       builder_for(predicate_name: predicate_name).call(options)
     end
@@ -17,7 +15,7 @@ module Locabulary
     #
     # @param options [Hash]
     # @option predicate_name [String] Used for lookup of the correct Locabulary::Item type
-    def builder_for(options = {})
+    def self.builder_for(options = {})
       predicate_name = options.fetch(:predicate_name)
       possible_class_name_for_predicate_name = predicate_name.singularize.classify
       klass = begin
