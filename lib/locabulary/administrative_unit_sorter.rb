@@ -24,12 +24,11 @@ module Locabulary
       arr = sub_facets.shift
       key_struct = arr.last
       node = new_node(key_struct)
-      unless sub_facets.is_a?(String)
-        sub_facets.each_pair do |key, sub_sub_facets|
-          node.add_child(build_node_for(sub_sub_facets[:_], sub_sub_facets))
-        end
-        node.sort_children
+      return node if sub_facets.is_a?(String)
+      sub_facets.each_pair do |key, sub_sub_facets|
+        node.add_child(build_node_for(sub_sub_facets[:_], sub_sub_facets))
       end
+      node.sort_children
       node
     end
 
