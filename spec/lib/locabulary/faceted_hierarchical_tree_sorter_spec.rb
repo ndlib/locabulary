@@ -38,7 +38,7 @@ RSpec.describe Locabulary::FacetedHierarchicalTreeSorter do
   subject { Locabulary::FacetedHierarchicalTreeSorter.new(tree: tree, predicate_name: 'administrative_units') }
 
   context '#call' do
-    it 'should return a wrapper object' do
+    it 'should return an array of wrapper objects' do
       mapper = ->(node) { [node.term_label, node.hits] }
       nodes = subject.call
       mapped_nodes = nodes.map(&mapper)
@@ -52,5 +52,6 @@ RSpec.describe Locabulary::FacetedHierarchicalTreeSorter do
         ]
       )
     end
+    pending 'should handle a missing term by building a basic item from the given facet'
   end
 end
