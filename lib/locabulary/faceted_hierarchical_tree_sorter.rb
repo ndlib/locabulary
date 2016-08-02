@@ -1,3 +1,4 @@
+require 'locabulary/facet_wrapper_for_item'
 module Locabulary
   # Responsible for sorting a hierarchical facet tree.
   class FacetedHierarchicalTreeSorter
@@ -20,7 +21,7 @@ module Locabulary
 
     private
 
-    attr_reader :tree
+    attr_reader :tree, :predicate_name
 
     def build_node_for(_key, sub_facets)
       arr = sub_facets.shift
@@ -31,19 +32,18 @@ module Locabulary
         child_node = build_node_for(sub_sub_facets.fetch(:_), sub_sub_facets)
         node.add_child(child_node)
       end
-      node.sort_children
       node
     end
 
     def new_node(solr_facet_struct)
       items = Locabulary.active_items_for(predicate_name: predicate_name)
       term_label = solr_facet_struct.qvalue.gsub(/(?<!:):(?!:)/, "::")
-      items.each do |administrative_unit|
-        if administrative_unit.term_label == term_label
-          return administrative_unit
+      items.each do |item|
+        if item.term_label == term_label
+          return FacetWrapperForItem.new(faceted_node: solr_facet_struct, locabulary_item: item)
         end
       end
-      solr_facet_struct
+      raise
     end
   end
 end

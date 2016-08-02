@@ -37,10 +37,6 @@ module Locabulary
         @children.sort
       end
 
-      def sort_children
-        @children.sort!
-      end
-
       def add_child(*input)
         @children += input
       end
