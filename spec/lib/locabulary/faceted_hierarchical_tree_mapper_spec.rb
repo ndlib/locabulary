@@ -1,9 +1,9 @@
 require 'spec_helper'
 require 'locabulary'
-require 'locabulary/faceted_hierarchical_tree_sorter'
+require 'locabulary/faceted_hierarchical_tree_mapper'
 require 'spec_helper/facetable_struct'
 
-RSpec.describe Locabulary::FacetedHierarchicalTreeSorter do
+RSpec.describe Locabulary::FacetedHierarchicalTreeMapper do
   let(:tree) do
     {
       "University of Notre Dame" => {
@@ -38,7 +38,7 @@ RSpec.describe Locabulary::FacetedHierarchicalTreeSorter do
     }
   end
 
-  subject { Locabulary::FacetedHierarchicalTreeSorter.new(tree: tree, predicate_name: 'administrative_units') }
+  subject { described_class.new(tree: tree, predicate_name: 'administrative_units') }
 
   context '#call' do
     it 'should return an array of wrapper objects' do
@@ -68,7 +68,7 @@ RSpec.describe Locabulary::FacetedHierarchicalTreeSorter do
       tree = {
         "College of Wizardry" => { _: FacetableStruct.new("College of Wizardry", "College of Wizardry", 3) }
       }
-      sorter = Locabulary::FacetedHierarchicalTreeSorter.new(tree: tree, predicate_name: 'administrative_units')
+      sorter = described_class.new(tree: tree, predicate_name: 'administrative_units')
       mapped_nodes = sorter.call
       expect(mapped_nodes.first).to be_a(Locabulary::FacetWrapperForItem)
     end

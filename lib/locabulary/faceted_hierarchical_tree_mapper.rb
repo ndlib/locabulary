@@ -1,7 +1,7 @@
 require 'locabulary/facet_wrapper_for_item'
 module Locabulary
-  # Responsible for sorting a hierarchical facet tree.
-  class FacetedHierarchicalTreeSorter
+  # Responsible for mapping a faceted tree into a hierarchical tree that has sorted children.
+  class FacetedHierarchicalTreeMapper
     # @param options [Hash]
     # @option tree [Hash]
     # @option predicate_name [String]
