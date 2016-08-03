@@ -1,13 +1,13 @@
 # encoding: UTF-8
 require 'locabulary/exceptions'
-require 'locabulary/items/base'
+require 'locabulary/item/base'
 
 module Locabulary
-  module Items
+  module Item
     # Responsible for exposing the data structure logic of the Administrative Units
     #
     # @see ./data/administrative_units.json
-    class AdministrativeUnit < Locabulary::Items::Base
+    class AdministrativeUnit < Locabulary::Item::Base
       configure do |config|
         config.attribute_names = [
           :predicate_name, :term_label, :term_uri, :description, :grouping, :classification, :affiliation, :default_presentation_sequence,

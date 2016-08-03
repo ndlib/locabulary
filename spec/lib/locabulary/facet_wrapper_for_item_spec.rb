@@ -1,16 +1,16 @@
 require 'spec_helper'
 require 'spec_helper/facetable_struct'
 require 'locabulary/facet_wrapper_for_item'
-require 'locabulary/items/base'
+require 'locabulary/item/base'
 
 module Locabulary
   RSpec.describe FacetWrapperForItem do
     let(:faceted_node) { FacetableStruct.new('my_qvalue', 'my_value', 123) }
     context '.build_for_faceted_node_and_locabulary_item' do
-      let(:item) { Items::Base.new(predicate_name: 'hello', term_label: 'world') }
+      let(:item) { Item::Base.new(predicate_name: 'hello', term_label: 'world') }
       subject { described_class.build_for_faceted_node_and_locabulary_item(faceted_node: faceted_node, locabulary_item: item) }
 
-      it 'builds an underlying Locabulary::Items::Base object' do
+      it 'builds an underlying Locabulary::Item::Base object' do
         expect(subject.term_label).to eq('world')
       end
       it { is_expected.to be_a(described_class) }
@@ -23,7 +23,7 @@ module Locabulary
       subject do
         described_class.build_for_faceted_node(faceted_node: faceted_node, predicate_name: 'administrative_units', term_label: 'world')
       end
-      it 'builds an underlying Locabulary::Items::Base object' do
+      it 'builds an underlying Locabulary::Item::Base object' do
         expect(subject.term_label).to eq('world')
       end
       it { is_expected.to be_a(described_class) }
@@ -33,8 +33,8 @@ module Locabulary
     end
 
     context 'Comparable' do
-      let(:item1) { Items::Base.new(predicate_name: 'hello', term_label: 'world') }
-      let(:item2) { Items::Base.new(predicate_name: 'hello', term_label: 'different world') }
+      let(:item1) { Item::Base.new(predicate_name: 'hello', term_label: 'world') }
+      let(:item2) { Item::Base.new(predicate_name: 'hello', term_label: 'different world') }
       let(:faceted_node1) { FacetableStruct.new('my_qvalue', 'my_value', 123) }
       let(:faceted_node2) { FacetableStruct.new('my_diff_qvalue', 'my_diff_value', 2) }
       let(:wrapper1) { described_class.build_for_faceted_node_and_locabulary_item(locabulary_item: item1, faceted_node: faceted_node1) }

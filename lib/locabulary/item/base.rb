@@ -1,6 +1,6 @@
 require 'dry/configurable'
 module Locabulary
-  module Items
+  module Item
     # A singular item in the controlled vocubulary.
     # @see https://en.wikipedia.org/wiki/Resource_Description_Framework
     class Base

@@ -1,7 +1,7 @@
 require 'spec_helper'
-require 'locabulary/items/administrative_unit'
+require 'locabulary/item/administrative_unit'
 
-RSpec.describe Locabulary::Items::AdministrativeUnit do
+RSpec.describe Locabulary::Item::AdministrativeUnit do
   subject { described_class.new }
   its(:attribute_names) { should include(:predicate_name) }
   its(:attribute_names) { should include(:term_label) }
@@ -14,7 +14,7 @@ RSpec.describe Locabulary::Items::AdministrativeUnit do
   its(:attribute_names) { should include(:activated_on) }
   its(:attribute_names) { should include(:deactivated_on) }
 
-  subject { Locabulary::Items::AdministrativeUnit.new(term_label: 'Universe::Galaxy::Planet') }
+  subject { Locabulary::Item::AdministrativeUnit.new(term_label: 'Universe::Galaxy::Planet') }
   context '#selectable?' do
     it 'is true if there are no children' do
       allow(subject).to receive(:children).and_return([])
@@ -38,7 +38,7 @@ RSpec.describe Locabulary::Items::AdministrativeUnit do
       expect(subject.selectable_label).to eq('Planet')
     end
     it 'is the second to last and last slug if we have a Non-Departmental last slug' do
-      subject = Locabulary::Items::AdministrativeUnit.new(term_label: "Universe::Galaxy::#{described_class::NON_DEPARTMENTAL_SLUG}")
+      subject = Locabulary::Item::AdministrativeUnit.new(term_label: "Universe::Galaxy::#{described_class::NON_DEPARTMENTAL_SLUG}")
       expect(subject.selectable_label).to eq(
         "Galaxy#{described_class::HUMAN_FRIENDLY_HIERARCHY_SEPARATOR}#{described_class::NON_DEPARTMENTAL_SLUG}"
       )
@@ -46,7 +46,7 @@ RSpec.describe Locabulary::Items::AdministrativeUnit do
   end
 
   context 'slug methods' do
-    subject { Locabulary::Items::AdministrativeUnit.new(term_label: 'Universe::Galaxy::Planet') }
+    subject { Locabulary::Item::AdministrativeUnit.new(term_label: 'Universe::Galaxy::Planet') }
 
     its(:root_slug) { should eq('Universe') }
     its(:parent_slugs) { should eq(%w(Universe Galaxy)) }
