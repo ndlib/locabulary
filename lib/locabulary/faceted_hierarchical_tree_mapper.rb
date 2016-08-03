@@ -15,7 +15,7 @@ module Locabulary
     # This method return sorted locabulary hierarchical tree for given set of items for the given predicate_name
     def call
       nodes = []
-      tree.each_pair do |_key, facet_branch|
+      tree.each_value do |facet_branch|
         nodes << build_node_for(facet_branch)
       end
       nodes.sort
@@ -28,7 +28,7 @@ module Locabulary
     def build_node_for(facet_branch)
       faceted_node = facet_branch.fetch(:_)
       node = new_node(faceted_node)
-      facet_branch.except(:_).each_pair do |_key, facet_sub_branch|
+      facet_branch.except(:_).each_value do |facet_sub_branch|
         child_node = build_node_for(facet_sub_branch)
         node.add_child(child_node)
       end
