@@ -1,9 +1,11 @@
 require 'locabulary/facet_wrapper_for_item'
+require 'active_support/core_ext/hash/except'
+
 module Locabulary
   # Responsible for mapping a faceted tree into a hierarchical tree that has sorted children.
   class FacetedHierarchicalTreeMapper
     # @param options [Hash]
-    # @option tree [Hash]
+    # @option tree [Hash] - See the specs for the expected structure of the tree
     # @option predicate_name [String]
     def initialize(options = {})
       @tree = options.fetch(:tree)
@@ -13,8 +15,8 @@ module Locabulary
     # This method return sorted locabulary hierarchical tree for given set of items for the given predicate_name
     def call
       nodes = []
-      tree.each_pair do |key, sub_facets|
-        nodes << build_node_for(key, sub_facets)
+      tree.each_pair do |_key, facet_branch|
+        nodes << build_node_for(facet_branch)
       end
       nodes.sort
     end
@@ -23,13 +25,11 @@ module Locabulary
 
     attr_reader :tree, :predicate_name
 
-    def build_node_for(_key, sub_facets)
-      arr = sub_facets.shift
-      key_struct = arr.last
-      node = new_node(key_struct)
-      return node if sub_facets.is_a?(String)
-      sub_facets.each_pair do |_sub_key, sub_sub_facets|
-        child_node = build_node_for(sub_sub_facets.fetch(:_), sub_sub_facets)
+    def build_node_for(facet_branch)
+      faceted_node = facet_branch.fetch(:_)
+      node = new_node(faceted_node)
+      facet_branch.except(:_).each_pair do |_key, facet_sub_branch|
+        child_node = build_node_for(facet_sub_branch)
         node.add_child(child_node)
       end
       node
