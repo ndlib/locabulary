@@ -5,22 +5,40 @@ require 'locabulary/items/base'
 
 module Locabulary
   RSpec.describe FacetWrapperForItem do
-    let(:item) { Items::Base.new(predicate_name: 'hello', term_label: 'world') }
     let(:faceted_node) { FacetableStruct.new('my_qvalue', 'my_value', 123) }
-    subject { described_class.new(faceted_node: faceted_node, locabulary_item: item) }
+    context '.build_for_faceted_node_and_locabulary_item' do
+      let(:item) { Items::Base.new(predicate_name: 'hello', term_label: 'world') }
+      subject { described_class.build_for_faceted_node_and_locabulary_item(faceted_node: faceted_node, locabulary_item: item) }
 
-    it { is_expected.to respond_to(:qvalue) }
-    it { is_expected.to respond_to(:value) }
-    it { is_expected.to respond_to(:hits) }
-    it { is_expected.to respond_to(:term_label) }
+      it 'builds an underlying Locabulary::Items::Base object' do
+        expect(subject.term_label).to eq('world')
+      end
+      it { is_expected.to be_a(described_class) }
+      it { is_expected.to delegate_method(:qvalue).to(:__faceted_node__) }
+      it { is_expected.to delegate_method(:value).to(:__faceted_node__) }
+      it { is_expected.to delegate_method(:hits).to(:__faceted_node__) }
+    end
+
+    context '.build_for_faceted_node' do
+      subject do
+        described_class.build_for_faceted_node(faceted_node: faceted_node, predicate_name: 'administrative_units', term_label: 'world')
+      end
+      it 'builds an underlying Locabulary::Items::Base object' do
+        expect(subject.term_label).to eq('world')
+      end
+      it { is_expected.to be_a(described_class) }
+      it { is_expected.to delegate_method(:qvalue).to(:__faceted_node__) }
+      it { is_expected.to delegate_method(:value).to(:__faceted_node__) }
+      it { is_expected.to delegate_method(:hits).to(:__faceted_node__) }
+    end
 
     context 'Comparable' do
       let(:item1) { Items::Base.new(predicate_name: 'hello', term_label: 'world') }
       let(:item2) { Items::Base.new(predicate_name: 'hello', term_label: 'different world') }
       let(:faceted_node1) { FacetableStruct.new('my_qvalue', 'my_value', 123) }
       let(:faceted_node2) { FacetableStruct.new('my_diff_qvalue', 'my_diff_value', 2) }
-      let(:wrapper1) { described_class.new(locabulary_item: item1, faceted_node: faceted_node1) }
-      let(:wrapper2) { described_class.new(locabulary_item: item2, faceted_node: faceted_node2) }
+      let(:wrapper1) { described_class.build_for_faceted_node_and_locabulary_item(locabulary_item: item1, faceted_node: faceted_node1) }
+      let(:wrapper2) { described_class.build_for_faceted_node_and_locabulary_item(locabulary_item: item2, faceted_node: faceted_node2) }
 
       it 'should sort the same as the underlying item' do
         sort_value_for_wrappers = wrapper1.<=>(wrapper2)

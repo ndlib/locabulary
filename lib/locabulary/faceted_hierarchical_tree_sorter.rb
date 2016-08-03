@@ -35,15 +35,25 @@ module Locabulary
       node
     end
 
-    def new_node(solr_facet_struct)
-      items = Locabulary.active_items_for(predicate_name: predicate_name)
-      term_label = solr_facet_struct.qvalue.gsub(/(?<!:):(?!:)/, "::")
-      items.each do |item|
-        if item.term_label == term_label
-          return FacetWrapperForItem.new(faceted_node: solr_facet_struct, locabulary_item: item)
-        end
+    def new_node(faceted_node)
+      term_label = convert_faceted_node_to_term_label(faceted_node)
+      item = find_locabulary_item_for(term_label)
+      if item
+        FacetWrapperForItem.build_for_faceted_node_and_locabulary_item(faceted_node: faceted_node, locabulary_item: item)
+      else
+        FacetWrapperForItem.build_for_faceted_node(faceted_node: faceted_node, predicate_name: predicate_name, term_label: term_label)
       end
-      raise
+    end
+
+    def find_locabulary_item_for(term_label)
+      items = Locabulary.active_items_for(predicate_name: predicate_name)
+      items.find do |item|
+        item.term_label == term_label
+      end
+    end
+
+    def convert_faceted_node_to_term_label(faceted_node)
+      faceted_node.qvalue.gsub(/(?<!:):(?!:)/, "::")
     end
   end
 end

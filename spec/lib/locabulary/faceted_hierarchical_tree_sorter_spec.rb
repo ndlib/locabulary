@@ -30,6 +30,9 @@ RSpec.describe Locabulary::FacetedHierarchicalTreeSorter do
           "Finance" => {
             _: FacetableStruct.new("University of Notre Dame:Mendoza College of Business:Finance", "Finance", 1)
           }
+        },
+        "College of Wizardry" => {
+          _: FacetableStruct.new("University of Notre Dame:College of Wizardry", "College of Wizardry", 25)
         }
       }
     }
@@ -48,10 +51,26 @@ RSpec.describe Locabulary::FacetedHierarchicalTreeSorter do
         [
           ["University of Notre Dame::College of Arts and Letters", 2],
           ["University of Notre Dame::Mendoza College of Business", 1],
-          ["University of Notre Dame::College of Engineering", 1]
+          ["University of Notre Dame::College of Engineering", 1],
+          ["University of Notre Dame::College of Wizardry", 25]
+        ]
+      )
+
+      mapped_grandchild_nodes = nodes.first.children.first.children.map(&mapper)
+      expect(mapped_grandchild_nodes).to eq(
+        [
+          ["University of Notre Dame::College of Arts and Letters::Africana Studies", 1],
+          ["University of Notre Dame::College of Arts and Letters::East Asian Languages & Cultures", 1]
         ]
       )
     end
-    pending 'should handle a missing term by building a basic item from the given facet'
+    it 'should handle a missing term by building a basic item from the given facet' do
+      tree = {
+        "College of Wizardry" => { _: FacetableStruct.new("College of Wizardry", "College of Wizardry", 3) }
+      }
+      sorter = Locabulary::FacetedHierarchicalTreeSorter.new(tree: tree, predicate_name: 'administrative_units')
+      mapped_nodes = sorter.call
+      expect(mapped_nodes.first).to be_a(Locabulary::FacetWrapperForItem)
+    end
   end
 end
