@@ -16,7 +16,7 @@ module Locabulary
       tree.each_pair do |key, sub_facets|
         nodes << build_node_for(key, sub_facets)
       end
-      nodes
+      nodes.sort
     end
 
     private

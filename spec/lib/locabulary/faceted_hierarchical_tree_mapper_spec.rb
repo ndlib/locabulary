@@ -72,5 +72,14 @@ RSpec.describe Locabulary::FacetedHierarchicalTreeMapper do
       mapped_nodes = sorter.call
       expect(mapped_nodes.first).to be_a(Locabulary::FacetWrapperForItem)
     end
+
+    it 'should sort top level nodes' do
+      tree = {
+        "College of Wizardry" => { _: FacetableStruct.new("College of Wizardry", "College of Wizardry", 3) },
+        "University of Notre Dame" => { _: FacetableStruct.new("University of Notre Dame", "University of Notre Dame", 3) }
+      }
+      mapper = described_class.new(tree: tree, predicate_name: 'administrative_units')
+      expect(mapper.call.map(&:term_label)).to eq(["University of Notre Dame", "College of Wizardry"])
+    end
   end
 end

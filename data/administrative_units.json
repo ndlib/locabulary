@@ -6,7 +6,8 @@
       "term_label": "University of Notre Dame",
       "classification": "University",
       "homepage": "http://www.nd.edu/",
-      "activated_on": "2015-07-22"
+      "activated_on": "2015-07-22",
+      "default_presentation_sequence": 1
     },
     {
       "predicate_name": "administrative_units",
