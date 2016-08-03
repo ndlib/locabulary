@@ -2,6 +2,8 @@ require 'locabulary/facet_wrapper_for_item'
 require 'active_support/core_ext/hash/except'
 
 module Locabulary
+  # @since 0.5.0
+  #
   # Responsible for mapping a faceted tree into a hierarchical tree that has sorted children.
   class FacetedHierarchicalTreeMapper
     # @param options [Hash]
@@ -12,7 +14,9 @@ module Locabulary
       @predicate_name = options.fetch(:predicate_name)
     end
 
-    # This method return sorted locabulary hierarchical tree for given set of items for the given predicate_name
+    # Maps the existing :tree and its open data structure into a more well-formed sorted array of proper objects.
+    #
+    # @return [Array<Locabulary::FacetWrapperForItem] A sorted array of top level nodes, each of which has child nodes
     def call
       nodes = []
       tree.each_value do |facet_branch|
