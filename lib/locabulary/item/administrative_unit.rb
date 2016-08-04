@@ -28,44 +28,6 @@ module Locabulary
 
       public
 
-      def initialize(*args)
-        super
-        @children = []
-      end
-
-      def children
-        @children.sort
-      end
-
-      def add_child(*input)
-        @children += input
-      end
-
-      HIERARCHY_DELIMITER = '::'.freeze
-      def slugs
-        term_label.split(HIERARCHY_DELIMITER)
-      end
-
-      def self.hierarchy_delimiter
-        HIERARCHY_DELIMITER
-      end
-
-      def parent_slugs
-        slugs[0..-2]
-      end
-
-      def parent_term_label
-        parent_slugs.join(HIERARCHY_DELIMITER)
-      end
-
-      def root_slug
-        slugs[0]
-      end
-
-      def selectable?
-        children.count.zero?
-      end
-
       NON_DEPARTMENTAL_SLUG = "Non-Departmental".freeze
       # NOTE: The whitespace characters are "thin spaces", U+200A
       HUMAN_FRIENDLY_HIERARCHY_DELIMITER = ' — '.freeze
@@ -76,8 +38,6 @@ module Locabulary
           slugs[-1]
         end
       end
-
-      alias selectable_id id
     end
   end
 end

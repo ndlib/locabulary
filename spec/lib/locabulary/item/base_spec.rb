@@ -19,6 +19,7 @@ RSpec.describe Locabulary::Item::Base do
     expect(item.to_h.keys).to eq(%w(term_label default_presentation_sequence))
   end
 
+  subject { described_class.new(term_label: 'Universe::Galaxy::Planet') }
   its(:as_json) { should be_a(Hash) }
 
   context '#default_presentation_sequence=' do
@@ -33,7 +34,6 @@ RSpec.describe Locabulary::Item::Base do
 
   context '#id' do
     it 'is an alias for #to_persistence_format_for_fedora' do
-      subject = described_class.new(term_label: 'Hello')
       expect(subject.id).to eq(subject.to_persistence_format_for_fedora)
     end
   end
@@ -47,5 +47,43 @@ RSpec.describe Locabulary::Item::Base do
       subject = described_class.new(term_label: 'Hello', term_uri: 'http://goodbye.com')
       subject.to_persistence_format_for_fedora == 'http://goodbye.com'
     end
+  end
+
+  context '.hierarchy_delimiter' do
+    subject { described_class.hierarchy_delimiter }
+    it { is_expected.to be_a(String) }
+  end
+
+  context '#selectable?' do
+    it 'is true if there are no children' do
+      allow(subject).to receive(:children).and_return([])
+      expect(subject).to be_selectable
+    end
+
+    it 'is false if there are children' do
+      allow(subject).to receive(:children).and_return([1, 2, 3])
+      expect(subject).to_not be_selectable
+    end
+  end
+
+  context '#add_child' do
+    it 'updates the children' do
+      expect { subject.add_child('tuna', 'sandwich') }.to change { subject.children.count }.by(2)
+    end
+  end
+
+  context '#selectable_label' do
+    it 'is the last slug' do
+      expect(subject.selectable_label).to eq('Planet')
+    end
+  end
+
+  context 'slug methods' do
+    subject { described_class.new(term_label: 'Universe::Galaxy::Planet') }
+
+    its(:root_slug) { should eq('Universe') }
+    its(:parent_slugs) { should eq(%w(Universe Galaxy)) }
+    its(:slugs) { should eq(%w(Universe Galaxy Planet)) }
+    its(:parent_term_label) { should eq('Universe::Galaxy') }
   end
 end

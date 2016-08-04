@@ -55,6 +55,7 @@ module Locabulary
           value = attributes[key] || attributes[key.to_s]
           send("#{key}=", value)
         end
+        @children = []
       end
 
       def to_h
@@ -100,6 +101,45 @@ module Locabulary
       def presentation_sequence
         default_presentation_sequence || SORT_SEQUENCE_FOR_NIL
       end
+
+      def children
+        @children.sort
+      end
+
+      def add_child(*input)
+        @children += input
+      end
+
+      HIERARCHY_DELIMITER = '::'.freeze
+      def slugs
+        term_label.split(HIERARCHY_DELIMITER)
+      end
+
+      def self.hierarchy_delimiter
+        HIERARCHY_DELIMITER
+      end
+
+      def parent_slugs
+        slugs[0..-2]
+      end
+
+      def parent_term_label
+        parent_slugs.join(HIERARCHY_DELIMITER)
+      end
+
+      def root_slug
+        slugs[0]
+      end
+
+      def selectable?
+        children.count.zero?
+      end
+
+      def selectable_label
+        slugs[-1]
+      end
+
+      alias selectable_id id
     end
   end
 end
