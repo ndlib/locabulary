@@ -14,6 +14,11 @@ RSpec.describe Locabulary::Item::AdministrativeUnit do
   its(:attribute_names) { should include(:activated_on) }
   its(:attribute_names) { should include(:deactivated_on) }
 
+  context '.hierarchy_delimiter' do
+    subject { described_class.hierarchy_delimiter }
+    it { is_expected.to be_a(String) }
+  end
+
   subject { Locabulary::Item::AdministrativeUnit.new(term_label: 'Universe::Galaxy::Planet') }
   context '#selectable?' do
     it 'is true if there are no children' do

@@ -46,6 +46,10 @@ module Locabulary
         term_label.split(HIERARCHY_SEPARATOR)
       end
 
+      def self.hierarchy_delimiter
+        HIERARCHY_SEPARATOR
+      end
+
       def parent_slugs
         slugs[0..-2]
       end
