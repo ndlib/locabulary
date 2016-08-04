@@ -52,17 +52,26 @@ module Locabulary
   # @since 0.5.0
   # @param options [Hash]
   # @option predicate_name [String]
-  # @option label [String]
+  # @option term_label [String]
   # @option as_of [Date] Optional
   # @raise ItemNotFoundError if unable to find label for predicate_name
   # @return Locabulary::Item
   def self.item_for(options = {})
     predicate_name = options.fetch(:predicate_name)
-    label = options.fetch(:label)
+    term_label = options.fetch(:term_label)
     as_of = options.fetch(:as_of) { Date.today }
-    builder = Items.builder_for(predicate_name: predicate_name)
-    returning_value = nil
-    # Code goes here! Leverage the with_extraction_for method and the builder.
+    active_collector = []
+    deactive_collector = []
+    with_extraction_for(predicate_name) do |data|
+      item = Items.build(data.merge('predicate_name' => predicate_name))
+      if term_label == item.term_label
+        data_is_active?(data, as_of) ? active_collector << item : deactive_collector << item
+      end
+    end
+    return active_collector.first if active_collector.any?
+    return deactive_collector.first if deactive_collector.any?
+    raise Locabulary::Exceptions::ItemNotFoundError.new(predicate_name, term_label)
+    nil
   end
 
   def self.associate_parents_and_childrens_for(hierarchy_graph_keys, items, predicate_name)
