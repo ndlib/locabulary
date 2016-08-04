@@ -23,13 +23,10 @@ RSpec.describe Locabulary do
   end
 
   context '.active_items_for' do
-    it 'will parse the given data' do
-      result = Locabulary.active_items_for(predicate_name: 'copyright')
-      expect(result.first.term_label).to eq('All rights reserved')
-    end
-    it 'will build a cached_data' do
-      Locabulary.active_items_for(predicate_name: 'copyright')
-      expect(Locabulary.active_cache.key?('copyright')).to eq(true)
+    it 'will delegate to Command::ActiveItemsFor' do
+      parameters = { predicate_name: 'predicate_name' }
+      expect(Locabulary::Command::ActiveItemsFor).to receive(:call).with(parameters)
+      described_class.active_items_for(parameters)
     end
   end
 

@@ -33,16 +33,7 @@ module Locabulary
   #   there is another deploy. I'm not concerned if we have expired data, as this
   #   data once was valid. When we redeploy the service, the cache will be rebuilt.
   def self.active_items_for(options = {})
-    predicate_name = options.fetch(:predicate_name)
-    as_of = options.fetch(:as_of) { Date.today }
-    builder = Items.builder_for(predicate_name: predicate_name)
-    active_cache[predicate_name] ||= begin
-      collector = []
-      with_active_extraction_for(predicate_name, as_of) do |data|
-        collector << builder.call(data.merge('predicate_name' => predicate_name))
-      end
-      collector.sort
-    end
+    Command::ActiveItemsFor.call(options)
   end
 
   # @api public
@@ -152,18 +143,13 @@ module Locabulary
   end
 
   # @api private
-  def self.active_cache
-    @active_cache ||= {}
-  end
-
-  # @api private
   def self.active_hierarchical_root_caches
     @active_hierarchical_root_caches ||= {}
   end
 
   # @api private
   def self.reset_active_cache!
-    @active_cache = nil
+    Command::ActiveItemsFor.reset_cache!
     @active_hierarchical_root_caches = nil
   end
 end
