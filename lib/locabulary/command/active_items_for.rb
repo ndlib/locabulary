@@ -1,6 +1,7 @@
 require 'date'
 require 'json'
 require 'locabulary/items'
+require 'locabulary/utility'
 
 module Locabulary
   module Command
@@ -8,7 +9,6 @@ module Locabulary
     #
     # @see Locabulary::Item
     class ActiveItemsFor
-      DATA_DIRECTORY = File.expand_path("../../../../data/", __FILE__).freeze
       def self.cache
         @cache ||= {}
       end
@@ -24,6 +24,10 @@ module Locabulary
       # @param options [Hash]
       # @option predicate_name [String]
       # @option as_of [Date]
+      # @note A concession about the as_of; This is not a live Utility. The data has a
+      #   low churn rate. And while the date is important, I'm not as concerned
+      #   about the local controlled vocabulary exposing a date that has expired.
+      #   When we next deploy the server changes, the deactivated will go away.
       def self.call(options = {})
         predicate_name = options.fetch(:predicate_name)
         cache[predicate_name] ||= new(options).call
@@ -37,7 +41,7 @@ module Locabulary
 
       def call
         collector = []
-        with_active_extraction_for do |data|
+        Utility.with_active_extraction_for(predicate_name, as_of) do |data|
           collector << builder.call(data.merge('predicate_name' => predicate_name))
         end
         collector.sort
@@ -46,29 +50,6 @@ module Locabulary
       private
 
       attr_reader :predicate_name, :as_of, :builder
-
-      def with_active_extraction_for
-        json = JSON.parse(File.read(filename_for_predicate_name))
-        json.fetch('values').each do |data|
-          yield(data) if data_is_active?(data)
-        end
-      end
-
-      def data_is_active?(data)
-        activated_on = Date.parse(data.fetch('activated_on'))
-        return false unless activated_on < as_of
-        deactivated_on_value = data['deactivated_on']
-        return true if deactivated_on_value.nil?
-        deactivated_on = Date.parse(deactivated_on_value)
-        return false unless deactivated_on >= as_of
-        true
-      end
-
-      def filename_for_predicate_name
-        filename = File.join(DATA_DIRECTORY, "#{File.basename(predicate_name)}.json")
-        return filename if File.exist?(filename)
-        raise Locabulary::Exceptions::RuntimeError, "Unable to find predicate_name: #{predicate_name}"
-      end
     end
   end
 end

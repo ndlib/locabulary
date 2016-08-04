@@ -3,7 +3,7 @@ require 'delegate'
 
 module Locabulary
   # A wrapper for a Locabulary::Item::Base that includes information from
-  # the SOLR query.
+  # the SOLR Utility.
   class FacetWrapperForItem < SimpleDelegator
     # @api public
     # @since 0.5.0

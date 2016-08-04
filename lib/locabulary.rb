@@ -28,10 +28,11 @@ module Locabulary
   # @api public
   # @since 0.1.0
   #
-  # @note A concession about the as_of; This is not a live query. The cached data
-  #   for active entries is stored in memory. We don't invalidate the cache until
-  #   there is another deploy. I'm not concerned if we have expired data, as this
-  #   data once was valid. When we redeploy the service, the cache will be rebuilt.
+  # Responsible for extracting a non-hierarchical sorted array of Locabulary::Item for the given predicate_name.
+  #
+  # @param options [Hash]
+  # @option predicate_name [String]
+  # @option as_of [Date]
   def self.active_items_for(options = {})
     Command::ActiveItemsFor.call(options)
   end
@@ -91,31 +92,14 @@ module Locabulary
   private_class_method :associate_parents_and_childrens_for
 
   def self.with_extraction_for(predicate_name)
-    filename = filename_for_predicate_name(predicate_name: predicate_name)
-    json = JSON.parse(File.read(filename))
-    json.fetch('values').each do |data|
-      yield(data)
-    end
+    Utility.with_extraction_for(*args, &block)
   end
   private_class_method :with_extraction_for
 
-  def self.with_active_extraction_for(predicate_name, as_of)
-    with_extraction_for(predicate_name) do |data|
-      yield(data) if data_is_active?(data, as_of)
-    end
+  def self.with_active_extraction_for(*args, &block)
+    Utility.with_active_extraction_for(*args, &block)
   end
   private_class_method :with_active_extraction_for
-
-  def self.data_is_active?(data, as_of)
-    activated_on = Date.parse(data.fetch('activated_on'))
-    return false unless activated_on < as_of
-    deactivated_on_value = data['deactivated_on']
-    return true if deactivated_on_value.nil?
-    deactivated_on = Date.parse(deactivated_on_value)
-    return false unless deactivated_on >= as_of
-    true
-  end
-  private_class_method :data_is_active?
 
   # @api public
   # @since 0.1.0
@@ -132,14 +116,6 @@ module Locabulary
   def self.active_labels_for(options = {})
     predicate_name = options.fetch(:predicate_name)
     active_items_for(predicate_name: predicate_name).map(&:term_label)
-  end
-
-  # @api private
-  def self.filename_for_predicate_name(options = {})
-    predicate_name = options.fetch(:predicate_name)
-    filename = File.join(DATA_DIRECTORY, "#{File.basename(predicate_name)}.json")
-    return filename if File.exist?(filename)
-    raise Locabulary::Exceptions::RuntimeError, "Unable to find predicate_name: #{predicate_name}"
   end
 
   # @api private

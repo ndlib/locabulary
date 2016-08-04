@@ -4,16 +4,6 @@ require 'locabulary'
 RSpec.describe Locabulary do
   before { Locabulary.reset_active_cache! }
 
-  it 'will throw an exception if the predicate name is missing' do
-    expect { Locabulary.filename_for_predicate_name(predicate_name: '__missing__') }.to raise_error(Locabulary::Exceptions::RuntimeError)
-  end
-
-  it 'will de-reference the filenmae to a base name' do
-    expect(Locabulary.filename_for_predicate_name(predicate_name: "../test/copyright")).to(
-      eq(File.join(Locabulary::DATA_DIRECTORY, 'copyright.json'))
-    )
-  end
-
   context '.build_ordered_hierarchical_tree' do
     it 'will delegate to Command::BuildOrderedHierarchicalTree' do
       parameters = { predicate_name: 'predicate_name', faceted_items: [1, 2, 3], faceted_item_hierarchy_delimiter: ':' }
@@ -100,29 +90,6 @@ RSpec.describe Locabulary do
       expect do
         described_class.item_for(predicate_name: 'spec', term_label: 'Very Much Missing')
       end.to raise_error(Locabulary::Exceptions::ItemNotFoundError)
-    end
-  end
-
-  context '.data_is_active?' do
-    let(:as_of) { Date.parse('2015-10-23') }
-    it 'returns false if the data not yet activated' do
-      expect(described_class.send(:data_is_active?, { 'activated_on' => '2015-11-23' }, as_of)).to eq(false)
-    end
-
-    it 'returns false if the data the as of date is after the deactivation date' do
-      expect(
-        described_class.send(:data_is_active?, { 'activated_on' => '2014-10-23', 'deactivated_on' => '2014-11-23' }, as_of)
-      ).to eq(false)
-    end
-
-    it 'returns true if the data is activated and does not have a deactivation date' do
-      expect(described_class.send(:data_is_active?, { 'activated_on' => '2013-11-23' }, as_of)).to eq(true)
-    end
-
-    it 'returns true if the data is activated and the deactivated date has not come to pass' do
-      expect(
-        described_class.send(:data_is_active?, { 'activated_on' => '2014-10-23', 'deactivated_on' => '2016-11-23' }, as_of)
-      ).to eq(true)
     end
   end
 

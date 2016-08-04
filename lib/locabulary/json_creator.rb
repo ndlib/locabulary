@@ -1,6 +1,6 @@
 require "google_drive"
 require 'highline/import'
-require 'locabulary'
+require 'locabulary/utility'
 require 'locabulary/items'
 require 'json'
 
@@ -10,7 +10,7 @@ module Locabulary
     def initialize(document_key, predicate_name, data_fetcher = default_data_fetcher)
       @document_key = document_key
       @predicate_name = predicate_name
-      @output_filepath = Locabulary.filename_for_predicate_name(predicate_name: predicate_name)
+      @output_filepath = Utility.filename_for_predicate_name(predicate_name)
       @data_fetcher = data_fetcher
     end
 
