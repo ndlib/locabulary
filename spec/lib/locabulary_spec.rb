@@ -82,7 +82,7 @@ RSpec.describe Locabulary do
 
   context '.item_for' do
     # uses data file '../../data/spec.json'
-    let(:as_of_date) { Date.parse('2015-10-23') }
+    let(:as_of_date) { Date.parse('2016-08-01') }
     it 'returns an active item for the given predicate_name and label' do
       item = described_class.item_for(predicate_name: 'spec', term_label: 'Active Item', as_of: Date.today)
       expect(item).to be_a(Locabulary::Items::Base)
