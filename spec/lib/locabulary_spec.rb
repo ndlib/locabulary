@@ -14,6 +14,14 @@ RSpec.describe Locabulary do
     )
   end
 
+  context '.build_ordered_hierarchical_tree' do
+    it 'will delegate to Command::BuildOrderedHierarchicalTree' do
+      parameters = { predicate_name: 'predicate_name', faceted_items: [1, 2, 3], faceted_item_hierarchy_delimiter: ':' }
+      expect(Locabulary::Command::BuildOrderedHierarchicalTree).to receive(:call).with(parameters)
+      described_class.build_ordered_hierarchical_tree(parameters)
+    end
+  end
+
   context '.active_items_for' do
     it 'will parse the given data' do
       result = Locabulary.active_items_for(predicate_name: 'copyright')

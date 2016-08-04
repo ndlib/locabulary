@@ -2,10 +2,28 @@ require 'date'
 require 'json'
 require 'locabulary/exceptions'
 require 'locabulary/items'
+require 'locabulary/command/build_ordered_hierarchical_tree'
 
 # @since 0.1.0
 module Locabulary
   DATA_DIRECTORY = File.expand_path("../../data/", __FILE__).freeze
+
+  # @api private
+  # @since 0.5.0
+  #
+  # Responsible for building a hierarchical tree from faceted items, and ordering the nodes as per the presentation sequence for the
+  # associated predicate_name.
+  #
+  # @param options [Hash]
+  # @option predicate_name [String]
+  # @option faceted_items [Array<#hits, #value>]
+  # @option faceted_item_hierarchy_delimiter [String]
+  # @return Array[<FacetWrapperForItem>]
+  #
+  # @see Locabulary::Command::BuildOrderedHierarchicalTree
+  def self.build_ordered_hierarchical_tree(options = {})
+    Command::BuildOrderedHierarchicalTree.call(options)
+  end
 
   # @api public
   # @since 0.1.0
