@@ -45,7 +45,7 @@ RSpec.describe Locabulary::Item::AdministrativeUnit do
     it 'is the second to last and last slug if we have a Non-Departmental last slug' do
       subject = Locabulary::Item::AdministrativeUnit.new(term_label: "Universe::Galaxy::#{described_class::NON_DEPARTMENTAL_SLUG}")
       expect(subject.selectable_label).to eq(
-        "Galaxy#{described_class::HUMAN_FRIENDLY_HIERARCHY_SEPARATOR}#{described_class::NON_DEPARTMENTAL_SLUG}"
+        "Galaxy#{described_class::HUMAN_FRIENDLY_HIERARCHY_DELIMITER}#{described_class::NON_DEPARTMENTAL_SLUG}"
       )
     end
   end

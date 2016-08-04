@@ -41,13 +41,13 @@ module Locabulary
         @children += input
       end
 
-      HIERARCHY_SEPARATOR = '::'.freeze
+      HIERARCHY_DELIMITER = '::'.freeze
       def slugs
-        term_label.split(HIERARCHY_SEPARATOR)
+        term_label.split(HIERARCHY_DELIMITER)
       end
 
       def self.hierarchy_delimiter
-        HIERARCHY_SEPARATOR
+        HIERARCHY_DELIMITER
       end
 
       def parent_slugs
@@ -55,7 +55,7 @@ module Locabulary
       end
 
       def parent_term_label
-        parent_slugs.join(HIERARCHY_SEPARATOR)
+        parent_slugs.join(HIERARCHY_DELIMITER)
       end
 
       def root_slug
@@ -68,10 +68,10 @@ module Locabulary
 
       NON_DEPARTMENTAL_SLUG = "Non-Departmental".freeze
       # NOTE: The whitespace characters are "thin spaces", U+200A
-      HUMAN_FRIENDLY_HIERARCHY_SEPARATOR = ' — '.freeze
+      HUMAN_FRIENDLY_HIERARCHY_DELIMITER = ' — '.freeze
       def selectable_label
         if slugs[-1] == NON_DEPARTMENTAL_SLUG
-          slugs[-2..-1].join(HUMAN_FRIENDLY_HIERARCHY_SEPARATOR)
+          slugs[-2..-1].join(HUMAN_FRIENDLY_HIERARCHY_DELIMITER)
         else
           slugs[-1]
         end
