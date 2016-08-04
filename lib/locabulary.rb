@@ -71,7 +71,6 @@ module Locabulary
     return active_collector.first if active_collector.any?
     return deactive_collector.first if deactive_collector.any?
     raise Locabulary::Exceptions::ItemNotFoundError.new(predicate_name, term_label)
-    nil
   end
 
   def self.associate_parents_and_childrens_for(hierarchy_graph_keys, items, predicate_name)
