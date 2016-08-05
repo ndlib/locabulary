@@ -60,16 +60,13 @@ module Locabulary
     predicate_name = options.fetch(:predicate_name)
     term_label = options.fetch(:term_label)
     as_of = options.fetch(:as_of) { Date.today }
-    active_collector = []
-    deactive_collector = []
+    item = nil
     with_extraction_for(predicate_name) do |data|
+      next unless data.fetch('term_label') == term_label
       item = Items.build(data.merge('predicate_name' => predicate_name))
-      if term_label == item.term_label
-        data_is_active?(data, as_of) ? active_collector << item : deactive_collector << item
-      end
+      break if data_is_active?(data, as_of)
     end
-    return active_collector.first if active_collector.any?
-    return deactive_collector.first if deactive_collector.any?
+    return item unless item.nil?
     raise Locabulary::Exceptions::ItemNotFoundError.new(predicate_name, term_label)
   end
 
