@@ -10,10 +10,10 @@ module Locabulary
   # @api public
   # @since 0.1.0
   #
-  # @note A concession about the as_of; This is not a live query. The data has a
-  #   low churn rate. And while the date is important, I'm not as concerned
-  #   about the local controlled vocabulary exposing a date that has expired.
-  #   When we next deploy the server changes, the deactivated will go away.
+  # @note A concession about the as_of; This is not a live query. The cached data
+  #   for active entries is stored in memory. We don't invalidate the cache until
+  #   there is another deploy. I'm not concerned if we have expired data, as this
+  #   data once was valid. When we redeploy the service, the cache will be rebuilt.
   def self.active_items_for(options = {})
     predicate_name = options.fetch(:predicate_name)
     as_of = options.fetch(:as_of) { Date.today }
@@ -48,6 +48,28 @@ module Locabulary
     end
   end
 
+  # @api public
+  # @since 0.5.0
+  # @param options [Hash]
+  # @option predicate_name [String]
+  # @option term_label [String]
+  # @option as_of [Date] Optional
+  # @raise ItemNotFoundError if unable to find label for predicate_name
+  # @return Locabulary::Item
+  def self.item_for(options = {})
+    predicate_name = options.fetch(:predicate_name)
+    term_label = options.fetch(:term_label)
+    as_of = options.fetch(:as_of) { Date.today }
+    item = nil
+    with_extraction_for(predicate_name) do |data|
+      next unless data.fetch('term_label') == term_label
+      item = Items.build(data.merge('predicate_name' => predicate_name))
+      break if data_is_active?(data, as_of)
+    end
+    return item unless item.nil?
+    raise Locabulary::Exceptions::ItemNotFoundError.new(predicate_name, term_label)
+  end
+
   def self.associate_parents_and_childrens_for(hierarchy_graph_keys, items, predicate_name)
     items.each do |item|
       begin
@@ -59,10 +81,17 @@ module Locabulary
   end
   private_class_method :associate_parents_and_childrens_for
 
-  def self.with_active_extraction_for(predicate_name, as_of)
+  def self.with_extraction_for(predicate_name)
     filename = filename_for_predicate_name(predicate_name: predicate_name)
     json = JSON.parse(File.read(filename))
     json.fetch('values').each do |data|
+      yield(data)
+    end
+  end
+  private_class_method :with_extraction_for
+
+  def self.with_active_extraction_for(predicate_name, as_of)
+    with_extraction_for(predicate_name) do |data|
       yield(data) if data_is_active?(data, as_of)
     end
   end

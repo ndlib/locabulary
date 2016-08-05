@@ -4,6 +4,13 @@ module Locabulary
     class RuntimeError < ::RuntimeError
     end
 
+    # There was a problem finding an item
+    class ItemNotFoundError < RuntimeError
+      def initialize(predicate_name, label)
+        super("Unable to find label=#{label.inspect} for predicate_name=#{predicate_name.inspect}")
+      end
+    end
+
     # There is a problem with the hierarchy; A child is being defined without a defined parent.
     class MissingHierarchicalParentError < RuntimeError
       attr_reader :predicate_name, :error
