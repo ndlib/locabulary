@@ -4,7 +4,7 @@ require 'locabulary/items'
 require 'locabulary/facet_wrapper_for_item'
 
 module Locabulary
-  module Command
+  module Commands
     # Responsible for building a hierarchical tree from faceted items, and ordering the nodes as per the presentation sequence for the
     # associated predicate_name.
     class BuildOrderedHierarchicalTree
