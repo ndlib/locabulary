@@ -1,10 +1,10 @@
 require 'spec_helper'
-require 'locabulary/commands/build_ordered_hierarchical_tree'
+require 'locabulary/commands/build_ordered_hierarchical_tree_command'
 require 'spec_helper/facetable_struct'
 
 module Locabulary
   module Commands
-    RSpec.describe BuildOrderedHierarchicalTree do
+    RSpec.describe BuildOrderedHierarchicalTreeCommand do
       context '.call' do
         subject { described_class.call(predicate_name: 'chicken', faceted_items: faceted_items, faceted_item_hierarchy_delimiter: '::') }
         context 'with a well formed tree' do

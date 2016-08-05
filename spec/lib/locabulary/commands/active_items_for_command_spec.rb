@@ -1,9 +1,9 @@
 require 'spec_helper'
-require 'locabulary/commands/active_items_for'
+require 'locabulary/commands/active_items_for_command'
 
 module Locabulary
   module Commands
-    RSpec.describe ActiveItemsFor do
+    RSpec.describe ActiveItemsForCommand do
       before { described_class.reset_cache! }
       after { described_class.reset_cache! }
       context '.call' do

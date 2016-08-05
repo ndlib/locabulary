@@ -2,7 +2,8 @@ require 'date'
 require 'json'
 require 'locabulary/exceptions'
 require 'locabulary/items'
-require 'locabulary/commands/build_ordered_hierarchical_tree'
+require 'locabulary/commands/build_ordered_hierarchical_tree_command'
+require 'locabulary/commands/active_items_for_command'
 
 # @since 0.1.0
 module Locabulary
@@ -22,7 +23,7 @@ module Locabulary
   #
   # @see Locabulary::Commands::BuildOrderedHierarchicalTree
   def self.build_ordered_hierarchical_tree(options = {})
-    Commands::BuildOrderedHierarchicalTree.call(options)
+    Commands::BuildOrderedHierarchicalTreeCommand.call(options)
   end
 
   # @api public
@@ -34,7 +35,7 @@ module Locabulary
   # @option predicate_name [String]
   # @option as_of [Date]
   def self.active_items_for(options = {})
-    Commands::ActiveItemsFor.call(options)
+    Commands::ActiveItemsForCommand.call(options)
   end
 
   # @api public
@@ -125,7 +126,7 @@ module Locabulary
 
   # @api private
   def self.reset_active_cache!
-    Commands::ActiveItemsFor.reset_cache!
+    Commands::ActiveItemsForCommand.reset_cache!
     @active_hierarchical_root_caches = nil
   end
 end

@@ -7,7 +7,7 @@ RSpec.describe Locabulary do
   context '.build_ordered_hierarchical_tree' do
     it 'will delegate to Commands::BuildOrderedHierarchicalTree' do
       parameters = { predicate_name: 'predicate_name', faceted_items: [1, 2, 3], faceted_item_hierarchy_delimiter: ':' }
-      expect(Locabulary::Commands::BuildOrderedHierarchicalTree).to receive(:call).with(parameters)
+      expect(Locabulary::Commands::BuildOrderedHierarchicalTreeCommand).to receive(:call).with(parameters)
       described_class.build_ordered_hierarchical_tree(parameters)
     end
   end
@@ -15,7 +15,7 @@ RSpec.describe Locabulary do
   context '.active_items_for' do
     it 'will delegate to Commands::ActiveItemsFor' do
       parameters = { predicate_name: 'predicate_name' }
-      expect(Locabulary::Commands::ActiveItemsFor).to receive(:call).with(parameters)
+      expect(Locabulary::Commands::ActiveItemsForCommand).to receive(:call).with(parameters)
       described_class.active_items_for(parameters)
     end
   end
