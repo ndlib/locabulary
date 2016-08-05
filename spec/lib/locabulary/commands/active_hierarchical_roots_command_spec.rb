@@ -41,16 +41,15 @@ module Locabulary
           roots = described_class.call(predicate_name: 'administrative_units', utility_service: utility_service)
 
           expect(roots.map(&:term_label)).to match_array([item3.fetch(:term_label), item7.fetch(:term_label)])
-
-          expect(roots.first.children.size).to(eq(2), 'Universe has two children')
-          expect(roots.first.children.map(&:term_label)).to eq([item4.fetch(:term_label), item1.fetch(:term_label)])
+          expect(roots.last.children.size).to(eq(2), 'Universe has two children')
+          expect(roots.last.children.map(&:term_label)).to eq([item4.fetch(:term_label), item1.fetch(:term_label)])
           expect(
-            roots.first.children.find { |node| node.term_label == 'Universe::Galaxy' }.children.map(&:term_label)
+            roots.last.children.find { |node| node.term_label == 'Universe::Galaxy' }.children.map(&:term_label)
           ).to eq([item5.fetch(:term_label), item2.fetch(:term_label)])
-          expect(roots.first.children.find { |node| node.term_label == 'Universe::Non-Galactic' }.children.map(&:term_label)).to eq([])
+          expect(roots.last.children.find { |node| node.term_label == 'Universe::Non-Galactic' }.children.map(&:term_label)).to eq([])
 
-          expect(roots.last.children.size).to(eq(1), 'Bizarro has one child')
-          expect(roots.last.children.map(&:term_label)).to eq([item6.fetch(:term_label)])
+          expect(roots.first.children.size).to(eq(1), 'Bizarro has one child')
+          expect(roots.first.children.map(&:term_label)).to eq([item6.fetch(:term_label)])
         end
 
         it 'fails if we have empty spaces between our nodes' do

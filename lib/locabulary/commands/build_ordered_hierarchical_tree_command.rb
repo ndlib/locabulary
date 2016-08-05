@@ -3,6 +3,7 @@ require 'locabulary'
 require 'locabulary/exceptions'
 require 'locabulary/item'
 require 'locabulary/facet_wrapper_for_item'
+require 'locabulary/hierarchy_processor'
 
 module Locabulary
   module Commands
@@ -31,32 +32,16 @@ module Locabulary
       end
 
       def call
-        items = []
-        hierarchy_graph_keys = {}
-        top_level_slugs = Set.new
-        faceted_items.each do |faceted_item|
-          item = build_item(faceted_item)
-          items << item
-          top_level_slugs << item.root_slug
-          hierarchy_graph_keys[item.term_label] = item
-        end
-        associate_parents_and_childrens_for(hierarchy_graph_keys, items)
-        top_level_slugs.map { |slug| hierarchy_graph_keys.fetch(slug) }.sort
+        HierarchyProcessor.call(
+          enumerator: faceted_items.method(:each),
+          item_builder: method(:build_item),
+          predicate_name: predicate_name
+        )
       end
 
       private
 
       attr_reader :locabulary_item_class, :predicate_name, :faceted_items, :faceted_item_hierarchy_delimiter
-
-      def associate_parents_and_childrens_for(hierarchy_graph_keys, items)
-        items.each do |item|
-          begin
-            hierarchy_graph_keys.fetch(item.parent_term_label).add_child(item) unless item.parent_slugs.empty?
-          rescue KeyError => error
-            raise Exceptions::MissingHierarchicalParentError.new(predicate_name, error)
-          end
-        end
-      end
 
       def build_item(faceted_node)
         term_label = convert_faceted_node_value_to_term_label(faceted_node.value)
