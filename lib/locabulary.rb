@@ -57,11 +57,11 @@ module Locabulary
   # @api public
   # @since 0.5.0
   # @param options [Hash]
-  # @option predicate_name [String]
-  # @option term_label [String]
-  # @option as_of [Date] Optional
-  # @raise ItemNotFoundError if unable to find label for predicate_name
-  # @return Locabulary::Item
+  # @option options [String] :predicate_name
+  # @option options [String] :term_label
+  # @option options [Date] :as_of (Date.today)
+  # @raise [Locabulary::Exceptions::ItemNotFoundError] if unable to find label for predicate_name
+  # @return [Locabulary::Items::Base]
   def self.item_for(options = {})
     predicate_name = options.fetch(:predicate_name)
     term_label = options.fetch(:term_label)
