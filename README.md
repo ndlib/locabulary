@@ -14,3 +14,5 @@ robust options.
 ## Testing
 
 The full test suite is run via `bundle exec rake`.
+
+If you are interested in running each file in isolation - a good thing for unit tests - use `./bin/rspec_isolated`.
