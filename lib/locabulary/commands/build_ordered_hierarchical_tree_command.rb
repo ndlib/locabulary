@@ -33,10 +33,7 @@ module Locabulary
         hierarchy_graph_keys = {}
         top_level_slugs = Set.new
         faceted_items.each do |faceted_item|
-          # TODO: This is inadequate in that we need to fetch the appropriate item from the predicate data store
-          item = FacetWrapperForItem.build_for_faceted_node(
-            faceted_node: faceted_item, predicate_name: predicate_name, term_label: faceted_item.value
-          )
+          item = build_item(faceted_item)
           items << item
           top_level_slugs << item.root_slug
           hierarchy_graph_keys[item.term_label] = item
@@ -57,6 +54,13 @@ module Locabulary
             raise Exceptions::MissingHierarchicalParentError.new(predicate_name, error)
           end
         end
+      end
+
+      def build_item(faceted_item)
+        # TODO: This is inadequate in that we need to fetch the appropriate item from the predicate data store
+        FacetWrapperForItem.build_for_faceted_node(
+          faceted_node: faceted_item, predicate_name: predicate_name, term_label: faceted_item.value
+        )
       end
     end
   end
