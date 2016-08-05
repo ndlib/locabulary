@@ -31,11 +31,6 @@ LineLength:
   Max: 140
   Enabled: true
 
-Metrics/ModuleLength:
-  Description: 'Limit modules to 100 lines.'
-  Exclude:
-    - lib/locabulary.rb
-
 Style/StringLiterals:
   Description: 'Checks if uses of quotes match the configured preference.'
   Enabled: false
