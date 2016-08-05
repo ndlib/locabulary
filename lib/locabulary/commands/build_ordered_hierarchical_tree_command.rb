@@ -1,6 +1,7 @@
 require 'set'
+require 'locabulary'
 require 'locabulary/exceptions'
-require 'locabulary/items'
+require 'locabulary/item'
 require 'locabulary/facet_wrapper_for_item'
 
 module Locabulary
@@ -56,11 +57,23 @@ module Locabulary
         end
       end
 
-      def build_item(faceted_item)
-        # TODO: This is inadequate in that we need to fetch the appropriate item from the predicate data store
-        FacetWrapperForItem.build_for_faceted_node(
-          faceted_node: faceted_item, predicate_name: predicate_name, term_label: faceted_item.value
-        )
+      def build_item(faceted_node)
+        term_label = faceted_node.value
+        locabulary_item = find_locabulary_item(predicate_name: predicate_name, term_label: term_label)
+        if locabulary_item
+          FacetWrapperForItem.build_for_faceted_node_and_locabulary_item(faceted_node: faceted_node, locabulary_item: locabulary_item)
+        else
+          FacetWrapperForItem.build_for_faceted_node(faceted_node: faceted_node, predicate_name: predicate_name, term_label: term_label)
+        end
+      end
+
+      def find_locabulary_item(*args)
+        Locabulary.item_for(*args)
+      rescue Exceptions::ItemNotFoundError, Exceptions::MissingPredicateNameError
+        # Either the predicate name didn't exist or the item didn't exist for the given predicate name
+        # Given that we are building from an alternate source, this is an acceptable error. It is possible
+        # that we want to consider a developer notification but not abort the whole process.
+        nil
       end
     end
   end

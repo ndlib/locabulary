@@ -35,7 +35,7 @@ module Locabulary
     def self.filename_for_predicate_name(predicate_name)
       filename = File.join(DATA_DIRECTORY, "#{File.basename(predicate_name)}.json")
       return filename if File.exist?(filename)
-      raise Locabulary::Exceptions::RuntimeError, "Unable to find predicate_name: #{predicate_name}"
+      raise Locabulary::Exceptions::MissingPredicateNameError, "Unable to find predicate_name: #{predicate_name}"
     end
   end
   private_constant :Utility

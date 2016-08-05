@@ -4,33 +4,20 @@
     {
       "predicate_name": "spec",
       "term_label": "Active Item",
-      "classification": "University",
-      "homepage": "http://www.nd.edu/",
+      "default_presentation_sequence": 3,
       "activated_on": "2015-07-22"
     },
     {
       "predicate_name": "spec",
       "term_label": "Deactive Item",
-      "classification": "College",
       "default_presentation_sequence": 1,
-      "homepage": "http://architecture.nd.edu/",
       "activated_on": "2015-07-22",
       "deactivated_on": "2016-07-01"
     },
     {
       "predicate_name": "spec",
-      "term_label": "University of Notre Dame::College of Arts and Letters",
-      "grouping": "The Humanities",
-      "classification": "College",
+      "term_label": "Alternate Item",
       "default_presentation_sequence": 2,
-      "homepage": "http://al.nd.edu/",
-      "activated_on": "2016-10-22"
-    },
-    {
-      "predicate_name": "spec",
-      "term_label": "University of Notre Dame::College of Arts and Letters::Non-Departmental",
-      "classification": "Department",
-      "default_presentation_sequence": 1,
       "activated_on": "2015-07-22"
     }
   ]

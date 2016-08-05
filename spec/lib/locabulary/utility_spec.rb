@@ -28,7 +28,9 @@ module Locabulary
 
     context '.filename_for_predicate_name' do
       it 'will throw an exception if the predicate name is missing' do
-        expect { described_class.filename_for_predicate_name('__missing__') }.to raise_error(Locabulary::Exceptions::RuntimeError)
+        expect { described_class.filename_for_predicate_name('__missing__') }.to(
+          raise_error(Locabulary::Exceptions::MissingPredicateNameError)
+        )
       end
 
       it 'will de-reference the filenmae to a base name' do

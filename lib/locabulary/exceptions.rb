@@ -11,6 +11,10 @@ module Locabulary
       end
     end
 
+    # An error occurred in attempting to find a given predicate_name in the data store
+    class MissingPredicateNameError < RuntimeError
+    end
+
     # There is a problem with the hierarchy; A child is being defined without a defined parent.
     class MissingHierarchicalParentError < RuntimeError
       attr_reader :predicate_name, :error
