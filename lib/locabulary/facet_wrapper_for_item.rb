@@ -35,7 +35,7 @@ module Locabulary
     # @see Locabulary::FacetedHierarchicalTreeSorter
     # @param options [Hash]
     # @option predicate_name [String]
-    # @option faceted_node [#qvalue, #value, #hits]
+    # @option faceted_node [#value, #hits]
     # @option term_label [String]
     # @return Locabulary::FacetWrapperForItem
     def self.build_for_faceted_node_and_locabulary_item(options = {})
@@ -54,6 +54,6 @@ module Locabulary
     attr_reader :__faceted_node__, :__locabulary_item__
 
     extend Forwardable
-    def_delegators :__faceted_node__, :qvalue, :value, :hits
+    def_delegators :__faceted_node__, :value, :hits
   end
 end

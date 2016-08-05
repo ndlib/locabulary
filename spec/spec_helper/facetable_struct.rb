@@ -1,1 +1,1 @@
-FacetableStruct = Struct.new(:qvalue, :value, :hits)
+FacetableStruct = Struct.new(:value, :hits)

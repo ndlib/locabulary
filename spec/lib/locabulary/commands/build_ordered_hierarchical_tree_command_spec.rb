@@ -13,9 +13,9 @@ module Locabulary
           context 'with a well formed tree' do
             let(:faceted_items) do
               [
-                FacetableStruct.new('Hello', 'Hello', 2),
-                FacetableStruct.new('Ardvark', 'Ardvark', 4),
-                FacetableStruct.new('Hello::World', 'Hello::World', 8)
+                FacetableStruct.new('Hello', 2),
+                FacetableStruct.new('Ardvark', 4),
+                FacetableStruct.new('Hello::World', 8)
               ]
             end
             it 'returns a sorted Array of Locabulary::Item objects' do
@@ -27,8 +27,8 @@ module Locabulary
           context 'with a tree that has gaps between nodes' do
             let(:faceted_items) do
               [
-                FacetableStruct.new('Hello', 'Hello', 2),
-                FacetableStruct.new('Hello::World::NowFail', 'Hello::World::NowFail', 8)
+                FacetableStruct.new('Hello', 2),
+                FacetableStruct.new('Hello::World::NowFail', 8)
               ]
             end
             it 'will raise Exceptions::MissingHierarchicalParentError' do
@@ -44,10 +44,10 @@ module Locabulary
           context 'with a mix of missing and existing items' do
             let(:faceted_items) do
               [
-                FacetableStruct.new('Deactive Item', 'Deactive Item', 3),
-                FacetableStruct.new('Active Item', 'Active Item', 2),
-                FacetableStruct.new('Alternate Item', 'Alternate Item', 8),
-                FacetableStruct.new('Aardvark of Activity', 'Aardvark of Activity', 16)
+                FacetableStruct.new('Deactive Item', 3),
+                FacetableStruct.new('Active Item', 2),
+                FacetableStruct.new('Alternate Item', 8),
+                FacetableStruct.new('Aardvark of Activity', 16)
               ]
             end
 
