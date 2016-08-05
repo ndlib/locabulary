@@ -15,10 +15,10 @@ module Locabulary
   # Responsible for building a hierarchical tree from faceted items, and ordering the nodes as per the presentation sequence for the
   # associated predicate_name.
   #
-  # @param options [Hash]
-  # @option predicate_name [String]
-  # @option faceted_items [Array<#hits, #value>]
-  # @option faceted_item_hierarchy_delimiter [String]
+  # @param [Hash] options
+  # @option options [String] :predicate_name
+  # @option options [Array<#hits, #value>] :faceted_items
+  # @option options [String] :faceted_item_hierarchy_delimiter
   # @return Array[<FacetWrapperForItem>]
   #
   # @see Locabulary::Commands::BuildOrderedHierarchicalTree
@@ -29,11 +29,14 @@ module Locabulary
   # @api public
   # @since 0.1.0
   #
-  # Responsible for extracting a non-hierarchical sorted array of Locabulary::Item for the given predicate_name.
+  # Responsible for extracting a non-hierarchical sorted array of Locabulary::Item::Base objects for the given predicate_name.
   #
-  # @param options [Hash]
-  # @option predicate_name [String]
-  # @option as_of [Date]
+  # @param [Hash] options
+  # @option options [String] :predicate_name
+  # @option options [Date] :as_of (Date.today)
+  # @return Array[<Locabulary::Item::Base>]
+  #
+  # @see Locabulary::Commands::ActiveItemsForCommand
   def self.active_items_for(options = {})
     Commands::ActiveItemsForCommand.call(options)
   end
@@ -76,19 +79,35 @@ module Locabulary
 
   # @api public
   # @since 0.1.0
+  #
+  # @param [Hash] options
+  # @option options [String] :predicate_name
+  # @option options [String] :term_uri
+  # @option options [String] :as_of (Date.today)
+  #
+  # @return [String] a label or URI
+  #
+  # @see Locabulary.active_items_for
   def self.active_label_for_uri(options = {})
-    predicate_name = options.fetch(:predicate_name)
     term_uri = options.fetch(:term_uri)
-    object = active_items_for(predicate_name: predicate_name).detect { |obj| obj.term_uri == term_uri }
+    object = active_items_for(options).detect { |obj| obj.term_uri == term_uri }
     return object.term_label if object
     term_uri
   end
 
   # @api public
   # @since 0.1.0
+  #
+  # Return an Array of term labels for the given :predicate_name
+  #
+  # @param [Hash] options
+  # @option options [String] :predicate_name
+  # @option options [String] :as_of (Date.today)
+  # @return [Array<String>] an array of Locabuarly::Item::Base#term_label
+  #
+  # @see Locabulary.active_items_for
   def self.active_labels_for(options = {})
-    predicate_name = options.fetch(:predicate_name)
-    active_items_for(predicate_name: predicate_name).map(&:term_label)
+    active_items_for(options).map(&:term_label)
   end
 
   # @api private

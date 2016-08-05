@@ -15,7 +15,8 @@ module Locabulary
       # @option predicate_name [String]
       # @option faceted_items [Array<#hits, #value>]
       # @option faceted_item_hierarchy_delimiter [String]
-      # @return Array[<FacetWrapperForItem>]
+      #
+      # @return [Array<FacetWrapperForItem>]
       def self.call(options = {})
         new(options).call
       end

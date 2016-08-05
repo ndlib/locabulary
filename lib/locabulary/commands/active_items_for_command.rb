@@ -24,8 +24,9 @@ module Locabulary
       # @since 0.5.0
       #
       # @param options [Hash]
-      # @option predicate_name [String]
-      # @option as_of [Date]
+      # @option options [String] :predicate_name
+      # @option options [Date] :as_of (Date.today)
+      #
       # @note A concession about the as_of; This is not a live Utility. The data has a
       #   low churn rate. And while the date is important, I'm not as concerned
       #   about the local controlled vocabulary exposing a date that has expired.
