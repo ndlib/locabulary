@@ -1,4 +1,6 @@
 require 'date'
+require 'json'
+require 'locabulary/exceptions'
 
 # :nodoc:
 module Locabulary
