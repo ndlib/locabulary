@@ -6,6 +6,7 @@ module Locabulary
   module Commands
     RSpec.describe BuildOrderedHierarchicalTreeCommand do
       context '.call' do
+        let(:mapper_for_specs) { ->(item) { [item.predicate_name, item.term_label] } }
         subject do
           described_class.call(predicate_name: 'chicken', faceted_items: faceted_items, faceted_item_hierarchy_delimiter: '::')
         end
@@ -19,8 +20,7 @@ module Locabulary
               ]
             end
             it 'returns a sorted Array of Locabulary::Item objects' do
-              mapper = ->(item) { [item.predicate_name, item.term_label] }
-              expect(subject.map(&mapper)).to eq([%w(chicken Ardvark), %w(chicken Hello)])
+              expect(subject.map(&mapper_for_specs)).to eq([%w(chicken Ardvark), %w(chicken Hello)])
             end
           end
 
@@ -38,10 +38,10 @@ module Locabulary
         end
 
         context 'with a predicate_name that has a data store' do
-          subject do
-            described_class.call(predicate_name: 'spec', faceted_items: faceted_items, faceted_item_hierarchy_delimiter: '::')
-          end
           context 'with a mix of missing and existing items' do
+            subject do
+              described_class.call(predicate_name: 'spec', faceted_items: faceted_items, faceted_item_hierarchy_delimiter: '::')
+            end
             let(:faceted_items) do
               [
                 FacetableStruct.new('Deactive Item', 3),
@@ -52,9 +52,40 @@ module Locabulary
             end
 
             it 'returns a sorted Array of Locabulary::Item objects' do
-              mapper = ->(item) { [item.predicate_name, item.term_label] }
-              expect(subject.map(&mapper)).to eq(
+              expect(subject.map(&mapper_for_specs)).to eq(
                 [["spec", "Deactive Item"], ["spec", "Alternate Item"], ["spec", "Active Item"], ["spec", "Aardvark of Activity"]]
+              )
+            end
+          end
+
+          context 'with administrative_units as returned from blacklight' do
+            # NOTE: The delimiter is a single colon as expected from blacklight.
+            # This is not the same as what is stored in Locabulary
+            let(:faceted_item_hierarchy_delimiter) { ":" }
+            subject do
+              described_class.call(
+                predicate_name: 'administrative_units',
+                faceted_items: faceted_items,
+                faceted_item_hierarchy_delimiter: faceted_item_hierarchy_delimiter
+              )
+            end
+            let(:faceted_items) do
+              [
+                FacetableStruct.new('University of Notre Dame', 1),
+                FacetableStruct.new("University of Notre Dame#{faceted_item_hierarchy_delimiter}College of Arts and Letters", 3),
+                FacetableStruct.new("University of Notre Dame#{faceted_item_hierarchy_delimiter}School of Architecture", 2)
+              ]
+            end
+
+            it 'returns a sorted Array of Locabulary::Item objects' do
+              roots = subject
+              expect(roots.map(&mapper_for_specs)).to eq([["administrative_units", "University of Notre Dame"]])
+
+              expect(roots.first.children.map(&mapper_for_specs)).to eq(
+                [
+                  ["administrative_units", "University of Notre Dame::School of Architecture"],
+                  ["administrative_units", "University of Notre Dame::College of Arts and Letters"]
+                ]
               )
             end
           end
