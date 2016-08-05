@@ -2,6 +2,7 @@ require 'set'
 require 'date'
 require 'locabulary/item'
 require 'locabulary/exceptions'
+require 'locabulary/hierarchy_processor'
 
 module Locabulary
   module Commands
@@ -37,41 +38,33 @@ module Locabulary
       def initialize(options = {})
         @predicate_name = options.fetch(:predicate_name)
         @as_of = options.fetch(:as_of) { Date.today }
-        @builder = Item.builder_for(predicate_name: predicate_name)
+        @locabulary_item_class = Item.class_to_instantiate(predicate_name: predicate_name)
         @utility_service = options.fetch(:utility_service) { default_utility_service }
       end
 
       def call
-        items = []
-        hierarchy_graph_keys = {}
-        top_level_slugs = Set.new
-        utility_service.with_active_extraction_for(predicate_name, as_of) do |data|
-          item = builder.call(data.merge('predicate_name' => predicate_name))
-          items << item
-          top_level_slugs << item.root_slug
-          hierarchy_graph_keys[item.term_label] = item
-        end
-        associate_parents_and_childrens_for(hierarchy_graph_keys, items)
-        top_level_slugs.map { |slug| hierarchy_graph_keys.fetch(slug) }
+        HierarchyProcessor.call(
+          enumerator: data_enumerator,
+          item_builder: item_builder,
+          predicate_name: predicate_name
+        )
       end
 
       private
 
-      attr_reader :predicate_name, :as_of, :builder, :utility_service
+      def data_enumerator
+        ->(&block) { utility_service.with_active_extraction_for(predicate_name, as_of, &block) }
+      end
+
+      def item_builder
+        ->(data) { locabulary_item_class.new(data.merge('predicate_name' => predicate_name)) }
+      end
+
+      attr_reader :predicate_name, :as_of, :locabulary_item_class, :utility_service
 
       def default_utility_service
         require 'locabulary/utility'
         Utility
-      end
-
-      def associate_parents_and_childrens_for(hierarchy_graph_keys, items)
-        items.each do |item|
-          begin
-            hierarchy_graph_keys.fetch(item.parent_term_label).add_child(item) unless item.parent_slugs.empty?
-          rescue KeyError => error
-            raise Exceptions::MissingHierarchicalParentError.new(predicate_name, error)
-          end
-        end
       end
     end
   end
