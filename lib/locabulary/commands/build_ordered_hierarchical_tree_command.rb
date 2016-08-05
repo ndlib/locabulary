@@ -79,10 +79,7 @@ module Locabulary
 
       # Responsible for converting the hierarchy delimiter of the facet item to the hierarchy delimiter of the Locabulary::Item.
       def convert_faceted_node_value_to_term_label(value)
-        value.gsub(
-          /(?<!#{faceted_item_hierarchy_delimiter})#{faceted_item_hierarchy_delimiter}(?!#{faceted_item_hierarchy_delimiter})/,
-          locabulary_item_class.hierarchy_delimiter
-        )
+        value.split(faceted_item_hierarchy_delimiter).join(locabulary_item_class.hierarchy_delimiter)
       end
     end
   end
