@@ -1,7 +1,7 @@
 require 'spec_helper'
-require 'locabulary/items'
+require 'locabulary/item'
 
-RSpec.describe Locabulary::Items do
+RSpec.describe Locabulary::Item do
   context '#build' do
     it "finds a defined subclass" do
       expect(described_class.build(predicate_name: 'administrative_units')).to(

@@ -1,7 +1,7 @@
 require "google_drive"
 require 'highline/import'
-require 'locabulary'
-require 'locabulary/items'
+require 'locabulary/utility'
+require 'locabulary/item'
 require 'json'
 
 module Locabulary
@@ -10,7 +10,7 @@ module Locabulary
     def initialize(document_key, predicate_name, data_fetcher = default_data_fetcher)
       @document_key = document_key
       @predicate_name = predicate_name
-      @output_filepath = Locabulary.filename_for_predicate_name(predicate_name: predicate_name)
+      @output_filepath = Utility.filename_for_predicate_name(predicate_name)
       @data_fetcher = data_fetcher
     end
 
@@ -53,7 +53,7 @@ module Locabulary
 
     def convert_to_json(data)
       json_array = data.map do |row|
-        Locabulary::Items.build(row).to_h
+        Locabulary::Item.build(row).to_h
       end
       @json_data = JSON.pretty_generate("predicate_name" => predicate_name, "values" => json_array)
     end

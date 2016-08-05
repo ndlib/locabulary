@@ -4,8 +4,11 @@ $LOAD_PATH.unshift File.join(GEM_ROOT, 'lib')
 require 'rspec'
 require 'rspec/its'
 require 'coverage_helper'
+require 'shoulda/matchers/independent/delegate_method_matcher'
 
 RSpec.configure do |config|
+  config.include Shoulda::Matchers::Independent
+
   # rspec-mocks config goes here. You can use an alternate test double
   # library (such as bogus or mocha) by changing the `mock_with` option here.
   config.mock_with :rspec do |mocks|
