@@ -14,6 +14,8 @@ module Locabulary
       end
       private_class_method :cache
 
+      # @api private
+      # @since 0.5.0
       def self.reset_cache!
         @cache = {}
       end

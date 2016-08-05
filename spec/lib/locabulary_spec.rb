@@ -5,7 +5,7 @@ RSpec.describe Locabulary do
   before { Locabulary.reset_active_cache! }
 
   context '.build_ordered_hierarchical_tree' do
-    it 'will delegate to Commands::BuildOrderedHierarchicalTree' do
+    it 'will delegate to Commands::BuildOrderedHierarchicalTreeCommand' do
       parameters = { predicate_name: 'predicate_name', faceted_items: [1, 2, 3], faceted_item_hierarchy_delimiter: ':' }
       expect(Locabulary::Commands::BuildOrderedHierarchicalTreeCommand).to receive(:call).with(parameters)
       described_class.build_ordered_hierarchical_tree(parameters)
@@ -13,7 +13,7 @@ RSpec.describe Locabulary do
   end
 
   context '.active_items_for' do
-    it 'will delegate to Commands::ActiveItemsFor' do
+    it 'will delegate to Commands::ActiveItemsForCommand' do
       parameters = { predicate_name: 'predicate_name' }
       expect(Locabulary::Commands::ActiveItemsForCommand).to receive(:call).with(parameters)
       described_class.active_items_for(parameters)
