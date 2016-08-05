@@ -1,5 +1,6 @@
 require 'spec_helper'
 require 'locabulary'
+require 'locabulary/item/base'
 
 RSpec.describe Locabulary do
   before { Locabulary.reset_active_cache! }
@@ -33,11 +34,11 @@ RSpec.describe Locabulary do
     let(:as_of_date) { Date.parse('2016-08-01') }
     it 'returns an active item for the given predicate_name and label' do
       item = described_class.item_for(predicate_name: 'spec', term_label: 'Active Item', as_of: Date.today)
-      expect(item).to be_a(Locabulary::Items::Base)
+      expect(item).to be_a(Locabulary::Item::Base)
     end
     it 'returns a found deactived item if no active item is found for the given predicate_name and label' do
       item = described_class.item_for(predicate_name: 'spec', term_label: 'Deactive Item', as_of: as_of_date)
-      expect(item).to be_a(Locabulary::Items::Base)
+      expect(item).to be_a(Locabulary::Item::Base)
     end
     it 'raises an exception if no item is found' do
       expect do
