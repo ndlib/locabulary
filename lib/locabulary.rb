@@ -108,10 +108,4 @@ module Locabulary
   def self.active_labels_for(options = {})
     active_items_for(options).map(&:term_label)
   end
-
-  # @api private
-  def self.reset_active_cache!
-    Commands::ActiveItemsForCommand.reset_cache!
-    Commands::ActiveHierarchicalRootsCommand.reset_cache!
-  end
 end
