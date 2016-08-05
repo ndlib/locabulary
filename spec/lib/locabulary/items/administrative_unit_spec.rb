@@ -1,7 +1,7 @@
 require 'spec_helper'
-require 'locabulary/item/administrative_unit'
+require 'locabulary/items/administrative_unit'
 
-RSpec.describe Locabulary::Item::AdministrativeUnit do
+RSpec.describe Locabulary::Items::AdministrativeUnit do
   subject { described_class.new }
   its(:attribute_names) { should include(:predicate_name) }
   its(:attribute_names) { should include(:term_label) }

@@ -37,7 +37,7 @@ module Locabulary
       def initialize(options = {})
         @predicate_name = options.fetch(:predicate_name)
         @as_of = options.fetch(:as_of) { Date.today }
-        @builder = Items.builder_for(predicate_name: predicate_name)
+        @builder = Item.builder_for(predicate_name: predicate_name)
         @utility_service = options.fetch(:utility_service) { default_utility_service }
       end
 

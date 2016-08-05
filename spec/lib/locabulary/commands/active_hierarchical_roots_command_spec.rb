@@ -13,7 +13,7 @@ module Locabulary
           expect(results).to be_a(Array)
           expect(results.size).to be > 1
           results.each do |result|
-            expect(result).to be_a(Locabulary::Item::AdministrativeUnit)
+            expect(result).to be_a(Locabulary::Items::AdministrativeUnit)
           end
         end
 

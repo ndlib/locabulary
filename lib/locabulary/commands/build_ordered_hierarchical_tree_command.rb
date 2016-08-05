@@ -25,7 +25,7 @@ module Locabulary
         @predicate_name = options.fetch(:predicate_name)
         @faceted_items = options.fetch(:faceted_items)
         @faceted_item_hierarchy_delimiter = options.fetch(:faceted_item_hierarchy_delimiter)
-        @builder = Items.builder_for(predicate_name: predicate_name)
+        @builder = Item.builder_for(predicate_name: predicate_name)
       end
 
       def call
