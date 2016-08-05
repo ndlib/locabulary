@@ -1,5 +1,6 @@
 require 'forwardable'
 require 'delegate'
+require 'locabulary/item'
 
 module Locabulary
   # A wrapper for a Locabulary::Items::Base that includes information from
@@ -22,7 +23,7 @@ module Locabulary
       predicate_name = options.fetch(:predicate_name)
       faceted_node = options.fetch(:faceted_node)
       term_label = options.fetch(:term_label)
-      locabulary_item = Locabulary::Item.build(predicate_name: predicate_name, term_label: term_label, default_presentation_sequence: nil)
+      locabulary_item = Item.build(predicate_name: predicate_name, term_label: term_label, default_presentation_sequence: nil)
       new(faceted_node: faceted_node, locabulary_item: locabulary_item)
     end
 

@@ -1,6 +1,6 @@
 require 'set'
 require 'date'
-require 'locabulary/items'
+require 'locabulary/item'
 require 'locabulary/exceptions'
 
 module Locabulary

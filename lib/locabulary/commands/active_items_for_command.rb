@@ -1,6 +1,5 @@
 require 'date'
-require 'json'
-require 'locabulary/items'
+require 'locabulary/item'
 require 'locabulary/utility'
 
 module Locabulary
