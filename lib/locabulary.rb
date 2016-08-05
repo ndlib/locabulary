@@ -71,7 +71,7 @@ module Locabulary
     Utility.with_extraction_for(predicate_name) do |data|
       next unless data.fetch('term_label') == term_label
       item = Items.build(data.merge('predicate_name' => predicate_name))
-      break if data_is_active?(data, as_of)
+      break if Utility.data_is_active?(data, as_of)
     end
     return item unless item.nil?
     raise Locabulary::Exceptions::ItemNotFoundError.new(predicate_name, term_label)
