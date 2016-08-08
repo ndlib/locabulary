@@ -6,6 +6,8 @@ require 'locabulary/hierarchy_processor'
 
 module Locabulary
   module Services
+    # @api private
+    #
     # Responsible for transforming the flat data for the given :predicate_name
     # into a hierarchy.
     class ActiveHierarchicalRootsCommand
