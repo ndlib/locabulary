@@ -11,6 +11,8 @@ module Locabulary
       new(options).call
     end
 
+    private_class_method :new
+
     # @param options [Hash]
     # @option options [#call] :item_builder - when called will create a Locabulary::Items::Base object
     # @option options [#call] :predicate_name -

@@ -26,6 +26,8 @@ module Locabulary
         new(options).call
       end
 
+      private_class_method :new
+
       def initialize(options = {})
         @predicate_name = options.fetch(:predicate_name)
         @faceted_items = options.fetch(:faceted_items)

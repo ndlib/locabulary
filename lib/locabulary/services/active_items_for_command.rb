@@ -37,6 +37,8 @@ module Locabulary
         cache[predicate_name] ||= new(options).call
       end
 
+      private_class_method :new
+
       def initialize(options = {})
         @predicate_name = options.fetch(:predicate_name)
         @as_of = options.fetch(:as_of) { Date.today }
