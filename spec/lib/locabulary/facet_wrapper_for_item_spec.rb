@@ -16,6 +16,7 @@ module Locabulary
       it { is_expected.to be_a(described_class) }
       it { is_expected.to delegate_method(:value).to(:__faceted_node__) }
       it { is_expected.to delegate_method(:hits).to(:__faceted_node__) }
+      it { is_expected.to respond_to(:count) }
     end
 
     context '.build_for_faceted_node' do
@@ -28,6 +29,7 @@ module Locabulary
       it { is_expected.to be_a(described_class) }
       it { is_expected.to delegate_method(:value).to(:__faceted_node__) }
       it { is_expected.to delegate_method(:hits).to(:__faceted_node__) }
+      it { is_expected.to respond_to(:count) }
     end
 
     context 'Comparable' do

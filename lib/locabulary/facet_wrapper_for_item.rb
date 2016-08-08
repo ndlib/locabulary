@@ -55,5 +55,6 @@ module Locabulary
 
     extend Forwardable
     def_delegators :__faceted_node__, :value, :hits
+    alias count hits
   end
 end
