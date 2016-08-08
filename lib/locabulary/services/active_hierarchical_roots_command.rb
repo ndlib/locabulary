@@ -5,6 +5,7 @@ require 'locabulary/exceptions'
 require 'locabulary/hierarchy_processor'
 
 module Locabulary
+  # :nodoc:
   module Services
     # @api private
     #
@@ -71,5 +72,6 @@ module Locabulary
         Utility
       end
     end
+    private_constant :ActiveHierarchicalRootsCommand
   end
 end

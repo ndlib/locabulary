@@ -3,6 +3,7 @@ require 'locabulary/item'
 require 'locabulary/utility'
 
 module Locabulary
+  # :nodoc:
   module Services
     # @api private
     #
@@ -57,5 +58,6 @@ module Locabulary
 
       attr_reader :predicate_name, :as_of, :builder
     end
+    private_constant :ActiveItemsForCommand
   end
 end

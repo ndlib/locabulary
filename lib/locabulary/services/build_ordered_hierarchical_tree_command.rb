@@ -6,6 +6,7 @@ require 'locabulary/facet_wrapper_for_item'
 require 'locabulary/hierarchy_processor'
 
 module Locabulary
+  # :nodoc:
   module Services
     # @api private
     #
@@ -71,5 +72,6 @@ module Locabulary
         value.split(faceted_item_hierarchy_delimiter).join(locabulary_item_class.hierarchy_delimiter)
       end
     end
+    private_constant :BuildOrderedHierarchicalTreeCommand
   end
 end
