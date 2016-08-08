@@ -1,9 +1,9 @@
 require 'spec_helper'
-require 'locabulary/commands/build_ordered_hierarchical_tree_command'
+require 'locabulary/services/build_ordered_hierarchical_tree_command'
 require 'spec_helper/facetable_struct'
 
 module Locabulary
-  module Commands
+  module Services
     RSpec.describe BuildOrderedHierarchicalTreeCommand do
       context '.call' do
         let(:mapper_for_specs) { ->(item) { [item.predicate_name, item.term_label] } }

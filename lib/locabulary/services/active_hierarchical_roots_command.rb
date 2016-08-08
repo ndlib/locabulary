@@ -5,7 +5,7 @@ require 'locabulary/exceptions'
 require 'locabulary/hierarchy_processor'
 
 module Locabulary
-  module Commands
+  module Services
     # Responsible for transforming the flat data for the given :predicate_name
     # into a hierarchy.
     class ActiveHierarchicalRootsCommand

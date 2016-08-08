@@ -4,25 +4,25 @@ require 'locabulary/items/base'
 
 RSpec.describe Locabulary do
   context '.build_ordered_hierarchical_tree' do
-    it 'will delegate to Commands::BuildOrderedHierarchicalTreeCommand' do
+    it 'will delegate to Services::BuildOrderedHierarchicalTreeCommand' do
       parameters = { predicate_name: 'predicate_name', faceted_items: [1, 2, 3], faceted_item_hierarchy_delimiter: ':' }
-      expect(Locabulary::Commands::BuildOrderedHierarchicalTreeCommand).to receive(:call).with(parameters)
+      expect(Locabulary::Services::BuildOrderedHierarchicalTreeCommand).to receive(:call).with(parameters)
       described_class.build_ordered_hierarchical_tree(parameters)
     end
   end
 
   context '.active_items_for' do
-    it 'will delegate to Commands::ActiveItemsForCommand' do
+    it 'will delegate to Services::ActiveItemsForCommand' do
       parameters = { predicate_name: 'predicate_name' }
-      expect(Locabulary::Commands::ActiveItemsForCommand).to receive(:call).with(parameters)
+      expect(Locabulary::Services::ActiveItemsForCommand).to receive(:call).with(parameters)
       described_class.active_items_for(parameters)
     end
   end
 
   context '.active_hierarchical_roots' do
-    it 'will delegate to Commands::ActiveHierarchicalRootsCommand' do
+    it 'will delegate to Services::ActiveHierarchicalRootsCommand' do
       parameters = { predicate_name: 'predicate_name' }
-      expect(Locabulary::Commands::ActiveHierarchicalRootsCommand).to receive(:call).with(parameters)
+      expect(Locabulary::Services::ActiveHierarchicalRootsCommand).to receive(:call).with(parameters)
       described_class.active_hierarchical_roots(parameters)
     end
   end

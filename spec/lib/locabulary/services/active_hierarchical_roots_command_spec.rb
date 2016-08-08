@@ -1,8 +1,8 @@
 require 'spec_helper'
-require 'locabulary/commands/active_hierarchical_roots_command'
+require 'locabulary/services/active_hierarchical_roots_command'
 
 module Locabulary
-  module Commands
+  module Services
     RSpec.describe ActiveHierarchicalRootsCommand do
       context '.call' do
         before { described_class.reset_cache! }

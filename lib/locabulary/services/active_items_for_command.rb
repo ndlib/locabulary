@@ -3,7 +3,7 @@ require 'locabulary/item'
 require 'locabulary/utility'
 
 module Locabulary
-  module Commands
+  module Services
     # Responsible for extracting a non-hierarchical sorted array of Locabulary::Item for the given predicate_name
     #
     # @see Locabulary::Item

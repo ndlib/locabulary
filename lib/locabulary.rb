@@ -2,9 +2,9 @@ require 'date'
 require 'json'
 require 'locabulary/exceptions'
 require 'locabulary/item'
-require 'locabulary/commands/build_ordered_hierarchical_tree_command'
-require 'locabulary/commands/active_items_for_command'
-require 'locabulary/commands/active_hierarchical_roots_command'
+require 'locabulary/services/build_ordered_hierarchical_tree_command'
+require 'locabulary/services/active_items_for_command'
+require 'locabulary/services/active_hierarchical_roots_command'
 
 # @since 0.1.0
 module Locabulary
@@ -20,9 +20,9 @@ module Locabulary
   # @option options [String] :faceted_item_hierarchy_delimiter
   # @return [Array<FacetWrapperForItem>]
   #
-  # @see Locabulary::Commands::BuildOrderedHierarchicalTree
+  # @see Locabulary::Services::BuildOrderedHierarchicalTree
   def self.build_ordered_hierarchical_tree(options = {})
-    Commands::BuildOrderedHierarchicalTreeCommand.call(options)
+    Services::BuildOrderedHierarchicalTreeCommand.call(options)
   end
 
   # @api public
@@ -35,9 +35,9 @@ module Locabulary
   # @option options [Date] :as_of (Date.today)
   # @return [Array<Locabulary::Items::Base>]
   #
-  # @see Locabulary::Commands::ActiveItemsForCommand
+  # @see Locabulary::Services::ActiveItemsForCommand
   def self.active_items_for(options = {})
-    Commands::ActiveItemsForCommand.call(options)
+    Services::ActiveItemsForCommand.call(options)
   end
 
   # @api public
@@ -51,7 +51,7 @@ module Locabulary
   # @option options [Date] :as_of (Date.today)
   # @return [Array<Locabulary::Items::Base>] - the root nodes
   def self.active_hierarchical_roots(options = {})
-    Commands::ActiveHierarchicalRootsCommand.call(options)
+    Services::ActiveHierarchicalRootsCommand.call(options)
   end
 
   # @api public

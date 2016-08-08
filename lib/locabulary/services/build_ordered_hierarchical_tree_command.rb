@@ -6,7 +6,7 @@ require 'locabulary/facet_wrapper_for_item'
 require 'locabulary/hierarchy_processor'
 
 module Locabulary
-  module Commands
+  module Services
     # Responsible for building a hierarchical tree from faceted items, and ordering the nodes as per the presentation sequence for the
     # associated predicate_name.
     class BuildOrderedHierarchicalTreeCommand
