@@ -8,7 +8,7 @@ require 'locabulary/commands/active_hierarchical_roots_command'
 
 # @since 0.1.0
 module Locabulary
-  # @api private
+  # @api public
   # @since 0.5.0
   #
   # Responsible for building a hierarchical tree from faceted items, and ordering the nodes as per the presentation sequence for the
