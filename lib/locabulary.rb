@@ -56,6 +56,10 @@ module Locabulary
 
   # @api public
   # @since 0.5.0
+  #
+  # For the given :predicate_name and :term_label find an item.
+  # We prefer to find an active item, but will settle for a non-active item.
+  #
   # @param options [Hash]
   # @option options [String] :predicate_name
   # @option options [String] :term_label
