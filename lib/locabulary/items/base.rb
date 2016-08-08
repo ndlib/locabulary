@@ -58,6 +58,7 @@ module Locabulary
         @children = []
       end
 
+      # @api private
       def to_h
         attribute_names.each_with_object({}) do |key, mem|
           mem[key.to_s] = send(key) unless send(key).to_s.strip == ''
@@ -66,6 +67,7 @@ module Locabulary
       end
       alias as_json to_h
 
+      # @api public
       def to_persistence_format_for_fedora
         return term_uri unless term_uri.to_s.strip == ''
         term_label
@@ -102,39 +104,50 @@ module Locabulary
         default_presentation_sequence || SORT_SEQUENCE_FOR_NIL
       end
 
+      # @api public
       def children
         @children.sort
       end
 
+      # @api private
+      # Yes, this is private. Its an internal mechanism.
       def add_child(*input)
         @children += input
       end
 
       HIERARCHY_DELIMITER = '::'.freeze
+
+      # @api public
       def slugs
         term_label.split(HIERARCHY_DELIMITER)
       end
 
+      # @api public
       def self.hierarchy_delimiter
         HIERARCHY_DELIMITER
       end
 
+      # @api public
       def parent_slugs
         slugs[0..-2]
       end
 
+      # @api public
       def parent_term_label
         parent_slugs.join(HIERARCHY_DELIMITER)
       end
 
+      # @api public
       def root_slug
         slugs[0]
       end
 
+      # @api public
       def selectable?
         children.count.zero?
       end
 
+      # @api public
       # When rendered as part of a select list
       def selectable_label
         slugs[-1]
@@ -142,6 +155,7 @@ module Locabulary
 
       alias selectable_id id
 
+      # @api public
       # When rendered as part of a facet list
       def hierarchy_facet_label
         slugs[-1]

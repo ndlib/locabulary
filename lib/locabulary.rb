@@ -18,7 +18,7 @@ module Locabulary
   # @option options [String] :predicate_name
   # @option options [Array<#hits, #value>] :faceted_items
   # @option options [String] :faceted_item_hierarchy_delimiter
-  # @return Array[<FacetWrapperForItem>]
+  # @return [Array<FacetWrapperForItem>]
   #
   # @see Locabulary::Commands::BuildOrderedHierarchicalTree
   def self.build_ordered_hierarchical_tree(options = {})
@@ -33,7 +33,7 @@ module Locabulary
   # @param [Hash] options
   # @option options [String] :predicate_name
   # @option options [Date] :as_of (Date.today)
-  # @return Array[<Locabulary::Items::Base>]
+  # @return [Array<Locabulary::Items::Base>]
   #
   # @see Locabulary::Commands::ActiveItemsForCommand
   def self.active_items_for(options = {})
