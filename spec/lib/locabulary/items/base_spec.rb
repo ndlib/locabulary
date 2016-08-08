@@ -78,6 +78,12 @@ RSpec.describe Locabulary::Items::Base do
     end
   end
 
+  context '#hierarchy_facet_label' do
+    it 'is the last slug' do
+      expect(subject.hierarchy_facet_label).to eq('Planet')
+    end
+  end
+
   context 'slug methods' do
     subject { described_class.new(term_label: 'Universe::Galaxy::Planet') }
 

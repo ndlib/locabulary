@@ -21,12 +21,26 @@ RSpec.describe Locabulary::Items::AdministrativeUnit do
 
   subject { described_class.new(term_label: 'Universe::Galaxy::Planet') }
 
+  context '#hierarchy_facet_label' do
+    it 'is the last slug' do
+      expect(subject.hierarchy_facet_label).to eq('Planet')
+    end
+    it 'is the second to last and last slug if we have a Non-Departmental last slug' do
+      subject = described_class.new(
+        term_label: "Universe::Galaxy::#{described_class::NON_DEPARTMENTAL_SLUG}"
+      )
+      expect(subject.hierarchy_facet_label).to eq(described_class::NON_DEPARTMENTAL_SLUG)
+    end
+  end
+
   context '#selectable_label' do
     it 'is the last slug' do
       expect(subject.selectable_label).to eq('Planet')
     end
     it 'is the second to last and last slug if we have a Non-Departmental last slug' do
-      subject = described_class.new(term_label: "Universe::Galaxy::#{described_class::NON_DEPARTMENTAL_SLUG}")
+      subject = described_class.new(
+        term_label: "Universe::Galaxy::#{described_class::NON_DEPARTMENTAL_SLUG}"
+      )
       expect(subject.selectable_label).to eq(
         "Galaxy#{described_class::HUMAN_FRIENDLY_HIERARCHY_DELIMITER}#{described_class::NON_DEPARTMENTAL_SLUG}"
       )

@@ -135,11 +135,17 @@ module Locabulary
         children.count.zero?
       end
 
+      # When rendered as part of a select list
       def selectable_label
         slugs[-1]
       end
 
       alias selectable_id id
+
+      # When rendered as part of a facet list
+      def hierarchy_facet_label
+        slugs[-1]
+      end
     end
   end
 end
