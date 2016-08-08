@@ -20,7 +20,7 @@ module Locabulary
 
     # @api public
     # @since 0.2.1
-    # @deprecated 0.6.0 Prefer instead class_to_instantiate
+    # @deprecated 0.6.0 Prefer instead class_to_instantiate; This will be removed in 0.7.0.
     #
     # Responsible for finding the appropriate Factory method for building a Locabulary::Item
     #
