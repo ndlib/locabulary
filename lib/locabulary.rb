@@ -1,10 +1,13 @@
-require 'date'
-require 'json'
-require 'locabulary/exceptions'
-require 'locabulary/item'
 require 'locabulary/services'
 
 # @since 0.1.0
+# @api public
+#
+# Locabulary is structured to expose public interface methods in the base module (e.g. `Locabulary`).
+# Other things to consider are the Locabulary::Items::Base object as it defines the returned data structure
+# for the public Locabulary methods.
+#
+# @see Locabury::Items::Base
 module Locabulary
   # @api public
   # @since 0.5.0
