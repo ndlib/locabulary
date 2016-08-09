@@ -2,6 +2,7 @@ require 'active_support/core_ext/string/inflections'
 require 'locabulary/services/build_ordered_hierarchical_tree_command'
 require 'locabulary/services/active_items_for_command'
 require 'locabulary/services/active_hierarchical_roots_command'
+require 'locabulary/services/item_for_command'
 
 module Locabulary
   # @api private

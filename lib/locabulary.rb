@@ -66,17 +66,7 @@ module Locabulary
   # @raise [Locabulary::Exceptions::ItemNotFoundError] if unable to find label for predicate_name
   # @return [Locabulary::Items::Base]
   def self.item_for(options = {})
-    predicate_name = options.fetch(:predicate_name)
-    term_label = options.fetch(:term_label)
-    as_of = options.fetch(:as_of) { Date.today }
-    item = nil
-    Utility.with_extraction_for(predicate_name) do |data|
-      next unless data.fetch('term_label') == term_label
-      item = Item.build(data.merge('predicate_name' => predicate_name))
-      break if Utility.data_is_active?(data, as_of)
-    end
-    return item unless item.nil?
-    raise Locabulary::Exceptions::ItemNotFoundError.new(predicate_name, term_label)
+    Services.call(:item_for, options)
   end
 
   # @api public
