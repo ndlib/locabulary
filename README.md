@@ -11,6 +11,10 @@ An extraction of limited localized vocabulary for Sipity and CurateND.
 This controlled vocabulary has a limited shelf-life as we explore other more
 robust options.
 
+## Getting Started
+
+See the [Locublary module in lib/locabulary](/lib/locabulary.rb) for the public methods of this gem.
+
 ## Testing
 
 The full test suite is run via `bundle exec rake`.
