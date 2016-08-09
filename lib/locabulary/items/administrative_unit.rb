@@ -18,8 +18,26 @@ module Locabulary
       # [String] What is the URL of the homepage. Please note the term_uri is reserved for something that is more resolvable by machines.
       #   And while the homepage may look resolvable, it is not as meaningful for longterm preservation.
       attr_reader :homepage
+
+      # [String, nil] The type of administrative unit in the hierarchy (e.g. College, Department, University, etc.)
       attr_reader :classification
+
+      # [String, nil] A larger concept that ties units together; "The Humanities" is a grouping for the following:
+      #   * "University of Notre Dame::College of Arts and Letters::Africana Studies"
+      #   * "University of Notre Dame::College of Arts and Letters::American Studies"
       attr_reader :grouping
+
+      # [String, nil] For centers and institutes, there is often an affiliation to another administrative unit.
+      # @example
+      #
+      #     {
+      #      "predicate_name": "administrative_units",
+      #      "term_label": "University of Notre Dame::Centers and Institutes::Center for Accounting Research and Education (CARE)",
+      #      "classification": "CenterOrInstitute",
+      #      "affiliation": "University of Notre Dame::Mendoza College of Business",
+      #      "homepage": "http://www3.nd.edu/~carecob/",
+      #      "activated_on": "2015-07-22"
+      #    }
       attr_reader :affiliation
 
       private

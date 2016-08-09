@@ -7,7 +7,7 @@ module Locabulary
       extend Dry::Configurable
 
       setting :attribute_names, [
-        :predicate_name, :term_label, :term_uri, :deposit_label, :description, :grouping, :affiliation, :default_presentation_sequence,
+        :predicate_name, :term_label, :term_uri, :deposit_label, :description, :default_presentation_sequence,
         :activated_on, :deactivated_on
       ].freeze
 
@@ -42,13 +42,9 @@ module Locabulary
       attr_reader :default_presentation_sequence
 
       # @deprecated
+      # The label to be used when depositing; This is deprecated in favor of mapping functions.
+      # Those mapping functions are in part described in Locabuarly (faceted_item_hierarchy_delimiter).
       attr_reader :deposit_label
-
-      # @deprecated
-      attr_reader :grouping
-
-      # @deprecated
-      attr_reader :affiliation
 
       def initialize(attributes = {})
         attribute_names.each do |key|
