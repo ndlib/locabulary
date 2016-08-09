@@ -48,6 +48,7 @@ module Locabulary
   # @option options [String] :predicate_name
   # @option options [Date] :as_of (Date.today)
   # @return [Array<Locabulary::Items::Base>] - the root nodes
+  #
   # @see Locabulary::Services
   def self.active_hierarchical_roots(options = {})
     Services.call(:active_hierarchical_roots, options)
@@ -65,12 +66,16 @@ module Locabulary
   # @option options [Date] :as_of (Date.today)
   # @raise [Locabulary::Exceptions::ItemNotFoundError] if unable to find label for predicate_name
   # @return [Locabulary::Items::Base]
+  #
+  # @see Locabulary::Services
   def self.item_for(options = {})
     Services.call(:item_for, options)
   end
 
   # @api public
   # @since 0.1.0
+  #
+  # For the given :predicate_name and :term_uri return a best fitting human readable label.
   #
   # @param [Hash] options
   # @option options [String] :predicate_name
