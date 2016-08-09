@@ -1,23 +1,23 @@
-require 'set'
 require 'date'
 require 'locabulary/item'
-require 'locabulary/exceptions'
-require 'locabulary/hierarchy_processor'
+require 'locabulary/utility'
 
 module Locabulary
   # :nodoc:
   module Services
     # @api private
     #
-    # Responsible for transforming the flat data for the given :predicate_name
-    # into a hierarchy.
-    class ActiveHierarchicalRootsCommand
+    # Responsible for extracting a non-hierarchical sorted array of Locabulary::Item for the given predicate_name
+    #
+    # @see Locabulary::Item
+    class ActiveItemsForService
       def self.cache
         @cache ||= {}
       end
       private_class_method :cache
 
       # @api private
+      # @since 0.5.0
       def self.reset_cache!
         @cache = {}
       end
@@ -43,35 +43,21 @@ module Locabulary
       def initialize(options = {})
         @predicate_name = options.fetch(:predicate_name)
         @as_of = options.fetch(:as_of) { Date.today }
-        @locabulary_item_class = Item.class_to_instantiate(predicate_name: predicate_name)
-        @utility_service = options.fetch(:utility_service) { default_utility_service }
+        @builder = Item.builder_for(predicate_name: predicate_name)
       end
 
       def call
-        HierarchyProcessor.call(
-          enumerator: data_enumerator,
-          item_builder: item_builder,
-          predicate_name: predicate_name
-        )
+        collector = []
+        Utility.with_active_extraction_for(predicate_name, as_of) do |data|
+          collector << builder.call(data.merge('predicate_name' => predicate_name))
+        end
+        collector.sort
       end
 
       private
 
-      def data_enumerator
-        ->(&block) { utility_service.with_active_extraction_for(predicate_name, as_of, &block) }
-      end
-
-      def item_builder
-        ->(data) { locabulary_item_class.new(data.merge('predicate_name' => predicate_name)) }
-      end
-
-      attr_reader :predicate_name, :as_of, :locabulary_item_class, :utility_service
-
-      def default_utility_service
-        require 'locabulary/utility'
-        Utility
-      end
+      attr_reader :predicate_name, :as_of, :builder
     end
-    private_constant :ActiveHierarchicalRootsCommand
+    private_constant :ActiveItemsForService
   end
 end

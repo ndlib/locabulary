@@ -1,10 +1,11 @@
 require 'spec_helper'
-require 'locabulary/services/item_for_command'
-require 'spec_helper/facetable_struct'
+require 'date'
+require 'locabulary/services/item_for_service'
+require 'locabulary/items/base'
 
 module Locabulary
   module Services
-    RSpec.describe ItemForCommand do
+    RSpec.describe ItemForService do
       context '.call' do
         # uses data file '../../data/spec.json'
         let(:as_of_date) { Date.parse('2016-08-01') }

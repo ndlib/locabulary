@@ -12,7 +12,7 @@ module Locabulary
     #
     # Responsible for building a hierarchical tree from faceted items, and ordering the nodes as per the presentation sequence for the
     # associated predicate_name.
-    class BuildOrderedHierarchicalTreeCommand
+    class BuildOrderedHierarchicalTreeService
       # @api private
       # @since 0.5.0
       #
@@ -72,6 +72,6 @@ module Locabulary
         value.split(faceted_item_hierarchy_delimiter).join(locabulary_item_class.hierarchy_delimiter)
       end
     end
-    private_constant :BuildOrderedHierarchicalTreeCommand
+    private_constant :BuildOrderedHierarchicalTreeService
   end
 end

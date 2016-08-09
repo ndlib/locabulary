@@ -7,7 +7,7 @@ module Locabulary
   # :nodoc:
   module Services
     # @api private
-    class ItemForCommand
+    class ItemForService
       def self.call(options = {})
         new(options).call
       end
@@ -37,6 +37,6 @@ module Locabulary
         raise Locabulary::Exceptions::ItemNotFoundError.new(predicate_name, term_label)
       end
     end
-    private_constant :ItemForCommand
+    private_constant :ItemForService
   end
 end

@@ -1,8 +1,8 @@
 require 'active_support/core_ext/string/inflections'
-require 'locabulary/services/build_ordered_hierarchical_tree_command'
-require 'locabulary/services/active_items_for_command'
-require 'locabulary/services/active_hierarchical_roots_command'
-require 'locabulary/services/item_for_command'
+require 'locabulary/services/build_ordered_hierarchical_tree_service'
+require 'locabulary/services/active_items_for_service'
+require 'locabulary/services/active_hierarchical_roots_service'
+require 'locabulary/services/item_for_service'
 
 module Locabulary
   # @api private
@@ -21,7 +21,7 @@ module Locabulary
     # @param command_name [Symbol]
     # @param options [Hash]
     def self.call(command_name, options = {})
-      command_class = "#{command_name}_command".classify
+      command_class = "#{command_name}_service".classify
       const_get(command_class).call(options)
     end
   end
