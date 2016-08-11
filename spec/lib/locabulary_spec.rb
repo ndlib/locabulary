@@ -31,6 +31,9 @@ module Locabulary
 
     context '.item_for' do
       it 'will delegate to Services' do
+        options = { predicate_name: 'predicate_name' }
+        expect(Services).to receive(:call).with(:item_for, options)
+        described_class.item_for(options)
       end
     end
 
