@@ -574,6 +574,14 @@
     },
     {
       "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Centers and Institutes::Center for the Study of Languages and Cultures",
+      "classification": "CenterOrInstitute",
+      "affiliation": "University of Notre Dame::College of Arts and Letters",
+      "homepage": "http://cslc.nd.edu/",
+      "activated_on": "2015-07-22"
+    },
+    {
+      "predicate_name": "administrative_units",
       "term_label": "University of Notre Dame::Centers and Institutes::Center for the Study of Religion and Society",
       "classification": "CenterOrInstitute",
       "affiliation": "University of Notre Dame::College of Arts and Letters",
