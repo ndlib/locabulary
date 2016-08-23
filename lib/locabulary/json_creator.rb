@@ -59,45 +59,50 @@ module Locabulary
     end
 
     # :nocov:
+    # Responsible for building credentials from code
+    module GoogleAccessTokenFetcher
+      OOB_URI = "urn:ietf:wg:oauth:2.0:oob".freeze
+      READ_ONLY_SCOPE = "https://www.googleapis.com/auth/drive.readonly".freeze
+      def self.call
+        # This looks a bit funny in that we can cache the tokens that are returned. However I don't want to do that.
+        # So instead, I'm adding a symbol that should barf if the underlying interface changes.
+        token_store = :token_store
+
+        client_id = Google::Auth::ClientId.new(client_secrets.fetch('client_id'), client_secrets.fetch('client_secret'))
+        authorizer = Google::Auth::UserAuthorizer.new(client_id, READ_ONLY_SCOPE, token_store)
+        authorization_url = authorizer.get_authorization_url(base_url: OOB_URI)
+        puts "\n Open the following URL, login with your credentials and get the authorization code \n\n #{authorization_url}\n\n"
+        authorization_code = ask('Authorization Code: ')
+        authorizer.get_credentials_from_code(base_url: OOB_URI, code: authorization_code)
+      end
+
+      def self.client_secrets
+        @secrets ||= YAML.load(File.open(File.join(secrets_path)))
+      end
+
+      def self.secrets_path
+        if File.exist? File.join(File.dirname(__FILE__), '../../config/client_secrets.yml')
+          File.join(File.dirname(__FILE__), '../../config/client_secrets.yml')
+        else
+          File.join(File.dirname(__FILE__), '../../config/client_secrets.example.yml')
+        end
+      end
+    end
+
     # Responsible for interacting with Google Sheets and retrieiving relevant information
     class GoogleSpreadsheet
       attr_reader :access_token, :document_key, :session
 
       private :session
 
-      def initialize(document_key)
+      def initialize(document_key, access_token_fetcher = GoogleAccessTokenFetcher)
         @document_key = document_key
-        configure_oauth!
+        @access_token = access_token_fetcher.call
         @session = GoogleDrive.login_with_oauth(access_token)
-      end
-
-      def configure_oauth!
-        client = Google::APIClient.new
-        auth = client.authorization
-        auth.client_id = client_secrets.fetch('client_id')
-        auth.client_secret = client_secrets.fetch('client_secret')
-        auth.scope = ["https://www.googleapis.com/auth/drive.readonly"]
-        auth.redirect_uri = "urn:ietf:wg:oauth:2.0:oob"
-        puts "\n Open the following URL, login with your credentials and get the authorization code \n\n #{auth.authorization_uri}\n\n"
-        auth.code = ask('Authorization Code: ')
-        auth.fetch_access_token!
-        @access_token = auth.access_token
       end
 
       def all_rows
         session.spreadsheet_by_key(document_key).worksheets[0].rows
-      end
-
-      def client_secrets
-        @secrets ||= YAML.load(File.open(File.join(secrets_path)))
-      end
-
-      def secrets_path
-        if File.exist? File.join(File.dirname(__FILE__), '../../config/client_secrets.yml')
-          File.join(File.dirname(__FILE__), '../../config/client_secrets.yml')
-        else
-          File.join(File.dirname(__FILE__), '../../config/client_secrets.example.yml')
-        end
       end
     end
   end
