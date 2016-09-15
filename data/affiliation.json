@@ -7,9 +7,13 @@
     "term_label": "Staff research and publications",
     "activated_on": "2015-01-01"
   },{
+    "term_label": "Postdoctoral research and publications",
+    "activated_on": "2016-09-15"
+  },{
     "term_label": "Graduate research and publications",
     "activated_on": "2015-01-01"
-  },{
+  }
+  ,{
     "term_label": "Undergraduate research and publications",
     "activated_on": "2015-01-01"
   },{
