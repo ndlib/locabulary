@@ -5,9 +5,9 @@
       "predicate_name": "administrative_units",
       "term_label": "University of Notre Dame",
       "classification": "University",
+      "default_presentation_sequence": 1,
       "homepage": "http://www.nd.edu/",
-      "activated_on": "2015-07-22",
-      "default_presentation_sequence": 1
+      "activated_on": "2015-07-22"
     },
     {
       "predicate_name": "administrative_units",
@@ -714,6 +714,14 @@
     },
     {
       "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Centers and Institutes::Institute for Scholarship in the Liberal Arts",
+      "classification": "CenterOrInstitute",
+      "affiliation": "University of Notre Dame::College of Arts and Letters",
+      "homepage": "https://isla.nd.edu/",
+      "activated_on": "2015-07-22"
+    },
+    {
+      "predicate_name": "administrative_units",
       "term_label": "University of Notre Dame::Centers and Institutes::Institute for Theoretical Sciences",
       "classification": "CenterOrInstitute",
       "affiliation": "University of Notre Dame::College of Science",
@@ -899,8 +907,17 @@
     },
     {
       "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Notre Dame Press",
+      "classification": "CampusOffice",
+      "default_presentation_sequence": 12,
+      "homepage": "http://undpress.nd.edu/",
+      "activated_on": "2015-07-22"
+    },
+    {
+      "predicate_name": "administrative_units",
       "term_label": "Catholic Organizations",
       "classification": "OrganizationalGroup",
+      "default_presentation_sequence": 13,
       "activated_on": "2015-07-22"
     },
     {
