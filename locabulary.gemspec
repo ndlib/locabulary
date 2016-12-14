@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "dry-configurable"
   spec.add_dependency "activesupport", '~>4.0'
 
-  spec.add_development_dependency "dry-validation"
+  spec.add_development_dependency "dry-validation", "~> 0.9.5"
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "rspec"
   spec.add_development_dependency "rspec-its"
