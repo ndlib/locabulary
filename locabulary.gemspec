@@ -20,10 +20,16 @@ Gem::Specification.new do |spec|
   spec.license = 'APACHE2'
 
   spec.add_dependency "json", "~> 1.8"
-  spec.add_dependency "dry-configurable"
+  spec.add_dependency "dry-configurable", "~> 0.1.7"
   spec.add_dependency "activesupport", '~>4.0'
 
   spec.add_development_dependency "dry-validation", "~> 0.9.5"
+  spec.add_development_dependency "dry-logic", "~> 0.3.0"
+  spec.add_development_dependency "dry-types", "~> 0.8.1"
+  spec.add_development_dependency "dry-container", "~> 0.5.0"
+  spec.add_development_dependency "dry-equalizer", "~> 0.2.0"
+  spec.add_development_dependency "dry-monads", "~> 0.1.1"
+
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "rspec"
   spec.add_development_dependency "rspec-its"
