@@ -4,13 +4,13 @@ require 'locabulary/items/base'
 RSpec.describe Locabulary::Items::Base do
   context 'Comparable' do
     it 'sorts with nil and integers for presentation sequence' do
-      item_1 = described_class.new(default_presentation_sequence: nil, term_label: 'Hello')
-      item_2 = described_class.new(default_presentation_sequence: 2, term_label: 'World')
-      item_3 = described_class.new(default_presentation_sequence: nil, term_label: 'Help')
-      item_4 = described_class.new(predicate_name: 'b', default_presentation_sequence: 1, term_label: 'Bob')
-      item_5 = described_class.new(predicate_name: 'a', default_presentation_sequence: 2, term_label: 'Apple')
+      item1 = described_class.new(default_presentation_sequence: nil, term_label: 'Hello')
+      item2 = described_class.new(default_presentation_sequence: 2, term_label: 'World')
+      item3 = described_class.new(default_presentation_sequence: nil, term_label: 'Help')
+      item4 = described_class.new(predicate_name: 'b', default_presentation_sequence: 1, term_label: 'Bob')
+      item5 = described_class.new(predicate_name: 'a', default_presentation_sequence: 2, term_label: 'Apple')
 
-      expect([item_1, item_2, item_3, item_4, item_5].sort).to eq([item_2, item_1, item_3, item_5, item_4])
+      expect([item1, item2, item3, item4, item5].sort).to eq([item2, item1, item3, item5, item4])
     end
   end
 
