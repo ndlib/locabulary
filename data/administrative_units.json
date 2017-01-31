@@ -907,7 +907,7 @@
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Notre Dame Press",
+      "term_label": "University of Notre Dame::University of Notre Dame Press",
       "classification": "CampusOffice",
       "default_presentation_sequence": 12,
       "homepage": "http://undpress.nd.edu/",
