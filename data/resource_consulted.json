@@ -5,9 +5,18 @@
     "default_presentation_sequence": 100,
     "activated_on": "2016-01-01"
   }, {
+    "term_label": "People::Residence Hall Librarian",
+    "default_presentation_sequence": 100,
+    "activated_on": "2017-01-01"
+  }, {
+    "term_label": "People::Live Chat",
+    "default_presentation_sequence": 100,
+    "activated_on": "2017-01-01"
+  }, {
     "term_label": "People::LINk Program librarian",
     "default_presentation_sequence": 100,
-    "activated_on": "2016-01-01"
+    "activated_on": "2016-01-01",
+    "deactivated_on": "2017-01-01"
   }, {
     "term_label": "People::Research Help Desk services (in person, on phone, via email)",
     "default_presentation_sequence": 100,
@@ -59,7 +68,8 @@
   }, {
     "term_label": "Online Resources::Online chat via Hesburgh Libraries web site",
     "default_presentation_sequence": 300,
-    "activated_on": "2016-01-01"
+    "activated_on": "2016-01-01",
+    "deactivated_on": "2017-01-01"
   }, {
     "term_label": "Online Resources::Remix",
     "default_presentation_sequence": 300,
@@ -77,7 +87,7 @@
     "default_presentation_sequence": 400,
     "activated_on": "2016-01-01"
   }, {
-    "term_label": "Other Library Resources::Workshop(s)/camps",
+    "term_label": "Other Library Resources::Workshop(s)/camp(s)",
     "default_presentation_sequence": 400,
     "activated_on": "2016-01-01"
   }, {
