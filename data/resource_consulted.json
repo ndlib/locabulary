@@ -20,7 +20,12 @@
   }, {
     "term_label": "People::Research Help Desk services (in person, on phone, via email)",
     "default_presentation_sequence": 100,
-    "activated_on": "2016-01-01"
+    "activated_on": "2016-01-01",
+    "deactivated_on": "2017-01-01"
+  }, {
+    "term_label": "People::Research Help Desk services (in person, on phone, via email, live chat)",
+    "default_presentation_sequence": 100,
+    "activated_on": "2017-01-01"
   }, {
     "term_label": "Places::Archives",
     "default_presentation_sequence": 200,
