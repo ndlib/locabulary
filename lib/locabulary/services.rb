@@ -23,8 +23,9 @@ module Locabulary
     # @param command_name [Symbol]
     # @param options [Hash]
     def self.call(command_name, options = {})
-      command_class = "#{command_name}_service".classify
-      const_get(command_class).call(options)
+      command_class_name = "#{command_name}_service".classify
+      klass = "Locabulary::Services::#{command_class_name}".constantize
+      klass.call(options)
     end
   end
   private_constant :Services

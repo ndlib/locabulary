@@ -43,7 +43,7 @@ module Locabulary
       predicate_name = options.fetch(:predicate_name)
       possible_class_name_for_predicate_name = predicate_name.singularize.classify
       begin
-        Items.const_get(possible_class_name_for_predicate_name)
+        "Locabulary::Items::#{possible_class_name_for_predicate_name}".constantize
       rescue NameError
         Items::Base
       end
