@@ -15,15 +15,15 @@
     },
     {
       "term_label": "Attribution 3.0: CC BY",
-      "activated_on": "2017-01-01",
       "term_uri": "https://creativecommons.org/licenses/by/3.0/",
-      "description": "With this license you allow others to \"distribute, remix, tweak, and build\" on your deposited content—including for commercial purposes—provided they attribute you as the original creator. CurateND supports both the United States and International (Unported) versions of this license."
+      "description": "With this license you allow others to \"distribute, remix, tweak, and build\" on your deposited content—including for commercial purposes—provided they attribute you as the original creator. CurateND supports both the United States and International (Unported) versions of this license.",
+      "activated_on": "2017-01-01"
     },
     {
       "term_label": "Attribution 4.0: CC BY",
-      "activated_on": "2017-01-01",
       "term_uri": "https://creativecommons.org/licenses/by/4.0",
-      "description": "With this license, you allow others to \"distribute, remix, tweak, and build upon your work, even commercially, as long as they credit you for the original creation. This is the most accommodating of licenses offered. Recommended for maximum dissemination and use of licensed materials.\""
+      "description": "With this license, you allow others to \"distribute, remix, tweak, and build upon your work, even commercially, as long as they credit you for the original creation. This is the most accommodating of licenses offered. Recommended for maximum dissemination and use of licensed materials.\"",
+      "activated_on": "2017-01-01"
     },
     {
       "term_label": "Attribution-NoDerivs 3.0 United States",
@@ -33,27 +33,27 @@
     },
     {
       "term_label": "Attribution-NoDerivs 3.0: CC BY-ND",
-      "activated_on": "2017-01-01",
       "term_uri": "https://creativecommons.org/licenses/by-nd/3.0/",
-      "description": "With this license you permit \"redistribution, commercial and non-commercial,\" provided the content remains unaltered and intact (i.e., whole) and provided you are attributed as the original creator."
+      "description": "With this license you permit \"redistribution, commercial and non-commercial,\" provided the content remains unaltered and intact (i.e., whole) and provided you are attributed as the original creator.",
+      "activated_on": "2017-01-01"
     },
     {
       "term_label": "Attribution-NoDerivs 4.0: CC BY-ND",
-      "activated_on": "2017-01-01",
       "term_uri": "https://creativecommons.org/licenses/by-nd/4.0",
-      "description": "With this license, you allow \"redistribution, commercial and non-commercial, as long as [the licensed object] is passed along unchanged and in whole, with credit to you.\""
+      "description": "With this license, you allow \"redistribution, commercial and non-commercial, as long as [the licensed object] is passed along unchanged and in whole, with credit to you.\"",
+      "activated_on": "2017-01-01"
     },
     {
       "term_label": "Attribution-Non-Commercial 3.0: CC BY-NC",
-      "activated_on": "2017-01-01",
       "term_uri": "https://creativecommons.org/licenses/by-nc/3.0/",
-      "description": "With this license you allow others to \"remix, tweak, and build\" on your content in non-commercial ways. While they must credit you as the original creator and while the remixed, tweaked, or expanded upon content must remain non-commercial, they do not have to apply identical license terms on the new content."
+      "description": "With this license you allow others to \"remix, tweak, and build\" on your content in non-commercial ways. While they must credit you as the original creator and while the remixed, tweaked, or expanded upon content must remain non-commercial, they do not have to apply identical license terms on the new content.",
+      "activated_on": "2017-01-01"
     },
     {
       "term_label": "Attribution-Non-Commercial-Share-Alike 3.0: CC BY-NC-SA",
-      "activated_on": "2017-01-01",
       "term_uri": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
-      "description": "With this license you allow others to \"remix, tweak, and build\" on your content in non-commercial ways, provided they give you credit (as the original creator) and also apply the same license level to the newly resulting creations."
+      "description": "With this license you allow others to \"remix, tweak, and build\" on your content in non-commercial ways, provided they give you credit (as the original creator) and also apply the same license level to the newly resulting creations.",
+      "activated_on": "2017-01-01"
     },
     {
       "term_label": "Attribution-NonCommercial 3.0 United States",
@@ -63,15 +63,15 @@
     },
     {
       "term_label": "Attribution-NonCommercial 4.0: CC BY-NC",
-      "activated_on": "2017-01-01",
       "term_uri": "https://creativecommons.org/licenses/by-nc/4.0",
-      "description": "With this license, you allow others to \"remix, tweak, and build upon your work non-commercially, and although their new works must also acknowledge you and be non-commercial, they don't have to license their derivative works on the same terms.\""
+      "description": "With this license, you allow others to \"remix, tweak, and build upon your work non-commercially, and although their new works must also acknowledge you and be non-commercial, they don't have to license their derivative works on the same terms.\"",
+      "activated_on": "2017-01-01"
     },
     {
       "term_label": "Attribution-NonCommercial-NoDerivs 3.0 CC BY-NC-ND",
-      "activated_on": "2017-01-01",
       "term_uri": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
-      "description": "With this license you share your work with others and allow them to download your work, provided they attribute you as the creator and refrain from changing the content in any way and from using it for commercial means."
+      "description": "With this license you share your work with others and allow them to download your work, provided they attribute you as the creator and refrain from changing the content in any way and from using it for commercial means.",
+      "activated_on": "2017-01-01"
     },
     {
       "term_label": "Attribution-NonCommercial-NoDerivs 3.0 United States",
@@ -81,9 +81,9 @@
     },
     {
       "term_label": "Attribution-NonCommercial-NoDerivs 4.0: CC BY-NC-ND",
-      "activated_on": "2017-01-01",
       "term_uri": "https://creativecommons.org/licenses/by-nc-nd/4.0",
-      "description": "With this license, you only allow others to \"download your works and share them with others as long as they credit you, but they can't change them in any way or use them commercially.\""
+      "description": "With this license, you only allow others to \"download your works and share them with others as long as they credit you, but they can't change them in any way or use them commercially.\"",
+      "activated_on": "2017-01-01"
     },
     {
       "term_label": "Attribution-NonCommercial-ShareAlike 3.0 United States",
@@ -93,15 +93,15 @@
     },
     {
       "term_label": "Attribution-NonCommercial-ShareAlike 4.0: CC BY-NC-SA",
-      "activated_on": "2017-01-01",
       "term_uri": "https://creativecommons.org/licenses/by-nc-sa/4.0",
-      "description": "With this license, you allow others to \"remix, tweak, and build upon your work non-commercially, as long as they credit you and license their new creations under the identical terms.\""
+      "description": "With this license, you allow others to \"remix, tweak, and build upon your work non-commercially, as long as they credit you and license their new creations under the identical terms.\"",
+      "activated_on": "2017-01-01"
     },
     {
       "term_label": "Attribution-Share-Alike 3.0: CC BY-SA",
-      "activated_on": "2017-01-01",
       "term_uri": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "description": "With this license you allow others to \"remix, tweak, and build\" on your deposited content, including for commercial uses, provided they attribute you as the original creator AND incorporate the same level of licensing (i.e., CC BY-SA) for the newly resulting creation. \"All new works based on yours will carry the same license, so any derivatives will also allow commercial use."
+      "description": "With this license you allow others to \"remix, tweak, and build\" on your deposited content, including for commercial uses, provided they attribute you as the original creator AND incorporate the same level of licensing (i.e., CC BY-SA) for the newly resulting creation. \"All new works based on yours will carry the same license, so any derivatives will also allow commercial use.",
+      "activated_on": "2017-01-01"
     },
     {
       "term_label": "Attribution-ShareAlike 3.0 United States",
@@ -111,9 +111,9 @@
     },
     {
       "term_label": "Attribution-ShareAlike 4.0: CC BY-SA",
-      "activated_on": "2017-01-01",
       "term_uri": "https://creativecommons.org/licenses/by-sa/4.0",
-      "description": "With this license, you allow others to \"remix, tweak, and build upon your work even for commercial purposes, as long as they credit you and license their new creations under the identical terms. This license is often compared to 'copyleft' free and open source software licenses. All new works based on yours will carry the same license, so any derivatives will also allow commercial use. This is the license used by Wikipedia, and is recommended for materials that would benefit from incorporating content from Wikipedia and similarly licensed projects.\""
+      "description": "With this license, you allow others to \"remix, tweak, and build upon your work even for commercial purposes, as long as they credit you and license their new creations under the identical terms. This license is often compared to 'copyleft' free and open source software licenses. All new works based on yours will carry the same license, so any derivatives will also allow commercial use. This is the license used by Wikipedia, and is recommended for materials that would benefit from incorporating content from Wikipedia and similarly licensed projects.\"",
+      "activated_on": "2017-01-01"
     },
     {
       "term_label": "CC0 1.0 Universal",

@@ -2,22 +2,19 @@
   "predicate_name": "spec",
   "values": [
     {
-      "predicate_name": "spec",
-      "term_label": "Active Item",
-      "default_presentation_sequence": 3,
-      "activated_on": "2015-07-22"
-    },
-    {
-      "predicate_name": "spec",
       "term_label": "Deactive Item",
       "default_presentation_sequence": 1,
       "activated_on": "2015-07-22",
       "deactivated_on": "2016-07-01"
     },
     {
-      "predicate_name": "spec",
       "term_label": "Alternate Item",
       "default_presentation_sequence": 2,
+      "activated_on": "2015-07-22"
+    },
+    {
+      "term_label": "Active Item",
+      "default_presentation_sequence": 3,
       "activated_on": "2015-07-22"
     }
   ]
