@@ -29,7 +29,7 @@ module Locabulary
   # @api public
   # @since 0.1.0
   #
-  # Responsible for extracting a non-hierarchical sorted array of Locabulary::Items::Base objects for the given predicate_name.
+  # Responsible for extracting a non-hierarchical sorted array of active Locabulary::Items::Base objects for the given predicate_name.
   #
   # @param [Hash] options
   # @option options [String] :predicate_name
@@ -39,6 +39,20 @@ module Locabulary
   # @see Locabulary::Services
   def self.active_items_for(options = {})
     Services.call(:active_items_for, options)
+  end
+
+  # @api public
+  # @since 0.7.0
+  #
+  # Responsible for extracting a non-hierarchical sorted array of Locabulary::Items::Base objects for the given predicate_name.
+  #
+  # @param [Hash] options
+  # @option options [String] :predicate_name
+  # @return [Array<Locabulary::Items::Base>]
+  #
+  # @see Locabulary::Services
+  def self.all_items_for(options = {})
+    Services.call(:all_items_for, options)
   end
 
   # @api public

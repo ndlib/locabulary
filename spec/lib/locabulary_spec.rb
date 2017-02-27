@@ -21,6 +21,14 @@ module Locabulary
       end
     end
 
+    context '.all_items_for' do
+      it 'will delegate to Services' do
+        parameters = { predicate_name: 'predicate_name' }
+        expect(Services).to receive(:call).with(:all_items_for, parameters)
+        described_class.active_items_for(parameters)
+      end
+    end
+
     context '.active_hierarchical_roots' do
       it 'will delegate to Services' do
         parameters = { predicate_name: 'predicate_name' }
