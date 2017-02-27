@@ -21,6 +21,14 @@ module Locabulary
       end
     end
 
+    context '.all_items_for' do
+      it 'will delegate to Services' do
+        parameters = { predicate_name: 'predicate_name' }
+        expect(Services).to receive(:call).with(:all_items_for, parameters)
+        described_class.all_items_for(parameters)
+      end
+    end
+
     context '.active_hierarchical_roots' do
       it 'will delegate to Services' do
         parameters = { predicate_name: 'predicate_name' }
@@ -46,12 +54,16 @@ module Locabulary
 
     context '.active_label_for_uri' do
       it 'will use the label for the given term_uri' do
-        label = Locabulary.active_label_for_uri(predicate_name: 'copyright', term_uri: 'http://creativecommons.org/licenses/by/3.0/us/')
-        expect(label).to eq('Attribution 3.0 United States')
+        label = Locabulary.active_label_for_uri(predicate_name: 'spec', term_uri: 'item:active')
+        expect(label).to eq('Active Item')
       end
-      it 'will use the term_uri if a uri cannot be found' do
-        label = Locabulary.active_label_for_uri(predicate_name: 'copyright', term_uri: 'Chompy')
-        expect(label).to eq('Chompy')
+      it 'will use term_uri if the term is no longer active' do
+        label = Locabulary.active_label_for_uri(predicate_name: 'spec', term_uri: 'item:deactive')
+        expect(label).to eq('item:deactive')
+      end
+      it 'will use term_uri if nothing exists' do
+        label = Locabulary.active_label_for_uri(predicate_name: 'spec', term_uri: 'item:__not_found__:because')
+        expect(label).to eq('item:__not_found__:because')
       end
     end
 

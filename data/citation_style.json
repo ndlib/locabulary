@@ -1,16 +1,20 @@
 {
   "predicate_name": "citation_style",
-  "values": [{
-    "term_label": "American Psychological Association",
-    "term_uri": "APA",
-    "activated_on": "2015-01-01"
-  },{
-    "term_label": "Chicago Manual of Style",
-    "term_uri": "Chicago",
-    "activated_on": "2015-01-01"
-  },{
-    "term_label": "Modern Language Association",
-    "term_uri": "MLA",
-    "activated_on": "2015-01-01"
-  }]
+  "values": [
+    {
+      "term_label": "American Psychological Association",
+      "term_uri": "APA",
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Chicago Manual of Style",
+      "term_uri": "Chicago",
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Modern Language Association",
+      "term_uri": "MLA",
+      "activated_on": "2015-01-01"
+    }
+  ]
 }

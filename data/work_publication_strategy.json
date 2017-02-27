@@ -1,20 +1,25 @@
 {
   "predicate_name": "work_publication_strategy",
-  "values": [{
-    "term_label": "going_to_publish",
-    "default_presentation_sequence": 1,
-    "activated_on": "2015-01-01"
-  },{
-    "term_label": "will_not_publish",
-    "default_presentation_sequence": 2,
-    "activated_on": "2015-01-01"
-  },{
-    "term_label": "already_published",
-    "default_presentation_sequence": 3,
-    "activated_on": "2015-01-01"
-  },{
-    "term_label": "do_not_know",
-    "default_presentation_sequence": 4,
-    "activated_on": "2015-01-01"
-  }]
+  "values": [
+    {
+      "term_label": "going_to_publish",
+      "default_presentation_sequence": 1,
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "will_not_publish",
+      "default_presentation_sequence": 2,
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "already_published",
+      "default_presentation_sequence": 3,
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "do_not_know",
+      "default_presentation_sequence": 4,
+      "activated_on": "2015-01-01"
+    }
+  ]
 }
