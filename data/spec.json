@@ -3,17 +3,20 @@
   "values": [
     {
       "term_label": "Deactive Item",
+      "term_uri": "item:deactive",
       "default_presentation_sequence": 1,
       "activated_on": "2015-07-22",
       "deactivated_on": "2016-07-01"
     },
     {
       "term_label": "Alternate Item",
+      "term_uri": "item:alternate",
       "default_presentation_sequence": 2,
       "activated_on": "2015-07-22"
     },
     {
       "term_label": "Active Item",
+      "term_uri": "item:active",
       "default_presentation_sequence": 3,
       "activated_on": "2015-07-22"
     }
