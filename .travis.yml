@@ -4,3 +4,6 @@ rvm:
   - 2.0.0
 cache: bundler
 sudo: false
+env:
+  global:
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
