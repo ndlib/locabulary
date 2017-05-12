@@ -651,6 +651,13 @@
     },
     {
       "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Centers and Institutes::Flatley Center for Undergraduate Scholarly Engagement (CUSE)",
+      "classification": "CenterOrInstitute",
+      "homepage": "http://cuse.nd.edu",
+      "activated_on": "2015-07-22"
+    },
+    {
+      "predicate_name": "administrative_units",
       "term_label": "University of Notre Dame::Centers and Institutes::Gigot Center for Entrepreneurship",
       "classification": "CenterOrInstitute",
       "affiliation": "University of Notre Dame::Mendoza College of Business",
