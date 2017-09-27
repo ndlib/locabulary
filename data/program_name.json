@@ -124,6 +124,26 @@
     {
       "term_label": "Theology",
       "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Biophysics",
+      "activated_on": "2017-09-01"
+    },
+    {
+      "term_label": "Global Affairs",
+      "activated_on": "2017-09-01"
+    },
+    {
+      "term_label": "Italian (PhD-only)",
+      "activated_on": "2017-09-01"
+    },
+    {
+      "term_label": "Italian Studies (MA-only)",
+      "activated_on": "2017-09-01"
+    },
+    {
+      "term_label": "Spanish",
+      "activated_on": "2017-09-01"
     }
   ]
 }
