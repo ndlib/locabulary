@@ -21,7 +21,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "json", "~> 1.8"
   spec.add_dependency "dry-configurable", "~> 0.1.7"
-  spec.add_dependency "activesupport", '~>4.0'
+  spec.add_dependency "activesupport", '>= 4.0', "< 6.0"
 
   spec.add_development_dependency "dry-validation", "~> 0.9.5"
   spec.add_development_dependency "dry-logic", "~> 0.3.0"
