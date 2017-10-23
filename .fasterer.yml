@@ -2,3 +2,4 @@ speedups:
   each_with_index_vs_while: false
 exclude_paths:
   - 'vendor/**/*.rb'
+  - 'gemfiles/**/*.rb'

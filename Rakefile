@@ -13,9 +13,7 @@ unless Rake::Task.task_defined?('spec')
 end
 
 require 'rubocop/rake_task'
-RuboCop::RakeTask.new do |task|
-  task.options << "--config=.hound.yml"
-end
+RuboCop::RakeTask.new
 
 namespace :commitment do
   task :configure_test_for_code_coverage do
