@@ -476,7 +476,16 @@
       "classification": "CenterOrInstitute",
       "affiliation": "University of Notre Dame::Hesburgh Libraries",
       "homepage": "http://library.nd.edu/cds/",
-      "activated_on": "2015-07-22"
+      "activated_on": "2015-07-22",
+      "deactivated_on": "2017-12-31"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Hesburgh Libraries::Center for Digital Scholarship",
+      "classification": "Department",
+      "affiliation": "University of Notre Dame::Hesburgh Libraries",
+      "homepage": "http://library.nd.edu/cds/",
+      "activated_on": "2018-01-01"
     },
     {
       "predicate_name": "administrative_units",
