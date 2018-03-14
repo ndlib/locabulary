@@ -449,7 +449,7 @@
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Centers and Institutes::Center for Environmental Science and Technology",
+      "term_label": "University of Notre Dame::Notre Dame Research::Center for Environmental Science and Technology",
       "classification": "CenterOrInstitute",
       "affiliation": "University of Notre Dame::College of Engineering",
       "homepage": "http://www.nd.edu/~cest/",
@@ -481,13 +481,13 @@
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Centers and Institutes::Center for Theology, Science, and Human Flourishing",
+      "term_label": "University of Notre Dame::Notre Dame Research::Center for Theology, Science, and Human Flourishing",
       "classification": "CenterOrInstitute",
       "activated_on": "2018-03-11"
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Centers and Institutes::Eck Institute for Global Health",
+      "term_label": "University of Notre Dame::Notre Dame Research::Eck Institute for Global Health",
       "classification": "CenterOrInstitute",
       "homepage": "http://globalhealth.nd.edu/",
       "activated_on": "2018-03-11"
@@ -510,7 +510,7 @@
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Centers and Institutes::Environmental Research Center (UNDERC)",
+      "term_label": "University of Notre Dame::Notre Dame Research::University of Notre Dame Environmental Research Center (UNDERC)",
       "classification": "CenterOrInstitute",
       "affiliation": "University of Notre Dame::College of Science",
       "homepage": "http://underc.nd.edu/",
@@ -542,7 +542,7 @@
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Centers and Institutes::Harper Cancer Research Institute",
+      "term_label": "University of Notre Dame::Notre Dame Research::Harper Cancer Research Institute",
       "classification": "CenterOrInstitute",
       "affiliation": "University of Notre Dame::College of Science",
       "homepage": "http://harpercancer.nd.edu/",
@@ -550,22 +550,13 @@
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Centers and Institutes::Interdisciplinary Center for Network Science and Applications",
+      "term_label": "University of Notre Dame::Notre Dame Research::Interdisciplinary Center for Network Science and Applications",
       "classification": "CenterOrInstitute",
       "homepage": "http://icensa.nd.edu/",
       "activated_on": "2018-03-11"
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Centers and Institutes::iCeNSA",
-      "description": "Interdisciplinary Center for Network Science & Applications",
-      "classification": "CenterOrInstitute",
-      "affiliation": "University of Notre Dame::College of Science",
-      "homepage": "http://www.icensa.com/",
-      "activated_on": "2018-03-11"
-    },
-    {
-      "predicate_name": "administrative_units",
       "term_label": "University of Notre Dame::Notre Dame Research::TEMPLATE",
       "classification": "CenterOrInstitute",
       "affiliation": "TEMPLATE",
@@ -598,7 +589,7 @@
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Centers and Institutes::NDEnergy",
+      "term_label": "University of Notre Dame::Notre Dame Research::Center for Sustainable Energy (ND Energy)",
       "description": "Center for Sustainable Energy at Notre Dame",
       "classification": "CenterOrInstitute",
       "homepage": "http://energy.nd.edu/",
@@ -606,7 +597,7 @@
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Centers and Institutes::NDnano",
+      "term_label": "University of Notre Dame::Notre Dame Research::Center for Nano Science and Technology (NDnano)",
       "description": "Nano Science and Technology",
       "classification": "CenterOrInstitute",
       "affiliation": "University of Notre Dame::College of Engineering",
@@ -615,7 +606,7 @@
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Centers and Institutes::Notre Dame Radiation Laboratory",
+      "term_label": "University of Notre Dame::Notre Dame Research::Radiation Laboratory",
       "classification": "CenterOrInstitute",
       "homepage": "http://www.rad.nd.edu/",
       "activated_on": "2018-03-11"
@@ -630,7 +621,7 @@
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Centers and Institutes::W. M. Keck Center For Transgene Research",
+      "term_label": "University of Notre Dame::Notre Dame Research::W. M. Keck Center For Transgene Research",
       "classification": "CenterOrInstitute",
       "homepage": "http://transgene.nd.edu/",
       "activated_on": "2018-03-11"
