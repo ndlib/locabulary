@@ -441,10 +441,9 @@
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Notre Dame Research::TEMPLATE",
+      "term_label": "University of Notre Dame::Notre Dame Research::Advanced Diagnostics and Therapeutics",
       "classification": "CenterOrInstitute",
-      "affiliation": "TEMPLATE",
-      "homepage": "TEMPLATE",
+      "homepage": "https://advanceddiagnostics.nd.edu/",
       "activated_on": "2018-03-11"
     },
     {
@@ -457,26 +456,23 @@
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Notre Dame Research::TEMPLATE",
+      "term_label": "University of Notre Dame::Notre Dame Research::Center for Informatics and Computational Science",
       "classification": "CenterOrInstitute",
-      "affiliation": "TEMPLATE",
-      "homepage": "TEMPLATE",
+      "homepage": "https://cics.nd.edu/",
       "activated_on": "2018-03-11"
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Notre Dame Research::TEMPLATE",
+      "term_label": "University of Notre Dame::Notre Dame Research::Center for Research Computing",
       "classification": "CenterOrInstitute",
-      "affiliation": "TEMPLATE",
-      "homepage": "TEMPLATE",
+      "homepage": "https://crc.nd.edu/",
       "activated_on": "2018-03-11"
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Notre Dame Research::TEMPLATE",
+      "term_label": "University of Notre Dame::Notre Dame Research::Center for Social Research",
       "classification": "CenterOrInstitute",
-      "affiliation": "TEMPLATE",
-      "homepage": "TEMPLATE",
+      "homepage": "https://csr.nd.edu/",
       "activated_on": "2018-03-11"
     },
     {
@@ -494,18 +490,16 @@
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Notre Dame Research::TEMPLATE",
+      "term_label": "University of Notre Dame::Notre Dame Research::Engineering and Design Core Facility",
       "classification": "CenterOrInstitute",
-      "affiliation": "TEMPLATE",
-      "homepage": "TEMPLATE",
+      "homepage": "https://edcf.nd.edu/",
       "activated_on": "2018-03-11"
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Notre Dame Research::TEMPLATE",
+      "term_label": "University of Notre Dame::Notre Dame Research::Environmental Change Initiative",
       "classification": "CenterOrInstitute",
-      "affiliation": "TEMPLATE",
-      "homepage": "TEMPLATE",
+      "homepage": "https://environmentalchange.nd.edu/",
       "activated_on": "2018-03-11"
     },
     {
@@ -518,26 +512,23 @@
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Notre Dame Research::TEMPLATE",
+      "term_label": "University of Notre Dame::Notre Dame Research::Freimann Life Sciences Center",
       "classification": "CenterOrInstitute",
-      "affiliation": "TEMPLATE",
-      "homepage": "TEMPLATE",
+      "homepage": "https://freimann.nd.edu/",
       "activated_on": "2018-03-11"
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Notre Dame Research::TEMPLATE",
+      "term_label": "University of Notre Dame::Notre Dame Research::Genomics and Bioinformatics Core Facility",
       "classification": "CenterOrInstitute",
-      "affiliation": "TEMPLATE",
-      "homepage": "TEMPLATE",
+      "homepage": "http://genomics.nd.edu/",
       "activated_on": "2018-03-11"
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Notre Dame Research::TEMPLATE",
+      "term_label": "University of Notre Dame::Notre Dame Research::Integrated Imaging Facility",
       "classification": "CenterOrInstitute",
-      "affiliation": "TEMPLATE",
-      "homepage": "TEMPLATE",
+      "homepage": "https://imaging.nd.edu/",
       "activated_on": "2018-03-11"
     },
     {
@@ -557,34 +548,30 @@
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Notre Dame Research::TEMPLATE",
+      "term_label": "University of Notre Dame::Notre Dame Research::Materials Characterization Facility",
       "classification": "CenterOrInstitute",
-      "affiliation": "TEMPLATE",
-      "homepage": "TEMPLATE",
+      "homepage": "https://mcf.nd.edu/",
       "activated_on": "2018-03-11"
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Notre Dame Research::TEMPLATE",
+      "term_label": "University of Notre Dame::Notre Dame Research::Notre Dame Global Adaptation Initiative",
       "classification": "CenterOrInstitute",
-      "affiliation": "TEMPLATE",
-      "homepage": "TEMPLATE",
+      "homepage": "https://gain.nd.edu/",
       "activated_on": "2018-03-11"
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Notre Dame Research::TEMPLATE",
+      "term_label": "University of Notre Dame::Notre Dame Research::Notre Dame Institute for Advanced Study",
       "classification": "CenterOrInstitute",
-      "affiliation": "TEMPLATE",
-      "homepage": "TEMPLATE",
+      "homepage": "https://ndias.nd.edu/",
       "activated_on": "2018-03-11"
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Notre Dame Research::TEMPLATE",
+      "term_label": "University of Notre Dame::Notre Dame Research::Notre Dame Linked Experimental Ecosystem Facility",
       "classification": "CenterOrInstitute",
-      "affiliation": "TEMPLATE",
-      "homepage": "TEMPLATE",
+      "homepage": "https://environmentalchange.nd.edu/resources/nd-leef/",
       "activated_on": "2018-03-11"
     },
     {
@@ -613,10 +600,9 @@
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Notre Dame Research::TEMPLATE",
+      "term_label": "University of Notre Dame::Notre Dame Research::Notre Dame Turbomachinery Laboratory",
       "classification": "CenterOrInstitute",
-      "affiliation": "TEMPLATE",
-      "homepage": "TEMPLATE",
+      "homepage": "https://turbo.nd.edu/",
       "activated_on": "2018-03-11"
     },
     {
