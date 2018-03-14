@@ -434,9 +434,189 @@
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Centers and Institutes",
+      "term_label": "University of Notre Dame::Notre Dame Research",
       "classification": "CenterOrInstitute",
       "default_presentation_sequence": 11,
+      "activated_on": "2018-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Notre Dame Research::Advanced Diagnostics and Therapeutics",
+      "classification": "CenterOrInstitute",
+      "homepage": "https://advanceddiagnostics.nd.edu/",
+      "activated_on": "2018-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Notre Dame Research::Center for Environmental Science and Technology",
+      "classification": "CenterOrInstitute",
+      "affiliation": "University of Notre Dame::College of Engineering",
+      "homepage": "http://www.nd.edu/~cest/",
+      "activated_on": "2018-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Notre Dame Research::Center for Informatics and Computational Science",
+      "classification": "CenterOrInstitute",
+      "homepage": "https://cics.nd.edu/",
+      "activated_on": "2018-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Notre Dame Research::Center for Research Computing",
+      "classification": "CenterOrInstitute",
+      "homepage": "https://crc.nd.edu/",
+      "activated_on": "2018-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Notre Dame Research::Center for Social Research",
+      "classification": "CenterOrInstitute",
+      "homepage": "https://csr.nd.edu/",
+      "activated_on": "2018-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Notre Dame Research::Center for Theology, Science, and Human Flourishing",
+      "classification": "CenterOrInstitute",
+      "activated_on": "2018-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Notre Dame Research::Eck Institute for Global Health",
+      "classification": "CenterOrInstitute",
+      "homepage": "http://globalhealth.nd.edu/",
+      "activated_on": "2018-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Notre Dame Research::Engineering and Design Core Facility",
+      "classification": "CenterOrInstitute",
+      "homepage": "https://edcf.nd.edu/",
+      "activated_on": "2018-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Notre Dame Research::Environmental Change Initiative",
+      "classification": "CenterOrInstitute",
+      "homepage": "https://environmentalchange.nd.edu/",
+      "activated_on": "2018-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Notre Dame Research::University of Notre Dame Environmental Research Center (UNDERC)",
+      "classification": "CenterOrInstitute",
+      "affiliation": "University of Notre Dame::College of Science",
+      "homepage": "http://underc.nd.edu/",
+      "activated_on": "2018-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Notre Dame Research::Freimann Life Sciences Center",
+      "classification": "CenterOrInstitute",
+      "homepage": "https://freimann.nd.edu/",
+      "activated_on": "2018-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Notre Dame Research::Genomics and Bioinformatics Core Facility",
+      "classification": "CenterOrInstitute",
+      "homepage": "http://genomics.nd.edu/",
+      "activated_on": "2018-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Notre Dame Research::Integrated Imaging Facility",
+      "classification": "CenterOrInstitute",
+      "homepage": "https://imaging.nd.edu/",
+      "activated_on": "2018-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Notre Dame Research::Harper Cancer Research Institute",
+      "classification": "CenterOrInstitute",
+      "affiliation": "University of Notre Dame::College of Science",
+      "homepage": "http://harpercancer.nd.edu/",
+      "activated_on": "2018-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Notre Dame Research::Interdisciplinary Center for Network Science and Applications",
+      "classification": "CenterOrInstitute",
+      "homepage": "http://icensa.nd.edu/",
+      "activated_on": "2018-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Notre Dame Research::Materials Characterization Facility",
+      "classification": "CenterOrInstitute",
+      "homepage": "https://mcf.nd.edu/",
+      "activated_on": "2018-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Notre Dame Research::Notre Dame Global Adaptation Initiative",
+      "classification": "CenterOrInstitute",
+      "homepage": "https://gain.nd.edu/",
+      "activated_on": "2018-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Notre Dame Research::Notre Dame Institute for Advanced Study",
+      "classification": "CenterOrInstitute",
+      "homepage": "https://ndias.nd.edu/",
+      "activated_on": "2018-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Notre Dame Research::Notre Dame Linked Experimental Ecosystem Facility",
+      "classification": "CenterOrInstitute",
+      "homepage": "https://environmentalchange.nd.edu/resources/nd-leef/",
+      "activated_on": "2018-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Notre Dame Research::Center for Sustainable Energy (ND Energy)",
+      "description": "Center for Sustainable Energy at Notre Dame",
+      "classification": "CenterOrInstitute",
+      "homepage": "http://energy.nd.edu/",
+      "activated_on": "2018-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Notre Dame Research::Center for Nano Science and Technology (NDnano)",
+      "description": "Nano Science and Technology",
+      "classification": "CenterOrInstitute",
+      "affiliation": "University of Notre Dame::College of Engineering",
+      "homepage": "http://nano.nd.edu/",
+      "activated_on": "2018-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Notre Dame Research::Radiation Laboratory",
+      "classification": "CenterOrInstitute",
+      "homepage": "http://www.rad.nd.edu/",
+      "activated_on": "2018-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Notre Dame Research::Notre Dame Turbomachinery Laboratory",
+      "classification": "CenterOrInstitute",
+      "homepage": "https://turbo.nd.edu/",
+      "activated_on": "2018-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Notre Dame Research::W. M. Keck Center For Transgene Research",
+      "classification": "CenterOrInstitute",
+      "homepage": "http://transgene.nd.edu/",
+      "activated_on": "2018-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Centers and Institutes",
+      "classification": "CenterOrInstitute",
+      "default_presentation_sequence": 12,
       "activated_on": "2015-07-22"
     },
     {
@@ -476,14 +656,6 @@
       "classification": "CenterOrInstitute",
       "affiliation": "University of Notre Dame::Hesburgh Libraries",
       "homepage": "http://library.nd.edu/cds/",
-      "activated_on": "2015-07-22"
-    },
-    {
-      "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Centers and Institutes::Center for Environmental Science and Technology",
-      "classification": "CenterOrInstitute",
-      "affiliation": "University of Notre Dame::College of Engineering",
-      "homepage": "http://www.nd.edu/~cest/",
       "activated_on": "2015-07-22"
     },
     {
@@ -598,12 +770,6 @@
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Centers and Institutes::Center for Theology, Science, and Human Flourishing",
-      "classification": "CenterOrInstitute",
-      "activated_on": "2015-07-22"
-    },
-    {
-      "predicate_name": "administrative_units",
       "term_label": "University of Notre Dame::Centers and Institutes::Center for Zebrafish Research",
       "classification": "CenterOrInstitute",
       "affiliation": "University of Notre Dame::College of Science",
@@ -628,21 +794,6 @@
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Centers and Institutes::Eck Institute for Global Health",
-      "classification": "CenterOrInstitute",
-      "homepage": "http://globalhealth.nd.edu/",
-      "activated_on": "2015-07-22"
-    },
-    {
-      "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Centers and Institutes::Environmental Research Center (UNDERC)",
-      "classification": "CenterOrInstitute",
-      "affiliation": "University of Notre Dame::College of Science",
-      "homepage": "http://underc.nd.edu/",
-      "activated_on": "2015-07-22"
-    },
-    {
-      "predicate_name": "administrative_units",
       "term_label": "University of Notre Dame::Centers and Institutes::Fanning Center for Business Communication",
       "classification": "CenterOrInstitute",
       "affiliation": "University of Notre Dame::Mendoza College of Business",
@@ -662,23 +813,6 @@
       "classification": "CenterOrInstitute",
       "affiliation": "University of Notre Dame::Mendoza College of Business",
       "homepage": "http://business.nd.edu/Gigot_Center",
-      "activated_on": "2015-07-22"
-    },
-    {
-      "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Centers and Institutes::Harper Cancer Research Institute",
-      "classification": "CenterOrInstitute",
-      "affiliation": "University of Notre Dame::College of Science",
-      "homepage": "http://harpercancer.nd.edu/",
-      "activated_on": "2015-07-22"
-    },
-    {
-      "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Centers and Institutes::iCeNSA",
-      "description": "Interdisciplinary Center for Network Science & Applications",
-      "classification": "CenterOrInstitute",
-      "affiliation": "University of Notre Dame::College of Science",
-      "homepage": "http://www.icensa.com/",
       "activated_on": "2015-07-22"
     },
     {
@@ -733,13 +867,6 @@
       "classification": "CenterOrInstitute",
       "affiliation": "University of Notre Dame::College of Science",
       "homepage": "http://physics.nd.edu/research/centers/",
-      "activated_on": "2015-07-22"
-    },
-    {
-      "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Centers and Institutes::Interdisciplinary Center for Network Science and Applications",
-      "classification": "CenterOrInstitute",
-      "homepage": "http://icensa.nd.edu/",
       "activated_on": "2015-07-22"
     },
     {
@@ -828,30 +955,6 @@
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Centers and Institutes::NDEnergy",
-      "description": "Center for Sustainable Energy at Notre Dame",
-      "classification": "CenterOrInstitute",
-      "homepage": "http://energy.nd.edu/",
-      "activated_on": "2015-07-22"
-    },
-    {
-      "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Centers and Institutes::NDnano",
-      "description": "Nano Science and Technology",
-      "classification": "CenterOrInstitute",
-      "affiliation": "University of Notre Dame::College of Engineering",
-      "homepage": "http://nano.nd.edu/",
-      "activated_on": "2015-07-22"
-    },
-    {
-      "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Centers and Institutes::Notre Dame Radiation Laboratory",
-      "classification": "CenterOrInstitute",
-      "homepage": "http://www.rad.nd.edu/",
-      "activated_on": "2015-07-22"
-    },
-    {
-      "predicate_name": "administrative_units",
       "term_label": "University of Notre Dame::Centers and Institutes::QuarkNet Center",
       "classification": "CenterOrInstitute",
       "affiliation": "University of Notre Dame::College of Science",
@@ -891,13 +994,6 @@
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Centers and Institutes::W. M. Keck Center For Transgene Research",
-      "classification": "CenterOrInstitute",
-      "homepage": "http://transgene.nd.edu/",
-      "activated_on": "2015-07-22"
-    },
-    {
-      "predicate_name": "administrative_units",
       "term_label": "University of Notre Dame::Centers and Institutes::William J. Shaw Center for Children and Families",
       "classification": "CenterOrInstitute",
       "affiliation": "University of Notre Dame::College of Arts and Letters",
@@ -916,7 +1012,7 @@
       "predicate_name": "administrative_units",
       "term_label": "University of Notre Dame::University of Notre Dame Press",
       "classification": "CampusOffice",
-      "default_presentation_sequence": 12,
+      "default_presentation_sequence": 13,
       "homepage": "http://undpress.nd.edu/",
       "activated_on": "2015-07-22"
     },
@@ -924,7 +1020,7 @@
       "predicate_name": "administrative_units",
       "term_label": "Catholic Organizations",
       "classification": "OrganizationalGroup",
-      "default_presentation_sequence": 13,
+      "default_presentation_sequence": 14,
       "activated_on": "2015-07-22"
     },
     {
