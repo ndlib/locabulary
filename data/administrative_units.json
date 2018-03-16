@@ -541,7 +541,7 @@
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Notre Dame Research::Interdisciplinary Center for Network Science and Applications",
+      "term_label": "University of Notre Dame::Notre Dame Research::Interdisciplinary Center for Network Science and Applications (iCeNSA)",
       "classification": "CenterOrInstitute",
       "homepage": "http://icensa.nd.edu/",
       "activated_on": "2018-03-11"
@@ -555,7 +555,7 @@
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Notre Dame Research::Notre Dame Global Adaptation Initiative",
+      "term_label": "University of Notre Dame::Notre Dame Research::Notre Dame Global Adaptation Initiative (ND-GAIN)",
       "classification": "CenterOrInstitute",
       "homepage": "https://gain.nd.edu/",
       "activated_on": "2018-03-11"
