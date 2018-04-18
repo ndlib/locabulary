@@ -1018,9 +1018,17 @@
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "Catholic Organizations",
+      "term_label": "University of Notre Dame::Snite Museum of Art",
       "classification": "OrganizationalGroup",
       "default_presentation_sequence": 14,
+      "homepage": "http://snite.nd.edu/",
+      "activated_on": "2018-04-17"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "Catholic Organizations",
+      "classification": "OrganizationalGroup",
+      "default_presentation_sequence": 15,
       "activated_on": "2015-07-22"
     },
     {
