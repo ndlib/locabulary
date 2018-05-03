@@ -21,7 +21,7 @@
       "predicate_name": "administrative_units",
       "term_label": "University of Notre Dame::Keough School of Global Affairs",
       "classification": "College",
-      "default_presentation_sequence": 1,
+      "default_presentation_sequence": 10,
       "homepage": "http://keough.nd.edu/",
       "activated_on": "2018-05-02"
     },
@@ -416,7 +416,7 @@
       "predicate_name": "administrative_units",
       "term_label": "University of Notre Dame::Hesburgh Libraries",
       "classification": "College",
-      "default_presentation_sequence": 10,
+      "default_presentation_sequence": 11,
       "homepage": "http://library.nd.edu/",
       "activated_on": "2015-07-22"
     },
