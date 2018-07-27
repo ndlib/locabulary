@@ -10,7 +10,7 @@ gem "dry-configurable"
 gem 'activesupport', '~> 4.0'
 
 group :test do
-  gem "dry-validation", "~> 0.9.5"
+  gem "dry-validation"
   gem "dry-logic", "~> 0.3.0"
   gem "dry-types", "~> 0.8.1"
   gem "dry-container", "~> 0.5.0"
