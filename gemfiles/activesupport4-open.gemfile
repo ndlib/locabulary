@@ -16,7 +16,7 @@ group :test do
   #  undefined method `curry' for #<Method: Module(Dry::Logic::Predicates::Methods)#type?>
   gem "dry-logic", "~> 0.3.0"
   gem "dry-types"
-  gem "dry-container", "~> 0.5.0"
+  gem "dry-container"
   gem "dry-equalizer", "~> 0.2.0"
   gem "dry-monads", "~> 0.1.1"
   gem "bundler"
