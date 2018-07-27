@@ -15,7 +15,7 @@ group :test do
   # NoMethodError:
   #  undefined method `curry' for #<Method: Module(Dry::Logic::Predicates::Methods)#type?>
   gem "dry-logic", "~> 0.3.0"
-  gem "dry-types", "~> 0.8.1"
+  gem "dry-types"
   gem "dry-container", "~> 0.5.0"
   gem "dry-equalizer", "~> 0.2.0"
   gem "dry-monads", "~> 0.1.1"
