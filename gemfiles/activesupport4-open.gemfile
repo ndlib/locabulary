@@ -17,8 +17,8 @@ group :test do
   gem "dry-equalizer", "~> 0.2.0"
   gem "dry-monads", "~> 0.1.1"
   gem "bundler"
-  gem "rspec", '3.5.0'
-  gem "rspec-its", '1.2.0'
+  gem "rspec"
+  gem "rspec-its"
   gem "rake", "~> 10.0"
   gem 'google_drive', "2.1.2"
   gem 'highline', '1.7.8'
