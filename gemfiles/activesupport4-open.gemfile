@@ -4,31 +4,4 @@ source 'https://rubygems.org'
 # Specify your gem's dependencies in vocabulary.gemspec
 gemspec path: '../'
 
-gem "json"
-gem "dry-configurable"
-# gem "activesupport", '>= 4.0', "< 6.0"
 gem 'activesupport', '~> 4.0'
-
-group :test do
-  gem "dry-validation"
-  # Attempted to update dry-logic without dependency, ran rspec and got the following
-  # NoMethodError:
-  #  undefined method `curry' for #<Method: Module(Dry::Logic::Predicates::Methods)#type?>
-  gem "dry-logic", "~> 0.3.0"
-  gem "dry-types"
-  gem "dry-container"
-  gem "dry-equalizer"
-  gem "dry-monads"
-  gem "bundler"
-  gem "rspec"
-  gem "rspec-its"
-  gem "rake"
-  gem 'google_drive', "2.1.2"
-  gem 'highline', '1.7.8'
-  gem "rubocop", '~> 0.46.0'
-  gem "simplecov"
-  gem "codeclimate-test-reporter", '1.0.3'
-  gem "fasterer"
-  gem "shoulda-matchers"
-  gem "nokogiri"
-end
