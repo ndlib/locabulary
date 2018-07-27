@@ -21,6 +21,17 @@ The full test suite is run via `bundle exec rake`.
 
 If you are interested in running each file in isolation - a good thing for unit tests - use `./bin/rspec_isolated`.
 
+### Testing/Using Different Gemfiles
+
+If you want to run your tests via a different gemfile, see the following:
+
+```console
+$ BUNDLE_GEMFILE=gemfiles/activesupport4.gemfile bundle install
+$ BUNDLE_GEMFILE=gemfiles/activesupport4.gemfile bundle exec rspec
+```
+
+See the [Bundler `bundle config` documentation](https://bundler.io/v1.16/bundle_config.html) for further information.
+
 ## Updating Data Files
 
 The "administrative_units" data is maintained in a Google Spreadsheet. To synchronize the JSON data:
