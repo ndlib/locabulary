@@ -11,6 +11,9 @@ gem 'activesupport', '~> 4.0'
 
 group :test do
   gem "dry-validation"
+  # Attempted to update dry-logic without dependency, ran rspec and got the following
+  # NoMethodError:
+  #  undefined method `curry' for #<Method: Module(Dry::Logic::Predicates::Methods)#type?>
   gem "dry-logic", "~> 0.3.0"
   gem "dry-types", "~> 0.8.1"
   gem "dry-container", "~> 0.5.0"
