@@ -27,7 +27,11 @@ Gem::Specification.new do |spec|
   # Attempted to update dry-logic without dependency, ran rspec and got the following
   # NoMethodError:
   #  undefined method `curry' for #<Method: Module(Dry::Logic::Predicates::Methods)#type?>
-  spec.add_development_dependency "dry-logic", "~> 0.3.0"
+  if RUBY_VERSION =~ /\A2\.[0|1]/
+    spec.add_development_dependency "dry-logic", "~> 0.3.0"
+  else
+    spec.add_development_dependency "dry-logic"
+  end
   spec.add_development_dependency "dry-types"
   spec.add_development_dependency "dry-container"
   spec.add_development_dependency "dry-equalizer"
