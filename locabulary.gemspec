@@ -29,13 +29,14 @@ Gem::Specification.new do |spec|
   #  undefined method `curry' for #<Method: Module(Dry::Logic::Predicates::Methods)#type?>
   if RUBY_VERSION =~ /\A2\.[0|1]/
     spec.add_development_dependency "dry-logic", "~> 0.3.0"
+    spec.add_development_dependency "dry-monads", "~> 0.3.1"
   else
     spec.add_development_dependency "dry-logic"
+    spec.add_development_dependency "dry-monads"
   end
   spec.add_development_dependency "dry-types"
   spec.add_development_dependency "dry-container"
   spec.add_development_dependency "dry-equalizer"
-  spec.add_development_dependency "dry-monads"
 
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "rspec"
