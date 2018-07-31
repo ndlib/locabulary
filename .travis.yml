@@ -19,5 +19,4 @@ matrix:
     gemfile: gemfiles/activesupport5.gemfile
 gemfile:
   - gemfiles/activesupport5.gemfile
-  - gemfiles/activesupport4-open.gemfile
-  - gemfiles/activesupport4-constricted.gemfile
+  - gemfiles/activesupport4.gemfile
