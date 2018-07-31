@@ -16,6 +16,7 @@ robust options.
 See the [Locublary module in lib/locabulary](/lib/locabulary.rb) for the public methods of this gem.
 
 ## Testing
+Install the gems via `BUNDLE_GEMFILE=gemfiles/activesupport4.gemfile bundle install`
 
 The full test suite is run via `bundle exec rake`.
 

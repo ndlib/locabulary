@@ -1,5 +1,8 @@
+# The purpose of this file is to preserve the current state of locabulary's dependencies
+# And inch forward
 source 'https://rubygems.org'
 
 # Specify your gem's dependencies in vocabulary.gemspec
 gemspec path: '../'
+# gem "activesupport", '>= 4.0', "< 6.0"
 gem 'activesupport', '~> 5.0'

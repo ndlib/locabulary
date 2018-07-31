@@ -19,27 +19,35 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
   spec.license = 'APACHE2'
 
-  spec.add_dependency "json", "~> 1.8"
-  spec.add_dependency "dry-configurable", "~> 0.1.7"
+  spec.add_dependency "json"
+  spec.add_dependency "dry-configurable"
   spec.add_dependency "activesupport", '>= 4.0', "< 6.0"
 
-  spec.add_development_dependency "dry-validation", "~> 0.9.5"
-  spec.add_development_dependency "dry-logic", "~> 0.3.0"
-  spec.add_development_dependency "dry-types", "~> 0.8.1"
-  spec.add_development_dependency "dry-container", "~> 0.5.0"
-  spec.add_development_dependency "dry-equalizer", "~> 0.2.0"
-  spec.add_development_dependency "dry-monads", "~> 0.1.1"
+  spec.add_development_dependency "dry-validation"
+  # Attempted to update dry-logic without dependency, ran rspec and got the following
+  # NoMethodError:
+  #  undefined method `curry' for #<Method: Module(Dry::Logic::Predicates::Methods)#type?>
+  if RUBY_VERSION =~ /\A2\.[0|1]/
+    spec.add_development_dependency "dry-logic", "~> 0.3.0"
+    spec.add_development_dependency "dry-monads", "~> 0.3.1"
+  else
+    spec.add_development_dependency "dry-logic"
+    spec.add_development_dependency "dry-monads"
+  end
+  spec.add_development_dependency "dry-types"
+  spec.add_development_dependency "dry-container"
+  spec.add_development_dependency "dry-equalizer"
 
   spec.add_development_dependency "bundler"
-  spec.add_development_dependency "rspec", '3.5.0'
-  spec.add_development_dependency "rspec-its", '1.2.0'
-  spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "rspec"
+  spec.add_development_dependency "rspec-its"
+  spec.add_development_dependency "rake"
   spec.add_development_dependency 'google_drive', "2.1.2"
   spec.add_development_dependency 'highline', '1.7.8'
   spec.add_development_dependency "rubocop", '~> 0.46.0'
-  spec.add_development_dependency "simplecov", '0.12.0'
+  spec.add_development_dependency "simplecov"
   spec.add_development_dependency "codeclimate-test-reporter", '1.0.3'
-  spec.add_development_dependency "fasterer", '0.3.2'
-  spec.add_development_dependency "shoulda-matchers", '3.1.1'
-  spec.add_development_dependency "nokogiri", '~> 1.6.8.1'
+  spec.add_development_dependency "fasterer"
+  spec.add_development_dependency "shoulda-matchers"
+  spec.add_development_dependency "nokogiri"
 end
