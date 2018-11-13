@@ -46,7 +46,7 @@ module Locabulary
         begin
           hierarchy_graph_keys.fetch(item.parent_term_label).add_child(item) unless item.parent_slugs.empty?
         rescue KeyError => error
-          raise Exceptions::MissingHierarchicalParentError.new(predicate_name, error)
+          raise Exceptions::MissingHierarchicalParentError.new(predicate_name, error, item)
         end
       end
     end
