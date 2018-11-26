@@ -17,11 +17,15 @@ module Locabulary
 
     # There is a problem with the hierarchy; A child is being defined without a defined parent.
     class MissingHierarchicalParentError < RuntimeError
-      attr_reader :predicate_name, :error
-      def initialize(predicate_name, error)
+      attr_reader :predicate_name, :error, :item
+      def initialize(predicate_name, error, item = nil)
         @predicate_name = predicate_name
         @error = error
-        super("Expected #{predicate_name.inspect} to have a welformed tree. Error: #{error}")
+        @item = item
+        message = ["Expected #{predicate_name.inspect} to have a welformed tree."]
+        message << "With item #{item.inspect}." if item
+        message << "Error: #{error}"
+        super(message.join(" "))
       end
     end
   end
