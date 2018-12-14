@@ -15,6 +15,14 @@ module Locabulary
         it 'will build a cached_data' do
           expect { subject }.to change { described_class.send(:cache).keys }.from([]).to([predicate_name])
         end
+
+        context 'with never active items in data' do
+          let(:predicate_name) { 'spec' }
+          subject { described_class.call(predicate_name: predicate_name) }
+          it 'will exclude never activated items' do
+            expect(subject.count).to eq(5)
+          end
+        end
       end
     end
   end

@@ -19,6 +19,27 @@
       "term_uri": "item:active",
       "default_presentation_sequence": 3,
       "activated_on": "2015-07-22"
+    },
+    {
+      "term_label": "Active Item with Acronym",
+      "term_uri": "item:active",
+      "acronym": "abcde",
+      "default_presentation_sequence": 4,
+      "activated_on": "2015-07-22"
+    },
+    {
+      "term_label": "Not Yet Active",
+      "term_uri": "item:pre-active",
+      "acronym": "xxx",
+      "default_presentation_sequence": 5,
+      "activated_on": "2018-12-15"
+    },
+    {
+      "term_label": "Never Active, for Translation Only",
+      "term_uri": "item:fake",
+      "acronym": "fake",
+      "activated_on": "2015-01-01",
+      "deactivated_on": "2015-01-01"
     }
   ]
 }
