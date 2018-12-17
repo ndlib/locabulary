@@ -16,20 +16,20 @@ module Locabulary
             as_of: Date.today }
         end
 
-        context 'returns an active item for' do
+        context 'for search key "term_label"' do
           let(:one_key) { 'term_label' }
           let(:one_value) { 'Active Item' }
 
-          it 'search key "term_label"' do
+          it 'will return an active item' do
             item = described_class.call(options)
             expect(item).to be_a(Locabulary::Items::Base)
           end
         end
-        context 'returns an active item for' do
+        context 'for search key "acronym"' do
           let(:one_key) { 'acronym' }
           let(:one_value) { 'abcde' }
 
-          it 'search key "acronym"' do
+          it 'will return an active item' do
             item = described_class.call(options)
             expect(item).to be_a(Locabulary::Items::Base)
             expect(item.term_label).to eq("Active Item with Acronym")
