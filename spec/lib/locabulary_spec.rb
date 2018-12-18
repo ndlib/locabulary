@@ -74,5 +74,14 @@ module Locabulary
         expect(administrative_unit_ids.uniq).to eq(administrative_unit_ids)
       end
     end
+
+    context '.all_labels_for' do
+      it 'will parse the given data' do
+        result = Locabulary.all_labels_for(predicate_name: 'spec')
+        expect(result).to be_a(Array)
+        expect(result.first).to eq("Deactive Item")
+        expect(result.size).to eq(5)
+      end
+    end
   end
 end

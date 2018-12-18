@@ -123,4 +123,18 @@ module Locabulary
   def self.active_labels_for(options = {})
     active_items_for(options).map(&:term_label)
   end
+
+  # @api public
+  # @since 1.0.0
+  #
+  # Return an Array of term labels for the given :predicate_name
+  #
+  # @param [Hash] options
+  # @option options [String] :predicate_name
+  # @return [Array<String>] an array of Locabuarly::Items::Base#term_label
+  #
+  # @see Locabulary.active_items_for
+  def self.all_labels_for(options = {})
+    all_items_for(options).map(&:term_label)
+  end
 end
