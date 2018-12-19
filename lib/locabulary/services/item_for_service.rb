@@ -36,7 +36,7 @@ module Locabulary
           break if Utility.data_is_active?(data, as_of)
         end
         return item unless item.nil?
-        raise Locabulary::Exceptions::ItemNotFoundError.new(predicate_name, search_term_key)
+        raise Locabulary::Exceptions::ItemNotFoundError.new(predicate_name, search_term_key, search_term_value)
       end
     end
     private_constant :ItemForService
