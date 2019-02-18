@@ -12,6 +12,18 @@
       "activated_on": "2015-01-01"
     },
     {
+      "term_label": "Master of Architecture",
+      "acronym": "MArch",
+      "activated_on": "2015-01-01",
+      "deactivated_on": "2015-01-02"
+    },
+    {
+      "term_label": "Master of Architectural Design and Urbanism",
+      "acronym": "MADU",
+      "activated_on": "2015-01-01",
+      "deactivated_on": "2015-01-02"
+    },
+    {
       "term_label": "Master of Arts",
       "acronym": "MA",
       "activated_on": "2015-01-01"
@@ -23,6 +35,7 @@
     },
     {
       "term_label": "Master of Global Affairs",
+      "acronym": "MGA",
       "activated_on": "2017-09-01"
     },
     {
@@ -41,9 +54,21 @@
       "activated_on": "2015-01-01"
     },
     {
+      "term_label": "Master of Science in Aerospace Engineering",
+      "acronym": "MSAeroE",
+      "activated_on": "2015-01-01",
+      "deactivated_on": "2015-01-01"
+    },
+    {
       "term_label": "Master of Science in Bioengineering",
       "acronym": "MSBioE",
       "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Master of Science in Bioengineering",
+      "acronym": "MSBioeng",
+      "activated_on": "2015-01-01",
+      "deactivated_on": "2015-01-01"
     },
     {
       "term_label": "Master of Science in Chemical Engineering",
@@ -81,6 +106,12 @@
       "activated_on": "2015-01-01"
     },
     {
+      "term_label": "Master of Science in Applied Mathematics",
+      "acronym": "MSAM",
+      "activated_on": "2015-01-01",
+      "deactivated_on": "2015-01-02"
+    },
+    {
       "term_label": "Master of Science in Interdisciplinary Mathematics",
       "acronym": "MSIM",
       "activated_on": "2015-01-01"
@@ -89,30 +120,6 @@
       "term_label": "Master of Science in Mechanical Engineering",
       "acronym": "MSME",
       "activated_on": "2015-01-01"
-    },
-    {
-      "term_label": "*** WHAT SHOULD THIS BE? *** (discipline: Aerospace and Mechanical Engineering)",
-      "acronym": "MEME",
-      "activated_on": "2015-01-01",
-      "deactivated_on": "2015-01-01"
-    },
-    {
-      "term_label": "*** WHAT SHOULD THIS BE? *** (discipline: Aerospace and Mechanical Engineering)",
-      "acronym": "MSAeroE",
-      "activated_on": "2015-01-01",
-      "deactivated_on": "2015-01-01"
-    },
-    {
-      "term_label": "*** WHAT SHOULD THIS BE? *** (discipline: Civil Engineering and Geological Sciences)",
-      "acronym": "MSBioeng",
-      "activated_on": "2015-01-01",
-      "deactivated_on": "2015-01-01"
-    },
-    {
-      "term_label": "*** WHAT SHOULD THIS BE? *** (discipline: Mathematics)",
-      "acronym": "MSIM",
-      "activated_on": "2015-01-01",
-      "deactivated_on": "2015-01-01"
     }
   ]
 }

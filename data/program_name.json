@@ -18,20 +18,14 @@
     },
     {
       "term_label": "Architecture",
-      "acronym": "***** WHAT SHOULD THIS BE *****?",
+      "acronym": "ARCH",
       "activated_on": "2015-01-01",
-      "deactivated_on": "2015-01-01"
+      "deactivated_on": "2015-01-02"
     },
     {
       "term_label": "Art, Art History, and Design",
       "acronym": "ART",
       "activated_on": "2015-01-01"
-    },
-    {
-      "term_label": "Art, Art History and Design",
-      "acronym": "ART",
-      "activated_on": "2015-01-01",
-      "deactivated_on": "2015-01-01"
     },
     {
       "term_label": "Bioengineering",
@@ -45,12 +39,12 @@
     },
     {
       "term_label": "Biophysics",
-      "acronym": "***** WHAT SHOULD THIS BE *****?",
+      "acronym": "BPHY",
       "activated_on": "2017-09-01"
     },
     {
       "term_label": "Chemical and Biomolecular Engineering",
-      "acronym": "***** WHAT SHOULD THIS BE *****? CBE?",
+      "acronym": "CHEG",
       "activated_on": "2015-01-01"
     },
     {
@@ -60,20 +54,20 @@
     },
     {
       "term_label": "Chemical Engineering",
-      "acronym": "***** WHAT SHOULD THIS BE *****? CHEG?",
+      "acronym": "CHEG",
       "activated_on": "2015-01-01",
-      "deactivated_on": "2015-01-01"
+      "deactivated_on": "2015-01-02"
     },
     {
       "term_label": "Civil and Environmental Engineering and Earth Sciences",
-      "acronym": "***** WHAT SHOULD THIS BE *****? CEEES",
+      "acronym": "CEES",
       "activated_on": "2015-01-01"
     },
     {
       "term_label": "Civil Engineering and Geological Sciences",
-      "acronym": "***** WHAT SHOULD THIS BE *****? CEGS",
+      "acronym": "CEGS",
       "activated_on": "2015-01-01",
-      "deactivated_on": "2015-01-01"
+      "deactivated_on": "2015-01-02"
     },
     {
       "term_label": "Classics",
@@ -87,7 +81,7 @@
     },
     {
       "term_label": "Creative Writing",
-      "acronym": "***** WHAT SHOULD THIS BE *****? CW or ENGL-CW",
+      "acronym": "ENGL-CW",
       "activated_on": "2015-01-01"
     },
     {
@@ -112,7 +106,7 @@
     },
     {
       "term_label": "Global Affairs",
-      "acronym": "***** WHAT SHOULD THIS BE *****?",
+      "acronym": "GA",
       "activated_on": "2017-09-01"
     },
     {
@@ -122,7 +116,7 @@
     },
     {
       "term_label": "History and Philosophy of Science",
-      "acronym": "HIPS",
+      "acronym": "HPS",
       "activated_on": "2015-01-01"
     },
     {
@@ -132,18 +126,13 @@
     },
     {
       "term_label": "International Peace Studies",
-      "acronym": "***** WHAT SHOULD THIS BE *****? IIPS?",
+      "acronym": "IIPS",
       "activated_on": "2015-01-01",
-      "deactivated_on": "2015-01-01"
+      "deactivated_on": "2015-01-02"
     },
     {
-      "term_label": "Italian (PhD-only)",
-      "acronym": "***** WHAT SHOULD THIS BE *****?",
-      "activated_on": "2017-09-01"
-    },
-    {
-      "term_label": "Italian Studies (MA-only)",
-      "acronym": "***** WHAT SHOULD THIS BE *****?",
+      "term_label": "Italian",
+      "acronym": "ROIT",
       "activated_on": "2017-09-01"
     },
     {
@@ -163,9 +152,9 @@
     },
     {
       "term_label": "Music",
-      "acronym": "***** WHAT SHOULD THIS BE *****?",
+      "acronym": "MUS",
       "activated_on": "2015-01-01",
-      "deactivated_on": "2015-01-01"
+      "deactivated_on": "2015-01-02"
     },
     {
       "term_label": "Peace Studies",
@@ -174,7 +163,7 @@
     },
     {
       "term_label": "Philosophy",
-      "acronym": "PIL",
+      "acronym": "PHIL",
       "activated_on": "2015-01-01"
     },
     {
@@ -209,7 +198,7 @@
     },
     {
       "term_label": "Spanish",
-      "acronym": "***** WHAT SHOULD THIS BE *****?",
+      "acronym": "RLSP",
       "activated_on": "2017-09-01"
     },
     {
