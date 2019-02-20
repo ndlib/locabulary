@@ -6,8 +6,8 @@ module Locabulary
 
     # There was a problem finding an item
     class ItemNotFoundError < RuntimeError
-      def initialize(predicate_name, label)
-        super("Unable to find label=#{label.inspect} for predicate_name=#{predicate_name.inspect}")
+      def initialize(predicate_name, label, value)
+        super("Unable to find label=#{label.inspect} with value=#{value.inspect} for predicate_name=#{predicate_name.inspect}")
       end
     end
 

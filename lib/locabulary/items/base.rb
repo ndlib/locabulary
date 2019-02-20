@@ -7,7 +7,7 @@ module Locabulary
       extend Dry::Configurable
 
       setting :attribute_names, [
-        :predicate_name, :term_label, :term_uri, :deposit_label, :description, :default_presentation_sequence,
+        :predicate_name, :term_label, :term_uri, :deposit_label, :description, :default_presentation_sequence, :acronym,
         :activated_on, :deactivated_on
       ].freeze
 
@@ -40,6 +40,10 @@ module Locabulary
       # [Integer, nil] What is the order in which
       # @see Locabulary::Item#presentation_sequence for details on how this is calculated
       attr_reader :default_presentation_sequence
+
+      # [String, nil] A translation acronym for the term label
+      # @note: must be unique, as we search from acronym for a label or vice versa
+      attr_reader :acronym
 
       # @deprecated
       # The label to be used when depositing; This is deprecated in favor of mapping functions.

@@ -16,7 +16,7 @@ group :test do
   gem "dry-types", "~> 0.8.1"
   gem "dry-container", "~> 0.5.0"
   gem "dry-equalizer", "~> 0.2.0"
-  gem "dry-monads", "~> 0.1.1"
+  gem "dry-monads", "~> 0.3.1"
   gem "bundler"
   gem "rspec", '3.5.0'
   gem "rspec-its", '1.2.0'

@@ -50,7 +50,7 @@ module Locabulary
 
       def build_item(faceted_node)
         term_label = convert_faceted_node_value_to_term_label(faceted_node.value)
-        locabulary_item = find_locabulary_item(predicate_name: predicate_name, term_label: term_label)
+        locabulary_item = find_locabulary_item(predicate_name: predicate_name, search_term_key: 'term_label', search_term_value: term_label)
         if locabulary_item
           FacetWrapperForItem.build_for_faceted_node_and_locabulary_item(faceted_node: faceted_node, locabulary_item: locabulary_item)
         else

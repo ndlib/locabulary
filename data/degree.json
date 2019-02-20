@@ -3,75 +3,123 @@
   "values": [
     {
       "term_label": "Doctor of Musical Arts",
+      "acronym": "DMA",
       "activated_on": "2015-01-01"
     },
     {
       "term_label": "Doctor of Philosophy",
+      "acronym": "PhD",
       "activated_on": "2015-01-01"
     },
     {
+      "term_label": "Master of Architecture",
+      "acronym": "MArch",
+      "activated_on": "2015-01-01",
+      "deactivated_on": "2015-01-02"
+    },
+    {
+      "term_label": "Master of Architectural Design and Urbanism",
+      "acronym": "MADU",
+      "activated_on": "2015-01-01",
+      "deactivated_on": "2015-01-02"
+    },
+    {
       "term_label": "Master of Arts",
+      "acronym": "MA",
       "activated_on": "2015-01-01"
     },
     {
       "term_label": "Master of Fine Arts",
-      "activated_on": "2015-01-01"
-    },
-    {
-      "term_label": "Master of Medieval Studies",
-      "activated_on": "2015-01-01"
-    },
-    {
-      "term_label": "Master of Science",
-      "activated_on": "2015-01-01"
-    },
-    {
-      "term_label": "Master of Science in Aerospace Engineering",
-      "activated_on": "2015-01-01"
-    },
-    {
-      "term_label": "Master of Science in Bioengineering",
-      "activated_on": "2015-01-01"
-    },
-    {
-      "term_label": "Master of Science in Chemical Engineering",
-      "activated_on": "2015-01-01"
-    },
-    {
-      "term_label": "Master of Science in Civil Engineering",
-      "activated_on": "2015-01-01"
-    },
-    {
-      "term_label": "Master of Science in Computer Science and Engineering",
-      "activated_on": "2015-01-01"
-    },
-    {
-      "term_label": "Master of Science in Earth Sciences",
-      "activated_on": "2015-01-01"
-    },
-    {
-      "term_label": "Master of Science in Electrical Engineering",
-      "activated_on": "2015-01-01"
-    },
-    {
-      "term_label": "Master of Science in Environmental Engineering",
-      "activated_on": "2015-01-01"
-    },
-    {
-      "term_label": "Master of Science in Geological Sciences",
-      "activated_on": "2015-01-01"
-    },
-    {
-      "term_label": "Master of Science in Interdisciplinary Mathematics",
-      "activated_on": "2015-01-01"
-    },
-    {
-      "term_label": "Master of Science in Mechanical Engineering",
+      "acronym": "MFA",
       "activated_on": "2015-01-01"
     },
     {
       "term_label": "Master of Global Affairs",
+      "acronym": "MGA",
       "activated_on": "2017-09-01"
+    },
+    {
+      "term_label": "Master of Medieval Studies",
+      "acronym": "MMS",
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Master of Science",
+      "acronym": "MS",
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Master of Science in Aerospace Engineering",
+      "acronym": "MSAE",
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Master of Science in Aerospace Engineering",
+      "acronym": "MSAeroE",
+      "activated_on": "2015-01-01",
+      "deactivated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Master of Science in Bioengineering",
+      "acronym": "MSBioE",
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Master of Science in Bioengineering",
+      "acronym": "MSBioeng",
+      "activated_on": "2015-01-01",
+      "deactivated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Master of Science in Chemical Engineering",
+      "acronym": "MSChE",
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Master of Science in Civil Engineering",
+      "acronym": "MSCE",
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Master of Science in Computer Science and Engineering",
+      "acronym": "MSCSE",
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Master of Science in Earth Sciences",
+      "acronym": "MSES",
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Master of Science in Electrical Engineering",
+      "acronym": "MSEE",
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Master of Science in Environmental Engineering",
+      "acronym": "MSEnvE",
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Master of Science in Geological Sciences",
+      "acronym": "MSGS",
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Master of Science in Applied Mathematics",
+      "acronym": "MSAM",
+      "activated_on": "2015-01-01",
+      "deactivated_on": "2015-01-02"
+    },
+    {
+      "term_label": "Master of Science in Interdisciplinary Mathematics",
+      "acronym": "MSIM",
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Master of Science in Mechanical Engineering",
+      "acronym": "MSME",
+      "activated_on": "2015-01-01"
     }
   ]
 }

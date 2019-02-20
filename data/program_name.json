@@ -3,147 +3,208 @@
   "values": [
     {
       "term_label": "Aerospace and Mechanical Engineering",
+      "acronym": "AME",
       "activated_on": "2015-01-01"
     },
     {
       "term_label": "Anthropology",
+      "acronym": "ANTH",
       "activated_on": "2015-01-01"
     },
     {
       "term_label": "Applied and Computational Mathematics and Statistics",
+      "acronym": "ACMS",
       "activated_on": "2015-01-01"
     },
     {
+      "term_label": "Architecture",
+      "acronym": "ARCH",
+      "activated_on": "2015-01-01",
+      "deactivated_on": "2015-01-02"
+    },
+    {
       "term_label": "Art, Art History, and Design",
+      "acronym": "ART",
       "activated_on": "2015-01-01"
     },
     {
       "term_label": "Bioengineering",
+      "acronym": "BIOE",
       "activated_on": "2015-01-01"
     },
     {
       "term_label": "Biological Sciences",
-      "activated_on": "2015-01-01"
-    },
-    {
-      "term_label": "Chemical and Biomolecular Engineering",
-      "activated_on": "2015-01-01"
-    },
-    {
-      "term_label": "Chemistry and Biochemistry",
-      "activated_on": "2015-01-01"
-    },
-    {
-      "term_label": "Civil and Environmental Engineering and Earth Sciences",
-      "activated_on": "2015-01-01"
-    },
-    {
-      "term_label": "Classics",
-      "activated_on": "2015-01-01"
-    },
-    {
-      "term_label": "Computer Science and Engineering",
-      "activated_on": "2015-01-01"
-    },
-    {
-      "term_label": "Creative Writing",
-      "activated_on": "2015-01-01"
-    },
-    {
-      "term_label": "Early Christian Studies",
-      "activated_on": "2015-01-01"
-    },
-    {
-      "term_label": "Economics",
-      "activated_on": "2015-01-01"
-    },
-    {
-      "term_label": "Electrical Engineering",
-      "activated_on": "2015-01-01"
-    },
-    {
-      "term_label": "English",
-      "activated_on": "2015-01-01"
-    },
-    {
-      "term_label": "History",
-      "activated_on": "2015-01-01"
-    },
-    {
-      "term_label": "History and Philosophy of Science",
-      "activated_on": "2015-01-01"
-    },
-    {
-      "term_label": "Integrated Biomedical Sciences",
-      "activated_on": "2015-01-01"
-    },
-    {
-      "term_label": "Literature",
-      "activated_on": "2015-01-01"
-    },
-    {
-      "term_label": "Mathematics",
-      "activated_on": "2015-01-01"
-    },
-    {
-      "term_label": "Medieval Studies",
-      "activated_on": "2015-01-01"
-    },
-    {
-      "term_label": "Peace Studies",
-      "activated_on": "2015-01-01"
-    },
-    {
-      "term_label": "Philosophy",
-      "activated_on": "2015-01-01"
-    },
-    {
-      "term_label": "Physics",
-      "activated_on": "2015-01-01"
-    },
-    {
-      "term_label": "Political Science",
-      "activated_on": "2015-01-01"
-    },
-    {
-      "term_label": "Psychology",
-      "activated_on": "2015-01-01"
-    },
-    {
-      "term_label": "Romance Languages and Literatures",
-      "activated_on": "2015-01-01"
-    },
-    {
-      "term_label": "Sacred Music",
-      "activated_on": "2015-01-01"
-    },
-    {
-      "term_label": "Sociology",
-      "activated_on": "2015-01-01"
-    },
-    {
-      "term_label": "Theology",
+      "acronym": "BIOS",
       "activated_on": "2015-01-01"
     },
     {
       "term_label": "Biophysics",
+      "acronym": "BPHY",
       "activated_on": "2017-09-01"
+    },
+    {
+      "term_label": "Chemical and Biomolecular Engineering",
+      "acronym": "CHEG",
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Chemistry and Biochemistry",
+      "acronym": "BIOCHEM",
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Chemical Engineering",
+      "acronym": "CHEG",
+      "activated_on": "2015-01-01",
+      "deactivated_on": "2015-01-02"
+    },
+    {
+      "term_label": "Civil and Environmental Engineering and Earth Sciences",
+      "acronym": "CEES",
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Civil Engineering and Geological Sciences",
+      "acronym": "CEGS",
+      "activated_on": "2015-01-01",
+      "deactivated_on": "2015-01-02"
+    },
+    {
+      "term_label": "Classics",
+      "acronym": "CLAS",
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Computer Science and Engineering",
+      "acronym": "CSE",
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Creative Writing",
+      "acronym": "ENGL-CW",
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Early Christian Studies",
+      "acronym": "ECS",
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Economics",
+      "acronym": "ECON",
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Electrical Engineering",
+      "acronym": "EE",
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "English",
+      "acronym": "ENGL",
+      "activated_on": "2015-01-01"
     },
     {
       "term_label": "Global Affairs",
+      "acronym": "GA",
       "activated_on": "2017-09-01"
     },
     {
-      "term_label": "Italian (PhD-only)",
+      "term_label": "History",
+      "acronym": "HIST",
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "History and Philosophy of Science",
+      "acronym": "HPS",
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Integrated Biomedical Sciences",
+      "acronym": "IBMS",
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "International Peace Studies",
+      "acronym": "IIPS",
+      "activated_on": "2015-01-01",
+      "deactivated_on": "2015-01-02"
+    },
+    {
+      "term_label": "Italian",
+      "acronym": "ROIT",
       "activated_on": "2017-09-01"
     },
     {
-      "term_label": "Italian Studies (MA-only)",
-      "activated_on": "2017-09-01"
+      "term_label": "Literature",
+      "acronym": "LIT",
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Mathematics",
+      "acronym": "MATH",
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Medieval Studies",
+      "acronym": "MS",
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Music",
+      "acronym": "MUS",
+      "activated_on": "2015-01-01",
+      "deactivated_on": "2015-01-02"
+    },
+    {
+      "term_label": "Peace Studies",
+      "acronym": "PEACE",
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Philosophy",
+      "acronym": "PHIL",
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Physics",
+      "acronym": "PHYS",
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Political Science",
+      "acronym": "POLS",
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Psychology",
+      "acronym": "PSY",
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Romance Languages and Literatures",
+      "acronym": "ROML",
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Sacred Music",
+      "acronym": "SACM",
+      "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Sociology",
+      "acronym": "SOC",
+      "activated_on": "2015-01-01"
     },
     {
       "term_label": "Spanish",
+      "acronym": "RLSP",
       "activated_on": "2017-09-01"
+    },
+    {
+      "term_label": "Theology",
+      "acronym": "THEO",
+      "activated_on": "2015-01-01"
     }
   ]
 }

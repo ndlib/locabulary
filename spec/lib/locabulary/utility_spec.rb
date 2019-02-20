@@ -24,6 +24,26 @@ module Locabulary
           described_class.send(:data_is_active?, { 'activated_on' => '2014-10-23', 'deactivated_on' => '2016-11-23' }, as_of)
         ).to eq(true)
       end
+
+      it 'returns false if the activated date and deactivated date are equal' do
+        expect(
+          described_class.send(:data_is_active?, { 'activated_on' => '2015-10-23', 'deactivated_on' => '2015-10-23' }, as_of)
+        ).to eq(false)
+      end
+    end
+
+    context '.data_was_ever_active?' do
+      it 'returns true if there is no deactivated date' do
+        expect(described_class.send(:data_was_ever_active?, 'activated_on' => '2015-11-23')).to eq(true)
+      end
+
+      it 'returns false if the two dates are the same' do
+        expect(described_class.send(:data_was_ever_active?, 'activated_on' => '2015-11-23', 'deactivated_on' => '2015-11-23')).to eq(false)
+      end
+
+      it 'returns true if the two dates are not the same' do
+        expect(described_class.send(:data_was_ever_active?, 'activated_on' => '2015-10-23', 'deactivated_on' => '2015-12-23')).to eq(true)
+      end
     end
 
     context '.filename_for_predicate_name' do

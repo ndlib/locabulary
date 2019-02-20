@@ -33,7 +33,7 @@ module Locabulary
     def self.with_extraction_for(predicate_name)
       json = JSON.parse(File.read(filename_for_predicate_name(predicate_name)))
       json.fetch('values').each do |data|
-        yield(data)
+        yield(data) if data_was_ever_active?(data)
       end
     end
 
@@ -52,6 +52,24 @@ module Locabulary
       return true if deactivated_on_value.nil?
       deactivated_on = Date.parse(deactivated_on_value)
       return false unless deactivated_on >= as_of
+      true
+    end
+
+    # @api private
+    #
+    # There is a need to support translation of older non-standard data
+    # without considering the actual data valid. Data that was never actually
+    # valid has activated_date = deactivated_date.
+    #
+    # @param data [Hash] conforms to the Locabulary::Schema definition for a single value
+    # @return [Boolean]
+    # @see Locabulary::Schema
+    def self.data_was_ever_active?(data)
+      activated_on = Date.parse(data.fetch('activated_on'))
+      deactivated_on_value = data['deactivated_on']
+      return true if deactivated_on_value.nil?
+      deactivated_on = Date.parse(deactivated_on_value)
+      return false if activated_on == deactivated_on
       true
     end
 
