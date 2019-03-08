@@ -1,4 +1,5 @@
 # coding: utf-8
+
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'locabulary/version'
@@ -9,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Jeremy Friesen"]
   spec.email         = ["jeremy.n.friesen@gmail.com"]
 
-  spec.summary       = %q{An extraction of limited localized vocabulary for Sipity and CurateND.}
-  spec.description   = %q{An extraction of limited localized vocabulary for Sipity and CurateND.}
+  spec.summary       = 'An extraction of limited localized vocabulary for Sipity and CurateND.'
+  spec.description   = 'An extraction of limited localized vocabulary for Sipity and CurateND.'
   spec.homepage      = "https://github.com/ndlib/locabulary"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
@@ -44,7 +45,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake"
   spec.add_development_dependency 'google_drive', "2.1.2"
   spec.add_development_dependency 'highline', '1.7.8'
-  spec.add_development_dependency "rubocop", '~> 0.46.0'
+  spec.add_development_dependency "rubocop", '~> 0.49.0'
   spec.add_development_dependency "simplecov"
   spec.add_development_dependency "codeclimate-test-reporter", '1.0.3'
   spec.add_development_dependency "fasterer"

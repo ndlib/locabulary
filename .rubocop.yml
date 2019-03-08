@@ -46,3 +46,10 @@ Documentation:
   Exclude:
   - spec/**/*
   - test/**/*
+
+Metrics/BlockLength:
+  Max: 100
+
+Naming/FileName:
+  Exclude:
+  - Gemfile

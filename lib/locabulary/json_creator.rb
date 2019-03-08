@@ -77,7 +77,7 @@ module Locabulary
       end
 
       def self.client_secrets
-        @secrets ||= YAML.load(File.open(File.join(secrets_path)))
+        @secrets ||= YAML.safe_load(File.open(File.join(secrets_path)))
       end
 
       def self.secrets_path

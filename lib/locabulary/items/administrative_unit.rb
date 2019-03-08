@@ -1,4 +1,5 @@
 # encoding: UTF-8
+
 require 'locabulary/exceptions'
 require 'locabulary/items/base'
 
@@ -9,10 +10,19 @@ module Locabulary
     # @see ./data/administrative_units.json
     class AdministrativeUnit < Locabulary::Items::Base
       configure do |config|
-        config.attribute_names = [
-          :predicate_name, :term_label, :term_uri, :description, :grouping, :classification, :affiliation, :default_presentation_sequence,
-          :homepage, :activated_on, :deactivated_on
-        ]
+        config.attribute_names = %i(
+          predicate_name
+          term_label
+          term_uri
+          description
+          grouping
+          classification
+          affiliation
+          default_presentation_sequence
+          homepage
+          activated_on
+          deactivated_on
+        )
       end
 
       # [String] What is the URL of the homepage. Please note the term_uri is reserved for something that is more resolvable by machines.

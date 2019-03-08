@@ -6,10 +6,10 @@ module Locabulary
     class Base
       extend Dry::Configurable
 
-      setting :attribute_names, [
-        :predicate_name, :term_label, :term_uri, :deposit_label, :description, :default_presentation_sequence, :acronym,
-        :activated_on, :deactivated_on
-      ].freeze
+      setting :attribute_names, %i(
+        predicate_name term_label term_uri deposit_label description default_presentation_sequence acronym
+        activated_on deactivated_on
+      ).freeze
 
       def attribute_names
         self.class.config.attribute_names
