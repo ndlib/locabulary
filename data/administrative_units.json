@@ -15,15 +15,38 @@
       "classification": "College",
       "default_presentation_sequence": 1,
       "homepage": "http://architecture.nd.edu/",
-      "activated_on": "2015-07-22"
+      "activated_on": "2015-07-22",
+      "deactivated_on": "2019-03-11"
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Keough School of Global Affairs",
+      "term_label": "University of Notre Dame::Keough School",
       "classification": "College",
       "default_presentation_sequence": 10,
       "homepage": "http://keough.nd.edu/",
       "activated_on": "2018-05-02"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Keough School of Global Affairs",
+      "classification": "Department",
+      "default_presentation_sequence": 1,
+      "homepage": "http://keough.nd.edu/",
+      "activated_on": "2018-05-02"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Keough School of Global Affairs::Global Affairs",
+      "classification": "Department",
+      "homepage": "http://keough.nd.edu/",
+      "activated_on": "2019-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Keough School of Global Affairs::Peace Studies",
+      "classification": "Department",
+      "homepage": "http://keough.nd.edu/",
+      "activated_on": "2019-03-11"
     },
     {
       "predicate_name": "administrative_units",
@@ -85,6 +108,20 @@
     },
     {
       "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::College of Arts and Letters::Creative Writing",
+      "grouping": "The Humanities",
+      "classification": "Department",
+      "activated_on": "2019-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::College of Arts and Letters::Early Christian Studies",
+      "grouping": "The Humanities",
+      "classification": "Department",
+      "activated_on": "2019-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
       "term_label": "University of Notre Dame::College of Arts and Letters::East Asian Languages & Cultures",
       "grouping": "The Humanities",
       "classification": "Department",
@@ -133,11 +170,39 @@
     },
     {
       "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::College of Arts and Letters::History and Philosophy of Science",
+      "grouping": "The Humanities",
+      "classification": "Department",
+      "activated_on": "2019-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
       "term_label": "University of Notre Dame::College of Arts and Letters::Irish Language and Literature",
       "grouping": "The Humanities",
       "classification": "Department",
       "homepage": "http://irishlanguage.nd.edu/",
       "activated_on": "2015-07-22"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::College of Arts and Letters::Italian",
+      "grouping": "The Humanities",
+      "classification": "Department",
+      "activated_on": "2019-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::College of Arts and Letters::Literature",
+      "grouping": "The Humanities",
+      "classification": "Department",
+      "activated_on": "2019-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::College of Arts and Letters::Medieval Studies",
+      "grouping": "The Humanities",
+      "classification": "Department",
+      "activated_on": "2019-03-11"
     },
     {
       "predicate_name": "administrative_units",
@@ -153,7 +218,8 @@
       "grouping": "The Arts",
       "classification": "Department",
       "homepage": "http://music.nd.edu/",
-      "activated_on": "2015-07-22"
+      "activated_on": "2015-07-22",
+      "deactivated_on": "2019-03-11"
     },
     {
       "predicate_name": "administrative_units",
@@ -189,11 +255,25 @@
     },
     {
       "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::College of Arts and Letters::Sacred Music",
+      "grouping": "The Humanities",
+      "classification": "Department",
+      "activated_on": "2019-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
       "term_label": "University of Notre Dame::College of Arts and Letters::Sociology",
       "grouping": "The Social Sciences",
       "classification": "Department",
       "homepage": "http://sociology.nd.edu/",
       "activated_on": "2015-07-22"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::College of Arts and Letters::Spanish",
+      "grouping": "The Humanities",
+      "classification": "Department",
+      "activated_on": "2019-03-11"
     },
     {
       "predicate_name": "administrative_units",
@@ -270,6 +350,12 @@
     },
     {
       "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::College of Engineering::Bioengineering",
+      "classification": "Department",
+      "activated_on": "2019-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
       "term_label": "University of Notre Dame::College of Engineering::Chemical and Biomolecular Engineering",
       "classification": "Department",
       "homepage": "http://cbe.nd.edu/",
@@ -327,10 +413,22 @@
     },
     {
       "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::College of Science::Biophysics",
+      "classification": "Department",
+      "activated_on": "2019-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
       "term_label": "University of Notre Dame::College of Science::Chemistry and Biochemistry",
       "classification": "Department",
       "homepage": "http://science.nd.edu/departments/chemistry-biochemistry/",
       "activated_on": "2015-07-22"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::College of Science::Integrated Biomedical Sciences",
+      "classification": "Department",
+      "activated_on": "2019-03-11"
     },
     {
       "predicate_name": "administrative_units",
@@ -444,7 +542,7 @@
       "predicate_name": "administrative_units",
       "term_label": "University of Notre Dame::Notre Dame Research",
       "classification": "CenterOrInstitute",
-      "default_presentation_sequence": 11,
+      "default_presentation_sequence": 12,
       "activated_on": "2018-03-11"
     },
     {
@@ -453,6 +551,12 @@
       "classification": "CenterOrInstitute",
       "homepage": "https://advanceddiagnostics.nd.edu/",
       "activated_on": "2018-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Notre Dame Research::Biophysics Instrumentation Core Facility",
+      "classification": "CenterOrInstitute",
+      "activated_on": "2019-03-11"
     },
     {
       "predicate_name": "administrative_units",
@@ -478,7 +582,7 @@
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Notre Dame Research::Center for Social Research",
+      "term_label": "University of Notre Dame::Notre Dame Research::Center for Social Science Research",
       "classification": "CenterOrInstitute",
       "homepage": "https://csr.nd.edu/",
       "activated_on": "2018-03-11"
@@ -514,9 +618,13 @@
       "predicate_name": "administrative_units",
       "term_label": "University of Notre Dame::Notre Dame Research::University of Notre Dame Environmental Research Center (UNDERC)",
       "classification": "CenterOrInstitute",
-      "affiliation": "University of Notre Dame::College of Science",
-      "homepage": "http://underc.nd.edu/",
-      "activated_on": "2018-03-11"
+      "activated_on": "2019-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Notre Dame Research::Fitzgerald Institute for Real Estate",
+      "classification": "CenterOrInstitute",
+      "activated_on": "2019-03-11"
     },
     {
       "predicate_name": "administrative_units",
@@ -549,7 +657,7 @@
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Notre Dame Research::Interdisciplinary Center for Network Science and Applications (iCeNSA)",
+      "term_label": "University of Notre Dame::Notre Dame Research::Center for Network and Data Science (CNDS)",
       "classification": "CenterOrInstitute",
       "homepage": "http://icensa.nd.edu/",
       "activated_on": "2018-03-11"
@@ -624,7 +732,7 @@
       "predicate_name": "administrative_units",
       "term_label": "University of Notre Dame::Centers and Institutes",
       "classification": "CenterOrInstitute",
-      "default_presentation_sequence": 12,
+      "default_presentation_sequence": 13,
       "activated_on": "2015-07-22"
     },
     {
@@ -1020,7 +1128,7 @@
       "predicate_name": "administrative_units",
       "term_label": "University of Notre Dame::University of Notre Dame Press",
       "classification": "CampusOffice",
-      "default_presentation_sequence": 13,
+      "default_presentation_sequence": 14,
       "homepage": "http://undpress.nd.edu/",
       "activated_on": "2015-07-22"
     },
@@ -1028,7 +1136,7 @@
       "predicate_name": "administrative_units",
       "term_label": "University of Notre Dame::Snite Museum of Art",
       "classification": "OrganizationalGroup",
-      "default_presentation_sequence": 14,
+      "default_presentation_sequence": 15,
       "homepage": "http://snite.nd.edu/",
       "activated_on": "2018-04-17"
     },
@@ -1036,7 +1144,7 @@
       "predicate_name": "administrative_units",
       "term_label": "Catholic Organizations",
       "classification": "OrganizationalGroup",
-      "default_presentation_sequence": 15,
+      "default_presentation_sequence": 16,
       "activated_on": "2015-07-22"
     },
     {
@@ -1045,6 +1153,50 @@
       "classification": "Organization",
       "homepage": "http://www.catholicresearch.net/",
       "activated_on": "2015-07-22"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "Joint Programs",
+      "classification": "Joint Programs",
+      "default_presentation_sequence": 17,
+      "activated_on": "2019-03-11"
+    },
+
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "Joint Programs::Katholieke Universiteit Leuven",
+      "classification": "Joint Programs",
+      "activated_on": "2019-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "Joint Programs::Pázmány Péter Catholic University",
+      "classification": "Joint Programs",
+      "activated_on": "2019-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "Joint Programs::Pontificia Universidad Católica de Chile",
+      "classification": "Joint Programs",
+      "activated_on": "2019-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "Joint Programs::Universidade Estadual de Campinas",
+      "classification": "Joint Programs",
+      "activated_on": "2019-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "Joint Programs::Universiteit Antwerpen",
+      "classification": "Joint Programs",
+      "activated_on": "2019-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "Joint Programs::Università Cattolica del Sacro Cuore",
+      "classification": "Joint Programs",
+      "activated_on": "2019-03-11"
     }
   ]
 }
