@@ -15,8 +15,7 @@
       "classification": "College",
       "default_presentation_sequence": 1,
       "homepage": "http://architecture.nd.edu/",
-      "activated_on": "2015-07-22",
-      "deactivated_on": "2019-03-11"
+      "activated_on": "2015-07-22"
     },
     {
       "predicate_name": "administrative_units",
@@ -218,8 +217,7 @@
       "grouping": "The Arts",
       "classification": "Department",
       "homepage": "http://music.nd.edu/",
-      "activated_on": "2015-07-22",
-      "deactivated_on": "2019-03-11"
+      "activated_on": "2015-07-22"
     },
     {
       "predicate_name": "administrative_units",
