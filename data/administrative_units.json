@@ -29,7 +29,7 @@
       "predicate_name": "administrative_units",
       "term_label": "University of Notre Dame::Keough School of Global Affairs",
       "classification": "Department",
-      "default_presentation_sequence": 1,
+      "default_presentation_sequence": 2,
       "homepage": "http://keough.nd.edu/",
       "activated_on": "2018-05-02"
     },
@@ -52,7 +52,7 @@
       "term_label": "University of Notre Dame::College of Arts and Letters",
       "grouping": "The Humanities",
       "classification": "College",
-      "default_presentation_sequence": 2,
+      "default_presentation_sequence": 3,
       "homepage": "http://al.nd.edu/",
       "activated_on": "2015-07-22"
     },
@@ -285,7 +285,7 @@
       "predicate_name": "administrative_units",
       "term_label": "University of Notre Dame::Mendoza College of Business",
       "classification": "College",
-      "default_presentation_sequence": 3,
+      "default_presentation_sequence": 4,
       "homepage": "http://mendoza.nd.edu/",
       "activated_on": "2015-07-22"
     },
@@ -328,7 +328,7 @@
       "predicate_name": "administrative_units",
       "term_label": "University of Notre Dame::College of Engineering",
       "classification": "College",
-      "default_presentation_sequence": 4,
+      "default_presentation_sequence": 5,
       "homepage": "http://engineering.nd.edu/",
       "activated_on": "2015-07-22"
     },
@@ -384,7 +384,7 @@
       "predicate_name": "administrative_units",
       "term_label": "University of Notre Dame::College of Science",
       "classification": "College",
-      "default_presentation_sequence": 5,
+      "default_presentation_sequence": 6,
       "homepage": "http://science.nd.edu/",
       "activated_on": "2015-07-22"
     },
@@ -453,7 +453,7 @@
       "predicate_name": "administrative_units",
       "term_label": "University of Notre Dame::First Year of Studies",
       "classification": "College",
-      "default_presentation_sequence": 6,
+      "default_presentation_sequence": 7,
       "homepage": "http://firstyear.nd.edu/",
       "activated_on": "2015-07-22"
     },
@@ -461,7 +461,7 @@
       "predicate_name": "administrative_units",
       "term_label": "University of Notre Dame::Graduate School",
       "classification": "College",
-      "default_presentation_sequence": 7,
+      "default_presentation_sequence": 8,
       "homepage": "http://graduateschool.nd.edu/",
       "activated_on": "2015-07-22"
     },
@@ -469,7 +469,7 @@
       "predicate_name": "administrative_units",
       "term_label": "University of Notre Dame::Law School",
       "classification": "College",
-      "default_presentation_sequence": 8,
+      "default_presentation_sequence": 9,
       "homepage": "http://law.nd.edu/",
       "activated_on": "2015-07-22"
     },
@@ -477,7 +477,7 @@
       "predicate_name": "administrative_units",
       "term_label": "University of Notre Dame::Reserve Officers Training Corps",
       "classification": "College",
-      "default_presentation_sequence": 9,
+      "default_presentation_sequence": 10,
       "activated_on": "2015-07-22"
     },
     {

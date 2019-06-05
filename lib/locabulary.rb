@@ -72,6 +72,21 @@ module Locabulary
   end
 
   # @api public
+  #
+  # Responsible for transforming the flat data for the given :predicate_name
+  # an array for use in creating a menu.
+  #
+  # @param [Hash] options
+  # @option options [String] :predicate_name
+  # @option options [Date] :as_of (Date.today)
+  # @return [Array<Hash] - [{ category_title: String, item: Locabulary::Items::Base>}]
+  #
+  # @see Locabulary::Services
+  def self.hierarchical_menu_options(options = {})
+    Services.call(:hierarchical_menu_options, options)
+  end
+
+  # @api public
   # @since 0.5.0
   #
   # For the given :predicate_name and :term_label find an item.

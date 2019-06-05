@@ -46,6 +46,8 @@ module Locabulary
     # @return [Boolean]
     # @see Locabulary::Schema
     def self.data_is_active?(data, as_of)
+      return false unless data_was_ever_active?(data)
+      return true if as_of == :all
       activated_on = Date.parse(data.fetch('activated_on'))
       return false unless activated_on < as_of
       deactivated_on_value = data['deactivated_on']
