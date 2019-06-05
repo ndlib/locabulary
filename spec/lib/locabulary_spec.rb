@@ -13,6 +13,14 @@ module Locabulary
       end
     end
 
+    context '.build_ordered_hierarchical_tree' do
+      it 'will delegate to Services' do
+        parameters = { predicate_name: 'predicate_name', faceted_items: [1, 2, 3], faceted_item_hierarchy_delimiter: ':' }
+        expect(Services).to receive(:call).with(:build_ordered_hierarchical_tree, parameters)
+        described_class.build_ordered_hierarchical_tree(parameters)
+      end
+    end
+
     context '.active_items_for' do
       it 'will delegate to Services' do
         parameters = { predicate_name: 'predicate_name' }
@@ -34,6 +42,14 @@ module Locabulary
         parameters = { predicate_name: 'predicate_name' }
         expect(Services).to receive(:call).with(:active_hierarchical_roots, parameters)
         described_class.active_hierarchical_roots(parameters)
+      end
+    end
+
+    context '.hierarchical_menu_options' do
+      it 'will delegate to Services' do
+        parameters = { roots: [] }
+        expect(Services).to receive(:call).with(:hierarchical_menu_options, parameters)
+        described_class.hierarchical_menu_options(parameters)
       end
     end
 

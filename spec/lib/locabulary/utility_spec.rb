@@ -5,6 +5,15 @@ module Locabulary
   RSpec.describe Utility do
     context '.data_is_active?' do
       let(:as_of) { Date.parse('2015-10-23') }
+
+      describe 'with as_of: :all' do
+        let(:as_of) { :all }
+
+        it 'returns true' do
+          expect(described_class.send(:data_is_active?, { 'activated_on' => '2015-11-23' }, as_of)).to eq(true)
+        end
+      end
+
       it 'returns false if the data not yet activated' do
         expect(described_class.send(:data_is_active?, { 'activated_on' => '2015-11-23' }, as_of)).to eq(false)
       end

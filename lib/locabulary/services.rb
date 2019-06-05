@@ -4,6 +4,7 @@ require 'locabulary/services/active_items_for_service'
 require 'locabulary/services/active_hierarchical_roots_service'
 require 'locabulary/services/item_for_service'
 require 'locabulary/services/all_items_for_service'
+require 'locabulary/services/hierarchical_menu_options'
 
 # :nodoc:
 module Locabulary

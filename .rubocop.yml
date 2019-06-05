@@ -50,6 +50,6 @@ Documentation:
 Metrics/BlockLength:
   Max: 100
 
-Naming/FileName:
+Style/FileName:
   Exclude:
   - Gemfile
