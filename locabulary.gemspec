@@ -7,8 +7,8 @@ require 'locabulary/version'
 Gem::Specification.new do |spec|
   spec.name          = "locabulary"
   spec.version       = Locabulary::VERSION
-  spec.authors       = ["Jeremy Friesen"]
-  spec.email         = ["jeremy.n.friesen@gmail.com"]
+  spec.authors       = ["Jeremy Friesen", "LaRita Robinson"]
+  spec.email         = ["jeremy.n.friesen@gmail.com", "LaRita.Robinson@nd.edu"]
 
   spec.summary       = 'An extraction of limited localized vocabulary for Sipity and CurateND.'
   spec.description   = 'An extraction of limited localized vocabulary for Sipity and CurateND.'
