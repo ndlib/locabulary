@@ -24,21 +24,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "dry-configurable"
   spec.add_dependency "activesupport", '>= 4.0', "< 6.0"
 
-  spec.add_development_dependency "dry-validation"
-  # Attempted to update dry-logic without dependency, ran rspec and got the following
-  # NoMethodError:
-  #  undefined method `curry' for #<Method: Module(Dry::Logic::Predicates::Methods)#type?>
-  if RUBY_VERSION =~ /\A2\.[0|1]/
-    spec.add_development_dependency "dry-logic", "~> 0.3.0"
-    spec.add_development_dependency "dry-monads", "~> 0.3.1"
-  else
-    spec.add_development_dependency "dry-logic"
-    spec.add_development_dependency "dry-monads"
-  end
-  spec.add_development_dependency "dry-types"
-  spec.add_development_dependency "dry-container"
-  spec.add_development_dependency "dry-equalizer"
-
+  spec.add_development_dependency "dry-schema", ">= 0.4"
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "rspec"
   spec.add_development_dependency "rspec-its"

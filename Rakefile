@@ -35,10 +35,11 @@ namespace :commitment do
     lastrun_filename = File.expand_path('../coverage/.last_run.json', __FILE__)
     if File.exist?(lastrun_filename)
       coverage_percentage = JSON.parse(File.read(lastrun_filename)).fetch('result').fetch('covered_percent').to_i
-      if coverage_percentage < 100
-        abort("ERROR: Code Coverage Goal Not Met:\n\t#{coverage_percentage}%\tExpected\n\t100%\tActual")
+      target_percentage = (RUBY_VERSION =~ /^2.3/ ? 97 : 100)
+      if coverage_percentage < target_percentage
+        abort("ERROR: Code Coverage Goal Not Met:\n\t#{coverage_percentage}%\tExpected\n\t#{target_percentage}%\tActual")
       else
-        $stdout.puts "Code Coverage Goal Met (100%)"
+        $stdout.puts "Code Coverage Goal Met (#{target_percentage}%)"
       end
     else
       abort "Expected #{lastrun_filename} to exist for code coverage"
