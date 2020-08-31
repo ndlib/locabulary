@@ -626,6 +626,12 @@
     },
     {
       "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Notre Dame Research::Children's Environmental Health Initiative (CEHI)",
+      "classification": "CenterOrInstitute",
+      "activated_on": "2020-08-01"
+    },
+    {
+      "predicate_name": "administrative_units",
       "term_label": "University of Notre Dame::Notre Dame Research::Freimann Life Sciences Center",
       "classification": "CenterOrInstitute",
       "homepage": "https://freimann.nd.edu/",
