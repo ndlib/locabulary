@@ -23,13 +23,22 @@
       "classification": "College",
       "default_presentation_sequence": 10,
       "homepage": "http://keough.nd.edu/",
-      "activated_on": "2018-05-02"
+      "activated_on": "2018-05-02",
+      "deactivated_on": "2018-05-02"
     },
     {
       "predicate_name": "administrative_units",
       "term_label": "University of Notre Dame::Keough School of Global Affairs",
       "classification": "Department",
       "default_presentation_sequence": 2,
+      "homepage": "http://keough.nd.edu/",
+      "activated_on": "2018-05-02"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Keough School of Global Affairs::Non-Departmental",
+      "classification": "Department",
+      "default_presentation_sequence": 1,
       "homepage": "http://keough.nd.edu/",
       "activated_on": "2018-05-02"
     },
