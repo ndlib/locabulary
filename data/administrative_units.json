@@ -550,13 +550,13 @@
       "term_label": "University of Notre Dame::Notre Dame Research",
       "classification": "CenterOrInstitute",
       "default_presentation_sequence": 12,
+      "homepage": "http://research.nd.edu/",
       "activated_on": "2018-03-11"
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Notre Dame Research::Advanced Diagnostics and Therapeutics",
+      "term_label": "University of Notre Dame::Notre Dame Research::Institute for Precision Health (IPH)",
       "classification": "CenterOrInstitute",
-      "homepage": "https://advanceddiagnostics.nd.edu/",
       "activated_on": "2018-03-11"
     },
     {
