@@ -589,13 +589,6 @@
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Notre Dame Research::Center for Social Science Research",
-      "classification": "CenterOrInstitute",
-      "homepage": "https://csr.nd.edu/",
-      "activated_on": "2018-03-11"
-    },
-    {
-      "predicate_name": "administrative_units",
       "term_label": "University of Notre Dame::Notre Dame Research::Center for Theology, Science, and Human Flourishing",
       "classification": "CenterOrInstitute",
       "activated_on": "2018-03-11"
@@ -670,10 +663,9 @@
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Notre Dame Research::Center for Network and Data Science (CNDS)",
+      "term_label": "University of Notre Dame::Notre Dame Research::Lucy Family Institute for Data and Society",
       "classification": "CenterOrInstitute",
-      "homepage": "http://icensa.nd.edu/",
-      "activated_on": "2018-03-11"
+      "activated_on": "2020-11-11"
     },
     {
       "predicate_name": "administrative_units",
