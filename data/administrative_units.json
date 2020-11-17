@@ -36,7 +36,7 @@
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Keough School of Global Affairs::Non-Departmental",
+      "term_label": "University of Notre Dame::Keough School of Global Affairs::General",
       "classification": "Department",
       "default_presentation_sequence": 1,
       "homepage": "http://keough.nd.edu/",
@@ -55,6 +55,13 @@
       "classification": "Department",
       "homepage": "http://keough.nd.edu/",
       "activated_on": "2019-03-11"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Keough School of Global Affairs::Pulte Institute of Global Development",
+      "classification": "Department",
+      "homepage": "http://keough.nd.edu/",
+      "activated_on": "2019-11-17"
     },
     {
       "predicate_name": "administrative_units",
