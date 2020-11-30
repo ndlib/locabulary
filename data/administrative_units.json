@@ -58,13 +58,6 @@
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Keough School of Global Affairs::Pulte Institute of Global Development",
-      "classification": "Department",
-      "homepage": "http://keough.nd.edu/",
-      "activated_on": "2019-11-17"
-    },
-    {
-      "predicate_name": "administrative_units",
       "term_label": "University of Notre Dame::College of Arts and Letters",
       "grouping": "The Humanities",
       "classification": "College",
@@ -1135,6 +1128,13 @@
       "affiliation": "University of Notre Dame::College of Engineering",
       "homepage": "http://wireless.nd.edu/",
       "activated_on": "2015-07-22"
+    },
+    {
+      "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Centers and Institutes::Pulte Institute for Global Development",
+      "classification": "Department",
+      "homepage": "http://keough.nd.edu/",
+      "activated_on": "2019-11-17"
     },
     {
       "predicate_name": "administrative_units",
