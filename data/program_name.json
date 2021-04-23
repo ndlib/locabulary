@@ -7,6 +7,10 @@
       "activated_on": "2015-01-01"
     },
     {
+      "term_label": "Aerospace and Mechanical Engineering: Materials Science and Engineering",
+      "activated_on": "2021-04-23"
+    },
+    {
       "term_label": "Anthropology",
       "acronym": "ANTH",
       "activated_on": "2015-01-01"
@@ -26,6 +30,10 @@
       "term_label": "Art, Art History, and Design",
       "acronym": "ART",
       "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Biochemistry: Materials Science and Engineering",
+      "activated_on": "2021-04-23"
     },
     {
       "term_label": "Bioengineering",
@@ -53,15 +61,27 @@
       "activated_on": "2015-01-01"
     },
     {
+      "term_label": "Chemistry: Materials Science and Engineering",
+      "activated_on": "2021-04-23"
+    },
+    {
       "term_label": "Chemical Engineering",
       "acronym": "CHEG",
       "activated_on": "2015-01-01",
       "deactivated_on": "2015-01-02"
     },
     {
+      "term_label": "Chemical Engineering: Materials Science and Engineering",
+      "activated_on": "2021-04-23"
+    },
+    {
       "term_label": "Civil and Environmental Engineering and Earth Sciences",
       "acronym": "CEES",
       "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Civil and Environmental Engineering and Earth Sciences: Materials Science and Engineering",
+      "activated_on": "2021-04-23"
     },
     {
       "term_label": "Civil Engineering and Geological Sciences",
@@ -98,6 +118,10 @@
       "term_label": "Electrical Engineering",
       "acronym": "EE",
       "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Electrical Engineering: Materials Science and Engineering Science",
+      "activated_on": "2021-04-23"
     },
     {
       "term_label": "English",
@@ -172,6 +196,10 @@
       "activated_on": "2015-01-01"
     },
     {
+      "term_label": "Physics: Materials Science and Engineering",
+      "activated_on": "2021-04-23"
+    },
+    {
       "term_label": "Political Science",
       "acronym": "POLS",
       "activated_on": "2015-01-01"
@@ -180,6 +208,10 @@
       "term_label": "Psychology",
       "acronym": "PSY",
       "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Psychology, Research and Experimental",
+      "activated_on": "2021-04-23"
     },
     {
       "term_label": "Romance Languages and Literatures",
