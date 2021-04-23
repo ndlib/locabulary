@@ -13,9 +13,18 @@ robust options.
 
 ## Getting Started
 
-See the [Locublary module in lib/locabulary](/lib/locabulary.rb) for the public methods of this gem.
+At its core Locabulary provides a set of public methods that helps with building a list or hierarchy tree of controlled vocabularies.
+
+The module methods marked `@api public` in the [Locabulary top-level module](/lib/locabulary.rb) are the public facing methods that both Sipity and CurateND utilize.  They should not use any other methods of Locabulary.
+
+As such, the implementation details of Locabulary are opaque to downstream dependencies.
+
+Peeling the details back a bit, Locabulary provides several controlled vocabularies. You can find them in the [./data](/data/) directory.  By convention, the data file is the predicate_name of the term (e.g. the `predicate_name: "copyright"` will use the ./data/copyright.json data).
+
+Everything else is about mapping and querying the JSON data.
 
 ## Testing
+
 Install the gems via `BUNDLE_GEMFILE=gemfiles/activesupport4.gemfile bundle install`
 
 The full test suite is run via `bundle exec rake`.
