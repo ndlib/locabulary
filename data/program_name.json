@@ -207,7 +207,8 @@
     {
       "term_label": "Psychology",
       "acronym": "PSY",
-      "activated_on": "2015-01-01"
+      "activated_on": "2015-01-01",
+      "deactivated_on": "2021-04-23"
     },
     {
       "term_label": "Psychology, Research and Experimental",
