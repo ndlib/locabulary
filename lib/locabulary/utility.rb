@@ -17,7 +17,7 @@ module Locabulary
     # @yield Raw data object that conforms to the Locabulary::Schema definition
     # @see Locabulary::Schema
     def self.with_active_extraction_for(predicate_name, as_of)
-      json = JSON.parse(File.read(filename_for_predicate_name(predicate_name)))
+      json = fetch_json_for(predicate_name: predicate_name)
       json.fetch('values').each do |data|
         yield(data) if data_is_active?(data, as_of)
       end
@@ -31,7 +31,7 @@ module Locabulary
     # @yield Raw data object that conforms to the Locabulary::Schema definition for a single value
     # @see Locabulary::Schema
     def self.with_extraction_for(predicate_name)
-      json = JSON.parse(File.read(filename_for_predicate_name(predicate_name)))
+      json = fetch_json_for(predicate_name: predicate_name)
       json.fetch('values').each do |data|
         yield(data) if data_was_ever_active?(data)
       end
@@ -77,10 +77,24 @@ module Locabulary
 
     # @api private
     #
+    # @param predicate_name [String]
+    # @return [String] Returns a ruby Hash representation of JSON object.
+    def self.fetch_json_for(predicate_name:)
+      filename = filename_for_predicate_name(predicate_name)
+      JSON.parse(File.read(filename))
+    end
+
+    # @api private
+    #
     # Returns the filename of the file that contains the data for the given :predicate_name
     #
     # @param predicate_name [String]
     # @return [String] name of file that contains the data for the given predicate
+    #
+    # @note Given that we are pointing towards using Github' RAW
+    # content for the JSON files, I think we still want to check that
+    # the filename exist before initiating an HTTP request.  See
+    # https://github.com/ndlib/locabulary/issues/72.
     def self.filename_for_predicate_name(predicate_name)
       filename = File.join(DATA_DIRECTORY, "#{File.basename(predicate_name)}.json")
       return filename if File.exist?(filename)
