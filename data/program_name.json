@@ -11,6 +11,10 @@
       "activated_on": "2021-04-23"
     },
     {
+      "term_label": "Analytics",
+      "activated_on": "2021-08-01"
+    },
+    {
       "term_label": "Anthropology",
       "acronym": "ANTH",
       "activated_on": "2015-01-01"
@@ -160,9 +164,17 @@
       "activated_on": "2017-09-01"
     },
     {
+      "term_label": "Italian Studies",
+      "activated_on": "2021-01-01"
+    },
+    {
       "term_label": "Literature",
       "acronym": "LIT",
       "activated_on": "2015-01-01"
+    },
+    {
+      "term_label": "Management",
+      "activated_on": "2021-08-01"
     },
     {
       "term_label": "Mathematics",
