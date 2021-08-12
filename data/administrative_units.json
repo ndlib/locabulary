@@ -1069,6 +1069,13 @@
     },
     {
       "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Centers and Institutes::ND Technology Ethics Center (ND TEC)",
+      "classification": "CenterOrInstitute",
+      "homepage": "https://techethics.nd.edu/",
+      "activated_on": "2021-08-12"
+    },
+    {
+      "predicate_name": "administrative_units",
       "term_label": "University of Notre Dame::Centers and Institutes::Nanovic Institute for European Studies",
       "classification": "CenterOrInstitute",
       "homepage": "http://nanovic.nd.edu/",
