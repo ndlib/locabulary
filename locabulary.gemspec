@@ -29,8 +29,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec"
   spec.add_development_dependency "rspec-its"
   spec.add_development_dependency "rake"
-  spec.add_development_dependency 'google_drive', "2.1.2"
-  spec.add_development_dependency 'highline', '1.7.8'
   spec.add_development_dependency "rubocop", '~> 0.49.0'
   spec.add_development_dependency "simplecov"
   spec.add_development_dependency "codeclimate-test-reporter", '1.0.3'
