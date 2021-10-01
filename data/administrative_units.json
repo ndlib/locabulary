@@ -58,6 +58,13 @@
     },
     {
       "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Keough School of Global Affairs::Ansari Institute for Global Engagement with Religion",
+      "classification": "Department",
+      "homepage": "http://keough.nd.edu/",
+      "activated_on": "2021-10-01"
+    },
+    {
+      "predicate_name": "administrative_units",
       "term_label": "University of Notre Dame::College of Arts and Letters",
       "grouping": "The Humanities",
       "classification": "College",
