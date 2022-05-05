@@ -328,6 +328,13 @@
     },
     {
       "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Mendoza College of Business::IT, Analytics, and Operations",
+      "classification": "Department",
+      "homepage": "https://mendoza.nd.edu/research-faculty/academic-departments/information-technology-analytics-operations/",
+      "activated_on": "2022-05-05"
+    },
+    {
+      "predicate_name": "administrative_units",
       "term_label": "University of Notre Dame::Mendoza College of Business::Management",
       "classification": "Department",
       "homepage": "http://mendoza.nd.edu/research-and-faculty/academic-departments/management/",
