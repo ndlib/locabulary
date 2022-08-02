@@ -690,7 +690,7 @@
     },
     {
       "predicate_name": "administrative_units",
-      "term_label": "University of Notre Dame::Notre Dame Research::Notre Dame Environmental Research Center (UNDREC)",
+      "term_label": "University of Notre Dame::Notre Dame Research::Notre Dame Environmental Research Center (UNDERC)",
       "classification": "CenterOrInstitute",
       "homepage": "https://undrec.nd.edu/",
       "activated_on": "2022-08-01"
