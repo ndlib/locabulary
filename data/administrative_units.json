@@ -636,6 +636,13 @@
     },
     {
       "predicate_name": "administrative_units",
+      "term_label": "University of Notre Dame::Notre Dame Research::Cybercrimes Investigations Research and Education Initiative (CIRE)",
+      "classification": "CenterOrInstitute",
+      "homepage": "https://cire.nd.edu",
+      "activated_on": "2022-10-12"
+    },
+    {
+      "predicate_name": "administrative_units",
       "term_label": "University of Notre Dame::Notre Dame Research::Fitzgerald Institute for Real Estate",
       "classification": "CenterOrInstitute",
       "activated_on": "2019-03-11"
